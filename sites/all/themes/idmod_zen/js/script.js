@@ -17,8 +17,35 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
-
+/**
+ * Begin Custom Functions
+ */
+    $(function() {
+      $(".p2_box").mouseenter(hovIn);           
+      $(".p2_rollup").mouseleave(hovOut);   
+    });
+    
+    function hovIn(evt) {
+      $(this).next("div").addClass("show-content");
+      $(this).find(".box_title").addClass("hide-content");
+    }
+    
+    function hovOut(evt) {
+      $(".p2_rollup").removeClass("show-content");
+      $(".box_title").removeClass("hide-content");
+    }
+    
+    $("#accordion > li > div").hover(function() {
+      if(false == $(this).next().is(':visible')) {
+        $('#accordion ul').slideUp(300);
+      }
+      $(this).next().slideToggle(300);
+    });    
+    
+    
+/**
+ *End Custom Functions
+ */
   }
 };
 

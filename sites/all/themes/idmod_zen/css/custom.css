@@ -1,0 +1,192 @@
+/**
+ * Top Nav
+ */
+#main-menu li {
+	display: inline;
+	border-left: thin solid white;
+}
+
+#main-menu li.first {
+	border-left: hidden;
+	padding-right: 65px;
+}
+
+#main-menu li:nth-child(2) {
+	border-left: hidden;
+}
+
+
+
+#main-menu .links a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.view-fp-rotator {
+	position: relative;
+}
+
+
+/**
+ * CSS for Side menu
+ */
+
+#hero-rotator {
+    position: absolute;
+    margin-bottom: 10px;   /*This won't do anything because absolute takes everthing out of the box*/
+}
+
+/*div.hero-rotator {
+	position: absolute;
+}*/
+
+
+div.accordian-menu {
+	position: absolute;
+	top:23px;
+}
+
+#accordian-menu {
+    padding-bottom: 200px; /* push down next div  */
+    clear: both;
+    z-index: 4;
+}
+
+#accordion {
+    position: absolute;
+    list-style: none;
+    padding: 0 0 0 0;
+    margin-top: 0px;
+    width: 250px;
+}
+#accordion div {
+    display: block;
+    background-color: #D5D2CF;
+    font-weight: bold;
+    margin: 1px;
+    cursor: pointer;
+    padding: 5 5 5 7px;
+    list-style: circle;
+    height: 76px;
+    width: 250px;
+    opacity: .8;
+}
+
+#accordion ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+#accordion ul{
+    display: none;
+}
+#accordion ul li {
+    font-weight: normal;
+    cursor: auto;
+    background-color: #fff;
+    padding: 0 0 0 7px;
+}
+#accordion a {
+    text-decoration: none;
+}
+#accordion a:hover {
+    text-decoration: underline;
+}
+
+div#menu_title {
+    height: 120px;
+}
+
+
+
+/* Is this needed?????  */
+#panel_2 {
+    width: 1000px;
+    height: 400px;
+    background-color: grey;
+    clear: both;
+}
+
+
+
+
+
+
+/**
+ * Panel2 CSS
+ */
+.p2_box {
+  background-color: lightgrey;
+  height: 320px;
+  width: 300px;
+  float: left;
+}
+
+
+/*
+ * CSS for panel 2
+ */
+
+
+.box_wrap {
+	float: left;
+}
+
+.p2_box {
+  background-color: lightgrey;
+  height: 320px;
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+.p2_rollup {
+	position: absolute;
+	width: 300px;
+	height: 320px;
+	display: none;
+	z-index: 4;
+	background-color: rgba(255, 255, 255, 0.60);
+
+}
+
+.box_title > h2 {
+	margin-left: 10px;
+	margin-top: 245px;
+}
+
+.rollup_content {
+	margin-left: 10px;
+}
+
+.show-content {
+	display: block;
+}
+
+.hide-content {
+	display: none;
+}
+
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	
+}
+
+
+
+
+
+
+
+
+/*.hero-rotator {
+	position: absolute;
+	height: 500px;
+	width: 800px;
+}
+
+.accordian-menu {
+	position: relative;
+	z-index: 4;
+}*/
