@@ -26,17 +26,13 @@ Drupal.behaviors.my_custom_behavior = {
           });
           
           function hovIn(evt) {
-            debugger;
             $(this).next("div").animate({
-                top: "7px",
+                top: "0px",
                 height: "320px",  
               }, 200 );
           }
-          
-          
+               
           function hovRollup(evt) {
-            debugger;
-            //$(".p2_rollup").removeClass("show-content");
             $(this).animate({
                 top: "0px",
                 height: "330px",  
@@ -44,9 +40,8 @@ Drupal.behaviors.my_custom_behavior = {
           }
                     
           function hovOut(evt) {
-            //$(".p2_rollup").removeClass("show-content");
             $(".p2_rollup").animate({
-                top: "270px",
+                top: "260px",
                 height: "60px",  
               }, 200 );
           }

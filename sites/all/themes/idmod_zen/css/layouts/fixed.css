@@ -21,7 +21,7 @@
   position: fixed;
   width: 100%;
   height: 44px;
-  z-index: 4;
+  z-index: 10;
 
 }
 
@@ -59,6 +59,57 @@ div.region.region-navigation {
   color: white;
   text-decoration: none;
 }
+
+
+/**
+ * CSS for Rotator and menu
+ */
+
+.views-field-nothing .menu {
+  
+}
+
+.views-field-nothing ul.menu{  
+    position:relative; /* absolute position (so we can position it where we want)*/
+    bottom: 315px;
+    width:200px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    /* styling below */  
+    background-color:black;  
+    font-family: 'tahoma';  
+    font-size:15px;  
+    color:white;  
+    opacity:0.6; /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */  
+}
+
+.views-field-nothing .menu > li {
+    height: 50px;
+    width: inherit;
+    list-style-type: none;
+    padding-top: 20px;
+    border-top: solid;
+    border-bottom: none;
+    border-width: 2px;
+    border-color: white;
+    text-indent: 20px;
+    font-size: 20px;
+    
+}
+
+.views-field-nothing .menu > li:first-child {
+    border-top: none;
+    border-bottom: none;
+}
+
+.views-field-nothing .menu > li:last-child {
+    border-bottom: none;
+}
+
+
+
+
 
 
 /**
