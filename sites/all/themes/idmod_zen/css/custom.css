@@ -126,7 +126,6 @@ div#menu_title {
  * CSS for panel 2
  */
 
-
 .box_wrap {
 	float: left;
 }
@@ -136,33 +135,33 @@ div#menu_title {
   height: 320px;
   width: 300px;
   float: left;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 .p2_rollup {
 	position: absolute;
 	width: 300px;
 	height: 320px;
-	display: none;
+	display: block;
+	top: 270px;  /* initial position */
 	z-index: 4;
-	background-color: rgba(255, 255, 255, 0.60);
+	background-color: rgba(10, 110, 160, 0.60);
+	overflow: hidden;
+	height: 60px; /* hide the start */ 
 
+}
+.show_p2 {
+	overflow: visible;
+/*	height: 170px;*/
 }
 
 .box_title > h2 {
 	margin-left: 10px;
-	margin-top: 245px;
+	margin-top: 275px;
 }
 
 .rollup_content {
+	color: white;
 	margin-left: 10px;
-}
-
-.show-content {
-	display: block;
-}
-
-.hide-content {
-	display: none;
 }
 
 
@@ -170,8 +169,9 @@ div#menu_title {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
-	
 }
+
+
 
 
 

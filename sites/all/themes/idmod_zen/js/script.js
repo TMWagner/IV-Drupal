@@ -20,20 +20,36 @@ Drupal.behaviors.my_custom_behavior = {
 /**
  * Begin Custom Functions
  */
-    $(function() {
-      $(".p2_box").mouseenter(hovIn);           
-      $(".p2_rollup").mouseleave(hovOut);   
-    });
-    
-    function hovIn(evt) {
-      $(this).next("div").addClass("show-content");
-      $(this).find(".box_title").addClass("hide-content");
-    }
-    
-    function hovOut(evt) {
-      $(".p2_rollup").removeClass("show-content");
-      $(".box_title").removeClass("hide-content");
-    }
+          $(function() {
+            $(".p2_box").mouseenter(hovIn);
+            $(".p2_rollup").mouseleave(hovOut);   
+          });
+          
+          function hovIn(evt) {
+            debugger;
+            $(this).next("div").animate({
+                top: "7px",
+                height: "320px",  
+              }, 200 );
+          }
+          
+          
+          function hovRollup(evt) {
+            debugger;
+            //$(".p2_rollup").removeClass("show-content");
+            $(this).animate({
+                top: "0px",
+                height: "330px",  
+              }, 200 );
+          }
+                    
+          function hovOut(evt) {
+            //$(".p2_rollup").removeClass("show-content");
+            $(".p2_rollup").animate({
+                top: "270px",
+                height: "60px",  
+              }, 200 );
+          }
     
     $("#accordion > li > div").hover(function() {
       if(false == $(this).next().is(':visible')) {
