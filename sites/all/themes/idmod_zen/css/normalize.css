@@ -92,6 +92,20 @@ audio:not([controls]) {
 }
 */
 
+@font-face{
+	font-family: "Gotham-Light";
+    src: url('../fonts/Gotham-light.otf');
+}
+
+@font-face{
+	font-family: "Gotham-Bold";
+    src: url('../fonts/Gotham-Bold.otf');
+}
+
+
+
+
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -100,7 +114,7 @@ audio:not([controls]) {
  *    `em` units.
  */
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif; /* 1 */
+  font-family: "Gotham-Light", Verdana, Tahoma, "DejaVu Sans", sans-serif; /* 1 */
 
   /* Delete all but one of the following font-size declarations: */
 
@@ -158,12 +172,17 @@ body {
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
+a {
+  color: #0073A3;
+}
 a:link {
+  text-decoration: none;
 }
 a:visited {
 }
 a:hover,
 a:focus {
+  text-decoration: none;
 }
 a:active {
 }

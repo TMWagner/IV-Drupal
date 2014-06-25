@@ -1,3 +1,11 @@
+.bold {
+	font-family: 'Gotham-Bold';
+}
+
+.panel-pane {
+	margin-bottom: 20px;
+}
+
 /**
  * Top Nav
  */
@@ -52,24 +60,32 @@ div.accordian-menu {
     z-index: 4;
 }
 
+#accordian-menu #menu_title {
+	font-family: "Gotham-Bold";
+	size: 14px;
+	color: white;
+}
+
 #accordion {
     position: absolute;
     list-style: none;
     padding: 0 0 0 0;
     margin-top: 0px;
-    width: 250px;
+    width: 220px;
 }
-#accordion div {
-    display: block;
-    background-color: #D5D2CF;
-    font-weight: bold;
-    margin: 1px;
-    cursor: pointer;
-    padding: 5 5 5 7px;
-    list-style: circle;
-    height: 76px;
-    width: 250px;
-    opacity: .8;
+
+#accordion li {
+	display: block;
+	font-weight: bold;
+	margin: 1px;
+	height: 78px;
+	border-bottom: 1px solid #646362;
+	vertical-align: middle;
+}
+
+#accordion a {
+    color: white;
+		font-size: 25px;
 }
 
 #accordion ul {
@@ -86,14 +102,36 @@ div.accordian-menu {
     padding: 0 0 0 7px;
 }
 #accordion a {
+    color: white;
     text-decoration: none;
-}
-#accordion a:hover {
-    text-decoration: underline;
+		padding: 30px 100px 30px 10px;
+		line-height: 78px;
 }
 
-div#menu_title {
-    height: 120px;
+#accordion .menu-item:hover {
+	background-color: rgba(211, 211, 211, 0.91)
+}
+
+#accordion a:hover {
+    text-decoration: none;
+		color: black;
+}
+
+#accordion li:first-child {
+	height: 60px;
+	border: none;
+	font-family: "Gotham-Bold";
+	size: 14px;
+	color: white;
+	text-transform: uppercase;
+	padding-top: 40px;
+	padding-left: 10px;
+	background-color: rgba(33, 61, 97, 1);
+	opacity: .7;
+}
+
+#accordion li:last-child {
+	border: none;
 }
 
 
@@ -135,7 +173,11 @@ div#menu_title {
   height: 320px;
   width: 300px;
   float: left;
-  margin-right: 5px;
+  margin-right: 20px;
+}
+
+div.p2_box.last {
+	margin-right: 0px;
 }
 .p2_rollup {
 	position: absolute;
@@ -173,21 +215,49 @@ div#menu_title {
 }
 
 
+/*
+ * CSS for panel 3
+ */
 
-
-
-
-
-
-
-
-/*.hero-rotator {
-	position: absolute;
-	height: 500px;
-	width: 800px;
+#p3_boxes div {
+	background-color: grey;
+	float: left;
+	margin-right: 20px;
+	height: 320px;
+	width: 300px;
 }
 
-.accordian-menu {
-	position: relative;
-	z-index: 4;
-}*/
+#p3_box1 {
+	background-image: url(images/p3_1.jpg);  /*This needs to be inline*/
+	background-repeat: no-repeat;
+}
+#p3_box2 {
+	background-image: url(images/p3_2.jpg);
+	background-repeat: no-repeat;
+}
+#p3_box3 {
+	background-image: url(images/p3_3.jpg);
+	background-repeat: no-repeat;
+}
+
+#p3_text {
+	clear: left;
+  line-height: 100px;
+  text-align: center;
+	width: 960px;
+}
+
+#p3_text span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
+}
+
+.last {
+	margin-right: 0px;
+}
+
+
+
+
+
