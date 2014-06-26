@@ -136,7 +136,7 @@ div.region.region-navigation {
   padding-right: 10px;
   border-left: 0 !important;
   border-right: 0 !important;
-  word-wrap: break-word;
+  word-wrap: normal;
   *behavior: url("/path/to/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
