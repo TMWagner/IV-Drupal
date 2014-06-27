@@ -20,6 +20,30 @@ Drupal.behaviors.my_custom_behavior = {
 /**
  * Begin Custom Functions
  */
+
+      var color = '';
+      var rollupColor = '';
+      var replaceColor = '';
+      var position = '';
+      $(".p2_box").each(function() {
+        color = $(this).css( "background-color" )
+        rollupColor = $(this).next(".p2_rollup").css("background-color");
+
+
+        console.log('Base Color init: ', color);
+        replaceColor = color.replace(/\)/, ', 0.7)');
+        replaceColor = replaceColor.replace('rgb', 'rgba');
+        console.log('Rollup color: ', rollupColor);
+        console.log('New Rollup color from base: ' + replaceColor);
+
+
+        $(this).next(".p2_rollup").css("background-color", replaceColor);
+
+      });
+
+
+
+
           $(function() {
             $(".p2_box").mouseenter(hovIn);
             $(".p2_rollup").mouseleave(hovOut);   
