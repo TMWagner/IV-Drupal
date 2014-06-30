@@ -94,14 +94,16 @@ audio:not([controls]) {
 
 @font-face{
 	font-family: "Gotham-Light";
-    src: url('../fonts/Gotham-Light.otf');
+    src: url('../fonts/Gotham-Light.otf'),
+    url('../fonts/Gotham-Light.otf');
+
 }
 
 @font-face{
 	font-family: "Gotham-Bold";
-    src: url('../fonts/Gotham-Bold.otf');
+    src: url('../fonts/Gotham-Bold.otf'),
+    url('../fonts/Gotham-Bold.otf');
 }
-
 
 
 
