@@ -9,6 +9,10 @@
 /**
  * Top Nav
  */
+
+nav#main-menu {
+	font-size: 14px;
+}
 #main-menu li {
 	display: inline;
 	border-left: thin solid white;
@@ -81,11 +85,12 @@ div.accordian-menu {
 	height: 78px;
 	border-bottom: 1px solid #646362;
 	vertical-align: middle;
+	text-transform: uppercase;
 }
 
 #accordion a {
     color: white;
-		font-size: 25px;
+		font-size: 20px;
 }
 
 #accordion ul {
@@ -231,18 +236,13 @@ div.p2_box.last {
 	width: 300px;
 }
 
-#p3_box1 {
-	background-image: url(images/p3_1.jpg);  /*This needs to be inline*/
-	background-repeat: no-repeat;
+
+
+div#p3_box2 {
+	margin-right: 0px;
+	width: 320px;
 }
-#p3_box2 {
-	background-image: url(images/p3_2.jpg);
-	background-repeat: no-repeat;
-}
-#p3_box3 {
-	background-image: url(images/p3_3.jpg);
-	background-repeat: no-repeat;
-}
+
 
 #p3_text {
 	clear: left;
@@ -257,11 +257,93 @@ div.p2_box.last {
   line-height: normal;      
 }
 
+#p3_text span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
+}
+
 .last {
 	margin-right: 0px;
 }
 
+/*
+ * CSS for Panel Footer
+ */
 
+#footer_header {
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer {
+	margin-bottom: 20px;
+}
+
+.footer_block {
+	margin-top: 20px;
+	margin-left: 90px;
+}
+
+.footer_block ul {
+	margin-right: 35px;
+	margin-top: 10px;
+}
+
+.footer_block ul:last-child {
+	margin-right: 0px;
+}
+
+.footer_block ul {
+	float: left;
+	list-style-type: none;
+	padding-left: 0px;
+	width: 140px;
+}
+
+
+/* Hit the title */
+li.list-title {
+	font-family: "Gotham-Bold";
+}
+/* END hit the title */
+
+
+#footer {
+	background-color: #0073a3;
+	font-size: 14px;
+	width: 940px;
+}
+
+#footer a {
+	color: white;
+}
+
+#copyright {
+	clear: left;
+	text-align: center;
+	font-size: 12px;
+/*	margin-left: 35px;*/
+}
+
+#copyright li {
+	color: white;
+	float: left;
+	margin-left: 10px;
+	display: block;
+}
+
+
+#copyright li  a {
+	display: inline;
+	margin-right: 10px;
+	padding-left: 10px;
+	border-left: thin solid white;
+}
+
+#copyright li.first a {
+	border-left: none;
+}
 
 
 
