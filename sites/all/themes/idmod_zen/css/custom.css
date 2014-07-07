@@ -346,4 +346,24 @@ li.list-title {
 }
 
 
+/*CSS for Team page*/
 
+.team-items {
+	padding: 0 10px 0 10px;
+	vertical-align: top;
+	width: 175px;
+}
+
+
+
+div.team-name-info {
+	background-color: rgba(10, 110, 160, 0.60);
+	color: white;
+	top: 170px;
+	font-size: 12px;
+	height: 0px;
+	overflow: hidden;
+	padding: 0 10px 0 10px;
+	position: absolute;
+	width: 135px;
+}

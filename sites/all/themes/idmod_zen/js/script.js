@@ -42,40 +42,88 @@ Drupal.behaviors.my_custom_behavior = {
       });
 
 
-
-
-          $(function() {
-            $(".p2_box").mouseenter(hovIn);
-            $(".p2_rollup").mouseleave(hovOut);   
-          });
-          
-          function hovIn(evt) {
-            $(this).next("div").animate({
-                top: "0px",
-                height: "320px",  
-              }, 200 );
-          }
-               
-          function hovRollup(evt) {
-            $(this).animate({
-                top: "0px",
-                height: "330px",  
-              }, 200 );
-          }
-                    
-          function hovOut(evt) {
-            $(".p2_rollup").animate({
-                top: "260px",
-                height: "60px",  
-              }, 200 );
-          }
+      $(function() {
+        $(".p2_box").mouseenter(hovIn);
+        $(".p2_rollup").mouseleave(hovOut);   
+      });
+      
+      function hovIn(evt) {
+        $(this).next("div").animate({
+            top: "0px",
+            height: "320px",  
+          }, 200 );
+      }
+           
+      function hovRollup(evt) {
+        $(this).animate({
+            top: "0px",
+            height: "330px",  
+          }, 200 );
+      }
+                
+      function hovOut(evt) {
+        $(".p2_rollup").animate({
+            top: "260px",
+            height: "60px",  
+          }, 200 );
+      }
     
     $("#accordion > li > div").hover(function() {
       if(false == $(this).next().is(':visible')) {
         $('#accordion ul').slideUp(300);
       }
       $(this).next().slideToggle(300);
-    });    
+    });
+    
+    
+    $(function() {
+      $(".views-field-field-profile-picture").mouseenter(teamIn);
+      $(".team-name-info").mouseleave(teamOut);   
+    });
+    
+    function teamIn(evt) {
+      $(this).next("div").animate({
+          top: "0px",
+          height: "165px",
+
+        }, "slow" );
+    }
+         
+    //Move the top back town and height back to 0 to hide it
+    function teamOut(evt) {
+      $(".team-name-info").animate({
+          top: "170px",
+          height: "0px",  
+        }, 200 );
+    }    
+    
+//// Superfish code
+//    // initialise plugin
+//    var example = $('#example').superfish({
+//      //add options here if required
+//    });
+//
+//    // buttons to demonstrate Superfish's public methods
+//    $('.destroy').on('click', function(){
+//      example.superfish('destroy');
+//    });
+//
+//    $('.init').on('click', function(){
+//      example.superfish();
+//    });
+//
+//    $('.open').on('click', function(){
+//      example.children('li:first').superfish('show');
+//    });
+//
+//    $('.close').on('click', function(){
+//      example.children('li:first').superfish('hide');
+//    });
+//
+//// End Superfish code
+//    
+    
+
     
     
 /**
