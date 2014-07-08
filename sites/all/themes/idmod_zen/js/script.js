@@ -77,7 +77,7 @@ Drupal.behaviors.my_custom_behavior = {
     
     
     $(function() {
-      $(".views-field-field-profile-picture").mouseenter(teamIn);
+      $(".views-field-field-profile-picture").hoverIntent(teamIn, function(){});
       $(".team-name-info").mouseleave(teamOut);   
     });
     
@@ -98,28 +98,28 @@ Drupal.behaviors.my_custom_behavior = {
     }    
     
 //// Superfish code
-//    // initialise plugin
-//    var example = $('#example').superfish({
-//      //add options here if required
-//    });
-//
-//    // buttons to demonstrate Superfish's public methods
-//    $('.destroy').on('click', function(){
-//      example.superfish('destroy');
-//    });
-//
-//    $('.init').on('click', function(){
-//      example.superfish();
-//    });
-//
-//    $('.open').on('click', function(){
-//      example.children('li:first').superfish('show');
-//    });
-//
-//    $('.close').on('click', function(){
-//      example.children('li:first').superfish('hide');
-//    });
-//
+    //// initialise plugin
+    //var example = $('#example').superfish({
+    //  //add options here if required
+    //});
+    //
+    //// buttons to demonstrate Superfish's public methods
+    //$('.destroy').on('click', function(){
+    //  example.superfish('destroy');
+    //});
+    //
+    //$('.init').on('click', function(){
+    //  example.superfish();
+    //});
+    //
+    //$('.open').on('click', function(){
+    //  example.children('li:first').superfish('show');
+    //});
+    //
+    //$('.close').on('click', function(){
+    //  example.children('li:first').superfish('hide');
+    //});
+
 //// End Superfish code
 //    
     

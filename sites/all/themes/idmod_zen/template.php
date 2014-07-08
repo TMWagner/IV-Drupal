@@ -8,6 +8,8 @@
  */
 
 
+drupal_add_library('hoverintent', 'hoverintent', TRUE);
+
 /**
  * Override or insert variables into the maintenance page template.
  *

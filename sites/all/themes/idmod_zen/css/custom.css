@@ -4,6 +4,7 @@
 
 .panel-pane {
 	margin-bottom: 20px;
+	position: relative;
 }
 
 /**
@@ -351,7 +352,11 @@ li.list-title {
 .team-items {
 	padding: 0 10px 0 10px;
 	vertical-align: top;
-	width: 175px;
+	width: 205px;
+}
+
+div#menu-level2 {
+	margin-bottom: 100px;
 }
 
 
@@ -366,4 +371,13 @@ div.team-name-info {
 	padding: 0 10px 0 10px;
 	position: absolute;
 	width: 135px;
+}
+
+/*Seem to have to this to keep Superfish from clobbering the next element*/
+div.panel-pane.pane-views-panes.pane-team-panel-pane-1 {
+	clear: both;
+}
+
+div#menu-level2 {
+	float: right;
 }
