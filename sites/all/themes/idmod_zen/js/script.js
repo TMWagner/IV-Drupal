@@ -43,7 +43,7 @@ Drupal.behaviors.my_custom_behavior = {
 
 
       $(function() {
-        $(".p2_box").mouseenter(hovIn);
+        $(".p2_box").hoverIntent(hovIn, function(){});
         $(".p2_rollup").mouseleave(hovOut);   
       });
       
