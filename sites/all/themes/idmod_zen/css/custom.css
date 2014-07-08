@@ -3,7 +3,7 @@
 }
 
 .panel-pane {
-	margin-bottom: 20px;
+/*	margin-bottom: 20px;   This is killing 2nd level page74Â*/
 	position: relative;
 }
 
@@ -229,6 +229,10 @@ div.p2_box.last {
  * CSS for panel 3
  */
 
+div#home-p3 {
+	margin-top: 20px;
+}
+
 #p3_boxes div {
 	background-color: grey;
 	float: left;
@@ -313,6 +317,7 @@ li.list-title {
 #footer {
 	background-color: #0073a3;
 	font-size: 14px;
+	margin-left: 10px;
 	width: 940px;
 }
 
@@ -356,7 +361,7 @@ li.list-title {
 }
 
 div#menu-level2 {
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 }
 
 
@@ -379,5 +384,23 @@ div.panel-pane.pane-views-panes.pane-team-panel-pane-1 {
 }
 
 div#menu-level2 {
-	float: right;
+	float: left;
+	margin-left: 220px;
 }
+
+
+/* Level 2 pages */
+.banner-l2 {
+	height: 104px;
+	width: 960px;
+}
+.banner-company {
+	color: white;
+	text-justify: left;
+	padding-top: 10px;
+	margin-left: 20px;
+	width: 220px;
+}
+
+
+
