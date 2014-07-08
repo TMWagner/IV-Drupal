@@ -377,6 +377,9 @@ div.team-name-info {
 	position: absolute;
 	width: 135px;
 }
+.team-items {
+	position: relative;  /* Provide ancestor for rollup to position to */
+}
 
 /*Seem to have to this to keep Superfish from clobbering the next element*/
 div.panel-pane.pane-views-panes.pane-team-panel-pane-1 {
