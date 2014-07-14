@@ -101,15 +101,15 @@ Drupal.behaviors.my_custom_behavior = {
         }, 200 );
     }
     
-//Light up the appropropriate menu block to show it is "active"
-$('.sf-level1').each(function(index) {
-  var link = $(this).find("a").attr('href');
-  var url =  window.location.href;
-   
-  if (url.indexOf(link) >=0) {
-    $(this).css( "background-color", "rgb(82, 91, 92" );
-  }
-});   
+    //Light up the appropropriate menu block to show it is "active"
+    $('.sf-level1').each(function(index) {
+      var link = $(this).find("a").attr('href');
+      var url =  window.location.href;
+       
+      if (url.indexOf(link) >=0) {
+        $(this).css( "background-color", "rgb(82, 91, 92" );
+      }
+    });   
  
     
     
