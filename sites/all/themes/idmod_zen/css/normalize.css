@@ -116,7 +116,7 @@ audio:not([controls]) {
  *    `em` units.
  */
 html {
-  font-family: "Gotham-Light", Verdana, Tahoma, "DejaVu Sans", sans-serif; /* 1 */
+  font-family: "Verdana, Tahoma, "DejaVu Sans", sans-serif; /* 1 */
 
   /* Delete all but one of the following font-size declarations: */
 

@@ -21,6 +21,12 @@ Drupal.behaviors.my_custom_behavior = {
  * Begin Custom Functions
  */
 
+
+      $('#tile-wrap').masonry({
+        gutter: 10,
+        itemSelector: '.research-areas'
+      });
+
       var color = '';
       var rollupColor = '';
       var replaceColor = '';
@@ -35,7 +41,6 @@ Drupal.behaviors.my_custom_behavior = {
         replaceColor = replaceColor.replace('rgb', 'rgba');
         console.log('Rollup color: ', rollupColor);
         console.log('New Rollup color from base: ' + replaceColor);
-
 
         $(this).next(".p2_rollup").css("background-color", replaceColor);
 
@@ -85,7 +90,6 @@ Drupal.behaviors.my_custom_behavior = {
       $(this).next("div").animate({
           top: "0px",
           height: "165px",
-
         }, "slow" );
     }
          
@@ -95,35 +99,19 @@ Drupal.behaviors.my_custom_behavior = {
           top: "170px",
           height: "0px",  
         }, 200 );
-    }    
+    }
     
-//// Superfish code
-    //// initialise plugin
-    //var example = $('#example').superfish({
-    //  //add options here if required
-    //});
-    //
-    //// buttons to demonstrate Superfish's public methods
-    //$('.destroy').on('click', function(){
-    //  example.superfish('destroy');
-    //});
-    //
-    //$('.init').on('click', function(){
-    //  example.superfish();
-    //});
-    //
-    //$('.open').on('click', function(){
-    //  example.children('li:first').superfish('show');
-    //});
-    //
-    //$('.close').on('click', function(){
-    //  example.children('li:first').superfish('hide');
-    //});
-
-//// End Superfish code
-//    
+//Light up the appropropriate menu block to show it is "active"
+$('.sf-level1').each(function(index) {
+  var link = $(this).find("a").attr('href');
+  var url =  window.location.href;
+   
+  if (url.indexOf(link) >=0) {
+    $(this).css( "background-color", "rgb(82, 91, 92" );
+  }
+});   
+ 
     
-
     
     
 /**

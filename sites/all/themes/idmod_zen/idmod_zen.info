@@ -70,6 +70,7 @@ stylesheets[all][] = sf-menu/css/superfish.css
 ; 7/7/2014 (tmw) added hoverintent via hoverintent module. No idea why this line below doesn't work
 
 scripts[] = js/script.js
+scripts[] = js/masonry.pkgd.min.js
 ;scripts[] = js/jquery.hoverintent.js   
 scripts[] = sf-menu/js/superfish.js
 

@@ -152,9 +152,6 @@ div.accordian-menu {
 
 
 
-
-
-
 /**
  * Panel2 CSS
  */
@@ -169,6 +166,13 @@ div.accordian-menu {
 /*
  * CSS for panel 2
  */
+
+/* level2-page is set in panels specifically for our 2nd level pages */
+.level2-page div#content {
+	position: relative;
+	top: -3px;
+}
+
 
 .box_wrap {
 	float: left;
@@ -354,6 +358,14 @@ li.list-title {
 
 /*CSS for Team page*/
 
+/* Move main content up and make sure it is on top of the nav bar shadow */
+/* TODO:  This isn't going to work... Moves the content up and over the menu bar and kills the links */
+/*.section-team div #main,
+.section-research #main {
+	padding-top: 2.8em;
+	z-index: 10;
+}*/
+
 .team-items {
 	padding: 0 10px 0 10px;
 	vertical-align: top;
@@ -363,8 +375,6 @@ li.list-title {
 div#menu-level2 {
 	/*margin-bottom: 100px;*/
 }
-
-
 
 div.team-name-info {
 	background-color: rgba(10, 110, 160, 0.60);
@@ -405,5 +415,17 @@ div#menu-level2 {
 	width: 220px;
 }
 
+/* CSS for Research page */
+#tile-wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+.research-areas {
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
 
 
