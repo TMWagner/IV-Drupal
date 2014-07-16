@@ -356,20 +356,30 @@ li.list-title {
 }
 
 
+/* CSS for 2nd level pages */
+
+.panels-flexible-brick1 .panels-flexible-row {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+}
+
 /*CSS for Team page*/
 
-/* Move main content up and make sure it is on top of the nav bar shadow */
-/* TODO:  This isn't going to work... Moves the content up and over the menu bar and kills the links */
-/*.section-team div #main,
-.section-research #main {
-	padding-top: 2.8em;
-	z-index: 10;
-}*/
 
 .team-items {
 	padding: 0 10px 0 10px;
 	vertical-align: top;
 	width: 205px;
+}
+
+.view-display-team-lead h3 {
+	margin: 0px 0px .5em;
+	font-size: 16px;
+	color: black;
+}
+.view-display-team-lead  {
+	font-size: 14px;
+	color: rgb(83, 83, 87);
 }
 
 div#menu-level2 {
@@ -415,17 +425,29 @@ div#menu-level2 {
 	width: 220px;
 }
 
+/* Left 220 */
+.panels-flexible-region-brick1-left220 h3 {
+	font-size: 18px;
+	line-height: 1em;
+	margin: 0px 0px 1em 0px;
+}
+
 /* CSS for Research page */
 #tile-wrap {
-	margin-left: auto;
+	margin-left: 0px;
 	margin-right: auto;
 	width: 700px;
 }
 
+#tile-wrap p {
+	margin-top: 0px;
+}
+
 .research-areas {
 	float: left;
+	margin-right: 20px;
 	width: 300px;
-	margin-left: 20px;
+/*	margin-left: 20px;  Want this flush against the left margin*/
 }
 
 

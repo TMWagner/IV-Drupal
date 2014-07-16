@@ -59,7 +59,7 @@ nav#main-menu {
   z-index: 10;
 }
 
-#block-search-form #edit-actions {
+#block-search-form  .form-actions {
   display: none;
 }
 
