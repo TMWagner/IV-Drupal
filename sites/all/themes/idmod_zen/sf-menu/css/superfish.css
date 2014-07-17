@@ -51,10 +51,10 @@
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
-	color: white;
+	color: #0073A3;
 }
 .sf-menu a:hover {
-	color: #0073A3;
+	color: black;
 }
 .sf-menu li {
 	background: #0073a3;
@@ -68,11 +68,23 @@
 	width: 185px;
 }
 .sf-menu ul li {
-	background: #C7C9CE;
+	background: #D1D2D3;
+}
+.sf-menu ul li:hover {
+	background: #BCBDBE;
 }
 .sf-menu ul ul li {
 	background: #9AAEDB;
 }
+
+/* Set CSS for 1st level only */
+.sf-level1 > a {
+	color: white;
+}
+.sf-level1 > a:hover {
+	color: black;
+}
+
 .sf-menu li:hover,
 .sf-menu li.sfHover {
 	background: #858c8c;
