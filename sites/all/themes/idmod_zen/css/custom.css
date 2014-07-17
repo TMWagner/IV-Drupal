@@ -13,6 +13,7 @@
 
 nav#main-menu {
 	font-size: 14px;
+	text-transform: uppercase;
 }
 #main-menu li {
 	display: inline;
@@ -21,7 +22,7 @@ nav#main-menu {
 
 #main-menu li.first {
 	border-left: hidden;
-	padding-right: 65px;
+	padding-right: 30px;
 }
 
 #main-menu li:nth-child(2) {
@@ -162,6 +163,10 @@ div.accordian-menu {
   float: left;
 }
 
+div#menu-level2 {
+	text-transform: uppercase;
+}
+
 
 /*
  * CSS for panel 2
@@ -200,6 +205,9 @@ div.p2_box.last {
 	overflow: hidden;
 	height: 60px; /* hide the start */ 
 
+}
+.p2_rollup h2 {
+	font-size: x-large;
 }
 .show_p2 {
 	overflow: visible;
