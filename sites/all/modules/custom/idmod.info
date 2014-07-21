@@ -1,0 +1,5 @@
+name = IDMOD Libraries and API
+description = Common IDMOD libraries and APIs to be used by other IDMOD modules.
+package = IDMOD
+version = 7.x-1.0
+core = 7.x

@@ -1,0 +1,20 @@
+<?php
+ 
+/*
+ * @file
+ * General module file for IDMOD
+ */
+
+ 
+/**
+ * Implementation of hook_menu_alter()
+ */
+function idmod_node_view($node, $view_mode, $langcode) {
+  //Debug
+  $debug_items = $node;
+
+}
+
+ 
+
+
