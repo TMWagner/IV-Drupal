@@ -6,15 +6,34 @@
  */
 
  
+
 /**
- * Implementation of hook_menu_alter()
+ * Implementation of hook_field_display_alter
  */
-function idmod_node_view($node, $view_mode, $langcode) {
-  //Debug
-  $debug_items = $node;
+function idmod_field_display_node_alter(&$display, $context) {
+  // Leave field labels out of the search index.
+  if($context['entity']->type == 'publications') {
+    // Look for our entity type
+    
+    if (isset($context['entity']->field_publications_author['und'][0]['entity']->label)) {
+      // Loop through the author array
+      // TODO: Each label is process at least three times... could set a flag and stop that BS
+      foreach ($context['entity']->field_publications_author['und'] as $key => $item) {
+        $label = $item['entity']->field_profile_first_name['und'][0]['value'];
+        $label .= ' ';
+        $label .= $item['entity']->field_profile_last_name['und'][0]['value'];
+        $context['entity']->field_publications_author['und'][$key]['entity']->label =  $label;
+      }
+    } 
+  }
 
 }
 
- 
+
+
+
+
+
+
 
 
