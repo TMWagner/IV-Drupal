@@ -11,6 +11,7 @@
 nav#main-menu {
 	font-size: 14px;
 	text-transform: uppercase;
+	margin-bottom: 11px;  /* push the next item down a bit   */
 }
 #main-menu li {
 	display: inline;
@@ -63,11 +64,11 @@ div.accordian-menu {
     z-index: 4;
 }
 
-#accordian-menu #menu_title {
+/*#accordian-menu #menu_title {
 	font-family: "Gotham-Bold";
 	size: 14px;
 	color: white;
-}
+}*/
 
 #accordion {
     position: absolute;
@@ -139,6 +140,11 @@ div.accordian-menu {
 }
 
 
+div#block-search-form {
+	width: 180px;
+	float: right;
+}
+
 
 /* Is this needed?????  */
 #panel_2 {
@@ -169,16 +175,45 @@ div#menu-level2 {
  * CSS for panel 2
  */
 
+
+/* TODO:  Is this needed?
+ *
+ */
+
 /* level2-page is set in panels specifically for our 2nd level pages */
 .level2-page div#content {
 	position: relative;
 	top: -3px;
 }
 
+div#block-block-7 {
+	clear: left;
+}
+/* override needed because of top menu */
+#menu-level2 .sf-level1 a {
+	color: #0073A3;
+}
+#menu-level2 .sf-level1 a:hover {
+	color: black;
+}
+
+#menu-level2 .sf-level1 > a {
+	color: white;
+}
+
+/*#menu-level2 a:visited {
+	color: #0073A3;
+}*/
 
 .box_wrap {
 	float: left;
 }
+
+/* level2 banner block placement */
+div#block-block-7 {
+	margin-top: 10px;
+}
+
 
 .p2_box {
   background-color: lightgrey;
@@ -387,9 +422,6 @@ li.list-title {
 	color: rgb(83, 83, 87);
 }
 
-div#menu-level2 {
-	/*margin-bottom: 100px;*/
-}
 
 div.team-name-info {
 	background-color: rgba(10, 110, 160, 0.60);
@@ -412,8 +444,7 @@ div.panel-pane.pane-views-panes.pane-team-panel-pane-1 {
 }
 
 div#menu-level2 {
-	float: left;
-	margin-left: 220px;
+	width: 960px;
 }
 
 

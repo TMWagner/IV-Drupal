@@ -25,6 +25,7 @@
 .sf-menu a {
 	display: block;
 	position: relative;
+	color: #0073A3;
 }
 .sf-menu ul ul {
 	top: 0;
@@ -34,7 +35,7 @@
 
 /*** DEMO SKIN ***/
 .sf-menu {
-	float: left;
+	float: right;
 /*	margin-bottom: 1em;   Disable this to move left sidebar content up */
 }
 .sf-menu ul {
@@ -50,9 +51,7 @@
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
-.sf-menu a {
-	color: #0073A3;
-}
+
 .sf-menu a:hover {
 	color: black;
 }
