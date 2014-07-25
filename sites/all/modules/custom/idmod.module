@@ -29,6 +29,23 @@ function idmod_field_display_node_alter(&$display, $context) {
 
 }
 
+/**
+ * Implements hook_context_load_alter().
+ * http://drupalcontrib.org/api/drupal/contributions%21context%21context.api.php/function/hook_context_load_alter/7
+ */
+function idmod_context_load_alter(&$context) {
+  // We need to make sure that the context menu blocks are ordered correctly via context.
+  // Start with the search form and make it the "lightest". 
+  
+  $debug = $context;
+  if ($context->name == 'all_pages') {
+    $context->reactions['block']['blocks']['search-form']['weight'] = -20;
+  }
+  if ($context->name == 'publications_page') {
+    $context->reactions['block']['blocks']['block-5']['weight'] = -10;
+  }
+}
+
 
 
 
