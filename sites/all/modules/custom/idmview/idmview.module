@@ -1,0 +1,19 @@
+<?php
+ 
+/*
+ * @file
+ * Views customization for IDMOD
+ * Author: T. Wagner
+ */
+
+ 
+/**
+ * Implements hook_views_api().
+ */
+function idmview_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'idmview') . '/includes/views',
+    'template path' => drupal_get_path('module', 'example') . '/themes',
+  );
+}

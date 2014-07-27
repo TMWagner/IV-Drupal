@@ -47,6 +47,29 @@ function idmod_context_load_alter(&$context) {
 }
 
 
+/**
+ * Implementation of hook_views_pre_render(&$view)
+ * http://drupalcontrib.org/api/drupal/contributions%21views%21views.api.php/function/hook_views_pre_render/7
+ * Too late!  We've already built the <a> tag
+ */
+function idmod_views_pre_render(&$view) {
+
+  $debug_view = $view;
+}
+
+
+///**
+// *  Not looking good either
+// *  http://drupalcontrib.org/api/search/7/hook_views
+// */
+//function idmod_views_default_views_alter(&$views) {
+//
+//  $debug_view = $views;
+//}
+
+
+
+
 
 
 
