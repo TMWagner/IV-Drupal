@@ -498,5 +498,37 @@ img.media-image {
 	-webkit-box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);	
 }
 
+/* format publication pages */
+
+.field {
+	float: left;
+	margin-right: 10px;
+}
+
+.field-name-title-field h3 {
+	margin: 0px;
+}
+.field-name-title-field,
+.field-name-field-publications-author {
+	clear: left;
+}
+
+.view-content .field-name-field-publications-date {
+	border-left: thin solid grey;
+	padding-left: 10px;
+}
+
+.field-items p {
+	margin-bottom: 5px;
+}
+.views-row {
+	border-bottom: thin solid grey;
+	margin: 10px 0px 10px 0px;
+}
+
+/*.field.field-name-field-publications-date {
+	color: blue;
+}
+*/
 
 

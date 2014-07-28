@@ -13,7 +13,16 @@
 function idmview_views_api() {
   return array(
     'api' => 3,
-    'path' => drupal_get_path('module', 'idmview') . '/includes/views',
-    'template path' => drupal_get_path('module', 'example') . '/themes',
+    'path' => drupal_get_path('module', 'idmview') . '/views',
   );
 }
+
+// Hoping to limit the number of returned items to one... doesn't work
+function idmview_views_query_alter(&$view, &$query) {
+  $debug = $view;
+  $debugq = $query;
+  $view->query->top[1] = 1;
+}
+
+
+
