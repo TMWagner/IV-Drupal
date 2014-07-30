@@ -462,6 +462,10 @@ div#menu-level2 {
 }
 
 /* Left 220 */
+/* Keep the left sidebar from blowing things up */
+.region-sidebar-first {
+
+}
 .panels-flexible-region-brick1-left220 h3 {
 	font-size: 18px;
 	line-height: 1em;

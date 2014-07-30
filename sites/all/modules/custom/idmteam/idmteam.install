@@ -10,5 +10,7 @@
  * @ingroup block_example
  */
 function block_example_uninstall() {
-  variable_del('idmblock_example_string');
+  // was "block_example_string"
+  // This is set in 
+  variable_del('idmteam_author_block');
 }

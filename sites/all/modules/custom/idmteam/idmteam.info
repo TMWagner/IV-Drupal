@@ -1,0 +1,6 @@
+name = IDMTeam custom blocks
+description = Perform team related functions
+package = IDMOD
+version = 7.x-1.0
+core = 7.x
+dependencies[] = block
