@@ -469,7 +469,7 @@ div#menu-level2 {
 }
 
 .panels-flexible-left220-left {
-	padding-top: 120px;
+	padding-top: 140px;
 }
 
 /* CSS for Research page */
@@ -521,14 +521,17 @@ img.media-image {
 .field-items p {
 	margin-bottom: 5px;
 }
-.views-row {
+.view-publications .views-row {
 	border-bottom: thin solid grey;
 	margin: 10px 0px 10px 0px;
 }
 
-/*.field.field-name-field-publications-date {
-	color: blue;
+.field-name-title-field h2 {
+	margin: 5px 0px 5px 0px;
 }
-*/
+
+.field.field-name-field-publications-topic {
+	clear: left;
+}
 
 

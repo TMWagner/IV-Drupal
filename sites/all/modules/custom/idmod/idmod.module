@@ -37,7 +37,6 @@ function idmod_context_load_alter(&$context) {
   // We need to make sure that the context menu blocks are ordered correctly via context.
   // Start with the search form and make it the "lightest". 
   
-  $debug = $context;
   if ($context->name == 'all_pages') {
     $context->reactions['block']['blocks']['search-form']['weight'] = -20;
   }
@@ -46,27 +45,39 @@ function idmod_context_load_alter(&$context) {
   }
 }
 
-
 /**
- * Implementation of hook_views_pre_render(&$view)
- * http://drupalcontrib.org/api/drupal/contributions%21views%21views.api.php/function/hook_views_pre_render/7
- * Too late!  We've already built the <a> tag
+ * Implementation of hook_entity_info_alter(&$entity_info).
+ * Modify URL of taxonomy terms
+ * Ref: http://drupal.stackexchange.com/questions/18784/how-to-modify-taxonomy-term-path-in-the-page-render-array
+ * Ref: http://www.erikwebb.net/blog/changing-url-all-taxonomy-terms/
  */
-function idmod_views_pre_render(&$view) {
+function idmod_entity_info_alter(&$entity_info) {
 
-  $debug_view = $view;
+  $entity_info['taxonomy_term']['uri callback'] = 'idmod_taxonomy_term_uri';
+  
+  $entity_info['node']['view modes']['full_node'] = array(
+    'label' => t('Full Node display'),
+    'custom settings' => TRUE,
+  );
+   
 }
 
 
-///**
-// *  Not looking good either
-// *  http://drupalcontrib.org/api/search/7/hook_views
-// */
-//function idmod_views_default_views_alter(&$views) {
-//
-//  $debug_view = $views;
-//}
-
+function idmod_taxonomy_term_uri($term) {
+  
+  switch ($term->name) {
+      case "Numerical Methods":
+          $new_url = 'research/numerical';
+          break;
+      case "Tuberculosis":
+          $new_url = 'research/tuberculosis';
+          break;
+      case "cake":
+          break;
+  }  
+  //return array('path' => 'research/numerical' . $term->tid);
+  return array('path' => $new_url);
+}
 
 
 
