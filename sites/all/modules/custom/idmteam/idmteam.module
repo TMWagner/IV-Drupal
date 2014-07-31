@@ -135,7 +135,8 @@ function idmteam_block_view($delta = '') {
  * A module-defined block content function.
  */
 
-// TODO: Cleanup up the unneeded crap in here. 
+// TODO: Cleanup up the unneeded crap in here.
+// Ref: https://api.drupal.org/api/views/views.module/function/views_embed_view/7
 function idmteam_contents($which_block) {
 
   $debug_block = $which_block;
@@ -150,15 +151,14 @@ function idmteam_contents($which_block) {
       // Block content can be returned in two formats: renderable arrays
       // (as here) are preferred though a simple string will work as well.
       // Block content created through the UI defaults to a string.
-      $result = views_embed_view('idm_author', 'default', $node->nid);
       
-      //$result = array(
-      //  '#markup' => variable_get('idmteam_author_block',
-      //    t('A default value. This block was created at %time',
-      //      array('%time' => date('c'))
-      //    )
-      //  ),
-      //);
+      // Determine if we have one author or multiple.
+      $number_author = count($node->field_publications_author['und']);
+      if ($number_author > 1)
+        $result = views_embed_view('idm_author', $display_id = 'multiple_authors', $node->nid);
+      else
+        $result = views_embed_view('idm_author', $display_id = 'single_author', $node->nid);
+      
       return $result;
 
     case 'example_empty':
@@ -221,6 +221,10 @@ function idmteam_block_list_alter(&$blocks) {
  * (set as title through the UI).
  */
 function idmteam_block_view_alter(&$data, $block) {
+  // Insert name and title from first block on multi-member journal team block.
+  $debug_data = $data;
+  $debug_block = $block;
+  
   // We'll search for the string 'uppercase'.
   if ((!empty($block->title) && stristr($block->title, 'uppercase')) || (!empty($data['subject']) && stristr($data['subject'], 'uppercase'))) {
     // This will uppercase the default title.

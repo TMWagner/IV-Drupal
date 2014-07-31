@@ -186,6 +186,7 @@ div#menu-level2 {
 	top: -3px;
 }
 
+div#block-block-6,
 div#block-block-7 {
 	clear: left;
 }
@@ -494,9 +495,15 @@ div#menu-level2 {
 /*	margin-left: 20px;  Want this flush against the left margin*/
 }
 
+/* Adjust margin on h3 above team pictures */
+.pane-idmteam-idmteam-author h3 {
+	margin: 0px;
+}
+
 
 /*Put a border around images*/
-img.media-image {
+img.media-image,
+.field-content img {
 	box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
 	-moz-box-shadow: 2px 2px 10px 0px rgba(119, 119, 119, 0.75);
 	-webkit-box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);	
@@ -537,5 +544,25 @@ img.media-image {
 .field.field-name-field-publications-topic {
 	clear: left;
 }
+
+/* CSS for Multiple team member display block */
+.author-list ul {
+	display: inline;
+	list-style-type: none;
+	padding: 0px;
+}
+.author-list li {
+	float: left;
+	padding: 0px 10px 0px 0px;
+}
+/* Test Code  - we will use jQuery to toggle info */
+.view-display-id-multiple_authors .hidden {
+display: none;
+}
+.hidden {
+	display: none;
+}
+
+
 
 
