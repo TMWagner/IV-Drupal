@@ -109,7 +109,24 @@ Drupal.behaviors.my_custom_behavior = {
       if (url.indexOf(link) >=0) {
         $(this).css( "background-color", "rgb(82, 91, 92" );
       }
-    });   
+    });
+    
+    $(function() {
+      $(".author-list .views-field-field-profile-picture").hoverIntent(teamMemIn, function(){});
+
+    });
+    
+    function teamMemIn(evt) {
+      // Find the content we are going to use as replacment
+      // Insert appropriately (make sure we mark it so we can make it go away with mouse leave.
+      //  - OR, are we going to replace some text... that would be easier, I think.
+      
+      //$(this).next("div").animate({
+      //    top: "0px",
+      //    height: "165px",
+      //  }, "slow" );
+    }
+
  
     
     
