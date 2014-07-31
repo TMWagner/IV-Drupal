@@ -128,6 +128,8 @@ function idmteam_block_view($delta = '') {
       $block['content'] = t("This block's title will be changed to uppercase. Any other block with 'uppercase' in the subject or title will also be altered. If you change this block's title through the UI to omit the word 'uppercase', it will still be altered to uppercase as the subject key has not been changed.");
       break;
   }
+  
+  
   return $block;
 }
 
@@ -154,11 +156,27 @@ function idmteam_contents($which_block) {
       
       // Determine if we have one author or multiple.
       $number_author = count($node->field_publications_author['und']);
-      if ($number_author > 1)
-        $result = views_embed_view('idm_author', $display_id = 'multiple_authors', $node->nid);
-      else
+      if ($number_author > 1) {
+        $pics = views_embed_view('idm_author', $display_id = 'multiple_authors', $node->nid);
+        $name = $node->field_publications_author['und'][0]['entity']->label;
+        $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];
+        
+        $output = $pics . "<div style='clear: left'>" . $name . '</div>';
+        $output .= '<div>' . $title . '</div>'; 
+        
+        $result = array(
+          '#markup' => $output,
+          
+          );     
+        
+      }
+      else {
         $result = views_embed_view('idm_author', $display_id = 'single_author', $node->nid);
-      
+        
+              
+        
+        
+      }
       return $result;
 
     case 'example_empty':
@@ -185,20 +203,20 @@ function idmteam_contents($which_block) {
  * You may also be interested in hook_block_info_alter(), which allows changes
  * to the behavior of blocks.
  */
-function idmteam_block_list_alter(&$blocks) {
-  // We are going to make the search block sticky on bottom of regions. For
-  // this example, we will modify the block list and append the search block at
-  // the end of the list, so even if the administrator configures the block to
-  // be on the top of the region, it will demote to bottom again.
-  foreach ($blocks as $bid => $block) {
-    if (($block->module == 'search') && ($block->delta == 'form')) {
-      // Remove the block from the list and append to the end.
-      unset($blocks[$bid]);
-      $blocks[$bid] = $block;
-      break;
-    }
-  }
-}
+//function idmteam_block_list_alter(&$blocks) {
+//  // We are going to make the search block sticky on bottom of regions. For
+//  // this example, we will modify the block list and append the search block at
+//  // the end of the list, so even if the administrator configures the block to
+//  // be on the top of the region, it will demote to bottom again.
+//  foreach ($blocks as $bid => $block) {
+//    if (($block->module == 'search') && ($block->delta == 'form')) {
+//      // Remove the block from the list and append to the end.
+//      unset($blocks[$bid]);
+//      $blocks[$bid] = $block;
+//      break;
+//    }
+//  }
+//}
 
 /**
  * Implements hook_block_view_alter().
