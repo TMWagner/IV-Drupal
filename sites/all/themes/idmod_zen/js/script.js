@@ -82,7 +82,7 @@ Drupal.behaviors.my_custom_behavior = {
     
     
     $(function() {
-      $(".views-field-field-profile-picture").hoverIntent(teamIn, function(){});
+      $(".view-team .views-field-field-profile-picture").hoverIntent(teamIn, function(){});
       $(".team-name-info").mouseleave(teamOut);   
     });
     
