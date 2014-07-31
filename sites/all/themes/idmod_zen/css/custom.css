@@ -556,11 +556,18 @@ img.media-image,
 	padding: 0px 10px 0px 0px;
 }
 /* Test Code  - we will use jQuery to toggle info */
-.view-display-id-multiple_authors .hidden {
+/*.view-display-id-multiple_authors .hidden {
 display: none;
-}
+}*/
 .hidden {
 	display: none;
+}
+
+/* set initial opacity for author images  */
+.author-list img {
+	opacity: 0.4;
+}.author-list .views-row-1 img {
+	opacity: 1.0;
 }
 
 
