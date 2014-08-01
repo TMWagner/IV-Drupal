@@ -555,6 +555,9 @@ img.media-image,
 	float: left;
 	padding: 0px 10px 0px 0px;
 }
+
+
+
 /* Test Code  - we will use jQuery to toggle info */
 /*.view-display-id-multiple_authors .hidden {
 display: none;
@@ -564,12 +567,25 @@ display: none;
 }
 
 /* set initial opacity for author images  */
-.author-list img {
-	opacity: 0.4;
-}.author-list .views-row-1 img {
-	opacity: 1.0;
+.author-list .views-field-field-profile-picture {
+    opacity: 0.4;
 }
 
+.author-list .views-row-1 .views-field-field-profile-picture {
+    opacity: 1.0;
+}
+
+/* Class we will use to toggle opacity */
+
+.views-field.views-field-field-profile-picture.selected-author {
+    opacity: 1;
+}
+
+
+/*.author-list .views-row-1 img {
+	opacity: 1.0;
+}
+*/
 
 
 

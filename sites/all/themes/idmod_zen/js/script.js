@@ -112,11 +112,16 @@ Drupal.behaviors.my_custom_behavior = {
     });
     
     $(function() {
-      $(".author-list .views-field-field-profile-picture").hoverIntent(teamMemIn, function(){});
+      //$(".author-list .views-field-field-profile-picture").hoverIntent(teamMemIn, function(){});
+      $(".author-list .views-field").not(".views-row-first").hoverIntent(teamMemIn, teamMemOut, function(){});
 
     });
     
     function teamMemIn(evt) {
+      // Change the opacity of the first element to shaded and the target element to 100%
+      $(this).addClass( "selected-author" );
+
+      
       // Find the content we are going to use as replacment
       // Insert appropriately (make sure we mark it so we can make it go away with mouse leave.
       //  - OR, are we going to replace some text... that would be easier, I think.
@@ -126,7 +131,9 @@ Drupal.behaviors.my_custom_behavior = {
       //    height: "165px",
       //  }, "slow" );
     }
-
+    function teamMemOut(evt) {
+      $(this).removeClass( "selected-author" );
+    }
  
     
     

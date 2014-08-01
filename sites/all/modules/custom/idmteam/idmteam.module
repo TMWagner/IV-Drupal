@@ -161,8 +161,8 @@ function idmteam_contents($which_block) {
         $name = $node->field_publications_author['und'][0]['entity']->label;
         $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];
         
-        $output = $pics . "<div style='clear: left'>" . $name . '</div>';
-        $output .= '<div>' . $title . '</div>'; 
+        $output = $pics . "<div class='display-name' style='clear: left'>" . $name . '</div>';
+        $output .= "<div class='display-title'>" . $title . '</div>'; 
         
         $result = array(
           '#markup' => $output,
