@@ -113,13 +113,18 @@ Drupal.behaviors.my_custom_behavior = {
     
     $(function() {
       //$(".author-list .views-field-field-profile-picture").hoverIntent(teamMemIn, function(){});
-      $(".author-list .views-field").not(".views-row-first").hoverIntent(teamMemIn, teamMemOut, function(){});
-
+      $(".author-list .views-field").not(':first').hoverIntent(teamMemIn, teamMemOut, function(){});
+      
+      //Dev Code 
+      //$(".author-list .views-field").not(':first').css( "background-color", "red" );
+      
     });
     
     function teamMemIn(evt) {
       // Change the opacity of the first element to shaded and the target element to 100%
       $(this).addClass( "selected-author" );
+      $(".author-list .views-row-first .views-field").css( "opacity", "0.4" );
+      
 
       
       // Find the content we are going to use as replacment
@@ -133,6 +138,7 @@ Drupal.behaviors.my_custom_behavior = {
     }
     function teamMemOut(evt) {
       $(this).removeClass( "selected-author" );
+      $(".author-list .views-row-first .views-field").css( "opacity", "1.0" );
     }
  
     
