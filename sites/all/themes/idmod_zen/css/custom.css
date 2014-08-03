@@ -581,6 +581,13 @@ display: none;
     opacity: 1;
 }
 
+/* CSS for Author data */
+
+.swap-author-data,
+.default-author-data {
+	clear: left;
+}
+
 
 /*.author-list .views-row-1 img {
 	opacity: 1.0;
