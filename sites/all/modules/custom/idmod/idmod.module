@@ -6,6 +6,13 @@
  */
 
  
+/**
+ * TODO:
+ * 8/3/2014: We should load the js on some pages individually.
+ *    See: http://www.benmarshall.me/load-js-css-specific-page-drupal-7/
+ */
+ 
+ 
 
 /**
  * Implementation of hook_field_display_alter

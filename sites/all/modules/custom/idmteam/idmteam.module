@@ -146,14 +146,7 @@ function idmteam_contents($which_block) {
     case 'idmteam_author':
       // Load currant node object
       $node = menu_get_object();
-      // Spin through field_publications_author and process each author.       
-      // Modules would typically perform some database queries to fetch the
-      // content for their blocks. Here, we'll just use the variable set in the
-      // block configuration or, if none has set, a default value.
-      // Block content can be returned in two formats: renderable arrays
-      // (as here) are preferred though a simple string will work as well.
-      // Block content created through the UI defaults to a string.
-      
+  
       // Determine if we have one author or multiple.
       $number_author = count($node->field_publications_author['und']);
       if ($number_author > 1) {
@@ -161,14 +154,12 @@ function idmteam_contents($which_block) {
         $name = $node->field_publications_author['und'][0]['entity']->label;
         $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];
         
-        $output = $pics . "<div class='display-name' style='clear: left'>" . $name . '</div>';
-        $output .= "<div class='display-title'>" . $title . '</div>'; 
+        $output = $pics . "<div class='default-author-data' style='clear: left'><div>" . $name . '</div>';
+        $output .= "<div>" . $title . '</div></div>'; 
         
         $result = array(
           '#markup' => $output,
-          
           );     
-        
       }
       else {
         $result = views_embed_view('idm_author', $display_id = 'single_author', $node->nid);

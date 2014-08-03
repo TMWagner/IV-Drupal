@@ -126,43 +126,23 @@ Drupal.behaviors.my_custom_behavior = {
       $(this).addClass( "selected-author" );
       $(".author-list .views-row-first .views-field").css( "opacity", "0.4" );
       
-      //Change color of target div to find it.... :)
-      
-      //$(this).next().find( ".swap-author-data" ).css( "border", "1px solid red");
       // Save new author info..
       swapAuthor = $(this).next().find( ".swap-author-data" );
-
       swapAuthorText = swapAuthor.html();
-
       defaultAuthor.html( swapAuthorText );
-      //swapAuthor.css( "border", "1px solid black");
-      //defaultAuthor.css( "border", "1px solid white");
-    
-      
-      // Find the content we are going to use as replacment
-      // Insert appropriately (make sure we mark it so we can make it go away with mouse leave.
-      //  - OR, are we going to replace some text... that would be easier, I think.
-      
-      //$(this).next("div").animate({
-      //    top: "0px",
-      //    height: "165px",
-      //  }, "slow" );
+
     }
     function teamMemOut(evt) {
       $(this).removeClass( "selected-author" );
       $(".author-list .views-row-first .views-field").css( "opacity", "1.0" );
-      //debug test code
-      //defaultAuthor.css( "border", "1px solid blue");
-      //swapAuthor.css( "border", "1px solid black");
-      
-      //$( ".swap-author-data" ).css( "border", "1px solid red");
+
+      // Reset default author with default author data text.
+      // Note: we are using TEXT (HTML) here - not an object. 
       $( ".default-author-data" ).html( defaultAuthorText );
       
-      //End Debug test code
     }
  
-    
-    
+      
     
 /**
  *End Custom Functions
