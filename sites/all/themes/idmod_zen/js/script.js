@@ -111,7 +111,6 @@ Drupal.behaviors.my_custom_behavior = {
       }
     });
     
-    
     var defaultAuthor = null;
     var swapAuthor = null;
     $(function() {
@@ -139,9 +138,9 @@ Drupal.behaviors.my_custom_behavior = {
       // Reset default author with default author data text.
       // Note: we are using TEXT (HTML) here - not an object. 
       $( ".default-author-data" ).html( defaultAuthorText );
-      
     }
  
+     
       
     
 /**

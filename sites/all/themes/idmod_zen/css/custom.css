@@ -516,6 +516,10 @@ img.media-image,
 	margin-right: 10px;
 }
 
+.node-publications h2 {
+	line-height: 1.2em;
+}
+
 .field-name-title-field h3 {
 	margin: 0px;
 }
@@ -546,6 +550,22 @@ img.media-image,
 }
 
 /* CSS for Multiple team member display block */
+
+.publish_info h4 {
+	margin: 0px;
+	font-style: italic;
+}
+
+.form-item.form-type-item {
+  margin: 0;
+}
+.publish_info {
+  margin-bottom: 20px;
+}
+i.fa.fa-external-link {
+	color: #0073A3;
+	margin-left: 5px;
+}
 .author-list ul {
 	display: inline;
 	list-style-type: none;

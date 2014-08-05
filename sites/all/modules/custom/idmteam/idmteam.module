@@ -39,23 +39,6 @@ function idmteam_block_info() {
     'cache' => DRUPAL_CACHE_PER_ROLE,
   );
 
-  // This sample shows how to provide default settings. In this case we'll
-  // enable the block in the first sidebar and make it visible only on
-  // 'node/*' pages. See the hook_block_info() documentation for these.
-  $blocks['example_empty'] = array(
-    'info' => t('Example: empty block'),
-    'status' => TRUE,
-    'region' => 'sidebar_first',
-    'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'node/*',
-  );
-
-  $blocks['example_uppercase'] = array(
-    // info: The name of the block.
-    'info' => t('Example: uppercase this please'),
-    'status' => TRUE,
-    'region' => 'sidebar_first',
-  );
 
   return $blocks;
 }
@@ -118,15 +101,19 @@ function idmteam_block_view($delta = '') {
       $block['content'] = idmteam_contents($delta);
       break;
 
-    case 'example_empty':
-      $block['subject'] = t('Title of second block (example_empty)');
-      $block['content'] = idmteam_contents($delta);
-      break;
-
-    case 'example_uppercase':
-      $block['subject'] = t("uppercase this please");
-      $block['content'] = t("This block's title will be changed to uppercase. Any other block with 'uppercase' in the subject or title will also be altered. If you change this block's title through the UI to omit the word 'uppercase', it will still be altered to uppercase as the subject key has not been changed.");
-      break;
+    //case 'example_empty':
+    //  $block['subject'] = t('Title of second block (example_empty)');
+    //  $block['content'] = idmteam_contents($delta);
+    //  break;
+    //
+    //case 'example_uppercase':
+    //  $block['subject'] = NULL;
+    //  $block['content'] = t(">This block's title will be changed to uppercase. Any other block with 'uppercase' in the subject or title will also be altered. If you change this block's title through the UI to omit the word 'uppercase', it will still be altered to uppercase as the subject key has not been changed.");
+    //  break;
+    
+    default:
+      $block = NULL;
+      
   }
   
   
@@ -150,24 +137,53 @@ function idmteam_contents($which_block) {
       // Determine if we have one author or multiple.
       $number_author = count($node->field_publications_author['und']);
       if ($number_author > 1) {
-        $pics = views_embed_view('idm_author', $display_id = 'multiple_authors', $node->nid);
-        $name = $node->field_publications_author['und'][0]['entity']->label;
-        $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];
-        
-        $output = $pics . "<div class='default-author-data' style='clear: left'><div>" . $name . '</div>';
-        $output .= "<div>" . $title . '</div></div>'; 
-        
-        $result = array(
-          '#markup' => $output,
-          );     
+        $views_embed = views_embed_view('idm_author', $display_id = 'multiple_authors', $node->nid);
       }
       else {
-        $result = views_embed_view('idm_author', $display_id = 'single_author', $node->nid);
-        
-              
-        
-        
+        $views_embed = views_embed_view('idm_author', $display_id = 'single_author', $node->nid);
       }
+      
+      $name = $node->field_publications_author['und'][0]['entity']->label;
+      $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];
+      
+      if (isset($node->field_publications_link['und'][0]['title'])) {
+        $form['publication_name'] = array(
+          '#type' => 'item',
+          '#title' => 'Published in ',
+          '#markup' => '<h4>' . $node->field_publications_link['und'][0]['title'] . '</h4>',
+          '#prefix' => '<div class="publish_info">',
+        );
+        
+        if (isset($node->field_publications_link['und'][0]['url'])) {
+          $form['publication_link'] = array(
+            '#type' => 'link',
+            '#title' => t('Read online'),
+            '#href' => $node->field_publications_link['und'][0]['url'],
+            '#suffix' => '<i class="fa fa-external-link"></i></div>',
+          ); 
+        }
+      }
+       
+      $form['photos'] = array(
+        '#type' => 'item',
+        '#markup' => $views_embed,
+      );
+      // This is the first form element. It's a textfield with a label, "Name"
+      $form['name'] = array(
+        '#type' => 'item',
+        '#markup' => $name,
+        '#prefix' => '<div class="default-author-data" style="clear: left">',
+      );
+      
+      $form['title'] = array(
+        '#type' => 'item',
+        '#markup' => $title,
+        '#prefix' => '<div>',
+        '#suffix' => '</div>',
+      );      
+      
+      $result = $form;
+      
       return $result;
 
     case 'example_empty':
