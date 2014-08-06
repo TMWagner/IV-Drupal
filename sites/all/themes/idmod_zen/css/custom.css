@@ -557,8 +557,7 @@ article.node-publications {
 .field-name-title-field h3 {
 	margin: 0px;
 }
-.field-name-title-field,
-.field-name-field-publications-author {
+.field-name-title-field {
 	clear: left;
 	margin-top: 20px;
 }
@@ -642,9 +641,6 @@ display: none;
 }
 
 
-/*.author-list .views-row-1 img {
-	opacity: 1.0;
-}
 */
 
 
