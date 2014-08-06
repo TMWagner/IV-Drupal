@@ -67,10 +67,15 @@ function idmod_entity_info_alter(&$entity_info) {
     'label' => t('Full Node display'),
     'custom settings' => TRUE,
   );
+  $entity_info['node']['view modes']['views_extract'] = array(
+    'label' => t('Views extract display'),
+    'custom settings' => TRUE,
+  );
 }
 
 
 function idmod_taxonomy_term_uri($term) {
+  $new_url = NULL;
   
   switch ($term->name) {
       case "Numerical Methods":
@@ -82,8 +87,11 @@ function idmod_taxonomy_term_uri($term) {
       case "HIV":
           $new_url = 'research/hiv';
           break;        
-      case "malaria":
-        $new_url = 'research/hiv';
+      case "Malaria":
+        $new_url = 'research/malaria';
+        break;
+      case "Polio":
+        $new_url = 'research/polio';
         break;
   }  
   //return array('path' => 'research/numerical' . $term->tid);
@@ -113,12 +121,19 @@ function idmod_entity_view_alter(&$build, $type) {
       '#prefix' => '<div class="field field_publication_title">',
       '#suffix' => '</div>',
     );
+    /* Adjust the weights for the "full_node" view */
+    if ($build['#view_mode'] == 'full_node') {
+      $build['field_publications_date']['#weight'] = '3';
+      $build['field_publications_topic']['#weight'] = '4';
+      $build['field_publications_link']['#weight'] = '5';
+      $build['body']['#weight'] = '6';
+    }
+    
+    
+    
     $build['field_publications_link']['#title'] = t('Read online');
     /* Adjust the weight of array items to order correctly */
-    $build['field_publications_date']['#weight'] = '3';
-    $build['field_publications_topic']['#weight'] = '4';
-    $build['field_publications_link']['#weight'] = '5';
-    $build['body']['#weight'] = '6';
+
     $key = 0;
       while (isset($build['field_publications_author'][$key])) {
         // If there is more then one name, we add a comma to present item.
@@ -129,12 +144,6 @@ function idmod_entity_view_alter(&$build, $type) {
       }
   }
 }
-
-
-
-
-
-
 
 
 

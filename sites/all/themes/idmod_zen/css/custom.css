@@ -511,9 +511,13 @@ img.media-image,
 
 /* format publication pages */
 
+.view-mode-full .field-items {
+	float: left;
+}
+
 .field_publication_title {
-    clear: left;
-    float: left;
+	clear: left;
+	float: left;
 }
 .field.field_publication_title, 
 .field-name-field-publications-date {
