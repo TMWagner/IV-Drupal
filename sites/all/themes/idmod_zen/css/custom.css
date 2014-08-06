@@ -511,9 +511,39 @@ img.media-image,
 
 /* format publication pages */
 
-.field {
+.field_publication_title {
+    clear: left;
+    float: left;
+}
+.field.field_publication_title, 
+.field-name-field-publications-date {
+    float: left;
+		margin-right: 20px;
+}
+
+.field-name-field-publications-author .field-item.field-item {
+    float: left;
+		margin-right: 20px;
+}
+	
+
+.field.field_publication_title {
+	margin-right: 10px;
+}
+
+/*.node-publications .field-item {
 	float: left;
 	margin-right: 10px;
+}*/
+
+/* put items on a new line */
+.field_publication_title {
+    clear: left;
+}
+
+
+.field.field-name-field-publications-link.field-type-link-field.field-label-hidden {
+	clear: left;
 }
 
 .node-publications h2 {
@@ -545,9 +575,7 @@ img.media-image,
 	margin: 5px 0px 5px 0px;
 }
 
-.field.field-name-field-publications-topic {
-	clear: left;
-}
+
 
 /* CSS for Multiple team member display block */
 

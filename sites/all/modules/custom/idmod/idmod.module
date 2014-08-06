@@ -19,6 +19,7 @@
  */
 function idmod_field_display_node_alter(&$display, $context) {
   // Leave field labels out of the search index.
+  $debug_stop = $context;
   if($context['entity']->type == 'publications') {
     // Look for our entity type
     
@@ -66,7 +67,6 @@ function idmod_entity_info_alter(&$entity_info) {
     'label' => t('Full Node display'),
     'custom settings' => TRUE,
   );
-   
 }
 
 
@@ -82,12 +82,54 @@ function idmod_taxonomy_term_uri($term) {
       case "HIV":
           $new_url = 'research/hiv';
           break;        
-      case "cake":
-          break;
+      case "malaria":
+        $new_url = 'research/hiv';
+        break;
   }  
   //return array('path' => 'research/numerical' . $term->tid);
   return array('path' => $new_url);
 }
+
+/**
+ * Implementation of hook_entity_view_alter
+ * We will modify the incoming data from the view handler before rendering. 
+ */
+function idmod_entity_view_alter(&$build, $type) {
+  $debug_build = $build;
+  
+  if($build['#bundle'] == 'publications') {
+    
+    $node = menu_get_object();
+    
+    if (isset($node->field_publications_link['und'][0]['title'])) {
+      $publication_name = $node->field_publications_link['und'][0]['title'];
+    }
+    else $publication_name = null;
+ 
+    $build['pubication_name'] = array(
+      '#type' => 'item',
+      '#markup' => $publication_name,
+      '#weight' => '2',
+      '#prefix' => '<div class="field field_publication_title">',
+      '#suffix' => '</div>',
+    );
+    $build['field_publications_link']['#title'] = t('Read online');
+    /* Adjust the weight of array items to order correctly */
+    $build['field_publications_date']['#weight'] = '3';
+    $build['field_publications_topic']['#weight'] = '4';
+    $build['field_publications_link']['#weight'] = '5';
+    $build['body']['#weight'] = '6';
+    $key = 0;
+      while (isset($build['field_publications_author'][$key])) {
+        // If there is more then one name, we add a comma to present item.
+        if(isset($build['field_publications_author'][$key+1])) {
+          $build['field_publications_author'][$key]['#markup'] .= ',';       
+        }
+        ++$key;
+      }
+  }
+}
+
 
 
 
