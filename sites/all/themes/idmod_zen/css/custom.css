@@ -535,10 +535,10 @@ img.media-image,
 	margin-right: 10px;
 }
 
-/*.node-publications .field-item {
-	float: left;
-	margin-right: 10px;
-}*/
+/* put a margin on the bottom of publications nodes... probably should just do it for all */
+article.node-publications {
+	margin-bottom: 20px;
+}
 
 /* put items on a new line */
 .field_publication_title {
@@ -560,6 +560,7 @@ img.media-image,
 .field-name-title-field,
 .field-name-field-publications-author {
 	clear: left;
+	margin-top: 20px;
 }
 
 .view-content .field-name-field-publications-date {
