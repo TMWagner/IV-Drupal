@@ -511,6 +511,11 @@ img.media-image,
 
 /* format publication pages */
 
+.field-name-field-publications-topic .field-item {
+  margin-right: 15px;
+}
+
+
 .view-mode-full .field-items {
 	float: left;
 }
