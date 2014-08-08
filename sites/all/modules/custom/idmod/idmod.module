@@ -18,9 +18,10 @@
  * Implementation of hook_field_display_alter
  */
 function idmod_field_display_node_alter(&$display, $context) {
+  $debug = $display;
   // Leave field labels out of the search index.
-  $debug_stop = $context;
   if($context['entity']->type == 'publications') {
+    $debug = $display;
     // Look for our entity type
     
     if (isset($context['entity']->field_publications_author['und'][0]['entity']->label)) {
@@ -103,7 +104,6 @@ function idmod_taxonomy_term_uri($term) {
  * We will modify the incoming data from the view handler before rendering. 
  */
 function idmod_entity_view_alter(&$build, $type) {
-  $debug_build = $build;
   
   if($build['#bundle'] == 'publications') {
     
@@ -133,9 +133,6 @@ function idmod_entity_view_alter(&$build, $type) {
 
     }
     
-    
-    
-    
     $build['field_publications_link']['#title'] = t('Read online');
     /* Adjust the weight of array items to order correctly */
 
@@ -155,14 +152,12 @@ function idmod_entity_view_alter(&$build, $type) {
  * Implementation of hook_entity_prepare_view
  *
  */
-function idmod_entity_view($entity, $type, $view_mode, $langcode){
+function idmod_entity_prepare_view($entities, $type, $langcode) {
+  
+  $debug_entity = $entities;
 
-  $debug_entity = $entity;
-  $entity->field_publications_link['und'][0]['#suffix'] = '<i class="fa fa-external-link"></i>';
-  $entity->field_publications_link['und'][0]['suffix'] = '<i class="fa fa-external-link"></i>';
-  $entity->field_publications_link['und'][0]['attributes']['class'] = 'fa fa-external-link';
-  $debug_type = $type;
-  //
+
+
   //$build['field_publications_link']['#suffix'] = '<i class="fa fa-external-link"></i>';
   
   

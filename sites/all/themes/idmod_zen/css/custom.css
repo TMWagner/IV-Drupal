@@ -4,6 +4,15 @@
 	position: relative;
 }
 
+
+.field-item .fa-external-link:after {
+	content: "\f08e";
+}
+.field-item .fa-external-link:before {
+	content: "";
+}
+
+
 /**
  * Top Nav
  */
@@ -515,6 +524,10 @@ img.media-image,
   margin-right: 15px;
 }
 
+.field-name-field-publications-link .field-item {
+	font-style: italic;
+}
+
 
 .view-mode-full .field-items {
 	float: left;
@@ -533,6 +546,7 @@ img.media-image,
 .field-name-field-publications-author .field-item.field-item {
     float: left;
 		margin-right: 20px;
+		margin-bottom:10px;
 }
 	
 
@@ -573,15 +587,15 @@ article.node-publications {
 }
 
 .field-items p {
-	margin-bottom: 5px;
+	margin: 0px 0px 10px 0px;
 }
 .view-publications .views-row {
 	border-bottom: thin solid grey;
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0px 25px 0px;
 }
 
 .field-name-title-field h2 {
-	margin: 5px 0px 5px 0px;
+	margin: 5px 0px 10px 0px;
 }
 
 
@@ -614,11 +628,6 @@ i.fa.fa-external-link {
 }
 
 
-
-/* Test Code  - we will use jQuery to toggle info */
-/*.view-display-id-multiple_authors .hidden {
-display: none;
-}*/
 .hidden {
 	display: none;
 }
