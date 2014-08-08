@@ -105,6 +105,8 @@ function idmod_taxonomy_term_uri($term) {
  */
 function idmod_entity_view_alter(&$build, $type) {
   
+  $debug_build = $build;
+  
   if($build['#bundle'] == 'publications') {
     
     $node = menu_get_object();
