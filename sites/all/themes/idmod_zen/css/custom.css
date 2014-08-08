@@ -1,3 +1,12 @@
+/**
+ * General CSS
+ */
+
+h2 {
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
 
 .panel-pane {
 /*	margin-bottom: 20px;   This is killing 2nd level page74Â*/
@@ -518,7 +527,9 @@ img.media-image,
 	-webkit-box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);	
 }
 
-/* format publication pages */
+/**
+ * format publication pages
+ */
 
 .field-name-field-publications-topic .field-item {
   margin-right: 15px;
@@ -547,6 +558,7 @@ img.media-image,
     float: left;
 		margin-right: 20px;
 		margin-bottom:10px;
+		font-weight: bold;
 }
 	
 
@@ -595,7 +607,7 @@ article.node-publications {
 }
 
 .field-name-title-field h2 {
-	margin: 5px 0px 10px 0px;
+	margin: 5px 0px 25px 0px;
 }
 
 
