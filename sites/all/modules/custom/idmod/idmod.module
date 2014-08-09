@@ -68,10 +68,7 @@ function idmod_entity_info_alter(&$entity_info) {
     'label' => t('Full Node display'),
     'custom settings' => TRUE,
   );
-  $entity_info['node']['view modes']['views_extract'] = array(
-    'label' => t('Views extract display'),
-    'custom settings' => TRUE,
-  );
+
 }
 
 
@@ -103,40 +100,41 @@ function idmod_taxonomy_term_uri($term) {
  * Implementation of hook_entity_view_alter
  * We will modify the incoming data from the view handler before rendering. 
  */
+
+/* We can stick this into DS... or better yet, use DS API...
+ */
 function idmod_entity_view_alter(&$build, $type) {
-  
-  $debug_build = $build;
   
   if($build['#bundle'] == 'publications') {
     
-    $node = menu_get_object();
-    
-    if (isset($node->field_publications_link['und'][0]['title'])) {
-      $publication_name = $node->field_publications_link['und'][0]['title'];
-    }
-    else $publication_name = null;
+    //$node = menu_get_object();
+    //
+    //if (isset($node->field_publications_link['und'][0]['title'])) {
+    //  $publication_name = $node->field_publications_link['und'][0]['title'];
+    //}
+    //else $publication_name = null;
  
-    $build['pubication_name'] = array(
-      '#type' => 'item',
-      '#markup' => $publication_name,
-      '#weight' => '2',
-      '#prefix' => '<div class="field field_publication_title">',
-      '#suffix' => '</div>',
-    );
+    //$build['pubication_name'] = array(
+    //  '#type' => 'item',
+    //  '#markup' => $publication_name,
+    //  '#weight' => '2',
+    //  '#prefix' => '<div class="field field_publication_title">',
+    //  '#suffix' => '</div>',
+    //);
     /* Adjust the weights for the "full_node" view */
-    if ($build['#view_mode'] == 'full_node') {
-      $build['field_publications_date']['#weight'] = '3';
-      $build['field_publications_topic']['#weight'] = '4';
-      $build['field_publications_link']['#weight'] = '5';
-      $build['body']['#weight'] = '6';
-      
-      $build['field_publications_link'][0]['#field']['label'] = t('Read online');
-      //$build['field_publications_link']['#suffix'] = '<i class="fa fa-external-link"></i>';
-
-    }
+    //if ($build['#view_mode'] == 'full_node') {
+    //  //$build['field_publications_date']['#weight'] = '3';
+    //  //$build['field_publications_topic']['#weight'] = '4';
+    //  //$build['field_publications_link']['#weight'] = '5';
+    //  //$build['body']['#weight'] = '6';
+    //  
+    //  //$build['field_publications_link'][0]['#field']['label'] = t('Read online::');
+    //  //$build['field_publications_link']['#suffix'] = '<i class="fa fa-external-link"></i>';
+    //
+    //}
     
-    $build['field_publications_link']['#title'] = t('Read online');
-    /* Adjust the weight of array items to order correctly */
+    //$build['field_publications_link']['#title'] = t('Read online');
+    ///* Adjust the weight of array items to order correctly */
 
     $key = 0;
       while (isset($build['field_publications_author'][$key])) {
@@ -149,21 +147,6 @@ function idmod_entity_view_alter(&$build, $type) {
   }
 }
 
-
-/**
- * Implementation of hook_entity_prepare_view
- *
- */
-function idmod_entity_prepare_view($entities, $type, $langcode) {
-  
-  $debug_entity = $entities;
-
-
-
-  //$build['field_publications_link']['#suffix'] = '<i class="fa fa-external-link"></i>';
-  
-  
-}
 
 
 
