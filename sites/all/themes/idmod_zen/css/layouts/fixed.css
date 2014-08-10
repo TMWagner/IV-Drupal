@@ -208,17 +208,25 @@ nav#main-menu {
 /* Span 4 columns, starting in 2nd column from left. */
 .sidebar-first #content {
   float: left;
-  width: 764px;
-  margin-left: 196px;
+  width: 760px;
+  margin-left: 220px;
   margin-right: -980px;
 }
+
+
 
 /* Span 1 column, starting in 1st column from left. */
 .sidebar-first .region-sidebar-first {
   float: left;
-  width: 176px;
+/*  width: 176px;*/
+  width: 200px;
   margin-left: 0px;
   margin-right: -196px;
+  /* TODO Ugly Hack */ 
+  position: relative;
+  left: -20px;
+
+
 }
 
 /**
