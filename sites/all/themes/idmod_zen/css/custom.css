@@ -2,17 +2,38 @@
  * General CSS
  */
 
-h2 {
+#main {
+	padding-top: 200px;
+}
+
+.page-home #main {
+	padding-top: 30px;
+}
+
+
+.uppercase {
+	text-transform: uppercase;
+}
+.italic {
+	font-style: italic;
+}
+.hidden {
+	display: none;
+}
+
+h1, h2 {
 	margin-bottom: 25px;
 	text-transform: uppercase;
 }
+
+
+
 
 
 .panel-pane {
 /*	margin-bottom: 20px;   This is killing 2nd level page74Â*/
 	position: relative;
 }
-
 
 .field-item .fa-external-link:after {
 	content: "\f08e";
@@ -425,6 +446,7 @@ li.list-title {
 /*CSS for Team page*/
 
 
+
 .team-items {
 	padding: 0 10px 0 10px;
 	vertical-align: top;
@@ -492,7 +514,7 @@ div#menu-level2 {
 }
 
 .panels-flexible-left220-left {
-	padding-top: 140px;
+	/*padding-top: 140px;*/
 }
 
 /* CSS for Research page */
@@ -531,6 +553,27 @@ img.media-image,
  * format publication pages
  */
 
+
+.field.field-name-publication-name.field-type-ds.field-label-hidden {
+	clear: left;
+	float: left;
+	font-style: italic;
+	margin: 0px 10px 0px 0px;
+}
+
+.field-publications-date {
+	float: left;
+	font-style: italic;
+}
+
+.node-publications p {
+	margin-top: .2em;
+}
+
+.node-publications .label-above {
+	margin: 20px 0px 0px 0px;
+}
+
 .field-name-field-publications-topic .field-item {
   margin-right: 15px;
 }
@@ -542,6 +585,15 @@ img.media-image,
 
 .view-mode-full .field-items {
 	float: left;
+}
+
+.view-mode-full_node .field-name-read-online {
+	clear: left;
+}
+
+.view-mode-full_node .label-inline {
+	float: left;
+	margin: 0px 10px 0px 0px;
 }
 
 .field_publication_title {
@@ -556,14 +608,28 @@ img.media-image,
 
 .field-name-field-publications-author .field-item.field-item {
     float: left;
-		margin-right: 20px;
-		margin-bottom:10px;
+		margin-right: 10px;
 		font-weight: bold;
 }
 	
 
 .field.field_publication_title {
 	margin-right: 10px;
+}
+
+.view-publications .field.field-name-field-publications-author {
+	clear: left;
+}
+
+
+.view-publications .field.field-name-publications-link2 {
+	clear: left;
+	font-style: italic;
+}
+
+.view-publications .field.field-name-field-publications-abstract {
+	float: left;
+	margin-top: 20px;
 }
 
 /* put a margin on the bottom of publications nodes... probably should just do it for all */
@@ -573,7 +639,7 @@ article.node-publications {
 
 /* put items on a new line */
 .field_publication_title {
-    clear: left;
+  clear: left;
 }
 
 
@@ -639,10 +705,6 @@ i.fa.fa-external-link {
 	padding: 0px 10px 0px 0px;
 }
 
-
-.hidden {
-	display: none;
-}
 
 /* set initial opacity for author images  */
 .author-list .views-field-field-profile-picture {
