@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+li.team-1 {
+  padding: 0 10px 0 10px;
+}
+
+ul#team {
+
+  text-transform: uppercase;
+  margin: 10px;
+}
