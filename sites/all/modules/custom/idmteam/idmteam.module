@@ -258,6 +258,55 @@ function idmteam_block_view_alter(&$data, $block) {
     $block->title = isset($block->title) ? drupal_strtoupper($block->title) : '';
   }
 }
+
 /**
- * @} End of "defgroup block_example".
+ * Implement hook_views_pre_build(&$view)
+ * Purpose is to insert Team submenu
  */
+
+function idmteam_views_pre_view(&$view, &$display_id, &$args){
+  $debug_data = $view;
+  //  Determine if we are going to process this view.
+  //  We don't care about $display_id
+  $team_page = FALSE;
+  switch ($view->name) {
+    case 'team':
+      $team_page = TRUE;
+      break;
+    case 'something_else':   //Remove before flight
+      $team_page = TRUE;
+      break;
+  }
+  if ($team_page) {
+    //Add CSS specific to this page
+    drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
+    drupal_add_js(drupal_get_path('module', 'idmteam') . '/js/team.js');
+    $build['publication'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3 inline" id="team">
+                    <li class="team-1">
+                      <a href="/team">All</a>
+                    </li>
+                    <li class="team-1">
+                      <a href="/team/research">Research</a>
+                    </li>
+                    <li class="team-1">
+                      <a href="/team/software">Software</a>
+                    </li>
+                    <li class="team-1">
+                      <a href="/team/management">Management</a>
+                    </li>	
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );
+  }
+  
+  
+  $view->attachment_before = drupal_render($build);
+}
+
+
+
+

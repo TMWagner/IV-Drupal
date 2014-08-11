@@ -30,7 +30,7 @@
       console.log('URL clean: ' + url);
       //  TODO: Too general
       //  This will light up the box of ANY term is in the string... 
-      if (url.indexOf(link) >=0) {
+      if (url == link) {
         $(this).css( "background-color", "rgb(227, 227, 227" );
       }
     }); 

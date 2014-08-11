@@ -107,34 +107,6 @@ function idmod_entity_view_alter(&$build, $type) {
   
   if($build['#bundle'] == 'publications') {
     
-    //$node = menu_get_object();
-    //
-    //if (isset($node->field_publications_link['und'][0]['title'])) {
-    //  $publication_name = $node->field_publications_link['und'][0]['title'];
-    //}
-    //else $publication_name = null;
- 
-    //$build['pubication_name'] = array(
-    //  '#type' => 'item',
-    //  '#markup' => $publication_name,
-    //  '#weight' => '2',
-    //  '#prefix' => '<div class="field field_publication_title">',
-    //  '#suffix' => '</div>',
-    //);
-    /* Adjust the weights for the "full_node" view */
-    //if ($build['#view_mode'] == 'full_node') {
-    //  //$build['field_publications_date']['#weight'] = '3';
-    //  //$build['field_publications_topic']['#weight'] = '4';
-    //  //$build['field_publications_link']['#weight'] = '5';
-    //  //$build['body']['#weight'] = '6';
-    //  
-    //  //$build['field_publications_link'][0]['#field']['label'] = t('Read online::');
-    //  //$build['field_publications_link']['#suffix'] = '<i class="fa fa-external-link"></i>';
-    //
-    //}
-    
-    //$build['field_publications_link']['#title'] = t('Read online');
-    ///* Adjust the weight of array items to order correctly */
 
     $key = 0;
       while (isset($build['field_publications_author'][$key])) {

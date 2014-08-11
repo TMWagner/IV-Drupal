@@ -101,16 +101,41 @@ Drupal.behaviors.my_custom_behavior = {
         }, 200 );
     }
     
+    function stripTrailingSlash(str) {
+      if(str.substr(-1) == '/') {
+          return str.substr(0, str.length - 1);
+      }
+      return str;
+    }     
+    
+    
     //Light up the appropropriate menu block to show it is "active"
+    //TODO: We want to only consider the a tags in main nav... not secondary
     $('.sf-level1').each(function(index) {
       var link = $(this).find("a").attr('href');
-      var url =  window.location.href;
-       
-      if (url.indexOf(link) >=0) {
+      var url = stripTrailingSlash(window.location.pathname);
+      var subUrl = url.split("/");
+      var subLink = link.split("/");
+
+
+      //
+      //
+      console.log('***SubUrl: ' + subUrl[1]);
+      console.log('***SubLink: ' + subLink[1]);
+      //console.log('SubUrl: ' + subUrl);
+      //console.log('CleanUrl: ' + res);
+          
+      
+      //  TODO: Too general
+      //  This will light up the box of ANY term is in the string...
+      //  In this case, we need to take the 1st term in the path name
+      if (url == link) {
         $(this).css( "background-color", "rgb(82, 91, 92" );
       }
     });
     
+  
+        
     var defaultAuthor = null;
     var swapAuthor = null;
     $(function() {
