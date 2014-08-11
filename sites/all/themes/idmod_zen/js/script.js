@@ -116,26 +116,17 @@ Drupal.behaviors.my_custom_behavior = {
       var url = stripTrailingSlash(window.location.pathname);
       var subUrl = url.split("/");
       var subLink = link.split("/");
-
-
-      //
-      //
-      console.log('***SubUrl: ' + subUrl[1]);
-      console.log('***SubLink: ' + subLink[1]);
-      //console.log('SubUrl: ' + subUrl);
-      //console.log('CleanUrl: ' + res);
-          
-      
+      var trimUrl = subUrl[1];
+      var trimLink = subLink[1];  
       //  TODO: Too general
       //  This will light up the box of ANY term is in the string...
       //  In this case, we need to take the 1st term in the path name
-      if (url == link) {
+      if (trimUrl == trimLink) {
         $(this).css( "background-color", "rgb(82, 91, 92" );
       }
     });
     
-  
-        
+    
     var defaultAuthor = null;
     var swapAuthor = null;
     $(function() {
