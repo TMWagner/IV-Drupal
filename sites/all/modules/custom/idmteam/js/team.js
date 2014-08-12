@@ -11,7 +11,7 @@
 
   $(document).ready(function () {
     
-    
+    var researchLink = false;
     
     function stripTrailingSlash(str) {
         if(str.substr(-1) == '/') {
@@ -32,7 +32,11 @@
       //  This will light up the box of ANY term is in the string... 
       if (url == link) {
         $(this).css( "background-color", "rgb(227, 227, 227" );
+        researchLink = true;
       }
+      //else {
+      //  researchLink = false;
+      //}
     }); 
     
   });

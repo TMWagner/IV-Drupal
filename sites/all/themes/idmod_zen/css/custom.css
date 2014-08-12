@@ -23,7 +23,6 @@
 
 h1, h2 {
 	margin-bottom: 25px;
-	text-transform: uppercase;
 }
 
 
@@ -564,6 +563,7 @@ img.media-image,
 
 .node-publications .field-name-read-online-link {
   clear: left;
+	margin-bottom: 10px;
 }
 
 .field-publications-date {
@@ -614,7 +614,7 @@ img.media-image,
 .field-name-field-publications-author .field-item.field-item {
     float: left;
 		margin-right: 10px;
-		font-weight: bold;
+/*		font-weight: bold;*/
 }
 	
 
@@ -657,6 +657,7 @@ article.node-publications {
 }
 
 .field-name-title-field h3 {
+	font-size: 20px;
 	margin: 0px;
 }
 .field-name-title-field {
@@ -670,7 +671,7 @@ article.node-publications {
 }
 
 .field-items p {
-	margin: 0px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
 }
 .view-publications .views-row {
 	border-bottom: thin solid grey;
