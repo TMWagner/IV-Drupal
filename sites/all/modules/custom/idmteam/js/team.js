@@ -11,7 +11,6 @@
 
   $(document).ready(function () {
     
-    var researchLink = false;
     
     function stripTrailingSlash(str) {
         if(str.substr(-1) == '/') {
@@ -22,23 +21,27 @@
 
        
     $('.team-1').each(function(index) {
-      var link = jQuery(this).find("a").attr('href');
-      var url =  window.location.pathname;
-      console.log('link: ' + link);
-      console.log('URL: ' + url);
-      url = stripTrailingSlash(url);
-      console.log('URL clean: ' + url);
+      var link = $(this).find("a").attr('href');
+      var url = stripTrailingSlash(window.location.pathname);
+      var subUrl = url.split("/");
+      var subLink = link.split("/");
+      var trimUrl = subUrl[2];
+      var trimLink = subLink[2];
       //  TODO: Too general
-      //  This will light up the box of ANY term is in the string... 
-      if (url == link) {
+      //  This will light up the box of ANY term is in the string...
+      //  In this case, we need to take the 1st term in the path name
+      if (trimUrl == trimLink) {
         $(this).css( "background-color", "rgb(227, 227, 227" );
-        researchLink = true;
+        if (trimUrl == "research") showResearch();
       }
-      //else {
-      //  researchLink = false;
-      //}
-    }); 
+    });
+        
+    
+    function showResearch(){
+      $( 'ul.level-3b').removeClass( "hidden" );
+    }
     
   });
 
 })(jQuery);
+

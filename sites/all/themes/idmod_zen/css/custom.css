@@ -567,8 +567,9 @@ img.media-image,
 }
 
 .field-publications-date {
+	border-left: thin solid grey;
 	float: left;
-	font-style: italic;
+	padding-left: 10px;
 }
 
 .node-publications p {
@@ -653,7 +654,7 @@ article.node-publications {
 }
 
 .node-publications h2 {
-	line-height: 1.2em;
+	line-height: 1.0em;
 }
 
 .field-name-title-field h3 {
@@ -662,7 +663,7 @@ article.node-publications {
 }
 .field-name-title-field {
 	clear: left;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 .view-content .field-name-field-publications-date {
@@ -679,7 +680,7 @@ article.node-publications {
 }
 
 .field-name-title-field h2 {
-	margin: 5px 0px 25px 0px;
+	margin: 5px 0px 10px 0px;
 }
 
 

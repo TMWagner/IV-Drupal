@@ -281,7 +281,7 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
     //Add CSS specific to this page
     drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
     drupal_add_js(drupal_get_path('module', 'idmteam') . '/js/team.js');
-    $build['publication'] = array(
+    $build['team1'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3 inline" id="team">
                     <li class="team-1">
@@ -301,6 +301,33 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
       '#prefix' => '<div class="team-menu" style="clear: left">',
       '#suffix' => '</div>',
     );
+    
+    $build['team2'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3  level-3b inline hidden" id="team-research">
+                    <li class="research">
+                      <a href="/team/research/hiv">HIV</a>
+                    </li>
+                    <li class="research">
+                      <a href="/team/research/malaria">Malaria</a>
+                    </li>
+                    <li class="research">
+                      <a href="/team/research/numerical">Numerical Methods</a>
+                    </li>
+                    <li class="research">
+                      <a href="/team/research/polio">Polio</a>
+                    </li>
+                    <li class="research">
+                      <a href="/team/research/tuberculosis">Tuberculosis</a>
+                    </li>	                    
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );    
+    
+    
+    
   }
   
   

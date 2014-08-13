@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
-.inline li.team-1 {
+.inline li.team-1,
+.inline li.research {
   padding: 0 10px 0 10px;
 }
 
-ul#team {
+ul#team,
+ul#team-research {
 
   text-transform: uppercase;
   margin: 10px;
