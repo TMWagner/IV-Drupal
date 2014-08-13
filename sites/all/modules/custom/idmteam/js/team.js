@@ -36,10 +36,58 @@
       }
     });
         
+
+
+    // TODO: "Over" event is great
+    //      The out event not so great. We can't hide the menu if the mouse has moved on that!!!!
+    var config = {    
+         sensitivity: 3,    
+         interval: 10000,     
+         timeout: 10000,    
+    };    
+         
+    $( 'li.team-1' ).hoverIntent(
+      function() {
+        var type = $(this).find("a").html();
+        if (type == 'Research') {
+          //do our stuff for research
+          //$( this ).css( "background-color", "red" );  //Debug only
+          showResearch();
+        }
+        if (type == 'Software') {
+          //do our stuff for Software
+        }
+        //debug
+        console.log(type);    
+      },
+      
+      function() {
+        //$( this ).css( "background-color", "" );
+        //hideResearch();
+      },
+      config
+    );
     
+    //TODO: Use hoverIntent with delay and anonymous enter function...
+    $( '.level-3b' ).hoverIntent(function(){}, hideResearch, function(){});
+    
+
     function showResearch(){
       $( 'ul.level-3b').removeClass( "hidden" );
     }
+    
+    function hideResearch() {   
+      var url = stripTrailingSlash(window.location.pathname);
+      var subUrl = url.split("/");
+      if (subUrl[2] !== 'research') {
+        $( 'ul.level-3b').addClass( "hidden" );
+      }
+    }
+    
+    
+    
+    //Test Code
+    $( "li.item-ii" ).find( "li" ).css( "background-color", "red" );
     
   });
 
