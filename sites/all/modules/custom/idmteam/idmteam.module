@@ -281,7 +281,14 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
     //Add CSS specific to this page
     drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
     drupal_add_js(drupal_get_path('module', 'idmteam') . '/js/team.js');
-    $build['team1'] = array(
+    
+    // Wrap the "team" items so we can handle appropriately with jQuery later. 
+    $build['team'] = array(
+      '#type' => 'fieldset',
+      '#prefix' => '<div class="team-menu-wrap">',
+      '#suffix' => '</div>',
+    );
+    $build['team']['team1'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3 inline" id="team">
                     <li class="team-1">
@@ -302,7 +309,7 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
       '#suffix' => '</div>',
     );
     
-    $build['team2'] = array(
+    $build['team']['team2'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3b inline hidden" id="team-research">
                     <li class="research">

@@ -68,10 +68,8 @@
       config
     );
     
-    //TODO: Use hoverIntent with delay and anonymous enter function...
-    $( '.level-3b' ).hoverIntent(function(){}, hideResearch, function(){});
+    $( '.team-menu-wrap' ).hoverIntent(function(){}, hideResearch, function(){});
     
-
     function showResearch(){
       $( 'ul.level-3b').removeClass( "hidden" );
     }
@@ -83,7 +81,6 @@
         $( 'ul.level-3b').addClass( "hidden" );
       }
     }
-    
     
     
     //Test Code
