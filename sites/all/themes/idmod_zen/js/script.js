@@ -89,7 +89,7 @@ Drupal.behaviors.my_custom_behavior = {
     function teamIn(evt) {
       $(this).next("div").animate({
           top: "0px",
-          height: "165px",
+          height: "155",
         }, "slow" );
     }
          
@@ -155,8 +155,7 @@ Drupal.behaviors.my_custom_behavior = {
       // Note: we are using TEXT (HTML) here - not an object. 
       $( ".default-author-data" ).html( defaultAuthorText );
     }
- 
-     
+      
       
     
 /**

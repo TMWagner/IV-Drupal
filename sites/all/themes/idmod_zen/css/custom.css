@@ -29,6 +29,7 @@ h1, h2 {
 
 
 
+
 .panel-pane {
 /*	margin-bottom: 20px;   This is killing 2nd level page74Â*/
 	position: relative;
@@ -197,6 +198,7 @@ div#block-search-form {
 /**
  * Panel2 CSS
  */
+
 .p2_box {
   background-color: lightgrey;
   height: 320px;
@@ -225,9 +227,19 @@ div#menu-level2 {
 }
 
 div#block-block-6,
-div#block-block-7 {
+div#block-block-7,
+div#block-block-10 {
 	clear: left;
 }
+
+
+/* level2 banner block placement */
+div#block-block-7,
+div#block-block-10 {
+	margin-top: 10px;
+}
+
+
 /* override needed because of top menu */
 #menu-level2 .sf-level1 a {
 	color: #0073A3;
@@ -248,10 +260,7 @@ div#block-block-7 {
 	float: left;
 }
 
-/* level2 banner block placement */
-div#block-block-7 {
-	margin-top: 10px;
-}
+
 
 
 .p2_box {
@@ -489,6 +498,11 @@ div#menu-level2 {
 
 
 /* Level 2 pages */
+
+.banner-l2 p {
+	margin: 0px;
+}
+
 .banner-l2 {
 	height: 104px;
 	width: 960px;
@@ -496,9 +510,21 @@ div#menu-level2 {
 .banner-company {
 	color: white;
 	text-justify: left;
-	padding-top: 10px;
+	padding-top: 25px;
 	margin-left: 20px;
 	width: 220px;
+	float: left;
+}
+
+.banner-text {
+	float: right;
+	margin: 0px 10px 0px 0px;
+}
+
+.banner-text h2 {
+	color: white;
+	margin: 20px 0px 5px 5px;
+	font-size: 2.0em;
 }
 
 /* Left 220 */

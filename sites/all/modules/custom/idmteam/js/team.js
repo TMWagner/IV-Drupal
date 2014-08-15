@@ -50,20 +50,16 @@
       function() {
         var type = $(this).find("a").html();
         if (type == 'Research') {
-          //do our stuff for research
-          //$( this ).css( "background-color", "red" );  //Debug only
+          //do our stuff for research...
           showResearch();
         }
         if (type == 'Software') {
-          //do our stuff for Software
+          //do our stuff for Software here...
         }
-        //debug
-        console.log(type);    
       },
       
       function() {
-        //$( this ).css( "background-color", "" );
-        //hideResearch();
+
       },
       config
     );
@@ -81,7 +77,6 @@
         $( 'ul.level-3b').addClass( "hidden" );
       }
     }
-    
     
     //Test Code
     $( "li.item-ii" ).find( "li" ).css( "background-color", "red" );
