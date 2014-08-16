@@ -247,8 +247,6 @@ function idmteam_contents($which_block) {
  */
 function idmteam_block_view_alter(&$data, $block) {
   // Insert name and title from first block on multi-member journal team block.
-  $debug_data = $data;
-  $debug_block = $block;
   
   // We'll search for the string 'uppercase'.
   if ((!empty($block->title) && stristr($block->title, 'uppercase')) || (!empty($data['subject']) && stristr($data['subject'], 'uppercase'))) {
