@@ -16,6 +16,10 @@ ul#team-research {
 	padding: 0px;
 }
 
+.team-name-info a {
+	color: white;
+}
+
 /*TEST CODE*/
 #navigation .sf-menu ul {
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
