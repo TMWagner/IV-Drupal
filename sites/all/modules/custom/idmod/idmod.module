@@ -120,6 +120,21 @@ function idmod_entity_view_alter(&$build, $type) {
 }
 
 
+/**
+ * Implementation of hook_url_outbound_alter
+ */
+function idmod_url_outbound_alter(&$path, &$options, $original_path) {
+  // We have altered the display of the user profile to our own internal view. 
+  if (isset($options['entity_type'])) {
+    if($options['entity_type'] == "profile2") {
+      //intercept and modify the link
+      $path = 'team/bio/' . $options['entity']->uid;
+      $options['fragment'] = null;
+    }
+  }
+  
+}
+
 
 
 
