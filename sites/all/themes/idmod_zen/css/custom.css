@@ -25,6 +25,10 @@ h1, h2 {
 	margin-bottom: 25px;
 }
 
+#content h1 {
+	font-size: 40px;
+	margin-top: 20px;
+}
 
 
 
@@ -75,6 +79,16 @@ nav#main-menu {
 
 .view-fp-rotator {
 	position: relative;
+}
+
+/**
+ * Breadcrumb
+ */
+.breadcrumb {
+	margin-left: 230px;
+	margin-top: 10px;
+
+
 }
 
 
@@ -451,6 +465,16 @@ li.list-title {
     margin: 0px;
 }
 
+
+.panel-pane h2 {
+	margin-top: 10px;
+}
+
+.panel-pane h3 {
+	margin-top: 0px;
+}
+
+
 /*CSS for Team page*/
 
 
@@ -572,6 +596,34 @@ img.media-image,
 	box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
 	-moz-box-shadow: 2px 2px 10px 0px rgba(119, 119, 119, 0.75);
 	-webkit-box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);	
+}
+
+
+/*Research - left sidebar*/
+
+.block-views h2 {
+	font-size: 22px;
+	margin: 0 0 10px 0px;
+}
+td.col-1.col-first {
+	position: relative;
+}
+
+.sidebar-numerical .team-name-info {
+	width: 160px;
+}
+
+.numerical.team-name-info {
+
+	height: 0px;
+	overflow: hidden;
+	padding: 0 10px 0 10px;
+	position: absolute;
+	width: 160px;
+}
+
+div.team-name-info a {
+	color: white;
 }
 
 /**
