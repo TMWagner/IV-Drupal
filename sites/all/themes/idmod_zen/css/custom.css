@@ -599,6 +599,39 @@ img.media-image,
 }
 
 
+/* Research - numerical Methods page */
+
+
+
+#numerical-fr {
+	width: 760px;
+}
+.numerical-fr-block {
+	height: 200px;
+	width: 165px;
+	float: left;
+	margin-right: 20px;
+	background-color: #CCC;
+	position: relative;
+}
+
+.numerical-fr-foot {
+	background-color: #0073a3;
+}
+.numerical-fr-foot {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#numerical-fr h4 {
+	color: white;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
 /*Research - left sidebar*/
 
 .block-views h2 {
