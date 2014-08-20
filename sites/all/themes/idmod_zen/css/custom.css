@@ -604,6 +604,7 @@ img.media-image,
 
 
 #numerical-fr {
+	height: 200px;
 	width: 760px;
 }
 .numerical-fr-block {
@@ -631,6 +632,15 @@ img.media-image,
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
+
+#numerical-fr a {
+	color: black;
+}
+
+a .numerical-fr-foot:hover {
+	background-color: grey;
+}
+
 
 /*Research - left sidebar*/
 
