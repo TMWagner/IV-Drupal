@@ -70,6 +70,10 @@ nav#main-menu {
 	border-left: hidden;
 }
 
+.region-navigation {
+	display: inline;
+}
+
 
 
 #main-menu .links a {
@@ -194,7 +198,7 @@ div.accordian-menu {
 
 
 div#block-search-form {
-	width: 180px;
+	width: 160px;
 	float: right;
 }
 
@@ -530,6 +534,7 @@ div#menu-level2 {
 .banner-l2 {
 	height: 104px;
 	width: 960px;
+	margin-top: 35px;
 }
 .banner-company {
 	color: white;
@@ -857,7 +862,33 @@ i.fa.fa-external-link {
 }
 
 
-*/
+/* CSS for News and Events
+ * We will move this to a seperate file if we write a custom module for News
+ */
 
 
+div#block-block-11 {
+	clear: left;
+}
+
+
+.field.field-name-field-news-type.field-type-list-text.field-label-hidden,
+.views-field.views-field-title-field {
+	clear: left;
+}
+
+
+.views-field.views-field-field-news-type {
+	float: left;
+	margin-right: 20px;
+}
+
+
+.views-field.views-field-field-news-date {
+	border-left: thin solid #808080;
+	float: left;
+	font-style: italic;
+	margin: 0px 10px 0px 0px;
+	padding-left: 10px;
+}
 
