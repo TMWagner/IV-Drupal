@@ -86,9 +86,9 @@ Drupal.behaviors.my_custom_behavior = {
     
 
     // This selector and 2 functions are for "related Team" pics left sidebar. Can we generalize this function?
+    // >>> Refactor this code
     $(function() {
       $(".block .views-field.views-field-field-profile-picture").hoverIntent(numericalSideIn, function(){});
-      //$(".team-name-info").mouseleave(numericalSideOut);  
     });
     
     function numericalSideIn(evt) {
@@ -104,6 +104,8 @@ Drupal.behaviors.my_custom_behavior = {
           height: "0px",  
         }, 200 );
     }
+    
+    // >>> END refactor code
     
     
     $(function() {

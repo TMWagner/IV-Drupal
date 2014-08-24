@@ -121,11 +121,6 @@ div.accordian-menu {
     z-index: 4;
 }
 
-/*#accordian-menu #menu_title {
-	font-family: "Gotham-Bold";
-	size: 14px;
-	color: white;
-}*/
 
 #accordion {
     position: absolute;
@@ -198,7 +193,7 @@ div.accordian-menu {
 
 
 div#block-search-form {
-	width: 160px;
+	width: 15%;
 	float: right;
 }
 
@@ -216,6 +211,10 @@ div#block-search-form {
 /**
  * Panel2 CSS
  */
+
+.sf-menu ul {
+	min-width: 185px;
+}
 
 .p2_box {
   background-color: lightgrey;
@@ -804,6 +803,18 @@ article.node-publications {
 	border-bottom: thin solid grey;
 	margin: 10px 0px 25px 0px;
 }
+
+.view-news-and-events  .views-row {
+	border-bottom: thin solid grey;
+	margin: 10px 0px 25px 0px;
+}
+
+.view-news-and-events  .views-row-last {
+	border: none;
+	margin: 10px 0px 25px 0px;
+}
+
+
 
 .field-name-title-field h2 {
 	margin: 5px 0px 10px 0px;

@@ -38,6 +38,7 @@ function idmod_field_display_node_alter(&$display, $context) {
 
 }
 
+
 /**
  * Implements hook_context_load_alter().
  * http://drupalcontrib.org/api/drupal/contributions%21context%21context.api.php/function/hook_context_load_alter/7
@@ -106,8 +107,6 @@ function idmod_taxonomy_term_uri($term) {
 function idmod_entity_view_alter(&$build, $type) {
   
   if($build['#bundle'] == 'publications') {
-    
-
     $key = 0;
       while (isset($build['field_publications_author'][$key])) {
         // If there is more then one name, we add a comma to present item.
@@ -133,6 +132,20 @@ function idmod_url_outbound_alter(&$path, &$options, $original_path) {
     }
   }
   
+}
+
+
+/**
+ * hook_entity_view($entity
+ * Act on entities being assembled before rendering
+ */
+function idmod_entity_view($entity, $type, $view_mode, $langcode) {
+  // CHeck "foreign author" field. If checked... don't display any author
+  if (isset( $entity->field_publication_foreign_author['und'][0]['value'])) {
+    if ($entity->field_publication_foreign_author['und'][0]['value']) {
+      unset ($entity->content['field_publications_author']);
+    }
+  } 
 }
 
 
