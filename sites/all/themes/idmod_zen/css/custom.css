@@ -557,6 +557,17 @@ div#menu-level2 {
 
 /* Left 220 */
 /* Keep the left sidebar from blowing things up */
+
+.sidebars h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: .5em;
+	line-height: 1.5em;
+}
+.sidebars p {
+	margin-top: .5em;
+}
+
 .region-sidebar-first {
 
 }
