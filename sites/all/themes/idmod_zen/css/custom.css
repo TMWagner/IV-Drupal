@@ -931,3 +931,74 @@ div#block-block-11 {
 	padding-left: 10px;
 }
 
+/*Polio pages*/
+
+#polio_main_table .column {
+	float: left;
+	margin-right: 10px;
+	width: 175px;
+}
+
+#polio_main_table .header {
+	background-color:  #0073a3;
+	color: white;
+	height: 75px;
+	display: table-cell;
+	width: 200px;
+	vertical-align: middle;
+}
+
+#polio_main_table .sub-head {
+	background-color: rgb(219, 219, 219);
+	color: black;	
+  height: 60px;
+  vertical-align: middle;
+}
+
+/*#polio_main_table .sub-head > p {
+	margin-left: 10px;
+	margin-top: 0;
+	padding-top: 10px;
+}*/
+
+#polio_main_table .row {
+	border-bottom: solid thin black;
+	color: black;	
+  height: 60px;
+  vertical-align: middle;
+}
+#polio_main_table .no-border {
+	border: none;
+}
+
+#polio_main_table  p {
+	margin-left: 10px;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+#polio_main_table td {
+	height: 50px;
+	padding-left: 10px;
+}
+
+#polio_main_table .head td {
+	background-color: #0073a3;
+	color: white;
+}
+
+#polio_main_table .sub-head td {
+	background-color: rgb(219, 219, 219);
+	color: black;
+}
+
+
+
+/*End Polio Pages*/
