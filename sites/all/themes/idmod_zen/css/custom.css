@@ -711,11 +711,11 @@ div.team-name-info a {
 
 
 .field.field-name-publication-name.field-type-ds.field-label-hidden {
-	border-left: thin solid #808080;
+	border-right: thin solid #808080;
 	float: left;
 	font-style: italic;
 	margin: 0px 10px 0px 0px;
-	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .node-publications .field-name-read-online-link {
@@ -723,11 +723,6 @@ div.team-name-info a {
 	margin-bottom: 10px;
 }
 
-.field-publications-date {
-	border-left: thin solid grey;
-	float: left;
-	padding-left: 10px;
-}
 
 .node-publications p {
 	margin-top: .2em;
@@ -738,7 +733,9 @@ div.team-name-info a {
 }
 
 .field-name-field-publications-topic .field-item {
-  margin-right: 15px;
+	border-right: thin solid #808080;
+	padding-right: 10px;
+  margin-right: 10px;
 }
 
 .field-name-field-publications-link .field-item {
@@ -769,12 +766,13 @@ div.team-name-info a {
 		margin-right: 20px;
 }
 
-.field-name-field-publications-author .field-item.field-item {
-    float: left;
-		margin-right: 10px;
-/*		font-weight: bold;*/
-}
 	
+.full-node-display-author {
+	float: left;
+	padding-right: 10px;
+	border-right: thin solid #808080;
+	margin-right: 10px;
+}
 
 .field.field_publication_title {
 	margin-right: 10px;
@@ -824,10 +822,10 @@ article.node-publications {
 	margin-top: 50px;
 }
 
-.view-content .field-name-field-publications-date {
-	border-left: thin solid grey;
+/*.view-content .field-name-field-publications-date {
+
 	padding-left: 10px;
-}
+}*/
 
 .field-items p {
 	margin: 10px 0px 10px 0px;
@@ -835,6 +833,10 @@ article.node-publications {
 .view-publications .views-row {
 	border-bottom: thin solid grey;
 	margin: 10px 0px 25px 0px;
+}
+
+.field-name-field-publications-author {
+	clear: left;
 }
 
 .view-news-and-events  .views-row {
