@@ -19,22 +19,32 @@
  * Convert the reference to profile entity "Main profile" to actual name. 
  */
 function idmod_field_display_node_alter(&$display, $context) {
-  $debug = $display;
-  // Leave field labels out of the search index.
-  if($context['entity']->type == 'publications') {
-    $debug = $display;
-    // Look for our entity type
-    
-    if (isset($context['entity']->field_publications_author['und'][0]['entity']->label)) {
-      // Loop through the author array
-      // TODO: Each label is process at least three times... could set a flag and stop that BS
-      foreach ($context['entity']->field_publications_author['und'] as $key => $item) {
-        $label = $item['entity']->field_profile_first_name['und'][0]['value'];
-        $label .= ' ';
-        $label .= $item['entity']->field_profile_last_name['und'][0]['value'];
-        $context['entity']->field_publications_author['und'][$key]['entity']->label =  $label;
+  
+  switch ($context['entity']->type) {
+    case 'publications':
+      if (isset($context['entity']->field_publications_author['und'][0]['entity']->label)) {
+        // Loop through the author array
+        // TODO: Each label is process at least three times... could set a flag and stop that BS
+        foreach ($context['entity']->field_publications_author['und'] as $key => $item) {
+          $label = $item['entity']->field_profile_first_name['und'][0]['value'];
+          $label .= ' ';
+          $label .= $item['entity']->field_profile_last_name['und'][0]['value'];
+          $context['entity']->field_publications_author['und'][$key]['entity']->label =  $label;
+        }
       }
-    } 
+      break;
+      
+    case 'polio_reports':
+      if (isset($context['entity']->field_polo_report_author['und'][0]['entity']->label)) {
+        foreach ($context['entity']->field_polo_report_author['und'] as $key => $item) {
+          $label = $item['entity']->field_profile_first_name['und'][0]['value'];
+          $label .= ' ';
+          $label .= $item['entity']->field_profile_last_name['und'][0]['value'];
+          $context['entity']->field_polo_report_author['und'][$key]['entity']->label =  $label;
+        }        
+      }
+      
+      break; 
   }
 
 }

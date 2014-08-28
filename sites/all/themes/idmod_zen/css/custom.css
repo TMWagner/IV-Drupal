@@ -25,6 +25,10 @@ h1, h2 {
 	margin-bottom: 25px;
 }
 
+h3 {
+	text-transform: uppercase;
+}
+
 #content h1 {
 	font-size: 40px;
 	margin-top: 20px;
@@ -811,8 +815,9 @@ article.node-publications {
 }
 
 .field-name-title-field h3 {
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0px;
+	text-transform: uppercase;
 }
 .field-name-title-field {
 	clear: left;
@@ -985,4 +990,31 @@ div#block-block-11 {
 
 
 
+/* Polio Brief reports */
+
+.field-name-field-polio-report-topic {
+	float: left;
+	margin-right: 10px;
+}
+
+.field-name-field-polio-report-date {
+	border-left: thin solid #808080;
+	float: left;
+	font-style: italic;
+	margin: 0 10px 0 0;
+	padding-left: 10px;
+}
+
+.view-research-brief-reports .views-row {
+	border-bottom: thin solid grey;
+	margin: 10px 0px 25px 0px;
+}
+
+
+.view-research-brief-reports .views-row-last {
+	border: none;
+}
+/* End Polio Brief reports/ 
+
 /*End Polio Pages*/
+/*****************/
