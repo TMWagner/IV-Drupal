@@ -16,6 +16,7 @@
 
 /**
  * Implementation of hook_field_display_alter
+ * Convert the reference to profile entity "Main profile" to actual name. 
  */
 function idmod_field_display_node_alter(&$display, $context) {
   $debug = $display;

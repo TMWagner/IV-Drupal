@@ -955,11 +955,6 @@ div#block-block-11 {
   vertical-align: middle;
 }
 
-/*#polio_main_table .sub-head > p {
-	margin-left: 10px;
-	margin-top: 0;
-	padding-top: 10px;
-}*/
 
 #polio_main_table .row {
 	border-bottom: solid thin black;
@@ -978,25 +973,14 @@ div#block-block-11 {
 }
 
 
-
-
-
-
-
-
-#polio_main_table td {
-	height: 50px;
-	padding-left: 10px;
-}
-
-#polio_main_table .head td {
-	background-color: #0073a3;
+#polio_main_table a:link {
 	color: white;
 }
-
-#polio_main_table .sub-head td {
-	background-color: rgb(219, 219, 219);
-	color: black;
+#polio_main_table a:visited {
+	color: white;
+}
+#polio_main_table a:hover {
+	color: white;
 }
 
 
