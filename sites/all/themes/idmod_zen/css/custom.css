@@ -756,6 +756,7 @@ div.team-name-info a {
 	margin: 0px 10px 0px 0px;
 }
 
+
 .field_publication_title {
 	clear: left;
 	float: left;
@@ -820,6 +821,7 @@ article.node-publications {
 .field-name-title-field {
 	clear: left;
 	margin-top: 50px;
+	padding-top: 5px;
 }
 
 /*.view-content .field-name-field-publications-date {
