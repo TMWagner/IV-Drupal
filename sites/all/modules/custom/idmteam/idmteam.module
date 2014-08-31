@@ -232,19 +232,23 @@ function idmteam_contents($which_block) {
 
 // TODO: Cleanup up the unneeded crap in here.
 // Ref: https://api.drupal.org/api/views/views.module/function/views_embed_view/7
+// Notes:
+//  This will only work so far with the polio entity - because it is looking for "field_group_tags".
+//  2014/08/31: "Defined "field_related_group_tags" in research entity... reused same field in polio entity. Works perfectly
+//
 function idmteam_related_subteams($which_block) {
 
   $node = menu_get_object();
   $form = array();
   // build the parameter list to pass to views.
   $key = 0;
-  if (isset($node->field_polio_group_tags['und'][$key])) {
+  if (isset($node->field_related_group_tags['und'][$key])) {
     // Set the first parmeter
-    $taxonomy_list = $node->field_polio_group_tags['und'][$key]['tid'];
+    $taxonomy_list = $node->field_related_group_tags['und'][$key]['tid'];
     // Loop through the rest
     ++$key;
-    while (isset($node->field_polio_group_tags['und'][$key])) {
-      $taxonomy_list .= '+' . $node->field_polio_group_tags['und'][$key]['tid'];
+    while (isset($node->field_related_group_tags['und'][$key])) {
+      $taxonomy_list .= '+' . $node->field_related_group_tags['und'][$key]['tid'];
       ++$key;
     }
     
@@ -255,24 +259,7 @@ function idmteam_related_subteams($which_block) {
       '#type' => 'item',
       '#markup' => $views_embed,
     );
-    // This is the first form element. It's a textfield with a label, "Name"
-    // Build up the next lines
-    //  name
-    //  title
-    //$form['name'] = array(
-    //  '#type' => 'item',
-    //  '#markup' => $name,
-    //  '#prefix' => '<div class="default-author-data" style="clear: left">',
-    //);
-    //
-    //$form['title'] = array(
-    //  '#type' => 'item',
-    //  '#markup' => $title,
-    //  '#prefix' => '<div>',
-    //  '#suffix' => '</div>',
-    //);         
-    
-      
+ 
     
   }
   
@@ -370,7 +357,7 @@ function idmteam_block_view_alter(&$data, $block) {
 
 /**
  * Implement hook_views_pre_build(&$view)
- * Purpose is to insert Team submenu
+ * Purpose is to insert Team submenu on /team page.
  */
 
 function idmteam_views_pre_view(&$view, &$display_id, &$args){
@@ -386,6 +373,7 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
       $team_page = TRUE;
       break;
   }
+ 
   if ($team_page) {
     //Add CSS specific to this page
     drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
