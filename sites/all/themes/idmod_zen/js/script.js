@@ -88,10 +88,10 @@ Drupal.behaviors.my_custom_behavior = {
     // This selector and 2 functions are for "related Team" pics left sidebar. Can we generalize this function?
     // >>> Refactor this code
     $(function() {
-      $(".block .views-field.views-field-field-profile-picture").hoverIntent(numericalSideIn, function(){});
+      $(".block .views-field.views-field-field-profile-picture").hoverIntent(side220SideIn, function(){});
     });
     
-    function numericalSideIn(evt) {
+    function side220SideIn(evt) {
       $(this).next("div").animate({
           top: "0px",
           height: "180",
@@ -120,13 +120,13 @@ Drupal.behaviors.my_custom_behavior = {
         }, "slow" );
     }
          
-    //Move the top back town and height back to 0 to hide it
-    function teamOut(evt) {
-      $(".team-name-info").animate({
-          top: "170px",
-          height: "0px",  
-        }, 200 );
-    }
+    ////Move the top back town and height back to 0 to hide it
+    //function teamOut(evt) {
+    //  $(".team-name-info").animate({
+    //      top: "170px",
+    //      height: "0px",  
+    //    }, 200 );
+    //}
     
     function stripTrailingSlash(str) {
       if(str.substr(-1) == '/') {
