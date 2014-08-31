@@ -693,7 +693,6 @@ td.col-1.col-first {
 }
 
 .numerical.team-name-info {
-
 	height: 0px;
 	overflow: hidden;
 	padding: 0 10px 0 10px;
@@ -1014,9 +1013,13 @@ div#block-block-11 {
 	margin: 10px 0px 25px 0px;
 }
 
-
 .view-research-brief-reports .views-row-last {
 	border: none;
+}
+
+/* Make Div relative so the jquery can slide absolute element into place */
+.view-id-related_team_profile2 .views-row {
+	position: relative;
 }
 /* End Polio Brief reports/ 
 
