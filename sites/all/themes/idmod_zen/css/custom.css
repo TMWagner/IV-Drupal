@@ -823,10 +823,7 @@ article.node-publications {
 	padding-top: 5px;
 }
 
-/*.view-content .field-name-field-publications-date {
 
-	padding-left: 10px;
-}*/
 
 .field-items p {
 	margin: 10px 0px 10px 0px;
@@ -852,11 +849,14 @@ article.node-publications {
 
 
 
-.field-name-title-field h2 {
+/*.field-name-title-field h2 {
 	margin: 5px 0px 10px 0px;
+}*/
+
+.news-item-title h3 {
+	padding-top: 10px;
+	clear: left;
 }
-
-
 
 /* CSS for Multiple team member display block */
 
@@ -918,6 +918,18 @@ div#block-block-11 {
 	clear: left;
 }
 
+.node-news-and-events .field.field-name-field-news-date.field-type-datetime.field-label-hidden {
+	border-left: thin solid #808080;
+	float: left;
+	font-style: italic;
+	margin: 0px 10px 0px 0px;
+	padding-left: 10px;
+}
+
+
+.node-news-and-events .field-items {
+	padding-right: 10px;
+}
 
 .field.field-name-field-news-type.field-type-list-text.field-label-hidden,
 .views-field.views-field-title-field {
@@ -937,6 +949,10 @@ div#block-block-11 {
 	font-style: italic;
 	margin: 0px 10px 0px 0px;
 	padding-left: 10px;
+}
+
+.field-name-title-field h3 {
+	margin: 0 0 10px 0px;
 }
 
 /*Polio pages*/
