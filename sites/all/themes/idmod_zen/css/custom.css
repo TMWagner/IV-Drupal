@@ -34,6 +34,10 @@ h3 {
 	margin-top: 20px;
 }
 
+h4 {
+	font-size: 1.17em;
+}
+
 
 
 
@@ -435,6 +439,10 @@ li.list-title {
 }
 
 #footer a {
+    color: #CDCECF;
+}
+
+#footer a:hover {
 	color: white;
 }
 
