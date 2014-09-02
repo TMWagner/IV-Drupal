@@ -10,7 +10,6 @@
 	padding-top: 30px;
 }
 
-
 .uppercase {
 	text-transform: uppercase;
 }
@@ -38,6 +37,9 @@ h4 {
 	font-size: 1.17em;
 }
 
+div#content {
+	margin-bottom: 60px;
+}
 
 
 
@@ -371,6 +373,7 @@ div#p3_box2 {
   line-height: 100px;
   text-align: center;
 	width: 960px;
+	padding-top: 60px;
 }
 
 #p3_text span {
