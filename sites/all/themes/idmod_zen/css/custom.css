@@ -187,11 +187,13 @@ div.accordian-menu {
 #accordion li:first-child {
 	height: 60px;
 	border: none;
-	font-family: "Gotham-Bold";
+/*	font-family: "Gotham-Bold";*/
+	font-size: 18px;
+	text-transform: uppercase;
 	size: 14px;
 	color: white;
-	text-transform: uppercase;
-	padding-top: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
 	padding-left: 10px;
 	background-color: rgba(33, 61, 97, 1);
 	opacity: .7;
@@ -427,13 +429,6 @@ footer {
 }
 
 
-/* Hit the title */
-li.list-title {
-	font-family: "Gotham-Bold";
-}
-/* END hit the title */
-
-
 #footer {
 	background-color: #0073a3;
 	font-size: 14px;
@@ -481,6 +476,11 @@ li.list-title {
 .panels-flexible-brick1 .panels-flexible-row {
     padding: 0px 0px 0px 0px;
     margin: 0px;
+}
+
+.banner-company p {
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 

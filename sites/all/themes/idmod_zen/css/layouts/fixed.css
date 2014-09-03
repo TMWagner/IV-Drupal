@@ -42,16 +42,6 @@
 
 }
 
-#main-menu {
-	text-shadow: 1px 1px 1px #02415c;
-/*	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.36);
-	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.36);
-	box-shadow: 1px 1px 2px rgba(0,0,0,.36);*/
-  
-}
-
-
-
 #navigation {
   /* Move the navbar up inside #main's padding. */
   margin-left: auto;
@@ -72,18 +62,12 @@ nav#main-menu {
 
 
 
-/* Dont need this any more....
-/*div.region.region-navigation {
-  width: 180px;
-  float: right;
-}*/
-
 #fixed-header a {
-  color: white;
+  color: #cdcecf;
   text-decoration: none;
 }
 
-#fixed-header a:visited {
+#fixed-header a:hover {
   color: white;
   text-decoration: none;
 }
