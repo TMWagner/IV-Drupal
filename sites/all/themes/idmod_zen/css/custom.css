@@ -968,6 +968,22 @@ div#block-block-11 {
 
 /*Polio pages*/
 
+.view-display-team-lead .views-row {
+	position: relative;
+}
+
+.polio.team-name-info {
+	height: 0;
+	overflow: hidden;
+	padding: 0 10px;
+	position: absolute;
+	width: 160px;
+}
+.polio .field-content h3 {
+    color: white;
+		margin-top: 20px;
+}
+
 #polio_main_table .column {
 	float: left;
 	margin-right: 10px;
