@@ -403,61 +403,87 @@ function idmteam_team_mem_related($which_block) {
   //  If we are looking at /team/bio, grab the profile ID
   
   if (isset($item['original_map'][2])) {
-    $profile_id = $item['original_map'][2];
+    $uid = $item['original_map'][2];
     
     // Load the users profile (which is where the taxonomy terms are stored.    
-    $profile2 = profile2_load_by_user($profile_id, $type_name = NULL);
+    $profile2 = profile2_load_by_user($uid, $type_name = NULL);
     
     // TODO: 
     // What if there is nothing set...
     $profile_array = $profile2['main']->field_profile_group_tags['und'];
     
-    // Grab the Taxonomy items we interested in:
-    //  Software
-    //  Research
-    $key = 0;    
 
+    // Get the taxonomy object
+    //  build the parameter list to pass to views.
+    //  There are three Major groups:
+    //    Management
+    //    Research
+    //    Software
+    //  We will build a block for each of these found (in Alpha order) and display.     
+    
+    $views_embed_management = NULL;
+    $views_embed_research = NULL;
+    $views_embed_software = NULL;
+
+    $key = 0;    
     if (isset($profile_array[$key])) {
-      // Get the taxonomy object
-      
-      // build the parameter list to pass to views.
-      // There are three Major groups:
-      //    Management
-      //    Software
-      //    Research      
+
       $taxonomy = taxonomy_term_load($profile_array[$key]['tid']);
       $taxonomy_term = $taxonomy->name;
       //  Embed Research "related" block
       if ($taxonomy_term == "Research") { 
-        $views_embed = views_embed_view('group_related_sidebar', $display_id = 'research_highlight');
+        $views_embed_research = views_embed_view('group_related_sidebar', $display_id = 'research_highlight');
       }
       elseif ($taxonomy_term == "Software") { 
-        $views_embed = views_embed_view('group_related_sidebar', $display_id = 'software_highlight');
+        $views_embed_software = views_embed_view('group_related_sidebar', $display_id = 'software_highlight');
       }
-      else {
-        $views_embed = t('Group area: ' . $taxonomy_term);
+      elseif ($taxonomy_term == "Management") { 
+        $views_embed_management = views_embed_view('group_related_sidebar', $display_id = 'management_highlight');
       }
       
       
-      
-      //  Debug: Print the taxonomy term
-      //print $taxonomy_term;
-      $form['group'][$key] = array(
-        '#type' => 'item',
-        '#markup' => $views_embed,
-      );      
-      
-      // Loop through the rest
-      //  TODO: Process the other potential term?
       ++$key;
       while (isset($profile_array[$key]))  {
         $taxonomy = taxonomy_term_load($profile_array[$key]['tid']);
         $taxonomy_term = $taxonomy->name;
+      
+        if ($taxonomy_term == "Research") { 
+          $views_embed_research = views_embed_view('group_related_sidebar', $display_id = 'research_highlight');
+        }
+        elseif ($taxonomy_term == "Software") { 
+          $views_embed_software = views_embed_view('group_related_sidebar', $display_id = 'software_highlight');
+        }
+        elseif ($taxonomy_term == "Management") { 
+          $views_embed_management = views_embed_view('group_related_sidebar', $display_id = 'management_highlight');
+        }
+        
         ++$key;
       }
       
       
     }
+    
+    //  We should have content for all three areas
+    if ($views_embed_research) {
+      $form['group']['research'] = array(
+        '#type' => 'item',
+        '#markup' => $views_embed_research,
+      );
+    }
+    if ($views_embed_software) {
+      $form['group']['software'] = array(
+        '#type' => 'item',
+        '#markup' => $views_embed_software,
+      );
+    }
+    
+   if ($views_embed_management) {
+      $form['group']['software'] = array(
+        '#type' => 'item',
+        '#markup' => $views_embed_management,
+      );
+    }    
+    
     
     }
     else {
@@ -468,6 +494,19 @@ function idmteam_team_mem_related($which_block) {
         '#suffix' => '</div>',
       );
     }
+    
+    // Now we will print out the publications.
+    
+    // DEBUG: force UID
+    //$uid = 20;
+    
+    $views_embed_publications = views_embed_view('publications_by_team_member', $display_id = 'publications', $uid);
+    $form['publications'] = array(
+      '#type' => 'item',
+      '#markup' => $views_embed_publications,
+      '#prefix' => '<div>',
+      '#suffix' => '</div>',
+    );    
   
   
     
