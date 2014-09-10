@@ -92,6 +92,10 @@ a.views-more-link:after {
 	margin-top: 24px;
 }
 
+div#views_slideshow_cycle_main_fp_rotator-page {
+	margin-bottom: 20px;
+}
+
 div#fp-hero-tagline {
 	padding-top: 80px;
 }
