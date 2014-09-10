@@ -18,8 +18,7 @@
         }
         return str;
     }    
-
-       
+     
     $('.team-1').each(function(index) {
       var link = $(this).find("a").attr('href');
       var url = stripTrailingSlash(window.location.pathname);
@@ -27,6 +26,16 @@
       var subLink = link.split("/");
       var trimUrl = subUrl[2];
       var trimLink = subLink[2];
+      
+      //Grab second parameter in string
+      var trimUrl2 = subUrl[3];
+      var trimLink2 = subUrl[3];
+      
+      // If link parameter 2 is set, find that element and light it up.
+      if (typeof trimLink2 === 'string') {  
+        $( '#' + trimLink2 ).css( "background-color", "rgb(227, 227, 227" );
+      }
+       
       //  TODO: Too general
       //  This will light up the box of ANY term is in the string...
       //  In this case, we need to take the 1st term in the path name
