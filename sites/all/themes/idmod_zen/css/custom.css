@@ -572,7 +572,9 @@ footer {
 
 /*CSS for Team page*/
 
-
+div#picture-group {
+	float: right;
+}
 
 .team-items {
 	padding: 0 10px 0 10px;
@@ -1141,6 +1143,13 @@ div#block-block-11 {
 /* Polio Brief reports */
 
 .field-name-field-polio-report-topic {
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+.node-polio-reports .field.field-name-field-related-group-tags.field-type-taxonomy-term-reference {
 	float: left;
 	margin-right: 10px;
 }
