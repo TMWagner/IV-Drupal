@@ -192,9 +192,9 @@ nav#main-menu {
 /* Span 4 columns, starting in 2nd column from left. */
 .sidebar-first #content {
   float: left;
-  width: 760px;
+  width: 730px;
   margin-left: 220px;
-  margin-right: -980px;
+  margin-right: -960px;
 }
 
 
