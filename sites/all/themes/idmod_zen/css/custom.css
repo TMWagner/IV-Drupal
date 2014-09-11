@@ -375,7 +375,7 @@ div#menu-level2 {
 	top: -3px;
 }
 
-div#block-block-6,
+/*div#block-block-6,*/
 div#block-block-7,
 div#block-block-10 {
 	clear: left;
@@ -383,10 +383,10 @@ div#block-block-10 {
 
 
 /* level2 banner block placement */
-div#block-block-7,
-div#block-block-10 {
+/*div#block-block-7,*/
+/*div#block-block-10 {
 	margin-top: 10px;
-}
+}*/
 
 
 /* override needed because of top menu */
