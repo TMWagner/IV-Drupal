@@ -141,7 +141,7 @@ div#fp-hero-tagline {
 #p3-block2.panel-pane.pane-node {
     float: left;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 320px;
 }
 
@@ -174,6 +174,12 @@ div#p3_block_a {
 div#panel-4 {
 	clear: left;
 }
+
+#p3_block_a h3,
+#p3-block2 h3  {
+	font-size: 15px;
+}
+
 	
 }
 
@@ -1133,7 +1139,7 @@ div#block-block-11 {
 
 #polio_main_table .column {
 	float: left;
-	margin-right: 10px;
+	margin-right: 5px;
 	width: 175px;
 }
 
