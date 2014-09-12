@@ -1237,13 +1237,20 @@ div#block-block-11 {
 	border-top-width: thin;
 	border-bottom-width: thin;
 	border-top-style: solid;
-	border-bottom-style: solid;
+	border-bottom-style: none;
 	border-top-color: #999;
 	border-bottom-color: #999;
 	margin-top: 10px;
 	padding-left: 20px;
 
 }
+
+.software-bundle.last {
+	border-bottom-style: solid;
+	padding-bottom: 20px;
+}
+
+
 .software-bundle .software-bundle-text {
 	float: left;
 	width: 500px;
