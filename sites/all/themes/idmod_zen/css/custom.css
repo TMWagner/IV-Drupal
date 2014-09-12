@@ -69,7 +69,7 @@ a.views-more-link:after {
 
 
 .panel-pane {
-/*	margin-bottom: 20px;   This is killing 2nd level page74Â*/
+/*	margin-bottom: 20px;   This is killing 2nd level page74Ã‚*/
 	position: relative;
 }
 
@@ -1233,3 +1233,41 @@ div#block-block-11 {
 
 /*End Polio Pages*/
 /*****************/
+.software-bundle {
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #999;
+	border-bottom-color: #999;
+	margin-top: 10px;
+	padding-left: 20px;
+
+}
+.software-bundle .software-bundle-text {
+	float: left;
+	width: 500px;
+}
+.software-bundle .software-bundle-link {
+	float: left;
+	margin-top: 50px;
+}
+.clear-left {
+	clear: left;
+}
+.software-wrapper {
+	width: 700px;
+}
+
+.software-download-description {
+	color: rgb(109, 108, 108);
+	font-size: 15px;
+}
+
+.software-download-description p {
+	margin: 0px;
+}
+.software-wrapper #software-gif {
+	height: 540px;
+	width: 740px;
+}
