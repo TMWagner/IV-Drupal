@@ -1262,9 +1262,9 @@ div#block-block-11 {
 .clear-left {
 	clear: left;
 }
-.software-wrapper {
+/*.software-wrapper {
 	width: 700px;
-}
+}*/
 
 .software-download-description {
 	color: rgb(109, 108, 108);
@@ -1274,7 +1274,11 @@ div#block-block-11 {
 .software-download-description p {
 	margin: 0px;
 }
-.software-wrapper #software-gif {
+.software-page-wrapper #software-gif {
 	height: 540px;
 	width: 740px;
+}
+
+.software220-wrap p {
+	margin: 0px;
 }
