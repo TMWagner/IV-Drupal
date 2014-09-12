@@ -1072,10 +1072,6 @@ i.fa.fa-external-link {
  */
 
 
-div#block-block-11 {
-	clear: left;
-}
-
 .node-news-and-events .field.field-name-field-news-date.field-type-datetime.field-label-hidden {
 	border-left: thin solid #808080;
 	float: left;
@@ -1281,7 +1277,7 @@ div#block-block-11 {
 	margin: 0px;
 }
 .software-page-wrapper #software-gif {
-	height: 540px;
+	height: 575px;
 	width: 740px;
 }
 
