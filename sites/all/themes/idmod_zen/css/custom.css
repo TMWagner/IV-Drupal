@@ -66,6 +66,10 @@ a.views-more-link:after {
 	vertical-align: middle;
 }
 
+.sidebar h2 {
+	text-transform: uppercase;
+}
+
 
 
 .panel-pane {
@@ -1281,4 +1285,11 @@ div#block-block-11 {
 
 .software220-wrap p {
 	margin: 0px;
+}
+
+
+.software220-wrap h4 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+
 }
