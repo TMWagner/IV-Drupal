@@ -524,6 +524,11 @@ div#p3_box2 {
  * CSS for Panel Footer
  */
 
+
+.footer_block .list-title {
+	text-transform: uppercase;
+}
+
 #footer_header {
 	text-align: center;
 	padding-top: 20px;
