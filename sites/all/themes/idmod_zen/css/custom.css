@@ -865,6 +865,18 @@ div.team-name-info a {
  */
 
 
+.node-publications .field-label {
+	clear: left;
+	margin-top: 10px;
+}
+
+
+
+
+.node-publications .field-items p {
+	margin: 0px
+}
+
 .field.field-name-publication-name.field-type-ds.field-label-hidden {
 	border-right: thin solid #808080;
 	float: left;
