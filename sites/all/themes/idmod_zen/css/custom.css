@@ -910,9 +910,12 @@ div.team-name-info a {
 }
 
 
-.view-mode-full .field-items {
+.view-mode-full .field-items,
+.view-mode-views_display .field-items {
 	float: left;
 }
+
+
 
 .view-mode-full_node .field-name-read-online {
 	clear: left;
