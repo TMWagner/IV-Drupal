@@ -65,11 +65,12 @@ Drupal.behaviors.my_custom_behavior = {
             height: "330px",  
           }, 200 );
       }
-                
+      
+      /* This needs to match CSS */           
       function hovOut(evt) {
         $(".p2_rollup").animate({
-            top: "260px",
-            height: "60px",  
+            top: "265px",
+            height: "50px",  
           }, 200 );
       }
       
