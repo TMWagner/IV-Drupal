@@ -830,10 +830,12 @@ img.media-image,
 
 /*Research - left sidebar*/
 
-.block-views h2 {
+
+/*KILLED THIS: redundent */ 
+/*.block-views h2 {
 	font-size: 22px;
 	margin: 0 0 10px 0px;
-}
+}*/
 td.col-1.col-first {
 	position: relative;
 }

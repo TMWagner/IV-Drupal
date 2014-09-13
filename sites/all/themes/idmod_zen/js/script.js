@@ -72,6 +72,19 @@ Drupal.behaviors.my_custom_behavior = {
             height: "60px",  
           }, 200 );
       }
+      
+      $(".p2_rollup.research").click(function(){
+        window.location = 'research';
+      });
+      $(".p2_rollup.publications").click(function(){
+        window.location = 'publications';
+      });      
+      
+      $(".p2_rollup.software").click(function(){
+        window.location = 'software';
+      });      
+      
+      
     
     $("#accordion > li > div").hover(function() {
       if(false == $(this).next().is(':visible')) {
@@ -79,9 +92,6 @@ Drupal.behaviors.my_custom_behavior = {
       }
       $(this).next().slideToggle(300);
     });
-    
-    
-    
     
     
 
@@ -122,13 +132,7 @@ Drupal.behaviors.my_custom_behavior = {
         }, "slow" );
     }
          
-    ////Move the top back town and height back to 0 to hide it
-    //function teamOut(evt) {
-    //  $(".team-name-info").animate({
-    //      top: "170px",
-    //      height: "0px",  
-    //    }, 200 );
-    //}
+
     
     function stripTrailingSlash(str) {
       if(str.substr(-1) == '/') {
