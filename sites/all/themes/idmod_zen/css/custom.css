@@ -912,6 +912,7 @@ div.team-name-info a {
 
 .view-mode-full .field-items,
 .view-mode-views_display .field-items {
+	clear: left;
 	float: left;
 }
 

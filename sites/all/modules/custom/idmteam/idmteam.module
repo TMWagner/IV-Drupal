@@ -14,8 +14,6 @@
  */
 
 
-
-
 /**
  * Implements hook_block_info().
  *
@@ -222,7 +220,6 @@ function idmteam_block_view($delta = '') {
 // Ref: https://api.drupal.org/api/views/views.module/function/views_embed_view/7
 function idmteam_contents($which_block) {
 
-  $debug_block = $which_block;
   switch ($which_block) {
     case 'idmteam_author':
       // Load currant node object
@@ -237,8 +234,31 @@ function idmteam_contents($which_block) {
         $views_embed = views_embed_view('idm_author', $display_id = 'single_author', $node->nid);
       }
       
-      $name = $node->field_publications_author['und'][0]['entity']->label;
-      $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];
+      //  We may not have an "Active" author...
+      //  Need to loop through to find the first user not flagged as nonactive....
+      
+      $author_uid = $node->field_publications_author['und'][0]['entity']->uid;
+      $author = user_load($author_uid);
+      
+      if (in_array ( 'Inactive', $author->roles )) {
+        // Loop through array in field_publications till we find the first active user
+        // NOTE: We are NOT looping through th author role array. 
+        $key = 1;
+        while (isset($node->field_publications_author['und'][$key])) {
+          $author_uid = $node->field_publications_author['und'][$key]['entity']->uid;
+          $author = user_load($author_uid);
+          if (! in_array ( 'Inactive', $author->roles )) {
+            $name = $node->field_publications_author['und'][$key]['entity']->label;
+            $title = $node->field_publications_author['und'][$key]['entity']->field_profile_title['und'][0]['value'];            
+            break;  
+          }    
+          ++$key;
+        }  
+      }
+      else {     
+        $name = $node->field_publications_author['und'][0]['entity']->label;
+        $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];         
+      }
       
       if (isset($node->field_publications_link['und'][0]['title'])) {
         $form['publication_name'] = array(
