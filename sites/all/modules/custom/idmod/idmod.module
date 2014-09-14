@@ -172,11 +172,9 @@ function idmod_entity_view_alter(&$build, $type) {
           $author = user_load($author_uid);
           if (in_array ( 'Inactive', $author->roles )) {
             // This author is "inactive"
-            
             $author_name_plain = $build['field_publications_author']['#object']->field_publications_author['und'][$key]['entity']->label;
             $build['field_publications_author'][$key]['#markup'] = $author_name_plain;
-          }
-          
+          } 
           $build['field_publications_author'][$key]['#markup'] .= ',';
         }
         ++$key;

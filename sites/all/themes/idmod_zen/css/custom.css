@@ -1315,3 +1315,15 @@ i.fa.fa-external-link {
     bottom: 60px;
     position: relative;
 }
+
+/* Career */
+
+.view-mode-full p {
+	margin: 0px;
+}
+
+figure {
+	margin: 0;
+	font-size: 80%;
+	padding-left: 10px;
+}
