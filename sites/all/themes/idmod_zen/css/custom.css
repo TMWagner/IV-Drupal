@@ -748,6 +748,9 @@ div#menu-level2 {
 	margin-bottom: 0;
 }
 
+.research-areas > ul {
+	margin: 0 0 10px;
+}
 #tile-wrap {
 	margin-left: 0px;
 	margin-right: auto;
