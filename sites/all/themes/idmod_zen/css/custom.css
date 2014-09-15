@@ -743,6 +743,11 @@ div#menu-level2 {
 }
 
 /* CSS for Research page */
+
+.node-research h4 {
+	margin-bottom: 0;
+}
+
 #tile-wrap {
 	margin-left: 0px;
 	margin-right: auto;
