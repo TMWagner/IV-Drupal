@@ -886,6 +886,14 @@ div.team-name-info a {
  */
 
 
+.pub-title h3 {
+	margin: 5px;
+}
+
+.pub-title {
+	float: left;
+}
+
 .node-publications .field-label {
 	clear: left;
 	margin-top: 10px;
