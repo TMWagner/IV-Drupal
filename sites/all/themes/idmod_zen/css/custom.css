@@ -648,8 +648,10 @@ div#picture-group {
 	float: right;
 }
 
-#picture-group img {
-	margin-left: 10px}
+div#picture-group {
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
 
 .team-items {
 	padding: 0 10px 0 10px;
