@@ -30,7 +30,7 @@ h3 {
 
 h1 {
 	font-size: 40px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 h4 {
@@ -47,6 +47,10 @@ h5 {
 
 div#content {
 	margin-bottom: 60px;
+}
+
+#page-title  {
+	margin-top: 48px;
 }
 
 
@@ -168,7 +172,7 @@ div#fp-hero-tagline {
 
 #p3_block_a .view-content {
 	margin: 10px;
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-right: 10px;
 }
 
