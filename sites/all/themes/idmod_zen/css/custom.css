@@ -73,6 +73,7 @@ a.views-more-link:after {
 figcaption {
 	text-align: center;
 	font-style: italic;
+	margin-bottom: 10px;
 }
 
 .panel-pane {
@@ -1333,7 +1334,7 @@ div.dl-button a {
 div.dl-button {
 	text-decoration:none;
 	text-align:center;
-	padding:5px 10px 2px 5px;
+	padding:10px 10px 10px 10px;
 	border:none;
 	/* font:15px Arial, Helvetica, sans-serif; 
  font-weight:bold; */
