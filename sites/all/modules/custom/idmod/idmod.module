@@ -168,7 +168,7 @@ function idmod_entity_view_alter(&$build, $type) {
     $key = 0;
     // Set flag for foreign author
     $foreign_authors = $build['#node']->field_publication_foreign_author['und'][0]['value'];
-    $foreign_authors_string = ($foreign_authors) ? t('IDM researchers included amoung authors: ') : NULL;
+    $foreign_authors_string = ($foreign_authors) ? t('IDM researchers included among the authors: ') : NULL;
 
       // Loop through authors listed
       while (isset($build['field_publications_author'][$key])) {
