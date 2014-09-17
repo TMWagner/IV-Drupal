@@ -282,7 +282,6 @@ div.accordian-menu {
 
 #accordion li {
 	display: block;
-	font-weight: bold;
 	margin: 1px;
 	height: 78px;
 	border-bottom: 1px solid #646362;
