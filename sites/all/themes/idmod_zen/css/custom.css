@@ -1172,6 +1172,10 @@ i.fa.fa-external-link {
 
 /*Polio pages*/
 
+p.sub-team-name {
+	margin-top: 0px;
+}
+
 .node-type-polio .field-name-title-field {
 	margin-top: 0;
 	padding-top: 0;
