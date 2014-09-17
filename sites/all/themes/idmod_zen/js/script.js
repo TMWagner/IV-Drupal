@@ -78,7 +78,7 @@ Drupal.behaviors.my_custom_behavior = {
         window.location = 'research';
       });
       $(".p2_rollup.publications").click(function(){
-        window.location = 'publications';
+        window.location = 'node/71';
       });      
       
       $(".p2_rollup.software").click(function(){
