@@ -172,9 +172,12 @@ div#fp-hero-tagline {
 
 #p3_block_a .view-content {
 	margin: 10px;
-	padding-top: 30px;
+	padding-top: 5px;
 	padding-right: 10px;
 }
+
+
+
 
 
 div#p3_block_a {
@@ -194,8 +197,24 @@ div#panel-4 {
 	font-size: 15px;
 }
 
-	
+.view-header > h3 {
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-top: 20px;
 }
+
+#p3_block_a .view-header {
+	margin-top: 20px;
+}
+
+#p3_block_a h3 {
+	margin-bottom: 5px;
+}
+	
+#p3_block_a p {
+	margin-top: 5px;
+}
+
 
 /**
  * Top Nav
