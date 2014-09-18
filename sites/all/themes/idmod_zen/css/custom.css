@@ -1193,8 +1193,6 @@ p.sub-team-name {
 }
 
 
-
-
 .node-type-polio .field-item.even > h1 {
     margin-top: 25px;
 		margin-bottom: 0px;
@@ -1219,6 +1217,13 @@ p.sub-team-name {
 .polio .field-content h3 {
     color: white;
 		margin-top: 20px;
+}
+
+#polio_main_table a {
+	font-size: 14px;
+}
+#polio_main_table p {
+	font-size: 14px;
 }
 
 #polio_main_table .column {
@@ -1493,4 +1498,3 @@ figure {
 	font-size: 80%;
 	padding-left: 10px;
 }
-
