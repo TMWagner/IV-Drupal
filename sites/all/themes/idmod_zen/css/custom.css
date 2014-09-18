@@ -92,6 +92,12 @@ figcaption {
 	content: "";
 }
 
+.no-bullet {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 5px;
+}
+
 
 /**
  * Home page
@@ -1483,3 +1489,4 @@ figure {
 	font-size: 80%;
 	padding-left: 10px;
 }
+
