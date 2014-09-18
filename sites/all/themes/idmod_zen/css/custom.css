@@ -748,6 +748,7 @@ div#menu-level2 {
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: .5em;
+	margin-top: 0px;
 	line-height: 1.5em;
 }
 .sidebars p {
