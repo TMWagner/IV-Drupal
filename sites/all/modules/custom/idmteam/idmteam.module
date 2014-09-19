@@ -374,6 +374,8 @@ function idmteam_team_contact($which_block) {
   // build the parameter list to pass to views.
   $key = 0;
   if (isset($node->field_research_team_lead['und'][$key])) {
+    
+    $team_lead_uid = $node->field_research_team_lead['und'][$key]['target_id'];
     // Set the first parmeter
     $taxonomy_list = $node->field_related_group_tags['und'][$key]['tid'];
     // Loop through the rest
@@ -384,7 +386,7 @@ function idmteam_team_contact($which_block) {
     }
     
     // Build the content
-    $views_embed = views_embed_view('display_team_lead', $display_id = 'team_lead', 14);
+    $views_embed = views_embed_view('display_team_lead', $display_id = 'team_lead', $team_lead_uid);
     
     $form['photos'] = array(
       '#type' => 'item',
