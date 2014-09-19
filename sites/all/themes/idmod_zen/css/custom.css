@@ -691,7 +691,8 @@ div#picture-group {
 }
 .view-display-team-lead  {
 	font-size: 14px;
-	color: rgb(83, 83, 87);
+/*	color: rgb(83, 83, 87);*/
+	color: black;
 }
 
 
