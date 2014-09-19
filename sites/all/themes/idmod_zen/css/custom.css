@@ -51,6 +51,7 @@ div#content {
 
 #page-title  {
 	margin-top: 48px;
+	margin-bottom: 0px;
 }
 
 
@@ -926,8 +927,10 @@ div.team-name-info a {
 	margin-top: 10px;
 }
 
-
-
+/*Goofy fix to make publication item line up with listing on previous page*/
+.field-name-publications-title .field-items {
+	margin-bottom: 10px;
+}
 
 .node-publications .field-items p {
 	margin: 0px
