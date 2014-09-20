@@ -54,6 +54,9 @@ div#content {
 	margin-bottom: 0px;
 }
 
+.field-item.even > h3 {
+  margin-bottom: 5px;
+}
 
 a.read-more:after {
 	font-family: FontAwesome;
@@ -103,6 +106,23 @@ figcaption {
 	margin: 0px;
 }
 
+.field-item h3 {
+	margin-bottom: 5px;
+}
+
+.field-item h4 {
+	font-size: 18px;
+  margin: 10px 0px 5px 0px;
+	line-height: 18px;
+}
+
+.field-item > p {
+  margin: 0;
+}
+
+.field-items h4 > p {
+	margin-top: 0px;
+}
 
 /**
  * Home page
@@ -821,11 +841,72 @@ img.media-image,
 }
 
 
-/* Research - numerical Methods page */
+/* Research / numerical Methods page  */
 
+#five_box_row {
+	height:150px;
+	margin-top: 10px;
+	width: 760px;
+}
+
+.five_box_row_block {
+	background-color: #ccc;
+	box-shadow: 4px 2px 5px 0 rgba(119, 119, 119, 0.75);
+	float: left;
+	height: 135px;
+	margin-right: 20px;
+	position: relative;
+	width: 130px;
+}
+
+
+.five_box_row_block ul li {
+	list-style-type: none;
+	text-decoration: none;
+	background-color: ##0073a3;
+	color: white;
+	margin-top: 95px;
+}
+
+
+.five_box_row_block ul li a {
+	display: inline-block;
+	xborder-top: 1px solid #ffffff;
+	background: #0073a3;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #FFF;
+	text-decoration: none;
+	vertical-align: middle;
+	width: 100px;
+	text-align: center;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+.five_box_row_block ul {
+  padding: 0px;
+}
+
+
+.five_box_row_block a {
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.five_box_row_block ul li a:hover {
+	background-color: grey;
+}
+
+/*End Research landing page*/
 
 #numerical-fr {
 	height: 200px;
+	margin-top: 10px;
 	width: 760px;
 }
 
@@ -859,10 +940,11 @@ img.media-image,
 	
 }
 
+/*Remove until we need a link on the NM home page graphics
 .numerical-fr-block ul li a:hover {
 	background-color: grey;
 }
-
+*/
 
 
 .numerical-fr-block ul {
@@ -881,14 +963,11 @@ img.media-image,
 /* END: Research - numerical Methods page */
 
 
+
 /*Research - left sidebar*/
 
 
-/*KILLED THIS: redundent */ 
-/*.block-views h2 {
-	font-size: 22px;
-	margin: 0 0 10px 0px;
-}*/
+
 td.col-1.col-first {
 	position: relative;
 }
@@ -1064,9 +1143,9 @@ article.node-publications {
 
 
 
-.field-items p {
+/*.field-items p {
 	margin: 10px 0px 10px 0px;
-}
+}*/
 .view-publications .views-row {
 	border-bottom: thin solid grey;
 	margin: 10px 0px 25px 0px;
