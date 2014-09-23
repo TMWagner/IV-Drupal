@@ -1015,6 +1015,10 @@ div.team-name-info a {
 	margin: 0px
 }
 
+.node-publications .publication-author {
+  margin-bottom: 10px;
+}
+
 .field.field-name-publication-name.field-type-ds.field-label-hidden {
 	border-right: thin solid #808080;
 	float: left;

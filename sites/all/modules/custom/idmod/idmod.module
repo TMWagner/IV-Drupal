@@ -186,7 +186,7 @@ function idmod_entity_view_alter(&$build, $type) {
           if (($key == 0) && $foreign_authors) {
             $build['field_publications_author'][$key]['#markup'] = $foreign_authors_string . $build['field_publications_author'][$key]['#markup'];
           }   
-          $build['field_publications_author'][$key]['#markup'] .= ',';
+          $build['field_publications_author'][$key]['#markup'] .= ', ';
 
         }
         ++$key;
