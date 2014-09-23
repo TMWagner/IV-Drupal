@@ -1408,6 +1408,12 @@ p.sub-team-name {
 /* Software Pages */
 
 
+/* Fix for random p tag that editor throws in */
+.dl-button p {
+	display: none;
+}
+
+
 #download  a {text-decoration:none; text-align:center; 
  padding:11px 32px; 
  border:none; 
