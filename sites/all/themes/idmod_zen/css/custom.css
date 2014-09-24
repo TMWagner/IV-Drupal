@@ -1413,6 +1413,16 @@ p.sub-team-name {
 	display: none;
 }
 
+#software-gif > p {
+  margin-top: 0;
+	text-align: center;
+
+}
+
+.software-page-wrapper #software-gif {
+	height: 600px;
+	width: 740px;
+}
 
 #download  a {text-decoration:none; text-align:center; 
  padding:11px 32px; 
@@ -1557,10 +1567,7 @@ div.dl-button:hover {
 .software-download-description p {
 	margin: 0px;
 }
-.software-page-wrapper #software-gif {
-	height: 575px;
-	width: 740px;
-}
+
 
 .software220-wrap p {
 	margin: 0px;
