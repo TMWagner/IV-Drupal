@@ -5,6 +5,11 @@
   padding: 0 10px 0 10px;
 }
 
+#team-research li {
+	padding: 0px 10px;
+}
+
+
 ul#team,
 ul#team-research {
   text-transform: uppercase;
