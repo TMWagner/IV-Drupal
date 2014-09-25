@@ -156,7 +156,7 @@ Drupal.behaviors.my_custom_behavior = {
       //  This will light up the box of ANY term is in the string...
       //  In this case, we need to take the 1st term in the path name
       if (trimUrl == trimLink) {
-        $(this).css( "background-color", "rgb(82, 91, 92" );
+        $(this).css( "background-color", "rgb(82, 91, 92)" );
       }
     });
     
