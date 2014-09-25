@@ -1424,6 +1424,16 @@ p.sub-team-name {
 	width: 740px;
 }
 
+div#button1 {
+	margin-top: 45px;
+	margin-left: 20px;
+}
+
+div#button2 {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
 #download  a {text-decoration:none; text-align:center; 
  padding:11px 32px; 
  border:none; 
