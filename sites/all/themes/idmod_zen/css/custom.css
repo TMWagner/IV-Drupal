@@ -859,6 +859,12 @@ img.media-image,
 	-webkit-box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);	
 }
 
+.field-name-field-publications-image-teaser .field-item img {
+	box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
+	-moz-box-shadow: 2px 2px 10px 0px rgba(119, 119, 119, 0.75);
+	-webkit-box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
+}
+
 
 /* Research / numerical Methods page  */
 
@@ -1011,6 +1017,16 @@ div.team-name-info a {
  * format publication pages
  */
 
+
+.view-publications .ds-2col > .group-left {
+	float: left;
+	width: 220px;
+}
+
+.view-publications .ds-2col > .group-right {
+	float: left;
+	width: 700px;
+}
 
 .pub-title h3 {
 	margin: 5px 0px 0px 0px;
