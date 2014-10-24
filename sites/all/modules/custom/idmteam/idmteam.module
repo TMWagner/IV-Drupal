@@ -645,12 +645,14 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
 
       '#prefix' => '<div class="team-menu" style="clear: left">',
       '#suffix' => '</div>',
-    );    
+    );
+    
+    $view->attachment_before = drupal_render($build);
      
   }
   
   
-  $view->attachment_before = drupal_render($build);
+
 }
 
 

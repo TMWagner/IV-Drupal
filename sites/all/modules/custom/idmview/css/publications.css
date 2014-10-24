@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.inline li.publications-1,
+.inline li.research {
+  padding: 0 10px 0 10px;
+}
+
+#team-research li {
+	padding: 0px 10px;
+}
+
+
+ul#team,
+ul#team-research {
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.team-menu-wrap fieldset {
+	border: none;
+	padding: 0px;
+}
+
+.team-name-info a {
+	color: white;
+}
+
+/*TEST CODE*/
+#navigation .sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	min-width: 185px;
+}
+/*>> END Test Code <<< */

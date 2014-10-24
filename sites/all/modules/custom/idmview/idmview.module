@@ -25,4 +25,83 @@ function idmview_views_query_alter(&$view, &$query) {
 }
 
 
+/**
+ * Implement hook_views_pre_build(&$view)
+ * Purpose is preprocess Views output. 
+ */
+
+function idmview_views_pre_view(&$view, &$display_id, &$args){
+
+  //  Determine if we are going to process this view.
+  //  We don't care about $display_id
+  $publications_page = FALSE;
+
+  switch ($view->name) {
+    case 'publications':
+      $publications_page = TRUE;
+      break;
+    case 'something_else':   //Remove before flight
+      $team_page = TRUE;
+      break;
+  }
+ 
+  if ($publications_page) {
+    //Add CSS specific to this page
+    drupal_add_css(drupal_get_path('module', 'idmview') . '/css/publications.css');
+    drupal_add_js(drupal_get_path('module', 'idmview') . '/js/publications.js');
+    
+    // Wrap the "team" items so we can handle appropriately with jQuery later. 
+    $build['team'] = array(
+      '#type' => 'fieldset',
+      '#prefix' => '<div class="team-menu-wrap">',
+      '#suffix' => '</div>',
+    );
+    $build['team']['team1'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3 inline" id="team">
+                    <li class="publications-1">
+                      <a href="/team">Author</a>
+                    </li>
+                    <li class="publications-1">
+                      <a href="/team/research">Publications date</a>
+                    </li>
+                    <li class="publications-1">
+                      <a href="/team/software">Topic</a>
+                    </li>
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );
+    
+    $build['team']['team2'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3  level-3b inline hidden" id="team-research">
+                    <li id="hiv">
+                      <a href="/team/research/hiv">HIV</a>
+                    </li>
+                    <li id="malaria">
+                      <a href="/team/research/malaria">Malaria</a>
+                    </li>
+                    <li id="numerical">
+                      <a href="/team/research/numerical">Numerical Methods</a>
+                    </li>
+                    <li id="polio">
+                      <a href="/team/research/polio">Polio</a>
+                    </li>
+                    <li id="tuberculosis">
+                      <a href="/team/research/tuberculosis">Tuberculosis</a>
+                    </li>	                    
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );    
+     
+    $view->attachment_before = drupal_render($build);
+  }
+  
+}
+
+
 
