@@ -60,14 +60,17 @@
         var type = $(this).find("a").html();
         if (type == 'Author') {
           //do our stuff for Author...
-          showTopic();
+          hideTopic();
+          showAuthor();
         }        
         if (type == 'Topic') {
           //do our stuff for research...
+          hideAuthor();
           showTopic();
         }
         if (type == 'Publications date') {
           //do our stuff for Software here...
+          hideAuthor();
           hideTopic();
         }
       },
@@ -80,15 +83,30 @@
     
     $( '.team-menu-wrap' ).hoverIntent(function(){}, hideTopic, function(){});
     
+    
+    // Show / Remove Author
+    function showAuthor(){
+      $( 'ul.level-3a').removeClass( "hidden" );
+    }
+    
+    function hideAuthor() {   
+      var url = stripTrailingSlash(window.location.pathname);
+      var subUrl = url.split("/");
+      if (subUrl[2] !== 'research') {
+        $( 'ul.level-3a').addClass( "hidden" );
+      }
+    }    
+    
+    // Show / Remove Topic
     function showTopic(){
-      $( 'ul.level-3b').removeClass( "hidden" );
+      $( 'ul.level-3c').removeClass( "hidden" );
     }
     
     function hideTopic() {   
       var url = stripTrailingSlash(window.location.pathname);
       var subUrl = url.split("/");
       if (subUrl[2] !== 'research') {
-        $( 'ul.level-3b').addClass( "hidden" );
+        $( 'ul.level-3c').addClass( "hidden" );
       }
     }
     

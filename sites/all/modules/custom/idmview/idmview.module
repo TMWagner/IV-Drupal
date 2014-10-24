@@ -74,9 +74,34 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#suffix' => '</div>',
     );
     
+    $build['publications']['publications2'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
+                    <li id="hiv">
+                      <a href="/team/research/hiv">A-F</a>
+                    </li>
+                    <li id="malaria">
+                      <a href="/team/research/malaria">G-L</a>
+                    </li>
+                    <li id="numerical">
+                      <a href="/team/research/numerical">M-R</a>
+                    </li>
+                    <li id="polio">
+                      <a href="/team/research/polio">S-Z</a>
+                    </li>                  
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    ); 
+    
+    
+    
+    
+    
     $build['publications']['publications3'] = array(
       '#type' => 'item',
-      '#markup' => '<ul class="level-3  level-3b inline hidden" id="team-research">
+      '#markup' => '<ul class="level-3  level-3c inline hidden" id="team-research">
                     <li id="hiv">
                       <a href="/team/research/hiv">HIV</a>
                     </li>
