@@ -63,7 +63,7 @@ div#content {
 }
 
 .field-item.even > h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 a.read-more:after {
@@ -1017,6 +1017,18 @@ div.team-name-info a {
  * format publication pages
  */
 
+.field.field-name-field-publications-image-teaser.field-type-image.field-label-hidden {
+	padding-top: 30px;
+}
+
+.field-name-read-online-link .field-items {
+	margin-bottom: 20px;
+}
+
+.team-menu .form-item.form-type-item {
+	margin-bottom: 10px;
+}
+
 
 .view-publications .ds-2col > .group-left {
 	float: left;
@@ -1052,6 +1064,7 @@ div.team-name-info a {
 
 .node-publications .publication-author {
   margin-bottom: 10px;
+	color: grey;
 }
 
 .field.field-name-publication-name.field-type-ds.field-label-hidden {
@@ -1176,7 +1189,7 @@ article.node-publications {
 }
 .field-name-title-field {
 	clear: left;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding-top: 5px;
 }
 
