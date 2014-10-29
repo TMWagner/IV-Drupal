@@ -78,16 +78,16 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
                     <li id="hiv">
-                      <a href="/publications/af">A-F</a>
+                      <a href="/publications/sub/af">A-F</a>
                     </li>
                     <li id="malaria">
-                      <a href="/publications/gl">G-L</a>
+                      <a href="/publications/sub/gl">G-L</a>
                     </li>
                     <li id="numerical">
-                      <a href="/publications/mr">M-R</a>
+                      <a href="/publications/sub/mr">M-R</a>
                     </li>
                     <li id="polio">
-                      <a href="/publications/sz">S-Z</a>
+                      <a href="/publications/sub/sz">S-Z</a>
                     </li>                  
                   </ul>',
 
