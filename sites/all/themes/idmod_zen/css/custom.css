@@ -1017,6 +1017,10 @@ div.team-name-info a {
  * format publication pages
  */
 
+.field.field-name-field-publications-author.field-type-entityreference.field-label-hidden {
+	color: grey;
+}
+
 .field.field-name-field-publications-image-teaser.field-type-image.field-label-hidden {
 	padding-top: 30px;
 }
@@ -1024,9 +1028,8 @@ div.team-name-info a {
 .field-name-read-online-link .field-items {
 	margin-bottom: 20px;
 }
-
-.team-menu .form-item.form-type-item {
-	margin-bottom: 10px;
+.team-menu-wrap fieldset > .fieldset-wrapper {
+  margin-bottom: 10px;
 }
 
 
