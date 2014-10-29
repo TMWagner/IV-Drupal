@@ -60,13 +60,13 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#type' => 'item',
       '#markup' => '<ul class="level-3 inline" id="team">
                     <li class="publications-1">
-                      <a href="/team">Author</a>
+                      <a href="#">Author</a>
                     </li>
                     <li class="publications-1">
-                      <a href="/team/research">Publications date</a>
+                      <a href="publications">Publications date</a>
                     </li>
                     <li class="publications-1">
-                      <a href="/team/software">Topic</a>
+                      <a href="#">Topic</a>
                     </li>
                   </ul>',
 
@@ -78,16 +78,16 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
                     <li id="hiv">
-                      <a href="/publications-af">A-F</a>
+                      <a href="/publications/af">A-F</a>
                     </li>
                     <li id="malaria">
-                      <a href="/publications-gl">G-L</a>
+                      <a href="/publications/gl">G-L</a>
                     </li>
                     <li id="numerical">
-                      <a href="/publications-mr">M-R</a>
+                      <a href="/publications/mr">M-R</a>
                     </li>
                     <li id="polio">
-                      <a href="/publications-sz">S-Z</a>
+                      <a href="/publications/sz">S-Z</a>
                     </li>                  
                   </ul>',
 
@@ -103,19 +103,19 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3c inline hidden" id="team-research">
                     <li id="hiv">
-                      <a href="/team/research/hiv">HIV</a>
+                      <a href="/publications/hiv">HIV</a>
                     </li>
                     <li id="malaria">
-                      <a href="/team/research/malaria">Malaria</a>
+                      <a href="/publications/malaria">Malaria</a>
                     </li>
                     <li id="numerical">
-                      <a href="/team/research/numerical">Numerical Methods</a>
+                      <a href="/publications/numerical">Numerical Methods</a>
                     </li>
                     <li id="polio">
-                      <a href="/team/research/polio">Polio</a>
+                      <a href="/publications/polio">Polio</a>
                     </li>
                     <li id="tuberculosis">
-                      <a href="/team/research/tuberculosis">Tuberculosis</a>
+                      <a href="/publications/tuberculosis">Tuberculosis</a>
                     </li>	                    
                   </ul>',
 
