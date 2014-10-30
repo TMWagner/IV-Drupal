@@ -78,16 +78,16 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
                     <li id="hiv">
-                      <a href="/publications/sub/af">A-F</a>
+                      <a href="/publications/author/af">A-F</a>
                     </li>
                     <li id="malaria">
-                      <a href="/publications/sub/gl">G-L</a>
+                      <a href="/publications/author/gl">G-L</a>
                     </li>
                     <li id="numerical">
-                      <a href="/publications/sub/mr">M-R</a>
+                      <a href="/publications/author/mr">M-R</a>
                     </li>
                     <li id="polio">
-                      <a href="/publications/sub/sz">S-Z</a>
+                      <a href="/publications/author/sz">S-Z</a>
                     </li>                  
                   </ul>',
 
@@ -99,19 +99,19 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3c inline hidden" id="team-research">
                     <li id="hiv">
-                      <a href="/publications/sub/hiv">HIV</a>
+                      <a href="/publications/topic/hiv">HIV</a>
                     </li>
                     <li id="malaria">
-                      <a href="/publications/sub/malaria">Malaria</a>
+                      <a href="/publications/topic/malaria">Malaria</a>
                     </li>
                     <li id="numerical">
-                      <a href="/publications/sub/numerical">Numerical Methods</a>
+                      <a href="/publications/topic/numerical">Numerical Methods</a>
                     </li>
                     <li id="polio">
-                      <a href="/publications/sub/polio">Polio</a>
+                      <a href="/publications/topic/polio">Polio</a>
                     </li>
                     <li id="tuberculosis">
-                      <a href="/publications/sub/tuberculosis">Tuberculosis</a>
+                      <a href="/publications/topic/tuberculosis">Tuberculosis</a>
                     </li>	                    
                   </ul>',
 
