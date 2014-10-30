@@ -95,10 +95,6 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#suffix' => '</div>',
     ); 
     
-    
-    
-    
-    
     $build['publications']['publications3'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3c inline hidden" id="team-research">
@@ -127,6 +123,4 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
   }
   
 }
-
-
 
