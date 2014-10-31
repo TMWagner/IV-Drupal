@@ -59,12 +59,13 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     $build['publications']['publications1'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3 inline" id="team">
+                    <li class="publications-1" id="publications">
+                      <a href="/publications">Publications date</a>
+                    </li>      
                     <li class="publications-1" id="author">
                       <a href="/publications/author">Author</a>
                     </li>
-                    <li class="publications-1" id="publications">
-                      <a href="/publications">Publications date</a>
-                    </li>
+
                     <li class="publications-1" id="topic">
                       <a href="/publications/topic">Topic</a>
                     </li>
