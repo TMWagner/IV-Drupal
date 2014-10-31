@@ -59,14 +59,14 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     $build['publications']['publications1'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3 inline" id="team">
-                    <li class="publications-1">
-                      <a href="#">Author</a>
+                    <li class="publications-1" id="author">
+                      <a href="/publications">Author</a>
                     </li>
-                    <li class="publications-1">
-                      <a href="publications">Publications date</a>
+                    <li class="publications-1" id="publications">
+                      <a href="/publications">Publications date</a>
                     </li>
-                    <li class="publications-1">
-                      <a href="#">Topic</a>
+                    <li class="publications-1" id="topic">
+                      <a href="/publications">Topic</a>
                     </li>
                   </ul>',
 
@@ -77,16 +77,16 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     $build['publications']['publications2'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
-                    <li id="hiv">
+                    <li id="af">
                       <a href="/publications/author/af">A-F</a>
                     </li>
-                    <li id="malaria">
+                    <li id="gl">
                       <a href="/publications/author/gl">G-L</a>
                     </li>
-                    <li id="numerical">
+                    <li id="mr">
                       <a href="/publications/author/mr">M-R</a>
                     </li>
-                    <li id="polio">
+                    <li id="sz">
                       <a href="/publications/author/sz">S-Z</a>
                     </li>                  
                   </ul>',
