@@ -47,6 +47,17 @@
         showAuthor();
       }
       
+      
+      //  LIGHT up Author if we are on any of those subpages
+      if ( trimUrl == "topic" ) {
+        $( '#topic' ).css( "background-color", "rgb(227, 227, 227" );
+        
+        //  Assume there is a third parameter... Light that one up too.
+        console.log( "Third parameter is: ", trimUrl2);
+        showTopic();
+      }      
+      
+      
       // If link parameter 2 is set, find that element and light it up.
       if (typeof trimLink2 === 'string') {  
         $( '#' + trimLink2 ).css( "background-color", "rgb(227, 227, 227" );
@@ -106,9 +117,52 @@
       config
     );
     
-    //  This removes sub menu when hoving away from 1st level. 
-    $( '.team-menu-wrap' ).hoverIntent(function(){}, hideTopic, function(){});
+    //  This will fire when we move the mouse away from any 1st Level item.
+    //    Hide topic sublevels Unless it should be there to support the menu path.
+    //    This should function exactly like the function above - except we cant just show/hide,
+    //    we have to figure out which one to show/hide based on the path. 
+    //$( '.team-menu-wrap' ).hoverIntent(function(){}, hideTopic, function(){});
     
+    $( '.team-menu-wrap' ).hoverIntent(
+      function(){},
+      
+      //  Instead of just hideTopic
+      function() {
+        $('.publications-1').each(function(index) {
+          //  Begin Paste 
+          var link = $(this).find("a").attr('href');
+          var url = stripTrailingSlash(window.location.pathname);
+          var subUrl = url.split("/");
+                
+          var subLink = link.split("/");
+          var trimUrl = subUrl[2];
+          var trimLink = subLink[2];
+             
+          console.log("this is the url: ", url);
+          console.log("trim URL: ", trimUrl);
+          
+          if (typeof trimUrl === "undefined") {
+            hideAuthor();
+            hideTopic();
+          }
+          
+          if (trimUrl == "author") {
+            showAuthor();
+          }
+          
+          if (trimUrl == "topic") {
+            hideAuthor();
+            showTopic();
+          }
+          
+          
+          //  End Paste
+          
+        });
+        
+      }
+      
+    );
     
     // Show / Remove Author
     function showAuthor(){
