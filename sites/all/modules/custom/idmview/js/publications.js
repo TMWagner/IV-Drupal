@@ -148,14 +148,14 @@
           
           if (trimUrl == "author") {
             showAuthor();
+            hideTopic();
           }
           
           if (trimUrl == "topic") {
             hideAuthor();
             showTopic();
           }
-          
-          
+
           //  End Paste
           
         });
