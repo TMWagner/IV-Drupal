@@ -49,6 +49,7 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     //Add CSS specific to this page
     drupal_add_css(drupal_get_path('module', 'idmview') . '/css/publications.css');
     drupal_add_js(drupal_get_path('module', 'idmview') . '/js/publications.js');
+
     
     // Wrap the "team" items so we can handle appropriately with jQuery later. 
     $build['publications'] = array(
@@ -65,7 +66,6 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
                     <li class="publications-1" id="author">
                       <a href="/publications/author">Author</a>
                     </li>
-
                     <li class="publications-1" id="topic">
                       <a href="/publications/topic">Topic</a>
                     </li>
