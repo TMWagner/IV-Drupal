@@ -95,6 +95,7 @@ scripts[] = sf-menu/js/superfish.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[navigation2]    = Secondary navigation
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
