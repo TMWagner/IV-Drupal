@@ -125,6 +125,15 @@ figcaption {
 	content: "";
 }
 
+.field-item .fa-home:after {
+	content: "\f015";
+}
+
+.field-item .fa-home:before {
+	content: "";
+}
+
+
 .no-bullet {
 	list-style-type: none;
 	margin: 0px;
@@ -288,22 +297,34 @@ div#panel-4 {
  * Top Nav
  */
 
-nav#main-menu {
+div#main-menu-home {
+	float: left;
+	font-size: 20px;
+	margin-left: 20px;
+	width: 200px;
+}
+
+a.menu__link {
+	margin-left: 10px;
+}
+
+div.menu-block-1 {
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-bottom: 11px;  /* push the next item down a bit   */
+	margin-top: 2px;
 }
-#main-menu li {
+.menu-block-1 li {
 	display: inline;
 	border-left: thin solid white;
 }
 
-#main-menu li.first {
+.menu-block-1 li.first {
 	border-left: hidden;
 	padding-right: 30px;
 }
 
-#main-menu li:nth-child(2) {
+.menu-block-1  li:nth-child(2) {
 	border-left: hidden;
 }
 
@@ -312,8 +333,7 @@ nav#main-menu {
 }
 
 
-
-#main-menu .links a {
+.menu-block-1 .links a {
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -328,8 +348,6 @@ nav#main-menu {
 .breadcrumb {
 	margin-left: 230px;
 	margin-top: 10px;
-
-
 }
 
 
