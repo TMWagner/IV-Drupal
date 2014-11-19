@@ -62,12 +62,14 @@ nav#main-menu {
 
 
 
-#fixed-header a {
+#fixed-header a,
+#float-header a {
   color: #cdcecf;
   text-decoration: none;
 }
 
-#fixed-header a:hover {
+#fixed-header a:hover,
+#float-header a:hover {
   color: white;
   text-decoration: none;
 }

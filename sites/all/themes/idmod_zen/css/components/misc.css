@@ -148,6 +148,7 @@
   margin: 0;
   padding: 0;
   text-align: left; /* LTR */
+  height: 3px;
 }
 #navigation .links li,
 #navigation .menu li {
