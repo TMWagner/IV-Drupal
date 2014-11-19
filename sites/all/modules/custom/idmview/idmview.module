@@ -25,4 +25,128 @@ function idmview_views_query_alter(&$view, &$query) {
 }
 
 
+/**
+ * Implement hook_views_pre_build(&$view)
+ * Purpose is preprocess Views output. 
+ */
+
+function idmview_views_pre_view(&$view, &$display_id, &$args){
+
+  //  Determine if we are going to process this view.
+  //  We don't care about $display_id
+  $publications_page = FALSE;
+
+  switch ($view->name) {
+    case 'publications':
+      $publications_page = TRUE;
+      break;
+    case 'something_else':   //Remove before flight
+      $team_page = TRUE;
+      break;
+  }
+ 
+  if ($publications_page) {
+    //Add CSS specific to this page
+    drupal_add_css(drupal_get_path('module', 'idmview') . '/css/publications.css');
+    drupal_add_js(drupal_get_path('module', 'idmview') . '/js/publications.js');
+
+    
+    // Wrap the "team" items so we can handle appropriately with jQuery later. 
+    $build['publications'] = array(
+      '#type' => 'fieldset',
+      '#prefix' => '<div class="team-menu-wrap">',
+      '#suffix' => '</div>',
+    );
+    $build['publications']['publications1'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3 inline" id="team">
+                    <li class="publications-1" id="publications">
+                      <a href="/publications">Publications date</a>
+                    </li>      
+                    <li class="publications-1" id="author">
+                      <a href="/publications/author">Author</a>
+                    </li>
+                    <li class="publications-1" id="topic">
+                      <a href="/publications/topic">Topic</a>
+                    </li>
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );
+    
+    
+    $build['publications']['publications2'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
+                    <li id="af">
+                      <a href="/publications/author/af">A-F</a>
+                    </li>
+                    <li id="gl">
+                      <a href="/publications/author/gl">G-L</a>
+                    </li>
+                    <li id="mr">
+                      <a href="/publications/author/mr">M-R</a>
+                    </li>
+                    <li id="sz">
+                      <a href="/publications/author/sz">S-Z</a>
+                    </li>                  
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );
+    
+    
+    $build['publications']['publications3'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3  level-3b inline hidden" id="team-research">
+                    <li id="2011">
+                      <a href="/publications/author/af">2011</a>
+                    </li>
+                    <li id="2012">
+                      <a href="/publications/author/gl">2012</a>
+                    </li>
+                    <li id="2013">
+                      <a href="/publications/author/mr">2013</a>
+                    </li>
+                    <li id="2014">
+                      <a href="/publications/author/sz">2014</a>
+                    </li>                  
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );     
+    
+    
+    
+    $build['publications']['publications4'] = array(
+      '#type' => 'item',
+      '#markup' => '<ul class="level-3  level-3c inline hidden" id="team-research">
+                    <li id="hiv">
+                      <a href="/publications/topic/hiv">HIV</a>
+                    </li>
+                    <li id="malaria">
+                      <a href="/publications/topic/malaria">Malaria</a>
+                    </li>
+                    <li id="numerical">
+                      <a href="/publications/topic/numerical">Numerical Methods</a>
+                    </li>
+                    <li id="polio">
+                      <a href="/publications/topic/polio">Polio</a>
+                    </li>
+                    <li id="tuberculosis">
+                      <a href="/publications/topic/tuberculosis">Tuberculosis</a>
+                    </li>	                    
+                  </ul>',
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );    
+     
+    $view->attachment_before = drupal_render($build);
+  }
+  
+}
 
