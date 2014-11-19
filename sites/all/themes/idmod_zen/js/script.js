@@ -58,13 +58,40 @@ Drupal.behaviors.my_custom_behavior = {
             height: "320px",  
           }, 200 );
       }
-           
-      function hovRollup(evt) {
-        $(this).animate({
+      
+      //Apparently this isn't being used...   
+      //function hovRollup(evt) {
+      //  $(this).animate({
+      //      top: "0px",
+      //      height: "330px",  
+      //    }, 200 );
+      //}
+      
+      
+      /*  Animate Research page boxes
+       *  Start with background color
+       *  Then move next div up over it.
+       */
+      
+      $(function() {
+        $(".five_box_960row_block").hoverIntent(fiveBoxHovIn, function(){});
+        $(".rollup").mouseleave(fiveBoxHovOut);   
+      });
+      
+      function fiveBoxHovIn(evt) {
+        $(this).find(".rollup").animate({
             top: "0px",
-            height: "330px",  
+            height: "180px",  
           }, 200 );
+        //$(this).find(".rollup").css( "background-color", "rgb(82, 91, 92)" );
       }
+      
+      function fiveBoxHovOut(evt) {
+        $(".rollup").animate({
+            top: "180px",
+            height: "0px",  
+          }, 200 );
+      }      
       
       /* This needs to match CSS */           
       function hovOut(evt) {
