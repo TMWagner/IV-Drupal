@@ -48,7 +48,7 @@
       }
       
       
-      //  LIGHT up Author if we are on any of those subpages
+      //  LIGHT up Topic if we are on any of those subpages
       if ( trimUrl == "topic" ) {
         $( '#topic' ).css( "background-color", "rgb(227, 227, 227" );
         
@@ -62,12 +62,7 @@
       if (typeof trimLink2 === 'string') {  
         $( '#' + trimLink2 ).css( "background-color", "rgb(227, 227, 227" );
       }
-      //
-      //
-      //console.log("this is the url: ", url);
-      //console.log("this is the link: ", link);
-      //console.log("trim URL: ", trimUrl);
-      //console.log("trim Link: ", trimLink);
+    
       
       // If link parameter 2 is set, find that element and light it up.
       if (typeof trimLink2 === 'string') {
@@ -95,18 +90,24 @@
     $( 'li.publications-1' ).hoverIntent(
       function() {
         var type = $(this).find("a").html();
+        console.log("Button is ", type);
+        
+        
         if (type == 'Author') {
           //do our stuff for Author...
           hideTopic();
+          hideDate();
           showAuthor();
         }        
         if (type == 'Topic') {
           //do our stuff for research...
           hideAuthor();
+          hideDate();
           showTopic();
         }
         if (type == 'Publications date') {
           //do our stuff for Software here...
+          showDate();
           hideAuthor();
           hideTopic();
         }
@@ -144,22 +145,24 @@
           if (typeof trimUrl === "undefined") {
             hideAuthor();
             hideTopic();
+            hideDate();
           }
           
           if (trimUrl == "author") {
             showAuthor();
             hideTopic();
+            hideDate();
           }
           
           if (trimUrl == "topic") {
             hideAuthor();
+            hideDate();
             showTopic();
           }
-
+          
           //  End Paste
           
-        });
-        
+        });    
       }
       
     );
@@ -172,10 +175,27 @@
     function hideAuthor() {   
       var url = stripTrailingSlash(window.location.pathname);
       var subUrl = url.split("/");
+      console.log( "Hide Author parm is: ", subUrl);
       if (subUrl[2] !== 'research') {
         $( 'ul.level-3a').addClass( "hidden" );
       }
     }    
+    
+    // Show / Remove Publication date
+    function showDate(){
+      $( 'ul.level-3b').removeClass( "hidden" );
+    }
+
+    function hideDate() {   
+      var url = stripTrailingSlash(window.location.pathname);
+      var subUrl = url.split("/");
+      
+      console.log( "Hide Date parm is: ", subUrl);
+      if (subUrl[2] !== 'publications') {
+        $( 'ul.level-3b').addClass( "hidden" );
+      }
+    }     
+    
     
     // Show / Remove Topic
     function showTopic(){
