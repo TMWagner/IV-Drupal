@@ -293,6 +293,34 @@ div#panel-4 {
 }
 
 
+.block.block-views.last.odd {
+	bottom: 25px;
+	float: left;
+	position: relative;
+	width: 100px;
+}
+
+.search-result-type {
+	color: grey;
+	margin-top: 10px;
+}
+
+.search-result-body>p {
+	margin-top: 0px;
+}
+
+
+/*Hide the block title*/
+#block-views-10c3c437f35292fdb6abea8568f26848 .views-exposed-form label {
+	font-weight: bold;
+	display: none;
+}
+
+
+input#edit-search-api-views-fulltext {
+	width: 200px;
+}
+
 /**
  * Top Nav
  */
@@ -952,11 +980,9 @@ img.media-image,
 	padding-right: 15px;
 	
 }
-
 .five_box_row_block ul {
   padding: 0px;
 }
-
 
 .five_box_row_block a {
 	font-size: 14px;
@@ -967,7 +993,77 @@ img.media-image,
 	background-color: grey;
 }
 
-/*End Research landing page*/
+
+
+#five_box_960row {
+	height:150px;
+	margin-top: 10px;
+	width: 960px;
+}
+
+.five_box_960row_block {
+	background-color: #ccc;
+	box-shadow: 4px 2px 5px 0 rgba(119, 119, 119, 0.75);
+	float: left;
+	height: 180px;
+	margin-right: 10px;
+	position: relative;
+	width: 180px;
+}
+
+
+/* CSS to Center multiline text vertically and horizontally.
+ * CSS for 5 block layout
+ */
+
+/*Not sure this does anything...*/
+.fivebox_wrapper {
+	position: relative;
+}
+
+.block_content {
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	width: 135px;
+	height: 84px;
+	display: table;
+}
+
+.block_content h3 {
+	color: white;
+  display: table-cell;
+	font-size: 25px;
+  vertical-align: middle; 
+  text-align: center; 
+}
+
+
+
+.rollup {
+	position: absolute;
+	width: 180px;
+	height: 0px;
+	display: block;
+	top: 180px;  /* initial position */
+	z-index: 4;
+	/*background-color: rgba(10, 110, 160, 0.60);*/
+	background-color: grey;
+	overflow: hidden;
+}
+
+.rollup p {
+	margin: 0px;
+}
+
+/* End CSS for 5 block Full page layout
+ */
+
+
+
+
+
+
 
 #numerical-fr {
 	height: 200px;
