@@ -65,8 +65,8 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
                       <a href="/publications/author">Author</a>
                     </li>
                     
-                    <li class="publications-1" id="publications">
-                      <a href="/publications">Date</a>
+                    <li class="publications-1" id="date">
+                      <a href="/publications/date">Date</a>
                     </li>                     
                     
                     

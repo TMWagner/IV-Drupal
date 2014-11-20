@@ -48,6 +48,17 @@
       }
       
       
+      
+      //  LIGHT up Date if we are on any of those subpages
+      if ( trimUrl == "date" ) {
+        $( '#date' ).css( "background-color", "rgb(227, 227, 227" );
+        
+        //  Assume there is a third parameter... Light that one up too.
+        console.log( "Third parameter is: ", trimUrl2);
+        showDate();
+      }      
+      
+      
       //  LIGHT up Topic if we are on any of those subpages
       if ( trimUrl == "topic" ) {
         $( '#topic' ).css( "background-color", "rgb(227, 227, 227" );
