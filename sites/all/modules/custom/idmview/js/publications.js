@@ -105,7 +105,7 @@
           hideDate();
           showTopic();
         }
-        if (type == 'Publications date') {
+        if (type == 'Date') {
           //do our stuff for Software here...
           showDate();
           hideAuthor();
