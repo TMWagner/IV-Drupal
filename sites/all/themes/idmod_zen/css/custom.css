@@ -345,7 +345,7 @@ div.menu-block-1 {
 }
 .menu-block-1 li {
 	display: inline;
-	border-left: thin solid white;
+/*	border-left: thin solid white;*/
 }
 
 .menu-block-1 li.first {
