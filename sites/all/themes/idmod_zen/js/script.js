@@ -58,31 +58,41 @@ Drupal.behaviors.my_custom_behavior = {
             height: "320px",  
           }, 200 );
       }
-      
-      //Apparently this isn't being used...   
-      //function hovRollup(evt) {
-      //  $(this).animate({
-      //      top: "0px",
-      //      height: "330px",  
-      //    }, 200 );
-      //}
-      
-      
+    
       /*  Animate Research page boxes
        *  Start with background color
        *  Then move next div up over it.
        */
-      
       $(function() {
         $(".five_box_960row_block").hoverIntent(fiveBoxHovIn, function(){});
+        //Roll "rollup" back down
         $(".rollup").mouseleave(fiveBoxHovOut);   
       });
       
       function fiveBoxHovIn(evt) {
+        // Get the class of the box
+        $box_class = $(this).attr('id');
+        console.log('>>> ID is: ', $box_class);
+        // Rollup related info. 
         $(this).find(".rollup").animate({
             top: "0px",
             height: "180px",  
           }, 200 );
+        
+        // Find related content div and display it. 
+        if ($box_class == 'hiv_box' ) {
+          $('#numerical_content').addClass("hidden");
+          $('#hiv_content').removeClass("hidden");
+        }
+        if ($box_class == 'numerical_box' ) {
+          $('#hiv_content').addClass("hidden");
+          $('#numerical_content').removeClass("hidden");
+        }        
+        
+        
+        
+        
+        
         //$(this).find(".rollup").css( "background-color", "rgb(82, 91, 92)" );
       }
       
