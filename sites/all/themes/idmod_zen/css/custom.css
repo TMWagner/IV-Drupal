@@ -297,7 +297,7 @@ div#panel-4 {
 	bottom: 25px;
 	float: left;
 	position: relative;
-	width: 100px;
+/*	width: 100px;  Screws up publications page */
 }
 
 .search-result-type {
