@@ -909,7 +909,7 @@ div#menu-level2 {
 .research-areas {
 	float: left;
 	margin-right: 20px;
-	width: 300px;
+	width: 960px;
 /*	margin-left: 20px;  Want this flush against the left margin*/
 }
 
@@ -1035,7 +1035,9 @@ img.media-image,
   display: table-cell;
 	font-size: 25px;
   vertical-align: middle; 
-  text-align: center; 
+  text-align: center;
+	text-transform: none;
+	font-weight: 
 }
 
 
