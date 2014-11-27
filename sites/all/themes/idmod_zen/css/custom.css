@@ -297,7 +297,7 @@ div#panel-4 {
 	bottom: 25px;
 	float: left;
 	position: relative;
-	width: 100px;
+/*	width: 100px;  Screws up publications page */
 }
 
 .search-result-type {
@@ -345,7 +345,7 @@ div.menu-block-1 {
 }
 .menu-block-1 li {
 	display: inline;
-	border-left: thin solid white;
+/*	border-left: thin solid white;*/
 }
 
 .menu-block-1 li.first {
@@ -889,6 +889,11 @@ div#menu-level2 {
 
 /* CSS for Research page */
 
+
+.fivebox_wrapper {
+	margin-top: 10px;
+}
+
 .node-research h4 {
 	margin-bottom: 0;
 }
@@ -909,7 +914,7 @@ div#menu-level2 {
 .research-areas {
 	float: left;
 	margin-right: 20px;
-	width: 300px;
+	width: 960px;
 /*	margin-left: 20px;  Want this flush against the left margin*/
 }
 
@@ -1035,7 +1040,9 @@ img.media-image,
   display: table-cell;
 	font-size: 25px;
   vertical-align: middle; 
-  text-align: center; 
+  text-align: center;
+	text-transform: none;
+	font-weight: 
 }
 
 
