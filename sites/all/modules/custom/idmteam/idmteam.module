@@ -336,7 +336,6 @@ function idmteam_related_subteams($which_block) {
       $taxonomy_list .= '+' . $node->field_related_group_tags['und'][$key]['tid'];
       ++$key;
     }
-    
     // Build the content
     $views_embed = views_embed_view('related_team_profile2', $display_id = 'related_team_members', $taxonomy_list);
     
@@ -344,6 +343,20 @@ function idmteam_related_subteams($which_block) {
       '#type' => 'item',
       '#markup' => $views_embed,
     );
+    
+    // Embed sort link if currant user is admin.
+    global $user;
+
+    if (in_array("administrator", $user->roles)) {
+      // currant user is admin - show sort link.
+      $form['link'] = array(
+        '#type' => 'link',
+        '#title' => 'Re-order team members',
+        '#href' => 'team-sort/' . $taxonomy_list,
+      );
+    }
+      
+    
   
   }
   
