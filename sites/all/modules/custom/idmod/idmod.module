@@ -68,44 +68,6 @@ function idmod_context_load_alter(&$context) {
 
 
 
-///**
-// * Implementation of hook_form_alter
-// */
-//function idmod_form_alter(&$form, &$form_state, $form_id) {
-//  $debug_form = $form;
-//  if ($form_id == 'publications_node_form') {
-//    // process
-//    
-//    $debug_form = $form;
-//
-//    // Problem when following code... If one author is set, there are actually two array entries... we
-//    // can't get the property of af non-existant object. 
-//    
-//    //$key = 0;
-//    //  while (isset($form['field_publications_author']['und'][$key])) {
-//    //    // If there is more then one name, we add a comma to present item.
-//    //    //if(isset($build['field_publications_author'][$key+1])) {
-//    //    //  $build['field_publications_author'][$key]['#markup'] .= ',';       
-//    //    //}
-//    //    // Check to make sure there is a profile... 
-//    //    $target_id = $form['field_publications_author']['und'][$key]['target_id']['#entity']->field_publications_author['und'][$key]['target_id'];
-//    //    $profile = profile2_load($target_id);
-//    //    
-//    //    $default_name = $profile->field_profile_first_name['und'][0]['value'] .
-//    //      ' ' . $profile->field_profile_last_name['und'][0]['value'];
-//    //    
-//    //    
-//    //    $debug_target = $form['field_publications_author']['und'][$key]['target_id']['#default_value'];
-//    //    
-//    //    ++$key;
-//    //  }    
-//    //
-//
-//  }
-//  
-//}
-
-
 
 
 
