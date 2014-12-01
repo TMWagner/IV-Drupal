@@ -1210,6 +1210,7 @@ div.team-name-info a {
 
 .node-publications .publication-author {
   margin-bottom: 10px;
+	clear: left;
 	color: grey;
 }
 
