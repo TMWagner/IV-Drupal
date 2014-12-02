@@ -427,12 +427,9 @@ function idmteam_team_contact($which_block) {
  *  We know the UID of Team member viewed
  *  Fetch profile id....
  */
-
-
 function idmteam_team_mem_related($which_block) {
   
   $item = menu_get_item();
-  
   
   $form = array();
   //  If we are looking at /team/bio, grab the profile ID
@@ -664,10 +661,7 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
      
   }
   
-  
 
 }
-
-
 
 
