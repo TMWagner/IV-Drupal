@@ -539,8 +539,6 @@ function idmteam_team_mem_related($which_block) {
       '#prefix' => '<div>',
       '#suffix' => '</div>',
     );    
-  
-  
     
   $result = $form;
   return $result;  

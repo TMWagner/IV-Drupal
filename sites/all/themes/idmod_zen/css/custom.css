@@ -1158,7 +1158,12 @@ div.team-name-info a {
 
 /**
  * format publication pages
+ * 
  */
+
+.group-left {
+  padding-bottom: 20px;
+}
 
 .field.field-name-field-publications-author.field-type-entityreference.field-label-hidden {
 	color: grey;
