@@ -81,12 +81,14 @@ Drupal.behaviors.my_custom_behavior = {
         // Find related content div and display it. 
         if ($box_class == 'hiv_box' ) {
           $('#hiv_content').removeClass("hidden");
+          $('#intro_content').addClass("hidden");
           $('#numerical_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#polio_content').addClass("hidden");
           $('#tuberculosis_content').addClass("hidden");
         }
         if ($box_class == 'numerical_box' ) {
+          $('#intro_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
           $('#numerical_content').removeClass("hidden");
           $('#malaria_content').addClass("hidden");
@@ -95,6 +97,7 @@ Drupal.behaviors.my_custom_behavior = {
         }        
         if ($box_class == 'malaria_box' ) {
           $('#malaria_content').removeClass("hidden");
+          $('#intro_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
           $('#numerical_content').addClass("hidden");
           $('#polio_content').addClass("hidden");
@@ -102,6 +105,7 @@ Drupal.behaviors.my_custom_behavior = {
         }
         if ($box_class == 'polio_box' ) {
           $('#polio_content').removeClass("hidden");
+          $('#intro_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
           $('#numerical_content').addClass("hidden");
@@ -109,6 +113,7 @@ Drupal.behaviors.my_custom_behavior = {
         }
         if ($box_class == 'tuberculosis_box' ) {
           $('#tuberculosis_content').removeClass("hidden");
+          $('#intro_content').addClass("hidden");
           $('#polio_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
