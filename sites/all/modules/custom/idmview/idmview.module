@@ -67,8 +67,7 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
                     
                     <li class="publications-1" id="date">
                       <a href="/publications/date">Date</a>
-                    </li>                     
-                    
+                    </li>                               
                     
                     <li class="publications-1" id="topic">
                       <a href="/publications/topic">Topic</a>
@@ -81,25 +80,36 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     
     
     $build['publications']['publications2'] = array(
-      '#type' => 'item',
-      '#markup' => '<ul class="level-3  level-3a inline hidden" id="team-research">
-                    <li id="af">
-                      <a href="/publications/author/af">A-F</a>
-                    </li>
-                    <li id="gl">
-                      <a href="/publications/author/gl">G-L</a>
-                    </li>
-                    <li id="mr">
-                      <a href="/publications/author/mr">M-R</a>
-                    </li>
-                    <li id="sz">
-                      <a href="/publications/author/sz">S-Z</a>
-                    </li>                  
-                  </ul>',
+      '#type' => 'select',
+      //'#title' => t('Author'),
+      '#options' => array(
+        0 => t('Dan Klein'),
+        1 => t('Philip Eckhoff'),
+        2 => t('Bradley Wagner'),
+        3 => t('Anna Bershteyn'),
+        4 => t('Hao Hu'),
+       ),
+
+    '#ajax' => array(
+      'callback' => 'idmview_author_js',
+      //'wrapper' => 'checkboxes-div',
+      //'method' => 'replace',
+      //'effect' => 'fade',
+    ),
 
       '#prefix' => '<div class="team-menu" style="clear: left">',
       '#suffix' => '</div>',
     );
+    
+    $build['publications']['publications2b'] = array(
+      '#type' => 'submit',
+      '#value' => t('Filter'),
+     
+
+      '#prefix' => '<div class="team-menu" style="clear: left">',
+      '#suffix' => '</div>',
+    );
+    
     
     
     $build['publications']['publications3'] = array(
@@ -152,5 +162,16 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     $view->attachment_before = drupal_render($build);
   }
   
+}
+
+function idmview_author_js($form, $form_state) {
+  print('here we are');
+  
+  return $form;
+}
+
+
+function idmview_form_alter(&$form, &$form_state, $form_id) {
+  $debug_id = $form_id;
 }
 

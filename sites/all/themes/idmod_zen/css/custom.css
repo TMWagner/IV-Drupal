@@ -1161,6 +1161,13 @@ div.team-name-info a {
  * 
  */
 
+
+/*format author select box*/
+.form-item.form-type-select {
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
 .group-left {
   padding-bottom: 20px;
 }
