@@ -12,7 +12,32 @@
  *    See: http://www.benmarshall.me/load-js-css-specific-page-drupal-7/
  */
  
- 
+
+
+
+/**
+ *  Implementation of hook_menu
+ */
+function idmod_menu() {
+  $items = array();
+  $items['publicationsx'] = array(
+    'title' => 'Publications',
+    'page callback' => 'idmod_publications_page',
+    'access arguments' => array('access content'),
+    'file' => 'idmod.publications.inc',
+    //'weight' => 1,
+  );
+  
+  return $items;
+}
+
+
+function idmod_publications_page() {
+  return drupal_get_form('idmod_publications_author');
+}
+
+
+
 
 /**
  * Implementation of hook_field_display_alter
