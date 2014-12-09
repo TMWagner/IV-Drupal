@@ -50,39 +50,6 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
     drupal_add_css(drupal_get_path('module', 'idmview') . '/css/publications.css');
     drupal_add_js(drupal_get_path('module', 'idmview') . '/js/publications.js');
     
-    
-
-  //$rtn .= drupal_render($form);    
-  //  
-
-  
-
-    //drupal_build_form('idmview_author_select', $form_state);
-    
-
-    //drupal_build_form($form_id, $form_state);
-
-
-    
-    //function idmview_author_select(&$form_state) {
-    //  $form = array();
-    //  $form['choice'] = array(
-    //    '#type' => 'select',
-    //    '#title' => t('Cake or pie?'),
-    //    '#description' => t('Would you like cake or pie?'),
-    //    '#options' => array(
-    //      'cake' => t('Cake please'),
-    //      'pie' => t('Pie I guess'),
-    //    ),
-    //    '#default_value' => 'cake',
-    //    '#required' => TRUE,
-    //  );
-    //  return $form;
-    //}
-    //
-
-    
-    
     // Wrap the "team" items so we can handle appropriately with jQuery later. 
     $build['publications'] = array(
       '#type' => 'fieldset',
@@ -110,7 +77,7 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
       '#suffix' => '</div>',
     );
     
-]
+
     
     $build['publications']['publications3'] = array(
       '#type' => 'item',
