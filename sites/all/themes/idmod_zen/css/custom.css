@@ -1161,6 +1161,8 @@ div.team-name-info a {
  * 
  */
 
+
+
 .group-left {
   padding-bottom: 20px;
 }
@@ -1798,6 +1800,12 @@ div.dl-button:hover {
 }
 
 /* Career */
+
+element.style {
+}
+	h1#page-title {
+	width: 200px;
+}
 
 .view-mode-full p {
 	margin-bottom: 10px;
