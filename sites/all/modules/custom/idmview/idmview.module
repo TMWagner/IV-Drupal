@@ -124,7 +124,11 @@ function idmview_views_pre_view(&$view, &$display_id, &$args){
 
       '#prefix' => '<div class="team-menu" style="clear: left">',
       '#suffix' => '</div>',
-    );    
+    );
+    
+    //TODO: clear the array
+    //  We will be getting rid of this whole mess 
+    $build = array();
      
     $view->attachment_before = drupal_render($build);
   }

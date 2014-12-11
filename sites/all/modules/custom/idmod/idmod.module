@@ -6,27 +6,29 @@
  */
 
  
-/**
- * TODO:
- * 8/3/2014: We should load the js on some pages individually.
- *    See: http://www.benmarshall.me/load-js-css-specific-page-drupal-7/
- */
- 
-
-
 
 /**
  *  Implementation of hook_menu
  */
 function idmod_menu() {
   $items = array();
-  $items['publicationsx'] = array(
+  $items['publications'] = array(
     'title' => 'Publications',
-    'page callback' => 'idmod_publications_page',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('idmod_publications_author', 2),
     'access arguments' => array('access content'),
     'file' => 'idmod.publications.inc',
     //'weight' => 1,
   );
+  
+  $items['publications/%'] = array(
+    'title' => 'Publications',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('idmod_publications_author', 2),
+    'access arguments' => array('access content'),
+    'file' => 'idmod.publications.inc',
+    //'weight' => 1,
+  );  
   
   return $items;
 }
