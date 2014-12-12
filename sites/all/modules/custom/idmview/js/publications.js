@@ -180,7 +180,7 @@
     
     // Show / Remove Author
     function showAuthor(){
-      $( 'ul.level-3a').removeClass( "hidden" );
+      $( 'div.level-3a').removeClass( "hidden" );
     }
     
     function hideAuthor() {   
@@ -188,7 +188,7 @@
       var subUrl = url.split("/");
       console.log( "Hide Author parm is: ", subUrl);
       if (subUrl[2] !== 'research') {
-        $( 'ul.level-3a').addClass( "hidden" );
+        $( 'div.level-3a').addClass( "hidden" );
       }
     }    
     

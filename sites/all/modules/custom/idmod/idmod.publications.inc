@@ -1,6 +1,5 @@
 <?php
 
-
 function idmod_publications_author($form, &$form_state, $arg1) {
   $form = array();
   $debug_url = $_GET['q'];
@@ -55,6 +54,8 @@ function idmod_publications_author($form, &$form_state, $arg1) {
      ),    
     '#default_value' => NULL,
     '#required' => TRUE,
+    '#prefix' => '<div class="level-3  level-3a inline hidden">',
+    '#suffix' => '</div>',   
   );
 
     
@@ -102,7 +103,10 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     '#prefix' => '<div class="team-menu" style="clear: left">',
     '#suffix' => '</div>',
   );
-  // If this is null, show the full unfiltered page.
+  // If the URL is ajax, we need to clear the URL so the "Author" page gets displayed.
+  if ($_GET['q'] == 'system/ajax') {
+    $arg1 = NULL;
+  }
   if (!isset($form_state['triggering_element']['#value']) ||
       $form_state['triggering_element']['#value'] == 'all') {
     $display_id = 'page_1';
@@ -117,6 +121,40 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     $display_id = 'hiv';
     $arg = NULL;
   }
+  if ($arg1 == 'malaria') {
+    $display_id = 'malaria';
+    $arg = NULL;
+  }
+  if ($arg1 == 'numercial') {
+    $display_id = 'numerical';
+    $arg = NULL;
+  }
+  if ($arg1 == 'polio') {
+    $display_id = 'polio';
+    $arg = NULL;
+  }  
+  if ($arg1 == 'tuberculosis') {
+    $display_id = 'tubercolosis';
+    $arg = NULL;
+  }
+  if ($arg1 == '2011') {
+    $display_id = '2011';
+    $arg = NULL;
+  }
+  if ($arg1 == '2012') {
+    $display_id = '2012';
+    $arg = NULL;
+  }
+  if ($arg1 == '2013') {
+    $display_id = '2013';
+    $arg = NULL;
+  }
+  if ($arg1 == '2014') {
+    $display_id = '2014';
+    $arg = NULL;
+  }   
+  
+  
   
   $view_name = 'publications';
 
