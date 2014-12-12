@@ -1162,7 +1162,7 @@ div.team-name-info a {
  */
 
 
-
+L
 .group-left {
   padding-bottom: 20px;
 }
@@ -1803,9 +1803,12 @@ div.dl-button:hover {
 
 element.style {
 }
-	h1#page-title {
+
+
+.page-node-47 h1#page-title {
 	width: 200px;
 }
+
 
 .view-mode-full p {
 	margin-bottom: 10px;
