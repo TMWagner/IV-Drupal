@@ -35,17 +35,19 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     '#type' => 'select',
     '#options' => array(
       'all' => t('All'),
-      '12' => t('Alexander Upfill-Brown'),
+      '9' => t('Basil Bayati'),
+      '46' => t('Matthew Behrend'),
       '13' => t('Anna Bershteyn'),
-      '15' => t('Bradley Wagner'),
-      '7' => t('Dan Klein'),
-      '4' => t('Edward Wenger'),
-      '3' => t('Guillaume Chabot-couture'),
+      '3' => t('Guillaume Chabot-Couture'),
+      '8' => t('Philp Eckhoff'),
       '22' => t('Hao Hu'),
+      '7' => t('Dan Klein'),
       '23' => t('Hil Lions'),
       '45' => t('Karimia Nigmatulina'),
-      '46' => t('Matthew Behrend'),
-      '8' => t('Philp Eckhoff'),
+      '12' => t('Alexander Upfill-Brown'),
+      '15' => t('Bradley Wagner'),
+      '4' => t('Edward Wenger'),
+      
     ),
     
     '#ajax' => array(
@@ -57,7 +59,6 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     '#prefix' => '<div class="level-3  level-3a inline hidden">',
     '#suffix' => '</div>',   
   );
-
     
   $form['publications']['publications3'] = array(
     '#type' => 'item',
