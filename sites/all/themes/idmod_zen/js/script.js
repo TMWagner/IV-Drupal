@@ -119,9 +119,7 @@ Drupal.behaviors.my_custom_behavior = {
           $('#hiv_content').addClass("hidden");
           $('#numerical_content').addClass("hidden");
         }
-        
-        
-        //$(this).find(".rollup").css( "background-color", "rgb(82, 91, 92)" );
+
       }
       
       function fiveBoxHovOut(evt) {
