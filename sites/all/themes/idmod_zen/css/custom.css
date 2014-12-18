@@ -281,6 +281,11 @@ div#panel-4 {
 	margin-top: 5px;
 }
 
+div#p3_b_content {
+	height: 375px;
+	overflow: hidden;
+}
+
 /**
  * Page Search
  */
