@@ -377,6 +377,14 @@ div.menu-block-1 {
 }
 
 /**
+ * Secondary Menu
+ * Killing display and letting Quickbar display
+ */
+#secondary-menu {
+  display: none;
+}
+
+/**
  * Breadcrumb
  */
 .breadcrumb {
