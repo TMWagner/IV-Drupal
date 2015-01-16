@@ -91,3 +91,52 @@ function reg_form_registration_submit(&$form, &$form_state) {
 function reg_form_registration_unsure(&$form, &$form_state) {
   drupal_set_message(t('Make up your mind.'), 'warning');
 }
+
+
+
+
+
+
+
+
+/**
+ * Mail page 1
+ */
+function reg_form_registration_sendmail() {
+  global $language;
+  $to = 'tmw100@gmail.com';
+  
+  // Send the mail
+  drupal_mail('reg_form_registration', 'page1', $to, $language->language, $params = array(), $from = NULL, $send = TRUE);
+  
+  return '';
+}
+
+///**
+// * Mail page 2
+// */
+//function example_page2() {
+//  global $language;
+//
+//  // Send the mail
+//  drupal_mail('example', 'page2', 'MAILADDRESS', $language->language);
+//  
+//  return '';
+//}
+ 
+/**
+ * Implements hook_mail().
+ */
+function reg_form_registration_mail($key, &$message, $params) {
+  if ($key == 'page1') {
+    $message['subject'] = t('Page 1');
+
+    // This can also be a theme function with full html page structure
+    $message['body'][] = drupal_html_to_text('<p>Your content for page 1</p>'); 
+  } else if ($key == 'page2') {
+    $message['subject'] = t('Page 2');
+
+    // This can also be a theme function with full html page structure
+    $message['body'][] = drupal_html_to_text('<p>Your content for page 2</p>'); 
+  }
+}
