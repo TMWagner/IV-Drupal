@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.page-regform #main {
+	width: 500px;
+}
+
+#edit-identification .form-item {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+fieldset#edit-identification .form-item {
+	float: left;
+	margin-right: 20px;
+}

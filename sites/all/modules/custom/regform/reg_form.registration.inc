@@ -5,6 +5,7 @@ function reg_form_registration_page() {
 }
 
 function reg_form_registration($form, &$form_state) {
+  drupal_add_css(drupal_get_path('module', 'reg_form') . '/css/regform.css');
   $form = array();
   
   $form['identification'] = array(
@@ -15,25 +16,35 @@ function reg_form_registration($form, &$form_state) {
   $form['identification']['firstname'] = array(
     '#type' => 'textfield',
     '#title' => t('First name'),
+    '#size' => 20,
+    '#maxlength' => 60,
   );
 
   $form['identification']['lastname'] = array(
     '#type' => 'textfield',
     '#title' => t('Last name'),
+    '#size' => 20,
+    '#maxlength' => 60,
+    '#required' => TRUE,
+  );
+  
+  
+  $form['identification']['email'] = array(
+    '#type' => 'textfield',
+    '#title' => t('email'),
+    '#size' => 20,
+    '#maxlength' => 60,
+  );
+  $form['identification']['phone'] = array(
+    '#type' => 'textfield',
+    '#title' => t('phone'),
+    '#size' => 20,
+    '#maxlength' => 60,
   );
   
   $form['identification']['organization'] = array(
     '#type' => 'textfield',
     '#title' => t('Organization'),
-  );
-  
-  $form['identification']['email'] = array(
-    '#type' => 'textfield',
-    '#title' => t('email'),
-  );
-  $form['identification']['phone'] = array(
-    '#type' => 'textfield',
-    '#title' => t('phone'),
   );  
   
   
@@ -54,7 +65,7 @@ function reg_form_registration($form, &$form_state) {
   $form['choice'] = array(
     '#type' => 'select',
     //'#title' => t('2015 Symposium Registration (title)'),
-    '#description' => t('2015 Symposium Registration2'),
+    '#description' => t('2015 Symposium Registration 2'),
     '#options' => array(
       'cake' => t('Cake please'),
       'pie' => t('Pie I guess'),
@@ -79,12 +90,14 @@ function reg_form_registration($form, &$form_state) {
 
 function reg_form_registration_validate(&$form, &$form_state) {
   if ($form_state['values']['choice'] == 'cake') {
+    // Force an error and redisplay the form...
     form_set_error('choice', t('We are out of cake.'));
   }
 }
 
 function reg_form_registration_submit(&$form, &$form_state) {
-
+  
+  $debug_form = $form;
   $form_state['redirect'] = '';
 }
 
