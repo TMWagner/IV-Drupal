@@ -1830,6 +1830,12 @@ figure {
 	padding-left: 10px;
 }
 
+.bquote {
+	font-size: 14px;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
 /*  CSS for Team member re-order page */
 .tabledrag-toggle-weight-wrapper {
 	text-align: right;
