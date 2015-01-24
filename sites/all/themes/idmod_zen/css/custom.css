@@ -1858,3 +1858,8 @@ figure {
 table.track-desc {
 	margin-top: 0px;
 }
+
+.course-selection {
+	margin-right: 50px;
+	line-height: 120px;
+}
