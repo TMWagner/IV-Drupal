@@ -1841,3 +1841,20 @@ figure {
 	text-align: right;
 	width: 450px;
 }
+/*  CSS for Symposium Resgitration */
+
+
+
+.track-desc p {
+	margin: 0;
+}.track-desc tr td h3 {
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+
+table.track-desc {
+	margin-top: 0px;
+}
