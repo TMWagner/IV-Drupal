@@ -1868,3 +1868,7 @@ table.track-desc {
 	float: left;
 	margin-right: 20px;
 }
+
+.form-actions {
+	margin-top: 20px;
+}
