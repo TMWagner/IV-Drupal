@@ -1863,3 +1863,8 @@ table.track-desc {
 	margin-right: 50px;
 	line-height: 120px;
 }
+
+.form-float-left {
+	float: left;
+	margin-right: 20px;
+}
