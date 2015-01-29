@@ -1847,7 +1847,8 @@ figure {
 
 .track-desc p {
 	margin: 0;
-}.track-desc tr td h3 {
+}
+.track-desc tr td h3 {
 	margin-top: 10px;
 	margin-right: 0px;
 	margin-bottom: 0px;
