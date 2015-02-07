@@ -344,10 +344,12 @@ function idmteam_related_subteams($which_block) {
       '#markup' => $views_embed,
     );
     
-    // Embed sort link if currant user is admin.
-    global $user;
 
-    if (in_array("administrator", $user->roles)) {
+    // Embed sort link if currant user has "update" rights to content.
+    global $user;
+    $op = "update";
+
+    if (node_access($op, $node, $account = NULL)) {
       // currant user is admin - show sort link.
       $form['link'] = array(
         '#type' => 'link',
@@ -357,7 +359,6 @@ function idmteam_related_subteams($which_block) {
     }
       
     
-  
   }
   
   // Build error message... (what should we really do - probably display something generic - or pass nothing
