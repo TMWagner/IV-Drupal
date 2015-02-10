@@ -1843,6 +1843,20 @@ figure {
 }
 /*  CSS for Symposium Resgitration */
 
+.tr-box-color1 {
+	background-color: rgba(44, 182, 240, 0.15);
+}
+
+.webform-component--sessions--day-1--day-1-column-1 {
+
+	position: relative;
+	width: 150px;
+}
+
+.webform-component--sessions--day-1--day-1-column-1--day-1-options-2 {
+	position: absolute;
+	top: 150px;
+}
 
 
 .track-desc p {
