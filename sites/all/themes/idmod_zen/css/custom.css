@@ -1841,10 +1841,18 @@ figure {
 	text-align: right;
 	width: 450px;
 }
-/*  CSS for Symposium Resgitration */
+/*  CSS for Symposium Registration */
 
 .node-webform form tbody {
 	border: none;
+}
+
+.horizontal-options {
+	padding-left: 100px;
+}
+
+.reg-indent {
+	margin-left: 13px;
 }
 
 /* Breakout Session table format */
@@ -1929,7 +1937,7 @@ table.track-desc {
 /* Registration day2 */
 .horizontal-options>.form-item {
 	display: inline;
-	margin-right: 250px;
+	margin-right: 200px;
 }
 
 
