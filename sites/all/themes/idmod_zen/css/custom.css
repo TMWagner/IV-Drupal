@@ -1887,3 +1887,14 @@ table.track-desc {
 .form-actions {
 	margin-top: 20px;
 }
+
+
+/*  Colorbox CSS */
+
+#colorbox h2.node__title.node-title {
+	font-size: 20px;
+}
+
+div#cboxLoadedContent p {
+	margin-top: 0px;
+}
