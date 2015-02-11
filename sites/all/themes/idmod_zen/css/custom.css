@@ -1889,6 +1889,15 @@ table.track-desc {
 }
 
 
+/* Registration day2 */
+.horizontal-options>.form-item {
+	display: inline;
+	margin-right: 50px;
+}
+
+
+
+
 /*  Colorbox CSS */
 
 #colorbox h2.node__title.node-title {
@@ -1898,3 +1907,5 @@ table.track-desc {
 div#cboxLoadedContent p {
 	margin-top: 0px;
 }
+
+
