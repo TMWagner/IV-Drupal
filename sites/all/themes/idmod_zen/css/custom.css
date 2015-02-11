@@ -1843,9 +1843,46 @@ figure {
 }
 /*  CSS for Symposium Resgitration */
 
+.node-webform form tbody {
+	border: none;
+}
+
+/* Breakout Session table format */
+.table-r1 .table-c1 {
+	background-color: rgba(44, 182, 240, 0.15);
+}
+.table-r1 .table-c2 {
+	background-color: rgba(208, 183, 53, 0.3);
+}
+.table-r1 .table-c3 {
+	background-color: rgba(44, 182, 240, 0.15);
+}
+
+.table-r2 .table-c1 {
+	background-color: rgba(44, 182, 240, 0.10);
+}
+.table-r2 .table-c2 {
+	background-color: rgba(208, 183, 53, 0.10);
+}
+.table-r2 .table-c3 {
+	background-color: rgba(44, 182, 240, 0.10);
+}
+
 .tr-box-color1 {
 	background-color: rgba(44, 182, 240, 0.15);
 }
+
+.session-discription  p {
+	margin: 0px;
+}
+.session-discription table  h4 {
+	margin: 0px;
+}
+
+
+
+
+
 
 .webform-component--sessions--day-1--day-1-column-1 {
 
@@ -1892,7 +1929,7 @@ table.track-desc {
 /* Registration day2 */
 .horizontal-options>.form-item {
 	display: inline;
-	margin-right: 50px;
+	margin-right: 250px;
 }
 
 
