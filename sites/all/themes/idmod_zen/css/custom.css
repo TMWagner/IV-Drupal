@@ -1856,6 +1856,7 @@ figure {
 }
 
 /* Breakout Session table format */
+
 .table-r1 .table-c1 {
 	background-color: rgba(44, 182, 240, 0.15);
 }
@@ -1880,6 +1881,9 @@ figure {
 	background-color: rgba(44, 182, 240, 0.15);
 }
 
+.session-description {
+	margin-left: 60px;
+}
 .session-description  p {
 	margin: 0px;
 }
@@ -1954,3 +1958,6 @@ div#cboxLoadedContent p {
 }
 
 
+.tr-box-color2 {
+	background-color: rgba(44, 182, 240, 0.05);
+}
