@@ -1855,26 +1855,31 @@ figure {
 	margin-left: 13px;
 }
 
+.node-webform .form-submit {
+	margin-right: 20px;
+	background-color: rgba(0, 115, 163, 0.08);
+}
+
 /* Breakout Session table format */
 
 .table-r1 .table-c1 {
-	background-color: rgba(44, 182, 240, 0.15);
+	background-color: rgba(161, 192, 231, 1);
 }
 .table-r1 .table-c2 {
-	background-color: rgba(208, 183, 53, 0.3);
+	background-color: rgba(205, 221, 243, 1);
 }
 .table-r1 .table-c3 {
-	background-color: rgba(44, 182, 240, 0.15);
+	background-color: rgba(220, 230, 241, 1);
 }
 
 .table-r2 .table-c1 {
-	background-color: rgba(44, 182, 240, 0.10);
+	background-color: rgba(205, 222, 243, 1);
 }
 .table-r2 .table-c2 {
-	background-color: rgba(208, 183, 53, 0.10);
+	background-color: rgba(220, 230, 241, 1);
 }
 .table-r2 .table-c3 {
-	background-color: rgba(44, 182, 240, 0.10);
+	background-color: rgba(234, 240, 246, 1);
 }
 
 .tr-box-color1 {
