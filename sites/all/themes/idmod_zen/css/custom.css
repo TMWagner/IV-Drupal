@@ -873,6 +873,17 @@ div#menu-level2 {
 	font-size: 2.0em;
 }
 
+.banner-text.banner-text-2line h3 {
+	margin: 0;
+	color: white;
+}
+
+.banner-text-2line h2 {
+	color: white;
+	margin: 15px 0px 5px 5px;
+	font-size: 1.5em
+}
+
 /* Left 220 */
 /* Keep the left sidebar from blowing things up */
 
@@ -1843,6 +1854,13 @@ figure {
 }
 /*  CSS for Symposium Registration */
 
+/* This is for the banner on the registration pages - displays tall version of banner */
+.banner-l2-full {
+	height: 150px;
+	width: 960px;
+	margin-top: 35px;
+}
+
 .node-webform form tbody {
 	border: none;
 }
@@ -1950,6 +1968,32 @@ table.track-desc {
 }
 
 
+/*  Button code */
+.myButton {
+-moz-box-shadow: inset 0px -3px 7px 0px #29bbff;
+-webkit-box-shadow: inset 0px -3px 7px 0px #0073A3;
+box-shadow: inset 0px -3px 7px 0px #027DB0;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background: linear-gradient(to bottom, #0073A3 5%, #0688fa 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+background-color: #2dabf9;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+border: 1px solid #0b0e07;
+display: inline-block;
+cursor: pointer;
+color: #ffffff;
+font-family: arial;
+font-size: 20px;
+padding: 9px 32px;
+text-decoration: none;
+text-shadow: 0px 1px 0px #263666;
+}
 
 
 /*  Colorbox CSS */
