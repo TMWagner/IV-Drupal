@@ -1854,6 +1854,18 @@ figure {
 }
 /*  CSS for Symposium Registration */
 
+.horizontal-options-wrapper {
+	margin: 0px;
+}
+
+.webform-component-markup {
+	margin: 0px;
+}
+
+.session-description table {
+	margin-bottom: 0px;
+}
+
 /* This is for the banner on the registration pages - displays tall version of banner */
 .banner-l2-full {
 	height: 150px;
@@ -1865,9 +1877,6 @@ figure {
 	border: none;
 }
 
-.horizontal-options {
-	padding-left: 100px;
-}
 
 .reg-indent {
 	margin-left: 13px;
@@ -1962,9 +1971,18 @@ table.track-desc {
 
 
 /* Registration day2 */
+
+.horizontal-options {
+	padding-left: 180px;
+}
+
 .horizontal-options>.form-item {
 	display: inline;
-	margin-right: 200px;
+	margin-right: 250px;
+}
+
+.horizontal-options>.form-item label.option {
+	display: none;
 }
 
 
