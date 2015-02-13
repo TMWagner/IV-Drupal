@@ -1853,6 +1853,11 @@ figure {
 	width: 450px;
 }
 /*  CSS for Symposium Registration */
+/***********************************/
+
+.webform-progressbar {
+	margin-bottom: 50px;
+}
 
 .horizontal-options-wrapper {
 	margin: 0px;
@@ -1923,13 +1928,7 @@ figure {
 	margin: 0px;
 }
 
-
-
-
-
-
 .webform-component--sessions--day-1--day-1-column-1 {
-
 	position: relative;
 	width: 150px;
 }
