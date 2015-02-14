@@ -1915,6 +1915,10 @@ table.breakout-description p {
 	background-repeat: repeat-y;
 }
 
+article.node-103 {
+background-image: url(/sites/default/files/symp_bg.png);
+}
+
 .breakout-description p {
 	margin: 0px;
 }
