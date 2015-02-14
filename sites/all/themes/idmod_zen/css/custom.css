@@ -1901,7 +1901,11 @@ figure {
 	margin-top: 0px;
 }
 
-table.breakout-description h4, p {
+table.breakout-description h4 {
+	margin-bottom: 10px;
+}
+
+table.breakout-description p {
 	margin: 0px;
 }
 
