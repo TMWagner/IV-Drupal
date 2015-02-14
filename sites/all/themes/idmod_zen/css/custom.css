@@ -1910,6 +1910,15 @@ table.breakout-description h4, p {
 	background-repeat: repeat-y;
 }
 
+.breakout-description p {
+	margin: 0px;
+}
+
+table.breakout-description {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 
 /* Breakout Session table format */
 
@@ -2000,7 +2009,7 @@ table.track-desc {
 	margin-right: 250px;
 }
 
-.horizontal-options>.form-item label.option {
+.vertical-options>.form-item label.option {
 	display: none;
 }
 
