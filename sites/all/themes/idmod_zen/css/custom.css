@@ -1892,7 +1892,27 @@ figure {
 	background-color: rgba(0, 115, 163, 0.08);
 }
 
+/* Breakout box formatting */
+
+
+.vertical-options {
+	width: 150px;
+	float: left;
+	margin-top: 0px;
+}
+
+table.breakout-description h4, p {
+	margin: 0px;
+}
+
+.webform-component--d2-830 {
+	background-image: url(/sites/default/files/wrapper_bg.png);
+	background-repeat: repeat-y;
+}
+
+
 /* Breakout Session table format */
+
 
 .table-r1 .table-c1 {
 	background-color: rgba(161, 192, 231, 1);
@@ -1983,7 +2003,6 @@ table.track-desc {
 .horizontal-options>.form-item label.option {
 	display: none;
 }
-
 
 /*  Button code */
 .myButton {
