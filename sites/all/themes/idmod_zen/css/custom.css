@@ -1895,6 +1895,18 @@ figure {
 /* Breakout box formatting */
 
 
+.no-label label.option {
+	display: none;
+}
+
+div.no-label {
+	margin-left: 55px;
+}
+.no-label>.form-item {
+	margin-bottom: 155px;
+}
+
+
 .vertical-options {
 	width: 150px;
 	float: left;
