@@ -1916,7 +1916,7 @@ div.tab55 {
 
 
 .vertical-options {
-	width: 150px;
+	width: 165px;
 	float: left;
 	margin-top: 0px;
 }
@@ -1974,6 +1974,10 @@ table.breakout-description {
 
 .tr-box-color1 {
 	background-color: rgba(44, 182, 240, 0.15);
+}
+
+.tr-box-color2 {
+	background-color: rgba(44, 182, 240, 0.05);
 }
 
 .session-description {
