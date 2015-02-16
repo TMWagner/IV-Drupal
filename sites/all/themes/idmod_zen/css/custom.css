@@ -1916,7 +1916,7 @@ div.tab55 {
 
 
 .vertical-options {
-	width: 165px;
+	width: 160px;
 	float: left;
 	margin-top: 0px;
 }
@@ -1931,7 +1931,7 @@ table.breakout-description p {
 }
 
 .selection-box-wrapper {
-	background-image: url(/sites/default/files/wrapper_bg.png);
+	background-image: url(/sites/default/files/grid_strip_bg.png);
 	background-repeat: repeat-y;
 }
 
