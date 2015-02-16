@@ -1906,6 +1906,14 @@ div.no-label {
 	margin-bottom: 155px;
 }
 
+div.tab55 {
+	margin-left: 55px;
+}
+
+.tab55 label.option {
+	margin-left: 90px;
+}
+
 
 .vertical-options {
 	width: 150px;
@@ -2073,6 +2081,3 @@ div#cboxLoadedContent p {
 }
 
 
-.tr-box-color2 {
-	background-color: rgba(44, 182, 240, 0.05);
-}
