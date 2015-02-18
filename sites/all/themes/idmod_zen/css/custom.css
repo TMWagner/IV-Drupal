@@ -1894,6 +1894,9 @@ figure {
 
 /* Breakout box formatting */
 
+.fieldset-wrapper h4 {
+	margin: 0px;
+}
 
 .no-label label.option {
 	display: none;
