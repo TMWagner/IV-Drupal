@@ -336,7 +336,7 @@ function idmteam_related_subteams($which_block) {
       $taxonomy_list .= '+' . $node->field_related_group_tags['und'][$key]['tid'];
       ++$key;
     }
-    // Build the content
+    // Build the content for "Related Subteam members"
     $views_embed = views_embed_view('related_team_profile2', $display_id = 'related_team_members', $taxonomy_list);
     
     $form['photos'] = array(
@@ -642,7 +642,7 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
                       <a href="/team/research/malaria">Malaria</a>
                     </li>
                     <li id="numerical">
-                      <a href="/team/research/numerical">Numerical Methods</a>
+                      <a href="/team/research/math">Applied Math</a>
                     </li>
                     <li id="polio">
                       <a href="/team/research/polio">Polio</a>
@@ -660,7 +660,6 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
      
   }
   
-
 }
 
 
