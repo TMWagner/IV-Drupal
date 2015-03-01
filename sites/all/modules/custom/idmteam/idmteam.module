@@ -311,6 +311,7 @@ function idmteam_contents($which_block) {
 
 
 
+
 /**
  * A module-defined block content function.
  */
@@ -324,6 +325,15 @@ function idmteam_contents($which_block) {
 function idmteam_related_subteams($which_block) {
 
   $node = menu_get_object();
+  if (isset($node->field_research_team_lead['und'][0]['target_id'])) {
+    $team_lead = $node->field_research_team_lead['und'][0]['target_id'];
+  }
+  else {
+    $team_lead = NULL;
+  }
+  
+    
+
   $form = array();
   // build the parameter list to pass to views.
   $key = 0;
@@ -337,7 +347,7 @@ function idmteam_related_subteams($which_block) {
       ++$key;
     }
     // Build the content for "Related Subteam members"
-    $views_embed = views_embed_view('related_team_profile2', $display_id = 'related_team_members', $taxonomy_list);
+    $views_embed = views_embed_view('related_team_profile2', $display_id = 'related_team_members', $taxonomy_list, $team_lead);
     
     $form['photos'] = array(
       '#type' => 'item',
