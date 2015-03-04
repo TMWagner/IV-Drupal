@@ -1614,6 +1614,7 @@ p.sub-team-name {
 
 .field.field-name-field-profile-group-tags.field-type-taxonomy-term-reference {	
 	float: left;
+	margin-right: 10px;
 }
 
 .field-name-field-polio-report-date {
