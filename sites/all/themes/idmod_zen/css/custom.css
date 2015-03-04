@@ -1610,6 +1610,12 @@ p.sub-team-name {
 	margin-right: 10px;
 }
 
+
+
+.field.field-name-field-profile-group-tags.field-type-taxonomy-term-reference {	
+	float: left;
+}
+
 .field-name-field-polio-report-date {
 	border-left: thin solid #808080;
 	float: left;
