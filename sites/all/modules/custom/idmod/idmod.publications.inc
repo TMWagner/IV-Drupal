@@ -44,6 +44,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       '7' => t('Dan Klein'),
       '23' => t('Hil Lyons'),
       '45' => t('Karima Nigmatulina'),
+      '25' => t('Joshua Proctor'),
       '12' => t('Alexander Upfill-Brown'),
       '15' => t('Bradley Wagner'),
       '4' => t('Edward Wenger'),
