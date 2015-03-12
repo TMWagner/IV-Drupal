@@ -111,7 +111,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   }
   if (!isset($form_state['triggering_element']['#value']) ||
       $form_state['triggering_element']['#value'] == 'all') {
-    $display_id = 'page_1';
+    $display_id = 'page_all';
     $arg = NULL;
   }
   else {
@@ -127,6 +127,8 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     $display_id = 'malaria';
     $arg = NULL;
   }
+  
+  //ToDo
   if ($arg1 == 'numercial') {
     $display_id = 'numerical';
     $arg = NULL;
