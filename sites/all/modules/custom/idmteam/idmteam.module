@@ -224,7 +224,7 @@ function idmteam_contents($which_block) {
     case 'idmteam_author':
       // Load currant node object
       $node = menu_get_object();
-  
+      
       // Determine if we have one author or multiple.
       $number_author = count($node->field_publications_author['und']);
       if ($number_author > 1) {
@@ -237,27 +237,52 @@ function idmteam_contents($which_block) {
       //  We may not have an "Active" author...
       //  Need to loop through to find the first user not flagged as nonactive....
       
-      $author_uid = $node->field_publications_author['und'][0]['entity']->uid;
+      //$author_uid = $node->field_publications_author['und'][0]['entity']->uid;
+      $author_uid = $node->field_publications_author['und'][0]['target_id'];
+      
+      
+      $profile = profile2_load($author_uid);
+      $first_name = $profile->field_profile_first_name['und'][0]['value'];
+      $last_name = $profile->field_profile_last_name['und'][0]['value'];
+      $full_name = $first_name . ' ' . $last_name;
+      $title = $profile->field_profile_title['und'][0]['value'];
+
       $author = user_load($author_uid);
       
       if (in_array ( 'Inactive', $author->roles )) {
         // Loop through array in field_publications till we find the first active user
-        // NOTE: We are NOT looping through th author role array. 
+        // NOTE: We are NOT looping through the author role array. 
         $key = 1;
         while (isset($node->field_publications_author['und'][$key])) {
           $author_uid = $node->field_publications_author['und'][$key]['entity']->uid;
           $author = user_load($author_uid);
           if (! in_array ( 'Inactive', $author->roles )) {
-            $name = $node->field_publications_author['und'][$key]['entity']->label;
-            $title = $node->field_publications_author['und'][$key]['entity']->field_profile_title['und'][0]['value'];            
+            
+            $profile = profile2_load($author_uid);
+            $first_name = $profile->field_profile_first_name['und'][$key]['value'];
+            $last_name = $profile->field_profile_last_name['und'][$key]['value'];
+            $full_name = $first_name . ' ' . $last_name;
+            $title = $profile->field_profile_title['und'][$key]['value'];
+            
+            
+            //$name = $node->field_publications_author['und'][$key]['entity']->label;
+            //$title = $node->field_publications_author['und'][$key]['entity']->field_profile_title['und'][0]['value'];            
             break;  
           }    
           ++$key;
         }  
       }
-      else {     
-        $name = $node->field_publications_author['und'][0]['entity']->label;
-        $title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];         
+      else {
+        
+        $profile = profile2_load($author_uid);
+        $first_name = $profile->field_profile_first_name['und'][0]['value'];
+        $last_name = $profile->field_profile_last_name['und'][0]['value'];
+        $full_name = $first_name . ' ' . $last_name;
+        $title = $profile->field_profile_title['und'][0]['value'];
+        
+        
+        //$name = $node->field_publications_author['und'][0]['entity']->label;
+        //$title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];         
       }
       
       if (isset($node->field_publications_link['und'][0]['title'])) {
@@ -285,7 +310,7 @@ function idmteam_contents($which_block) {
       // This is the first form element. It's a textfield with a label, "Name"
       $form['name'] = array(
         '#type' => 'item',
-        '#markup' => $name,
+        '#markup' => $full_name,
         '#prefix' => '<div class="default-author-data" style="clear: left">',
       );
       
@@ -296,8 +321,7 @@ function idmteam_contents($which_block) {
         '#suffix' => '</div>',
       );      
       
-      //$result = $form;
-      //return $result; 
+
       $result = $form; 
       return $result;
 
