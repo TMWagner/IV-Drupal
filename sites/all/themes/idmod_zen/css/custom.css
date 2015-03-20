@@ -1185,6 +1185,10 @@ div.team-name-info a {
  * 
  */
 
+.group-authors-group {
+  clear: left;
+}
+
 
 /*format author select box*/
 .form-item.form-type-select {
@@ -1228,6 +1232,7 @@ div.team-name-info a {
 
 .pub-title {
 	float: left;
+	margin-bottom: 10px;
 }
 
 .node-publications .field-label {
