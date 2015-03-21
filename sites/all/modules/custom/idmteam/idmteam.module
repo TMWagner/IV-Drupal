@@ -236,10 +236,7 @@ function idmteam_contents($which_block) {
       
       //  We may not have an "Active" author...
       //  Need to loop through to find the first user not flagged as nonactive....
-      
-      //$author_uid = $node->field_publications_author['und'][0]['entity']->uid;
       $author_uid = $node->field_publications_author['und'][0]['target_id'];
-      
       
       $profile = profile2_load($author_uid);
       $first_name = $profile->field_profile_first_name['und'][0]['value'];
@@ -263,26 +260,17 @@ function idmteam_contents($which_block) {
             $last_name = $profile->field_profile_last_name['und'][$key]['value'];
             $full_name = $first_name . ' ' . $last_name;
             $title = $profile->field_profile_title['und'][$key]['value'];
-            
-            
-            //$name = $node->field_publications_author['und'][$key]['entity']->label;
-            //$title = $node->field_publications_author['und'][$key]['entity']->field_profile_title['und'][0]['value'];            
             break;  
           }    
           ++$key;
         }  
       }
-      else {
-        
+      else {      
         $profile = profile2_load($author_uid);
         $first_name = $profile->field_profile_first_name['und'][0]['value'];
         $last_name = $profile->field_profile_last_name['und'][0]['value'];
         $full_name = $first_name . ' ' . $last_name;
-        $title = $profile->field_profile_title['und'][0]['value'];
-        
-        
-        //$name = $node->field_publications_author['und'][0]['entity']->label;
-        //$title = $node->field_publications_author['und'][0]['entity']->field_profile_title['und'][0]['value'];         
+        $title = $profile->field_profile_title['und'][0]['value'];        
       }
       
       if (isset($node->field_publications_link['und'][0]['title'])) {
@@ -332,8 +320,6 @@ function idmteam_contents($which_block) {
       return;
   }
 }
-
-
 
 
 /**

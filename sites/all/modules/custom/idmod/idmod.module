@@ -174,12 +174,7 @@ function idmod_entity_view_alter(&$build, $type) {
           $build['field_publications_author'][$key]['#markup'] .= ', ';
         }
         ++$key;
-      }
-      
-      // If Foreign Author flag is set, append FA note to first array item. 
-      if ($foreign_authors) {
-        $build['field_publications_author'][0]['#markup'] = $foreign_authors_string . $build['field_publications_author'][0]['#markup'];
-      }                 
+      }          
   }
 }
 
@@ -196,7 +191,6 @@ function idmod_url_outbound_alter(&$path, &$options, $original_path) {
       $options['fragment'] = null;
     }
   }
-  
 }
 
 
@@ -215,7 +209,5 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
     }
   } 
 }
-
-
 
 
