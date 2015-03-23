@@ -47,8 +47,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       '25' => t('Joshua Proctor'),
       '12' => t('Alexander Upfill-Brown'),
       '15' => t('Bradley Wagner'),
-      '4' => t('Edward Wenger'),
-      
+      '4' => t('Edward Wenger'), 
     ),
     
     '#ajax' => array(
@@ -85,15 +84,18 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   $form['publications']['publications4'] = array(
     '#type' => 'item',
     '#markup' => '<ul class="level-3  level-3c inline hidden" id="team-research">
+    
+                  <li id="math">
+                    <a href="/publications/topic/math">Applied Math</a>
+                  </li>    
+    
                   <li id="hiv">
                     <a href="/publications/topic/hiv">HIV</a>
                   </li>
                   <li id="malaria">
                     <a href="/publications/topic/malaria">Malaria</a>
                   </li>
-                  <li id="numerical">
-                    <a href="/publications/topic/numerical">Numerical Methods</a>
-                  </li>
+
                   <li id="polio">
                     <a href="/publications/topic/polio">Polio</a>
                   </li>
