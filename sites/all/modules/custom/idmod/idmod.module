@@ -122,8 +122,8 @@ function idmod_taxonomy_term_uri($term) {
   $new_url = NULL;
   
   switch ($term->name) {
-      case "Numerical Methods":
-          $new_url = 'research/numerical';
+      case "Applied Math":
+          $new_url = 'research/math';
           break;
       case "Tuberculosis":
           $new_url = 'research/tuberculosis';
