@@ -224,20 +224,24 @@ Drupal.behaviors.my_custom_behavior = {
     });
     
     
-    var defaultAuthor = null;
-    var swapAuthor = null;
+    
     $(function() {
-      defaultAuthor = $(".default-author-data");
-      defaultAuthorText = defaultAuthor.html();
+      
       $(".author-list .views-field").not(':first').hoverIntent(teamMemIn, teamMemOut, function(){});
             
     });
     
     function teamMemIn(evt) {
+
+      
       // Change the opacity of the first element to shaded and the target element to 100%
       $(this).addClass( "selected-author" );
       $(".author-list .views-row-first .views-field").css( "opacity", "0.4" );
       
+      
+      defaultAuthor = $(".default-author-data");
+      defaultAuthorText = defaultAuthor.html();
+         
       // Save new author info..
       swapAuthor = $(this).next().find( ".swap-author-data" );
       swapAuthorText = swapAuthor.html();
@@ -245,9 +249,10 @@ Drupal.behaviors.my_custom_behavior = {
 
     }
     function teamMemOut(evt) {
+      
       $(this).removeClass( "selected-author" );
       $(".author-list .views-row-first .views-field").css( "opacity", "1.0" );
-
+      
       // Reset default author with default author data text.
       // Note: we are using TEXT (HTML) here - not an object. 
       $( ".default-author-data" ).html( defaultAuthorText );
