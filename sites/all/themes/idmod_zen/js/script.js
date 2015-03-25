@@ -78,7 +78,8 @@ Drupal.behaviors.my_custom_behavior = {
             height: "180px",  
           }, 200 );
         
-        // Find related content div and display it. 
+        // Find related content div and display it.
+        //  NOTE (2015/03/25): box class = "numercial..." is the old name for Applied Math
         if ($box_class == 'hiv_box' ) {
           $('#hiv_content').removeClass("hidden");
           $('#intro_content').addClass("hidden");
