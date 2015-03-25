@@ -1170,10 +1170,7 @@ img.media-image,
 /* END: Research - numerical Methods page */
 
 
-
 /*Research - left sidebar*/
-
-
 
 td.col-1.col-first {
 	position: relative;
@@ -1199,6 +1196,16 @@ div.team-name-info a {
  * format publication pages
  * 
  */
+
+.node-publications h3 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.node-publications h4 {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
 
 .group-authors-group {
   clear: left;
