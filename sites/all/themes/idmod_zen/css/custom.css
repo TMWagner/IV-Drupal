@@ -2115,3 +2115,10 @@ div#cboxLoadedContent p {
 }
 
 
+.figure-block {
+	background-color: #ECECEC;
+	padding: 10px;
+}
+.figure-block .publication-graphic {
+	text-align: left;
+}
