@@ -236,13 +236,15 @@ function idmteam_contents($which_block) {
       
       //  We may not have an "Active" author...
       //  Need to loop through to find the first user not flagged as nonactive....
-      $author_uid = $node->field_publications_author['und'][0]['target_id'];
+      $author_pid = $node->field_publications_author['und'][0]['target_id'];
       
-      $profile = profile2_load($author_uid);
+      $profile = profile2_load($author_pid);
       $first_name = $profile->field_profile_first_name['und'][0]['value'];
       $last_name = $profile->field_profile_last_name['und'][0]['value'];
       $full_name = $first_name . ' ' . $last_name;
       $title = $profile->field_profile_title['und'][0]['value'];
+      
+      $author_uid = $profile->uid;
 
       $author = user_load($author_uid);
       
@@ -251,22 +253,23 @@ function idmteam_contents($which_block) {
         // NOTE: We are NOT looping through the author role array. 
         $key = 1;
         while (isset($node->field_publications_author['und'][$key])) {
-          $author_uid = $node->field_publications_author['und'][$key]['entity']->uid;
+          $author_pid = $node->field_publications_author['und'][$key]['target_id'];
+          $profile = profile2_load($author_pid);
+          $author_uid = $profile->uid;
           $author = user_load($author_uid);
           if (! in_array ( 'Inactive', $author->roles )) {
             
-            $profile = profile2_load($author_uid);
-            $first_name = $profile->field_profile_first_name['und'][$key]['value'];
-            $last_name = $profile->field_profile_last_name['und'][$key]['value'];
+            $first_name = $profile->field_profile_first_name['und'][0]['value'];
+            $last_name = $profile->field_profile_last_name['und'][0]['value'];
             $full_name = $first_name . ' ' . $last_name;
-            $title = $profile->field_profile_title['und'][$key]['value'];
+            $title = $profile->field_profile_title['und'][0]['value']; 
             break;  
           }    
           ++$key;
         }  
       }
       else {      
-        $profile = profile2_load($author_uid);
+        $profile = profile2_load($author_pid);
         $first_name = $profile->field_profile_first_name['und'][0]['value'];
         $last_name = $profile->field_profile_last_name['und'][0]['value'];
         $full_name = $first_name . ' ' . $last_name;
