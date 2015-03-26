@@ -134,8 +134,8 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   }
   
   //ToDo
-  if ($arg1 == 'numercial') {
-    $display_id = 'numerical';
+  if ($arg1 == 'math') {
+    $display_id = 'math';
     $arg = NULL;
   }
   if ($arg1 == 'polio') {
