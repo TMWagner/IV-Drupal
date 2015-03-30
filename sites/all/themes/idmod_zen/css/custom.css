@@ -25,6 +25,12 @@
  * General CSS
  */
 
+strong {
+	font-size: 16px;
+	font-family: 'Proxima Nova Semibold';
+}
+
+
 #main {
 	padding-top: 0px;
 }
@@ -2124,12 +2130,9 @@ div#cboxLoadedContent p {
 
 .figure-block {
 	background-color: #ECECEC;
+	overflow: auto;
 	padding: 10px;
 }
 .figure-block .publication-graphic {
 	text-align: left;
-}
-strong {
-	font-size: 16px;
-	font-family: 'Proxima Nova Semibold';
 }
