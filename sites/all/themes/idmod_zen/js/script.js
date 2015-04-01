@@ -142,7 +142,7 @@ Drupal.behaviors.my_custom_behavior = {
         window.location = 'research';
       });
       $(".p2_rollup.publications").click(function(){
-        window.location = 'node/71';
+        window.location = 'publications/97';
       });      
       
       $(".p2_rollup.software").click(function(){
