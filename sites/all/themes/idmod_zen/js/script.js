@@ -64,7 +64,6 @@ Drupal.behaviors.my_custom_behavior = {
        */
       $(function() {
         $(".five_box_960row_block").hoverIntent(fiveBoxHovIn, function(){});
-        //Roll "rollup" back down
         $(".rollup").mouseleave(fiveBoxHovOut);   
       });
       
@@ -75,7 +74,7 @@ Drupal.behaviors.my_custom_behavior = {
         // Rollup related info. 
         $(this).find(".rollup").animate({
             top: "0px",
-            height: "180px",  
+            height: "130px",  
           }, 200 );
         
         // Find related content div and display it.
@@ -83,34 +82,48 @@ Drupal.behaviors.my_custom_behavior = {
         if ($box_class == 'hiv_box' ) {
           $('#hiv_content').removeClass("hidden");
           $('#intro_content').addClass("hidden");
-          $('#numerical_content').addClass("hidden");
+          $('#epidemiology_content').addClass("hidden");
+          $('#math_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#polio_content').addClass("hidden");
           $('#tuberculosis_content').addClass("hidden");
-        }
-        if ($box_class == 'numerical_box' ) {
-          $('#intro_content').addClass("hidden");
+        }     
+        if ($box_class == 'epidemiology_box' ) {
+          $('#epidemiology_content').removeClass("hidden");
           $('#hiv_content').addClass("hidden");
-          $('#numerical_content').removeClass("hidden");
+          $('#intro_content').addClass("hidden");
+          $('#math_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#polio_content').addClass("hidden");
           $('#tuberculosis_content').addClass("hidden");
+        }        
+        
+        if ($box_class == 'math_box' ) {
+          $('#intro_content').addClass("hidden");
+          $('#hiv_content').addClass("hidden");        
+          $('#malaria_content').addClass("hidden");
+          $('#polio_content').addClass("hidden");
+          $('#tuberculosis_content').addClass("hidden");
+          $('#math_content').removeClass("hidden");
+          $('#epidemiology_content').addClass("hidden");
         }        
         if ($box_class == 'malaria_box' ) {
           $('#malaria_content').removeClass("hidden");
           $('#intro_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
-          $('#numerical_content').addClass("hidden");
+          $('#math_content').addClass("hidden");
           $('#polio_content').addClass("hidden");
           $('#tuberculosis_content').addClass("hidden");
+          $('#epidemiology_content').addClass("hidden");
         }
         if ($box_class == 'polio_box' ) {
           $('#polio_content').removeClass("hidden");
           $('#intro_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
-          $('#numerical_content').addClass("hidden");
+          $('#math_content').addClass("hidden");
           $('#tuberculosis_content').addClass("hidden");
+          $('#epidemiology_content').addClass("hidden");
         }
         if ($box_class == 'tuberculosis_box' ) {
           $('#tuberculosis_content').removeClass("hidden");
@@ -118,16 +131,16 @@ Drupal.behaviors.my_custom_behavior = {
           $('#polio_content').addClass("hidden");
           $('#malaria_content').addClass("hidden");
           $('#hiv_content').addClass("hidden");
-          $('#numerical_content').addClass("hidden");
+          $('#math_content').addClass("hidden");
+          $('#epidemiology_content').addClass("hidden");
         }
-
       }
       
       function fiveBoxHovOut(evt) {
         $(".rollup").animate({
-            top: "180px",
+            top: "130px",
             height: "0px",  
-          }, 200 );
+          }, 300 );
       }      
       
       /* This needs to match CSS */           

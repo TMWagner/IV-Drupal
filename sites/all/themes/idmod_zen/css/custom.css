@@ -934,9 +934,39 @@ div#menu-level2 {
 
 /* CSS for Research page */
 
+.node-research p {
+  margin: 0px;
+}
 
-.fivebox_wrapper {
-	margin-top: 10px;
+.orgchart-item {
+	height: 190px;
+	width: 185px;
+	float: left;
+	margin-right: 5px;
+	position: relative;
+}
+
+.orgchart-band1 {
+	left: 60px;
+	top: 10px;
+	position: relative;
+}
+
+.orgchart-band2 {
+	color: white;
+	text-align: center;
+	padding-top: 3px;
+	position: absolute;
+	top: 60px;
+	left: 40px;
+}
+
+.orgchart-band3 {
+	color: white;
+	left: 60px;
+	position: absolute;
+	top: 140px;
+	text-align: center;
 }
 
 .node-research h4 {
@@ -1055,26 +1085,29 @@ img.media-image,
 	background-color: #ccc;
 	box-shadow: 4px 2px 5px 0 rgba(119, 119, 119, 0.75);
 	float: left;
-	height: 180px;
-	margin-right: 10px;
+	height: 130px;
+	margin-right: 20px;
+	margin-top: 10px;
 	position: relative;
-	width: 180px;
+	width: 300px;
 }
 
 
 /* CSS to Center multiline text vertically and horizontally.
  * CSS for 5 block layout
+ * 2015/04/12: Will become 3x2 section
  */
 
-/*Not sure this does anything...*/
 .fivebox_wrapper {
-	position: relative;
+	margin-top: 10px;
+	/* [disabled]position: relative; */
 }
+
 
 .block_content {
 	position: absolute;
-	left: 20px;
-	top: 50px;
+	left: 80px;
+	top: 20px;
 	width: 135px;
 	height: 84px;
 	display: table;
@@ -1094,7 +1127,7 @@ img.media-image,
 
 .rollup {
 	position: absolute;
-	width: 180px;
+	width: 300px;
 	height: 0px;
 	display: block;
 	top: 180px;  /* initial position */
@@ -2135,4 +2168,8 @@ div#cboxLoadedContent p {
 }
 .figure-block .publication-graphic {
 	text-align: left;
+}
+
+.box-section_wrapper {
+	width: 960px;
 }
