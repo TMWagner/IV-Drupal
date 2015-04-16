@@ -1163,7 +1163,7 @@ img.media-image,
 	margin-right: 20px;
 	background-color: #CCC;
 	position: relative;
-  box-shadow: 4px 2px 5px 0px rgba(119, 119, 119, 0.75);
+	box-shadow: 4px 2px 5px 0px rgba(119, 119, 119, 0.75);
 }
 
 .numerical-fr-block ul li a {
@@ -2172,4 +2172,48 @@ div#cboxLoadedContent p {
 
 .box-section_wrapper {
 	width: 960px;
+}
+
+/* Epidemiology page */
+
+
+.epidemiology-fr-block ul {
+	list-style-type: none;
+	padding-top: 100px;
+	margin-top: 130px;
+	padding-left: 0px;
+}
+
+
+#epidemiology-fr {
+	height: 200px;
+	margin-top: 10px;
+	width: 760px;
+}
+
+.epidemiology-fr-block {
+	height: 290px;
+	width: 230px;
+	float: left;
+	margin-right: 20px;
+	background-color: #CCC;
+	position: relative;
+	box-shadow: 4px 2px 5px 0px rgba(119, 119, 119, 0.75);
+}
+
+.epidemiology-fr-block ul li a {
+	display: inline-block;
+	xborder-top: 1px solid #ffffff;
+	background: #0073a3;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #FFF;
+	text-decoration: none;
+	vertical-align: middle;
+	width:230px;
+	text-align: center;
+	height: 30px;
+	height: 40px;
+	padding-top: 20px;
+
 }
