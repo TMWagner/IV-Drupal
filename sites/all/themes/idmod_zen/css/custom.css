@@ -2012,7 +2012,8 @@ table.breakout-description p {
 }
 
 article.node-103 {
-background-image: url(/sites/default/files/symp_bg.png);
+background-image: url(/sites/default/files/symp_bg.png); 
+background-repeat:no-repeat;
 }
 
 .breakout-description p {
