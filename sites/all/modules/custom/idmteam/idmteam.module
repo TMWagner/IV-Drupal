@@ -658,14 +658,17 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
     $build['team']['team2'] = array(
       '#type' => 'item',
       '#markup' => '<ul class="level-3  level-3b inline hidden" id="team-research">
+                    <li id="math">
+                      <a href="/team/research/math">Applied Math</a>
+                    </li>
+                    <li id="epidemiology">
+                      <a href="/team/research/epidemiology">Epidemiology</a>
+                    </li>
                     <li id="hiv">
                       <a href="/team/research/hiv">HIV</a>
-                    </li>
+                    </li>                              
                     <li id="malaria">
                       <a href="/team/research/malaria">Malaria</a>
-                    </li>
-                    <li id="numerical">
-                      <a href="/team/research/math">Applied Math</a>
                     </li>
                     <li id="polio">
                       <a href="/team/research/polio">Polio</a>
