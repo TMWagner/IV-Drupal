@@ -939,10 +939,10 @@ div#menu-level2 {
 }
 
 .orgchart-item {
-	height: 190px;
+	height: 145px;
 	width: 185px;
 	float: left;
-	margin-right: 5px;
+	margin-right: 6px;
 	position: relative;
 }
 
@@ -957,7 +957,7 @@ div#menu-level2 {
 	text-align: center;
 	padding-top: 3px;
 	position: absolute;
-	top: 60px;
+	top: 10px;
 	left: 40px;
 }
 
@@ -965,8 +965,8 @@ div#menu-level2 {
 	color: white;
 	left: 60px;
 	position: absolute;
-	top: 140px;
 	text-align: center;
+	top: 100px;
 }
 
 .node-research h4 {
