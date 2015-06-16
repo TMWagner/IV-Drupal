@@ -190,8 +190,9 @@ figcaption {
 .fp-hero {
 	background-repeat: no-repeat;
 	width: 960px;
-	height: 420px;
+	height: 540px;
 	margin-top: 24px;
+    overflow: hidden;
 }
 
 div#views_slideshow_cycle_main_fp_rotator-page {
@@ -237,6 +238,21 @@ div#fp-hero-tagline {
 	font-family: 'Proxima Nova Light';
 	line-height: 30px;
 	margin-top: 5px;
+}
+
+/*Row 2 nav*/
+
+.fp-nav-row {
+	float: left;
+	width: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: block;
+	text-align: center;
+}
+
+.fp-nav-row h3 {
+  margin-top: 5px;
 }
 
 
