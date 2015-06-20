@@ -676,6 +676,58 @@ div.p2_box.last {
 /*
  * CSS for panel 3
  */
+ 
+ 
+ #panel3-wrapper {
+	 
+	 background-color:#B0AEAE;
+	 margin-left:auto;
+	 margin-right: auto;
+	 position: relative;
+     height:540px;
+     width: 960px;	
+}
+#panal3-bg {
+    background-image: url(/sites/default/files/fp_panel3_bg.png);
+    height: 522px;
+    position: absolute;
+    bottom: 0;
+    width: 960px;
+}
+	
+#panel3-main-button {
+	width: 200px;
+	height:200px;
+	display:block;
+	background-color:#0084FF;
+	margin-left:auto;
+	margin-right:auto;
+
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-style: inset;
+	border-width: 0px;
+	
+}
+	
+.panel3-sub-button {
+	width: 140px;
+	height:140px;
+	display:block;
+}
+
+img.button-image {
+	padding-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+ 
+ 
+ 
+ /* end new code */
+ 
 
 div#home-p3 {
 	margin-top: 20px;
@@ -936,6 +988,7 @@ div#menu-level2 {
 }
 
 .region-sidebar-first {
+
 
 }
 .panels-flexible-region-brick1-left220 h3 {
