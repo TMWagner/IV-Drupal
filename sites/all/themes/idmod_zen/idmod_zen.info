@@ -75,6 +75,7 @@ scripts[] = js/script.js
 scripts[] = js/masonry.pkgd.min.js
 ;scripts[] = js/jquery.hoverintent.js   
 scripts[] = sf-menu/js/superfish.js
+scripts[] = js/jquery.scrollme.min.js
 
 
 

@@ -679,13 +679,11 @@ div.p2_box.last {
  
  
  #panel3-wrapper {
-	 
-	 background-color:#B0AEAE;
-	 margin-left:auto;
-	 margin-right: auto;
-	 position: relative;
-     height:540px;
-     width: 960px;	
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 540px;
+	width: 960px;
 }
 #panal3-bg {
     background-image: url(/sites/default/files/fp_panel3_bg.png);
@@ -699,10 +697,23 @@ div.p2_box.last {
 	width: 200px;
 	height:200px;
 	display:block;
-	background-color:#0084FF;
 	margin-left:auto;
 	margin-right:auto;
-
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-style: inset;
+	border-width: 0px;
+	position:relative;	
+}
+	
+.panel3-sub-button {
+	
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	
 	border-radius: 100px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
@@ -710,20 +721,57 @@ div.p2_box.last {
 	border-width: 0px;
 	
 }
-	
-.panel3-sub-button {
-	width: 140px;
-	height:140px;
-	display:block;
+
+.panel3-sub-button p {
+  text-align: center;
+  color: white;
+  padding-top: 45px;
 }
 
 img.button-image {
 	padding-top:20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
 }
+
+#panel3-math {
+	position:absolute;
+	top: 20px;
+	z-index:1;
+	}
+	
+#panel3-tb {
+	position:absolute;
+	top: 20px;
+	z-index:1;
+	}
+	
+#panel3-epidemiology {
+	position:absolute;
+	top: 92px;
+	z-index:1;
+	}	
+	
+#panel3-polio {
+	position:absolute;
+	top: 93px;
+	z-index:1;
+	}		
  
+ #panel3-hiv {
+	position:absolute;
+	left:328px;
+	top: 95px;
+	z-index:1;
+	}	
+	
+#panel3-malaria {
+	position:absolute;
+	left:470px;
+	top: 95px;
+	z-index:1;
+}	
  
  
  /* end new code */
