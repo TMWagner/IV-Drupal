@@ -788,9 +788,13 @@ div#panel3-default-text {
 /*  padding-top: 45px;*/
 }
 
+.panel3-swap-text>p {
+	margin: 0px 10px 0px 10px;
+}
+
 /*Temp*/
 .panel3-sub-button-text {
-/*	background-color: rgba(111, 84, 218, 0.29);*/
+	/*background-color: rgba(111, 84, 218, 0.29);*/ /*Background color for debugging <div>*/
 	height: 100px;
 	width:100px;
 }

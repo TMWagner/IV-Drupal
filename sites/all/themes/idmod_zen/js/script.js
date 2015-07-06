@@ -65,10 +65,11 @@ Drupal.behaviors.my_custom_behavior = {
        *    jQuery('.panel3-sub-button-text').css('background-color','blue');
        */
       $(function() {
-        $(".panel3-sub-button-text").hoverIntent(swapFpP3Text, function(){});  //Can we declare mouseleave function here?
+        $(".panel3-sub-button-text").hoverIntent(swapInFPP3Text, swapOutFPP3Text, function(){});  //Can we declare mouseleave function here?
       });
       
-      function swapFpP3Text(evt) {
+      function swapInFPP3Text(evt) {
+		
         // Get the class of the bubble
         $bubble_class = $(this).attr('id');
         //DEBUG: Remove
@@ -78,17 +79,78 @@ Drupal.behaviors.my_custom_behavior = {
         
         //Swap in the appropriate text for the bubble hovered over
         if ($bubble_class == 'math-bubble' ) {
-          $('#panel3-math-text').removeClass("hidden");
+          console.log('>>> Fire rules for: ', $bubble_class);
           $('#panel3-default-text').addClass("hidden");
-          //$('#epidemiology_content').addClass("hidden");
-          //$('#math_content').addClass("hidden");
-          //$('#malaria_content').addClass("hidden");
-          //$('#polio_content').addClass("hidden");
-          //$('#tuberculosis_content').addClass("hidden");
-        } 
+          $('#panel3-math-text').removeClass("hidden");
+          $('#panel3-epidemiology-text').addClass("hidden");
+          $('#panel3-hiv-text').addClass("hidden");
+          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-polio-text').addClass("hidden");
+          $('#panel3-tuberculosis-text').addClass("hidden");
+        }
+        if ($bubble_class == 'epidemiology-bubble' ) {
+          console.log('>>> Fire rules for: ', $bubble_class);
+          $('#panel3-default-text').addClass("hidden");
+          $('#panel3-math-text').addClass("hidden");
+          $('#panel3-epidemiology-text').removeClass("hidden");
+          $('#panel3-hiv-text').addClass("hidden");
+          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-polio-text').addClass("hidden");
+          $('#panel3-tuberculosis-text').addClass("hidden");
+        }     
+        if ($bubble_class == 'hiv-bubble' ) {
+        console.log('>>> Fire rules for: ', $bubble_class);
+          $('#panel3-default-text').addClass("hidden");
+          $('#panel3-math-text').addClass("hidden");
+          $('#panel3-epidemiology-text').addClass("hidden");
+          $('#panel3-hiv-text').removeClass("hidden");
+          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-polio-text').addClass("hidden");
+          $('#panel3-tuberculosis-text').addClass("hidden");
+        }
+        if ($bubble_class == 'malaria-bubble' ) {
+          console.log('>>> Fire rules for: ', $bubble_class);
+          $('#panel3-default-text').addClass("hidden");
+          $('#panel3-math-text').addClass("hidden");
+          $('#panel3-epidemiology-text').addClass("hidden");
+          $('#panel3-hiv-text').addClass("hidden");
+          $('#panel3-malaria-text').removeClass("hidden");
+          $('#panel3-polio-text').addClass("hidden");
+          $('#panel3-tuberculosis-text').addClass("hidden");
+        }
+        if ($bubble_class == 'polio-bubble' ) {
+          console.log('>>> Fire rules for: ', $bubble_class);
+          $('#panel3-default-text').addClass("hidden");
+          $('#panel3-math-text').addClass("hidden");
+          $('#panel3-epidemiology-text').addClass("hidden");
+          $('#panel3-hiv-text').addClass("hidden");
+          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-polio-text').removeClass("hidden");
+          $('#panel3-tuberculosis-text').addClass("hidden");
+        }
+        if ($bubble_class == 'tuberculosis-bubble' ) {
+          console.log('>>> Fire rules for: ', $bubble_class);
+          $('#panel3-default-text').addClass("hidden");
+          $('#panel3-math-text').addClass("hidden");
+          $('#panel3-epidemiology-text').addClass("hidden");
+          $('#panel3-hiv-text').addClass("hidden");
+          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-polio-text').addClass("hidden");
+          $('#panel3-tuberculosis-text').removeClass("hidden");
+        }
         
       }
-      
+       
+      function swapOutFPP3Text(evt) {
+        console.log('>>> Restore default text ');
+        $('#panel3-default-text').removeClass("hidden");
+        $('#panel3-math-text').addClass("hidden");
+        $('#panel3-epidemiology-text').addClass("hidden");
+        $('#panel3-hiv-text').addClass("hidden");
+        $('#panel3-malaria-text').addClass("hidden");
+        $('#panel3-polio-text').addClass("hidden");
+        $('#panel3-tuberculosis-text').addClass("hidden");
+      }
       
     
       /*  Animate Research page boxes
