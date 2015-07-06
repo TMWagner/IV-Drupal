@@ -722,11 +722,7 @@ div.p2_box.last {
 	
 }
 
-.panel3-sub-button p {
-  text-align: center;
-  color: white;
-  padding-top: 45px;
-}
+
 
 img.button-image {
 	padding-top:20px;
@@ -772,7 +768,33 @@ img.button-image {
 	top: 95px;
 	z-index:1;
 }	
+
+div#panel3-research-text {
+  margin: 0px 10px;
+}
  
+#panel3-default-text {
+	
+}
+
+div#panel3-default-text {
+  margin: 0px 10px;
+}
+
+.panel3-sub-button p {
+  text-align: center;
+  color: white;
+	margin-top:40px;
+/*  padding-top: 45px;*/
+}
+
+/*Temp*/
+.panel3-sub-button-text {
+/*	background-color: rgba(111, 84, 218, 0.29);*/
+	height: 100px;
+	width:100px;
+}
+
  
  /* end new code */
  

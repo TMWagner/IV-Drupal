@@ -29,7 +29,7 @@ Drupal.behaviors.my_custom_behavior = {
       var color = '';
       var rollupColor = '';
       var replaceColor = '';
-      var position = '';
+     
       $(".p2_box").each(function() {
         color = $(this).css( "background-color" )
         rollupColor = $(this).next(".p2_rollup").css("background-color");
@@ -57,6 +57,39 @@ Drupal.behaviors.my_custom_behavior = {
             height: "320px",  
           }, 200 );
       }
+      
+      
+      /*  Animate the Front page bubbles
+       *  Debug code for console:
+       *    jQuery('.panel3-sub-button').css('border-color', 'red');
+       *    jQuery('.panel3-sub-button-text').css('background-color','blue');
+       */
+      $(function() {
+        $(".panel3-sub-button-text").hoverIntent(swapFpP3Text, function(){});  //Can we declare mouseleave function here?
+      });
+      
+      function swapFpP3Text(evt) {
+        // Get the class of the bubble
+        $bubble_class = $(this).attr('id');
+        //DEBUG: Remove
+        console.log('>>> ID of bubble is: ', $bubble_class);
+        
+        //Change the background of the bubble (better done with CSS?)
+        
+        //Swap in the appropriate text for the bubble hovered over
+        if ($bubble_class == 'math-bubble' ) {
+          $('#panel3-math-text').removeClass("hidden");
+          $('#panel3-default-text').addClass("hidden");
+          //$('#epidemiology_content').addClass("hidden");
+          //$('#math_content').addClass("hidden");
+          //$('#malaria_content').addClass("hidden");
+          //$('#polio_content').addClass("hidden");
+          //$('#tuberculosis_content').addClass("hidden");
+        } 
+        
+      }
+      
+      
     
       /*  Animate Research page boxes
        *  Start with background color
