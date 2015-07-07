@@ -64,6 +64,7 @@ Drupal.behaviors.my_custom_behavior = {
        *    jQuery('.panel3-sub-button').css('border-color', 'red');
        *    jQuery('.panel3-sub-button-text').css('background-color','blue');
        */
+      
       $(function() {
         $(".panel3-sub-button-text").hoverIntent(swapInFPP3Text, swapOutFPP3Text, function(){});  //Can we declare mouseleave function here?
       });

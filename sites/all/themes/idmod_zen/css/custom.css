@@ -722,8 +722,6 @@ div.p2_box.last {
 	
 }
 
-
-
 img.button-image {
 	padding-top:20px;
   	margin-left: auto;
@@ -733,39 +731,41 @@ img.button-image {
 
 #panel3-math {
 	position:absolute;
-	top: 20px;
+	top: 5px;
 	z-index:1;
 	}
 	
 #panel3-tb {
 	position:absolute;
-	top: 20px;
+	top: 5px;
 	z-index:1;
 	}
 	
 #panel3-epidemiology {
 	position:absolute;
-	top: 92px;
+	left:180px;
+	top: 76px;
 	z-index:1;
 	}	
 	
 #panel3-polio {
 	position:absolute;
-	top: 93px;
+	left:475px;
+	top: 80px;
 	z-index:1;
 	}		
  
  #panel3-hiv {
 	position:absolute;
-	left:328px;
-	top: 95px;
+	left:312px;
+	top: 80px;
 	z-index:1;
 	}	
 	
 #panel3-malaria {
 	position:absolute;
 	left:470px;
-	top: 95px;
+	top: 80px;
 	z-index:1;
 }	
 
@@ -782,14 +782,64 @@ div#panel3-default-text {
 }
 
 .panel3-sub-button p {
-  text-align: center;
-  color: white;
-	margin-top:40px;
-/*  padding-top: 45px;*/
+    color: white;
+    height: 50px;
+    margin-top: 60px;
+    text-align: center;
+    width: 125px;
 }
 
 .panel3-swap-text>p {
 	margin: 0px 10px 0px 10px;
+}
+
+div#math-bubble {
+  background-image: url(/sites/default/files/math_bg_normal.png); 
+  width: 382px;
+  height: 172px;
+}
+
+/* do this with jQuery */
+div#panel3-math-bubble:hover {
+  background-image: url(/sites/default/files/math_bg_hover.png); 
+  width: 382px;
+  height: 172px;
+}
+
+div#tuberculosis-bubble {
+  background-image: url(/sites/default/files/fp_tb_normal.png); 
+  width: 380px;
+  height: 172px;
+}
+
+div#epidemiology-bubble {
+  background-image: url(/sites/default/files/fp_epidemiology_normal.png); 
+  width: 302px;
+  height: 240px;
+}
+
+div#epidemiology-bubble {
+  background-image: url(/sites/default/files/fp_epidemiology_normal.png); 
+  width: 302px;
+  height: 240px;
+}
+
+div#polio-bubble {
+  background-image: url(/sites/default/files/fp_polio_normal.png); 
+  width: 310px;
+  height: 241px;
+}
+
+div#hiv-bubble {
+  background-image: url(/sites/default/files/fp_hiv_normal.png); 
+  width: 173px;
+  height: 320px;
+}
+
+div#malaria-bubble {
+  background-image: url(/sites/default/files/fp_malaria_normal.png); 
+  width: 172px;
+  height: 320px;
 }
 
 /*Temp*/
