@@ -256,12 +256,12 @@ div#fp-hero-tagline {
 }
 
 
-#p3-block2.panel-pane.pane-node {
+/*#p3-block2.panel-pane.pane-node {
     float: left;
     margin-left: 20px;
     margin-top: 20px;
     width: 320px;
-}
+}*/
 
 #p3-block2.panel-pane {
 	float: left;
@@ -682,7 +682,7 @@ div.p2_box.last {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	height: 540px;
+	height: 520px;
 	width: 960px;
 }
 #panal3-bg {
