@@ -63,10 +63,12 @@ Drupal.behaviors.my_custom_behavior = {
        *  Debug code for console:
        *    jQuery('.panel3-sub-button').css('border-color', 'red');
        *    jQuery('.panel3-sub-button-text').css('background-color','blue');
+       *    jQuery('.panel3-sub-button-text > p').css('background-color','blue');
+       *    background-image: url("/sites/default/files/math_bg_hover.png");
        */
       
       $(function() {
-        $(".panel3-sub-button-text").hoverIntent(swapInFPP3Text, swapOutFPP3Text, function(){});  //Can we declare mouseleave function here?
+        $(".panel3-sub-button-text > p").hoverIntent(swapInFPP3Text, swapOutFPP3Text, function(){});  //Can we declare mouseleave function here?
       });
       
       function swapInFPP3Text(evt) {
@@ -79,7 +81,7 @@ Drupal.behaviors.my_custom_behavior = {
         //Change the background of the bubble (better done with CSS?)
         
         //Swap in the appropriate text for the bubble hovered over
-        if ($bubble_class == 'math-bubble' ) {
+        if ($bubble_class == 'math-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').removeClass("hidden");
@@ -88,8 +90,12 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
+          $('div#math-bubble').css('background-image','url("/sites/default/files/fp_math_bubble_hover.png")');
+          $('p#math-bubble-text').css('color','rgb(216, 216, 216)');
+          
+          
         }
-        if ($bubble_class == 'epidemiology-bubble' ) {
+        if ($bubble_class == 'epidemiology-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').addClass("hidden");
@@ -98,9 +104,10 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
+          $('div#epidemiology-bubble').css('background-image','url("/sites/default/files/fp_epidemiology_hover.png")');
+          $('p#epidemiology-bubble-text').css('color','rgb(216, 216, 216)');
         }     
-        if ($bubble_class == 'hiv-bubble' ) {
-        console.log('>>> Fire rules for: ', $bubble_class);
+        if ($bubble_class == 'hiv-bubble-text' ) {
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').addClass("hidden");
           $('#panel3-epidemiology-text').addClass("hidden");
@@ -108,8 +115,10 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
+          $('div#hiv-bubble').css('background-image','url("/sites/default/files/fp_hiv_hover.png")');
+          $('p#hiv-bubble-text').css('color','rgb(216, 216, 216)');
         }
-        if ($bubble_class == 'malaria-bubble' ) {
+        if ($bubble_class == 'malaria-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').addClass("hidden");
@@ -118,8 +127,10 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malaria-text').removeClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
+          $('div#malaria-bubble').css('background-image','url("/sites/default/files/fp_malaria_hover.png")');
+          $('p#malaria-bubble-text').css('color','rgb(216, 216, 216)');
         }
-        if ($bubble_class == 'polio-bubble' ) {
+        if ($bubble_class == 'polio-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').addClass("hidden");
@@ -128,8 +139,10 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').removeClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
+          $('div#polio-bubble').css('background-image','url("/sites/default/files/fp_polio_hover.png")');
+          $('p#polio-bubble-text').css('color','rgb(216, 216, 216)');
         }
-        if ($bubble_class == 'tuberculosis-bubble' ) {
+        if ($bubble_class == 'tuberculosis-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').addClass("hidden");
@@ -138,6 +151,8 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').removeClass("hidden");
+          $('div#tuberculosis-bubble').css('background-image','url("/sites/default/files/fp_tb_hover.png")');
+          $('p#tuberculosis-bubble-text').css('color','rgb(216, 216, 216)');
         }
         
       }
@@ -151,6 +166,20 @@ Drupal.behaviors.my_custom_behavior = {
         $('#panel3-malaria-text').addClass("hidden");
         $('#panel3-polio-text').addClass("hidden");
         $('#panel3-tuberculosis-text').addClass("hidden");
+        
+        $('div#math-bubble').css('background-image','url("/sites/default/files/fp_math_bubble_normal.png")');
+        $('div#epidemiology-bubble').css('background-image','url("/sites/default/files/fp_epidemiology_normal.png")');
+        $('div#hiv-bubble').css('background-image','url("/sites/default/files/fp_hiv_normal.png")');
+        $('div#malaria-bubble').css('background-image','url("/sites/default/files/fp_malaria_normal.png")');
+        $('div#polio-bubble').css('background-image','url("/sites/default/files/fp_polio_normal.png")');
+        $('div#tuberculosis-bubble').css('background-image','url("/sites/default/files/fp_tb_normal.png")');
+        
+        $('p#math-bubble-text').css('color','white');
+        $('p#epidemiology-bubble-text').css('color','white');
+        $('p#hiv-bubble-text').css('color','white');
+        $('p#malaria-bubble-text').css('color','white');
+        $('p#polio-bubble-text').css('color','white');
+        $('p#tuberculosis-bubble-text').css('color','white');
       }
       
     

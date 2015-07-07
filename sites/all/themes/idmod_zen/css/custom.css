@@ -782,11 +782,12 @@ div#panel3-default-text {
 }
 
 .panel3-sub-button p {
-    color: white;
-    height: 50px;
-    margin-top: 60px;
-    text-align: center;
-    width: 125px;
+/*	background-color:blue;*/ /*debug*/
+	color: white;
+	height: 65px;
+	padding-top: 35px;
+	text-align: center;
+	width: 125px;
 }
 
 .panel3-swap-text>p {
