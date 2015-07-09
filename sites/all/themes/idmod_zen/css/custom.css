@@ -799,40 +799,31 @@ div#math-bubble {
   width: 382px;
   height: 172px;
 }
-
-/* do this with jQuery */
-div#panel3-math-bubble:hover {
+div#math-bubble-hover {
   background-image: url(/sites/default/files/math_bg_hover.png); 
   width: 382px;
   height: 172px;
 }
 
-div#tuberculosis-bubble {
-  background-image: url(/sites/default/files/fp_tb_normal.png); 
-  width: 380px;
-  height: 172px;
-}
 
 div#epidemiology-bubble {
   background-image: url(/sites/default/files/fp_epidemiology_normal.png); 
   width: 302px;
   height: 240px;
 }
-
-div#epidemiology-bubble {
-  background-image: url(/sites/default/files/fp_epidemiology_normal.png); 
+div#epidemiology-bubble-hover {
+  background-image: url(/sites/default/files/fp_epidemiology_hover.png); 
   width: 302px;
   height: 240px;
-}
-
-div#polio-bubble {
-  background-image: url(/sites/default/files/fp_polio_normal.png); 
-  width: 310px;
-  height: 241px;
 }
 
 div#hiv-bubble {
   background-image: url(/sites/default/files/fp_hiv_normal.png); 
+  width: 173px;
+  height: 320px;
+}
+div#hiv-bubble-hover{
+  background-image: url(/sites/default/files/fp_hiv_hover.png); 
   width: 173px;
   height: 320px;
 }
@@ -842,6 +833,37 @@ div#malaria-bubble {
   width: 172px;
   height: 320px;
 }
+div#malaria-bubble-hover {
+  background-image: url(/sites/default/files/fp_malaria_hover.png); 
+  width: 172px;
+  height: 320px;
+}
+
+div#polio-bubble {
+  background-image: url(/sites/default/files/fp_polio_normal.png); 
+  width: 310px;
+  height: 241px;
+}
+div#polio-bubble-hover {
+  background-image: url(/sites/default/files/fp_polio_hover.png); 
+  width: 310px;
+  height: 241px;
+}
+
+
+div#tuberculosis-bubble {
+  background-image: url(/sites/default/files/fp_tb_normal.png); 
+  width: 380px;
+  height: 172px;
+}
+div#tuberculosis-bubble-hover {
+  background-image: url(/sites/default/files/fp_tb_hover.png); 
+  width: 380px;
+  height: 172px;
+}
+
+
+
 
 /*Temp*/
 .panel3-sub-button-text {

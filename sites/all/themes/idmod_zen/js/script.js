@@ -31,7 +31,7 @@ Drupal.behaviors.my_custom_behavior = {
       var replaceColor = '';
      
       $(".p2_box").each(function() {
-        color = $(this).css( "background-color" )
+        color = $(this).css( "background-color" );
         rollupColor = $(this).next(".p2_rollup").css("background-color");
 
 
@@ -68,17 +68,15 @@ Drupal.behaviors.my_custom_behavior = {
        */
       
       $(function() {
-        $(".panel3-sub-button-text > p").hoverIntent(swapInFPP3Text, swapOutFPP3Text, function(){});  //Can we declare mouseleave function here?
+        // Explicity NOT firing the mouse leave function. 
+        $(".panel3-sub-button-text > p").hoverIntent(swapInFPP3Text,  function(){});  //Can we declare mouseleave function here?
       });
       
       function swapInFPP3Text(evt) {
-		
         // Get the class of the bubble
         $bubble_class = $(this).attr('id');
         //DEBUG: Remove
         console.log('>>> ID of bubble is: ', $bubble_class);
-        
-        //Change the background of the bubble (better done with CSS?)
         
         //Swap in the appropriate text for the bubble hovered over
         if ($bubble_class == 'math-bubble-text' ) {
@@ -90,9 +88,17 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
-          $('div#math-bubble').css('background-image','url("/sites/default/files/fp_math_bubble_hover.png")');
-          $('p#math-bubble-text').css('color','rgb(216, 216, 216)');
-          
+          //$('p#math-bubble-text').css('color','rgb(216, 216, 216)');
+          //  Swap currant math div with next div
+          //  And: Remove the highlighted div from the rest....
+          //  .fadeIn adds "Display:block"... hmmm instead of removing the class, just use the attribute "Display". 
+          $('div#math-bubble-hover').fadeIn("slow");
+          $('div#epidemiology-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#hiv-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#malaria-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#polio-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#tuberculosis-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+
           
         }
         if ($bubble_class == 'epidemiology-bubble-text' ) {
@@ -103,20 +109,34 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-hiv-text').addClass("hidden");
           $('#panel3-malari-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
-          $('#panel3-tuberculosis-text').addClass("hidden");
-          $('div#epidemiology-bubble').css('background-image','url("/sites/default/files/fp_epidemiology_hover.png")');
-          $('p#epidemiology-bubble-text').css('color','rgb(216, 216, 216)');
+          $('#panel3-tuberculosis-text').addClass("hidden");  
+          //  Swap currant math div with next div
+          //  Swap out the rest of the divs...
+          $('div#epidemiology-bubble-hover').fadeIn("slow");
+          $('div#math-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#hiv-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#malaria-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#polio-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#math-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          
         }     
         if ($bubble_class == 'hiv-bubble-text' ) {
           $('#panel3-default-text').addClass("hidden");
           $('#panel3-math-text').addClass("hidden");
           $('#panel3-epidemiology-text').addClass("hidden");
           $('#panel3-hiv-text').removeClass("hidden");
-          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-malaria-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
-          $('#panel3-tuberculosis-text').addClass("hidden");
-          $('div#hiv-bubble').css('background-image','url("/sites/default/files/fp_hiv_hover.png")');
-          $('p#hiv-bubble-text').css('color','rgb(216, 216, 216)');
+          $('#panel3-tuberculosis-text').addClass("hidden");  
+         
+          //  Swap currant div with next div
+          //  Swap out the rest
+          $('div#hiv-bubble-hover').fadeIn("slow");
+          $('div#malaria-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#polio-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#tuberculosis-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#math-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#epidemiology-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
         }
         if ($bubble_class == 'malaria-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
@@ -126,9 +146,17 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-hiv-text').addClass("hidden");
           $('#panel3-malaria-text').removeClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
-          $('#panel3-tuberculosis-text').addClass("hidden");
-          $('div#malaria-bubble').css('background-image','url("/sites/default/files/fp_malaria_hover.png")');
-          $('p#malaria-bubble-text').css('color','rgb(216, 216, 216)');
+          $('#panel3-tuberculosis-text').addClass("hidden");  
+                    
+          //  Swap currant div with next div
+          //  Swap out the rest
+          $('div#malaria-bubble-hover').fadeIn("slow");
+          $('div#polio-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#tuberculosis-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#math-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#epidemiology-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#hiv-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          
         }
         if ($bubble_class == 'polio-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
@@ -136,11 +164,18 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-math-text').addClass("hidden");
           $('#panel3-epidemiology-text').addClass("hidden");
           $('#panel3-hiv-text').addClass("hidden");
-          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-malaria-text').addClass("hidden");
           $('#panel3-polio-text').removeClass("hidden");
           $('#panel3-tuberculosis-text').addClass("hidden");
-          $('div#polio-bubble').css('background-image','url("/sites/default/files/fp_polio_hover.png")');
-          $('p#polio-bubble-text').css('color','rgb(216, 216, 216)');
+                 
+          //  Swap currant div with next div
+          //  Swap out the rest
+          $('div#polio-bubble-hover').fadeIn("slow");
+          $('div#tuberculosis-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#math-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#epidemiology-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#hiv-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#malaria-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
         }
         if ($bubble_class == 'tuberculosis-bubble-text' ) {
           console.log('>>> Fire rules for: ', $bubble_class);
@@ -148,11 +183,18 @@ Drupal.behaviors.my_custom_behavior = {
           $('#panel3-math-text').addClass("hidden");
           $('#panel3-epidemiology-text').addClass("hidden");
           $('#panel3-hiv-text').addClass("hidden");
-          $('#panel3-malari-text').addClass("hidden");
+          $('#panel3-malaria-text').addClass("hidden");
           $('#panel3-polio-text').addClass("hidden");
           $('#panel3-tuberculosis-text').removeClass("hidden");
-          $('div#tuberculosis-bubble').css('background-image','url("/sites/default/files/fp_tb_hover.png")');
-          $('p#tuberculosis-bubble-text').css('color','rgb(216, 216, 216)');
+          
+          //  Swap currant div with next div
+          //  Swap out the rest
+          $('div#tuberculosis-bubble-hover').fadeIn("slow");
+          $('div#math-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#epidemiology-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#hiv-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#malaria-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
+          $('div#polio-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
         }
         
       }
