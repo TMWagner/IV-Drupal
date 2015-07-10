@@ -59,6 +59,29 @@ Drupal.behaviors.my_custom_behavior = {
       }
       
       
+      /*  Make the bubbles clickable
+       *
+       */
+      $('div#math-bubble-hover').click(function(){
+        window.location = 'research/math';
+      });
+      $('div#epidemiology-bubble-hover').click(function(){
+        window.location = 'research/epidemiology';
+      });
+      $('div#hiv-bubble-hover').click(function(){
+        window.location = 'research/hiv';
+      });
+      $('div#malaria-bubble-hover').click(function(){
+        window.location = 'research/malaria';
+      });
+      $('div#polio-bubble-hover').click(function(){
+        window.location = 'research/polio';
+      });
+      $('div#tuberculosis-bubble-hover').click(function(){
+        window.location = 'research/tuberculosis';
+      });   
+      
+      
       /*  Animate the Front page bubbles
        *  Debug code for console:
        *    jQuery('.panel3-sub-button').css('border-color', 'red');
@@ -224,20 +247,6 @@ Drupal.behaviors.my_custom_behavior = {
         $('#panel3-malaria-text').addClass("hidden");
         $('#panel3-polio-text').addClass("hidden");
         $('#panel3-tuberculosis-text').addClass("hidden");
-        
-        //$('div#math-bubble').css('background-image','url("/sites/default/files/fp_math_bubble_normal.png")');
-        //$('div#epidemiology-bubble').css('background-image','url("/sites/default/files/fp_epidemiology_normal.png")');
-        //$('div#hiv-bubble').css('background-image','url("/sites/default/files/fp_hiv_normal.png")');
-        //$('div#malaria-bubble').css('background-image','url("/sites/default/files/fp_malaria_normal.png")');
-        //$('div#polio-bubble').css('background-image','url("/sites/default/files/fp_polio_normal.png")');
-        //$('div#tuberculosis-bubble').css('background-image','url("/sites/default/files/fp_tb_normal.png")');
-        //
-        //$('p#math-bubble-text').css('color','white');
-        //$('p#epidemiology-bubble-text').css('color','white');
-        //$('p#hiv-bubble-text').css('color','white');
-        //$('p#malaria-bubble-text').css('color','white');
-        //$('p#polio-bubble-text').css('color','white');
-        //$('p#tuberculosis-bubble-text').css('color','white');
       }
       
     
