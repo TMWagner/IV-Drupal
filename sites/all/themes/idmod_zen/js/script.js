@@ -81,7 +81,6 @@ Drupal.behaviors.my_custom_behavior = {
           $('div#tuberculosis-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
           $('div#epidemiology-bubble-hover').fadeOut("fast");  //Either fadeOut or just remove the property...
           swapOutFPP3Text();
-        
       };
       
       $(function() {
