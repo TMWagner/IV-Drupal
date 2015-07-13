@@ -2434,3 +2434,63 @@ div#cboxLoadedContent p {
 	padding-top: 20px;
 
 }
+
+
+/*IAS page CSS*/
+
+div.ias-full-cell {
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.55);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.55);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.55);
+	float: left;
+	width:960px;
+	margin:10px 10px 0px 0px;
+}
+
+div.ias-full-cell-noborder {
+	float: left;
+	width:960px;
+	margin:10px 10px 0px 0px;
+}
+
+div.ias-half-cell {
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.55);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.55);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.55);
+	float: left;
+	width:475px;
+	margin:0px 10px 0px 0px;
+}
+
+div.ias-half-cell:last-child {
+	margin:0px;
+}
+
+.ias-half-cell.last {
+  margin-right: 0px;
+}
+
+
+div.ias-half-cell-noborder {
+
+	float: left;
+	width:470px;
+	height:320px;
+	margin:10px 10px 0px 0px;
+}
+
+#ias-page h2 {
+  margin-top: 20px;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+
+
+.ias-half-cell {
+  height: 200px;
+}
+
+.page-node-133 div#content {
+  margin-bottom: 30px;
+}
