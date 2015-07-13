@@ -2488,6 +2488,14 @@ div.ias-half-cell-noborder {
   font-size: 30px;
 }
 
-#ias-page p {
-	margin-top:10px;
+#ias-page h3, p {
+  margin: 0px 0px 5px 5px;
+}
+
+.ias-half-cell {
+  height: 200px;
+}
+
+.page-node-133 div#content {
+  margin-bottom: 30px;
 }
