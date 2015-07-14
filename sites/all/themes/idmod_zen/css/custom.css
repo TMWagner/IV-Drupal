@@ -1672,6 +1672,11 @@ article.node-publications {
 	clear: left;
 }
 
+
+.field.field-name-field-news-type.field-type-list-text.field-label-hidden {
+  float: left;
+}
+
 .view-news-and-events  .views-row {
 	border-bottom: thin solid grey;
 	margin: 10px 0px 25px 0px;
