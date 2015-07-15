@@ -2506,6 +2506,8 @@ div.ias-half-cell-noborder {
 }
 
 /*TEMP Code for IAS page*/
-#ias-page h3, p {
+#ias-page h3,
+#ias-page h4,
+#ias-page p {
   margin: 0px 0px 5px 5px;
 }
