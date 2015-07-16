@@ -62,7 +62,7 @@ Drupal.behaviors.my_custom_behavior = {
        *
        */
       $('div#fp-p1-reports').click(function(){
-        window.location = '/research/math';
+        window.location = '/news';
       });     
       $('div#fp-p1-shapes').click(function(){
         window.location = '/about';
