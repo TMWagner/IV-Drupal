@@ -58,6 +58,19 @@ Drupal.behaviors.my_custom_behavior = {
           }, 200 );
       }
       
+      /*  Make the rotators clickable
+       *
+       */
+      $('div#fp-p1-reports').click(function(){
+        window.location = '/research/math';
+      });     
+      $('div#fp-p1-shapes').click(function(){
+        window.location = '/about';
+      });  
+      $('div#fp-p1-releases').click(function(){
+        window.location = '/ias';
+      });  
+      
       
       /*  Make the bubbles clickable
        *
