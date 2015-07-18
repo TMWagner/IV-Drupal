@@ -69,8 +69,24 @@ Drupal.behaviors.my_custom_behavior = {
       });  
       $('div#fp-p1-releases').click(function(){
         window.location = '/ias';
-      });  
+      });
       
+      /*  Make the panel 2 nav  clickable
+       *
+       */
+      $('div#fp-nav-research').click(function(){
+        window.location = '/research';
+      });
+      $('div#fp-nav-publications').click(function(){
+        window.location = '/publications';
+      });
+      $('div#fp-nav-software').click(function(){
+        window.location = '/software';
+      });
+      $('div#fp-nav-team').click(function(){
+        window.location = '/team';
+      });
+    
       
       /*  Make the bubbles clickable
        *
