@@ -34,7 +34,6 @@ Drupal.behaviors.my_custom_behavior = {
         color = $(this).css( "background-color" );
         rollupColor = $(this).next(".p2_rollup").css("background-color");
 
-
         console.log('Base Color init: ', color);
         replaceColor = color.replace(/\)/, ', 0.7)');
         replaceColor = replaceColor.replace('rgb', 'rgba');
@@ -108,7 +107,68 @@ Drupal.behaviors.my_custom_behavior = {
       });
       $('div#tuberculosis-bubble-hover').click(function(){
         window.location = 'research/tuberculosis';
-      });   
+      });
+      
+      
+      
+      
+      /*  Make the panel 2 icons hover active
+       *  DEBUG: jQuery('div#fp-nav-research');
+       *  jQuery('div#fp-nav-research').css("background-color", "yellow");
+       *
+       */
+      $('div#fp-nav-research').hover(function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
+        $(this).find("h3").css("font-family", "proxima nova light");
+          }, function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_research.png");
+        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+      });
+      
+      $('div#fp-nav-publications').hover(function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications_hover.png");
+        $(this).find("h3").css("font-family", "proxima nova light");
+          }, function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications.png");
+        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+      });
+      
+      $('div#fp-nav-software').hover(function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_software_hover.png");
+        $(this).find("h3").css("font-family", "proxima nova light");
+          }, function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_software.png");
+        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+      });
+      
+      $('div#fp-nav-team').hover(function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_team_hover.png");
+        $(this).find("h3").css("font-family", "proxima nova light");
+          }, function(){
+        $(this).find("img").attr("src", "/sites/default/files/fp_nav_team.png");
+        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+      });
+      
+      
+      ////$(function() {
+      ////  $('div#fp-nav-research').hover(fpNavP2In, fpNavP2Out);
+      ////});
+      //
+      //function fpNavP2In(evt) {
+      //  //DEBUG: Remove
+      //  //console.log('>>> Value is: ', $src);
+      //  $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
+      //  $(this).find("h3").css("font-family", "proxima nova light");
+      //
+      //};
+      //function fpNavP2Out(evt) {
+      //  //$(this).css('background-color', 'pink');
+      //  $(this).find("img").attr("src", "/sites/default/files/fp_nav_research.png");
+      //  $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+      //
+      //};
+      //
+  
       
       
       /*  Animate the Front page bubbles
