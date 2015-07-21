@@ -119,34 +119,34 @@ Drupal.behaviors.my_custom_behavior = {
        */
       $('div#fp-nav-research').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
-        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_research.png");
-        $(this).find("h3").css("font-family", "proxima nova light");
+        //$(this).find("h3").css("font-family", "proxima nova light");
       });
       
       $('div#fp-nav-publications').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications_hover.png");
-        $(this).find("h3").css("font-family", "proxima nova light");
+        //$(this).find("h3").css("font-family", "proxima nova light");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications.png");
-        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
       });
       
       $('div#fp-nav-software').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_software_hover.png");
-        $(this).find("h3").css("font-family", "proxima nova light");
+        //$(this).find("h3").css("font-family", "proxima nova light");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_software.png");
-        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
       });
       
       $('div#fp-nav-team').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_team_hover.png");
-        $(this).find("h3").css("font-family", "proxima nova light");
+        //$(this).find("h3").css("font-family", "proxima nova light");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_team.png");
-        $(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
       });
       
       
