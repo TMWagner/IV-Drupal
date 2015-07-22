@@ -119,56 +119,35 @@ Drupal.behaviors.my_custom_behavior = {
        */
       $('div#fp-nav-research').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
-        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        $(this).find("a").css("color", "black");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_research.png");
-        //$(this).find("h3").css("font-family", "proxima nova light");
+        $(this).find("a").css("color", "#0073A3");
       });
       
       $('div#fp-nav-publications').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications_hover.png");
-        //$(this).find("h3").css("font-family", "proxima nova light");
+        $(this).find("a").css("color", "black");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications.png");
-        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        $(this).find("a").css("color", "#0073A3");
       });
       
       $('div#fp-nav-software').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_software_hover.png");
-        //$(this).find("h3").css("font-family", "proxima nova light");
+        $(this).find("a").css("color", "black");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_software.png");
-        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
+        $(this).find("a").css("color", "#0073A3");
       });
       
       $('div#fp-nav-team').hover(function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_team_hover.png");
-        //$(this).find("h3").css("font-family", "proxima nova light");
+        $(this).find("a").css("color", "black");
           }, function(){
         $(this).find("img").attr("src", "/sites/default/files/fp_nav_team.png");
-        //$(this).find("h3").css("font-family", "Proxima Nova Semibold");
+       $(this).find("a").css("color", "#0073A3");
       });
-      
-      
-      ////$(function() {
-      ////  $('div#fp-nav-research').hover(fpNavP2In, fpNavP2Out);
-      ////});
-      //
-      //function fpNavP2In(evt) {
-      //  //DEBUG: Remove
-      //  //console.log('>>> Value is: ', $src);
-      //  $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
-      //  $(this).find("h3").css("font-family", "proxima nova light");
-      //
-      //};
-      //function fpNavP2Out(evt) {
-      //  //$(this).css('background-color', 'pink');
-      //  $(this).find("img").attr("src", "/sites/default/files/fp_nav_research.png");
-      //  $(this).find("h3").css("font-family", "Proxima Nova Semibold");
-      //
-      //};
-      //
-  
       
       
       /*  Animate the Front page bubbles
@@ -177,8 +156,7 @@ Drupal.behaviors.my_custom_behavior = {
        *    jQuery('.panel3-sub-button-text').css('background-color','blue');
        *    jQuery('.panel3-sub-button-text > p').css('background-color','blue');
        *    background-image: url("/sites/default/files/math_bg_hover.png");
-       */
-      
+       */  
       
       $(function() {
         $(".panel3-bubble-selected").mouseleave(bubbleOut);
