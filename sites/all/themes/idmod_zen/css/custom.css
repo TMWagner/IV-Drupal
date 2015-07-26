@@ -678,7 +678,7 @@ div.p2_box.last {
 
 
 /*
- * CSS for panel 3
+ * CSS for FP panel 3
  */
  
  
@@ -690,11 +690,11 @@ div.p2_box.last {
 	width: 960px;
 }
 #panal3-bg {
-    background-image: url(/sites/default/files/fp_panel3_bg.png);
-    height: 522px;
-    position: absolute;
-    bottom: 0;
-    width: 960px;
+	background-image: url(/sites/default/files/fp_panel3_bg.png);
+	height: 522px;
+	position: absolute;
+	bottom: 0;
+	width: 960px;
 }
 	
 #panel3-main-button {
@@ -723,14 +723,13 @@ div.p2_box.last {
 	-webkit-border-radius: 100px;
 	border-style: inset;
 	border-width: 0px;
-	
 }
 
 img.button-image {
 	padding-top:20px;
-  	margin-left: auto;
-  	margin-right: auto;
-  	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 #panel3-math {
@@ -2058,8 +2057,6 @@ div.dl-button:hover {
 }
 
 
-/* END DEV code */
-
 
 
 .software-bundle {
@@ -2091,9 +2088,6 @@ div.dl-button:hover {
 .clear-left {
 	clear: left;
 }
-/*.software-wrapper {
-	width: 700px;
-}*/
 
 .software-download-description {
 	color: rgb(109, 108, 108);
@@ -2118,11 +2112,7 @@ div.dl-button:hover {
 
 /* About US pages */
 
-/*.page-node-47 #page-title {
-    bottom: 50px;
-    position: relative;
-		width: 200px;
-}*/
+
 
 /* Career */
 
@@ -2478,7 +2468,6 @@ div.ias-half-cell:last-child {
 
 
 div.ias-half-cell-noborder {
-
 	float: left;
 	width:470px;
 	height:320px;
@@ -2490,8 +2479,6 @@ div.ias-half-cell-noborder {
   line-height: 40px;
   font-size: 30px;
 }
-
-
 
 .ias-half-cell {
   height: 200px;
