@@ -30,6 +30,10 @@ strong {
 	font-family: 'Proxima Nova Semibold';
 }
 
+p.tight-paragraph {
+    margin: 0px;
+}
+
 
 #main {
 	padding-top: 0px;
@@ -2499,4 +2503,3 @@ div.ias-half-cell-noborder {
   margin: 0px 0px 5px 5px;
 }
 
-/* test code move to top? */
