@@ -90,7 +90,11 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     
                   <li id="math">
                     <a href="/publications/topic/math">Applied Math</a>
-                  </li>    
+                  </li>
+                  
+                  <li id="epidemiology">
+                    <a href="/publications/topic/epidemiology">Epidemiology</a>
+                  </li>  
     
                   <li id="hiv">
                     <a href="/publications/topic/hiv">HIV</a>
@@ -137,6 +141,9 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   if ($arg1 == 'math') {
     $display_id = 'math';
     $arg = NULL;
+  }
+  if ($arg1 == 'epidemiology') {
+    $display_id = 'epidemiology';
   }
   if ($arg1 == 'polio') {
     $display_id = 'polio';
