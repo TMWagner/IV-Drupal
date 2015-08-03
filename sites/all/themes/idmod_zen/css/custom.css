@@ -205,6 +205,8 @@ div#views_slideshow_cycle_main_fp_rotator-page {
 
 
 /* Format pager front page rotator */
+
+
 .views-content-counter {
     display: none;
 }
@@ -221,7 +223,8 @@ div#views_slideshow_cycle_main_fp_rotator-page {
     border-width: 1px;
     background: none;
     border-radius: 10px;
-    width: 10px;
+    height: 5px;
+    width: 5px;
 }
 
 .views-slideshow-pager-field-item.active {
@@ -229,8 +232,10 @@ div#views_slideshow_cycle_main_fp_rotator-page {
     border-radius: 10px;
 }
 
+/* note: This does not really work for dynamic bullets - e.g., more items will appear off balance */
 .views-slideshow-controls-bottom {
-    margin-bottom: 10px;
+    margin: 10px auto 10px auto;
+    width: 150px;
 }
 /* End Pager format */
 
