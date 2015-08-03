@@ -203,6 +203,37 @@ div#views_slideshow_cycle_main_fp_rotator-page {
 	/*margin-bottom: 20px;*/
 }
 
+
+/* Format pager front page rotator */
+.views-content-counter {
+    display: none;
+}
+.views-slideshow-pager-field-item {
+    float: left;
+    height:10px;
+    padding:5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.views-slideshow-pager-field-item {
+    border-style: solid;
+    border-color:black;
+    border-width: 1px;
+    background: none;
+    border-radius: 10px;
+    width: 10px;
+}
+
+.views-slideshow-pager-field-item.active {
+    background: #037CAE;
+    border-radius: 10px;
+}
+
+.views-slideshow-controls-bottom {
+    margin-bottom: 10px;
+}
+/* End Pager format */
+
 div#fp-hero-tagline {
 	padding-top: 100px;
 }
