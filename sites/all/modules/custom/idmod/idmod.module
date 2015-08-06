@@ -218,6 +218,7 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
 function idmod_init() {
   if (drupal_is_front_page()) {
     drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
+    drupal_add_css(drupal_get_path('module', 'idmod') . '/css/fp.css');
   }
 
 }
