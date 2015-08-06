@@ -1,0 +1,90 @@
+/*Front page CSS*/
+
+
+/* Format pager front page rotator */
+
+.fp-hero {
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 540px;
+	margin-top: 24px;
+	overflow: hidden;
+}
+
+div#views_slideshow_cycle_main_fp_rotator-page {
+	margin-bottom: 20px;
+}
+
+
+div#fp-hero-tagline {
+	padding-top: 100px;
+}
+
+#fp-hero-tagline {
+	color: white;
+	text-align: right;
+	margin-top: 20px;
+	width: 300px;
+	margin-left: 400px;
+	/* margin-right: 20px; */
+	float: right;
+	margin-right: 40px;
+}
+
+.fp-hero h1 h2 h3 p {
+	color: white;
+}
+
+.view-fp-rotator.view-content {
+    position: relative;
+}
+
+.views-slideshow-controls-bottom.clearfix {
+    position: relative;
+    bottom: 50px;
+    z-index: 5;
+}
+
+.views-content-counter {
+    display: none;
+}
+.views-slideshow-pager-field-item {
+    float: left;
+    height:10px;
+    padding:5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.views-slideshow-pager-field-item {
+	border-style: none;
+    border-color: black;
+    border-width: 1px;
+    background: rgba(216, 212, 213, 0.48);
+    border-radius: 10px;
+    height: 5px;
+    width: 5px;
+}
+
+.views-slideshow-pager-field-item.active {
+    background: #037CAE;
+    border-radius: 10px;
+}
+
+/* note: This does not really work for dynamic bullets - e.g., more items will appear off balance */
+.views-slideshow-controls-bottom {
+    margin: 10px auto 10px auto;
+    width: 130px;
+}
+/* End Pager format */
+
+/* Nav bar */
+
+#wrapper {
+	bottom:10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 960px;
+}
+
+/* End Nav bar */
