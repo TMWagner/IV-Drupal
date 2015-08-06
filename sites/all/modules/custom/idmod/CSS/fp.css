@@ -12,7 +12,7 @@
 }
 
 div#views_slideshow_cycle_main_fp_rotator-page {
-	/*margin-bottom: 20px;*/
+	margin-bottom: 20px;
 }
 
 
@@ -41,7 +41,7 @@ div#fp-hero-tagline {
 
 .views-slideshow-controls-bottom.clearfix {
     position: relative;
-   /* bottom: 20px;*/
+    bottom: 50px;
     z-index: 5;
 }
 
@@ -56,10 +56,10 @@ div#fp-hero-tagline {
 }
 
 .views-slideshow-pager-field-item {
-    border-style: none;
+	border-style: none;
     border-color: black;
     border-width: 1px;
-    background: rgba(128, 128, 128, 0.25);
+    background: rgba(216, 212, 213, 0.48);
     border-radius: 10px;
     height: 5px;
     width: 5px;
@@ -73,6 +73,18 @@ div#fp-hero-tagline {
 /* note: This does not really work for dynamic bullets - e.g., more items will appear off balance */
 .views-slideshow-controls-bottom {
     margin: 10px auto 10px auto;
-    width: 150px;
+    width: 130px;
 }
 /* End Pager format */
+
+/* Nav bar */
+
+#wrapper {
+	bottom:10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 960px;
+}
+
+/* End Nav bar */
