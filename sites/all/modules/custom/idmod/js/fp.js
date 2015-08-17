@@ -45,6 +45,9 @@ Drupal.behaviors.fp = {
     /*  Make the rotators clickable
      *
      */
+    $('div#fp-p1-video').click(function(){
+      window.location = '/news/node/132';
+    });
     $('div#fp-p1-reports').click(function(){
       window.location = '/news/node/131';
     });     
