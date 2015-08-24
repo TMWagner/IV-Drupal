@@ -53,8 +53,8 @@ Drupal.behaviors.fp = {
     $('div#fp-p1-shapes').click(function(){
       window.location = '/about';
     });  
-    $('div#fp-p1-releases').click(function(){
-      window.location = '/ias';
+    $('div#fp-p1-challenges').click(function(){
+      window.location = '/news/node/142';
     });
     
     /*  Make the panel 2 nav  clickable
