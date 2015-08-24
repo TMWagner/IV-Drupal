@@ -47,8 +47,8 @@ Drupal.behaviors.fp = {
     $('div#fp-p1-video').click(function(){
       window.location = '/news/node/132';
     });
-    $('div#fp-p1-reports').click(function(){
-      window.location = '/news/node/131';
+    $('div#fp-p1-releases').click(function(){
+      window.location = '/software';
     });     
     $('div#fp-p1-shapes').click(function(){
       window.location = '/about';
