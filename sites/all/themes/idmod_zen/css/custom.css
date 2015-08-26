@@ -2505,3 +2505,8 @@ div.ias-half-cell-noborder {
   margin: 0px 0px 5px 5px;
 }
 
+.image-footer-text {
+	margin: 5px 5px 0px 5px;
+	font-size: 12px;
+
+}
