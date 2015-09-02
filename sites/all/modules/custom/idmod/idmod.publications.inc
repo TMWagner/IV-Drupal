@@ -55,7 +55,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       '70' => t('Milen Nikolov'),
       '45' => t('Karima Nigmatulina'),
       '42' => t('Kevin Oishi'),
-      '66' => t('Andre Ouedraogo'),
+      '66' => t('Andre Lin Ouedraogo'),
       '25' => t('Joshua Proctor'),
       '28' => t('Min Roh'),
       '69' => t('Christian Selinger'),
