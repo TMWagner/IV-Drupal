@@ -37,6 +37,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       'all' => t('All'),
       '68' => t('Ben Althouse'),
       '9' => t('Basil Bayati'),
+      '64' =>t('David Bernotas'),
       '46' => t('Matthew Behrend'),
       '13' => t('Anna Bershteyn'),
       '16' => t('Caitlin Bever'),
