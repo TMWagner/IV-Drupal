@@ -289,6 +289,9 @@ function idmteam_contents($which_block) {
             '#type' => 'link',
             '#title' => t('Read online'),
             '#href' => $node->field_publications_link['und'][0]['url'],
+            '#attributes' => array(
+              'target' => array('_blank')
+            ),
             '#suffix' => '<i class="fa fa-external-link"></i></div>',
           );
         }
