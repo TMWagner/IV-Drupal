@@ -56,6 +56,9 @@ Drupal.behaviors.fp = {
     $('div#fp-p1-challenges').click(function(){
       window.location = '/news/node/142';
     });
+    $('div#fp-p1-guinea').click(function(){
+      window.location = '/news/node/154';
+    });
     
     /*  Make the panel 2 nav  clickable
      *
