@@ -137,6 +137,9 @@ function idmod_taxonomy_term_uri($term) {
       case "Polio":
         $new_url = 'research/polio';
         break;
+      case 'Epidemiology':
+        $new_url = 'research/epidemiology';
+        break;
   }  
   //return array('path' => 'research/numerical' . $term->tid);
   return array('path' => $new_url);
