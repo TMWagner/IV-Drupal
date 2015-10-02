@@ -1514,6 +1514,11 @@ div.team-name-info a {
 	width: 700px;
 }
 
+.view-publications-dev .ds-2col > .group-right {
+	float: left;
+	width: 700px;
+}
+
 .pub-title h3 {
 	margin: 5px 0px 0px 0px;
 }
