@@ -234,7 +234,7 @@ figcaption {
 #fp-hero-tagline h1 {
 	font-size: 50px;
 	text-transform: lowercase;
-	font-family: 'Proxima Nova Light';
+	font-family: 'Proxima Nova';
 	margin-top: 10px;
 	margin-bottom: 10px;
 	line-height: 50px;
@@ -242,13 +242,14 @@ figcaption {
 
 .fp-hero h2 {
 	font-size: 18px;
-	font-family: 'Proxima Nova Semibold';
+	font-family: 'Proxima Nova';
+	font-weight: 500;
 	margin-bottom: 5px;
 }
 
 .fp-hero p {
 	font-size: 21px;
-	font-family: 'Proxima Nova Light';
+	font-family: 'Proxima Nova';
 	line-height: 30px;
 	margin-top: 5px;
 }
