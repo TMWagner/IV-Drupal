@@ -1949,6 +1949,47 @@ p.sub-team-name {
 
 /* Software Pages */
 
+/*Download Icons: 2015-10 */
+
+
+.download-button-link {
+	height: 195px;
+	width: 150px;	
+	display:block;
+}
+
+#download-button-quick a:link {
+	background-image: url(/sites/default/files/software_dl_quick.png);
+	float: left;
+	margin-left:20px;
+}
+#download-button-quick a:hover {
+	background-image: url(/sites/default/files/software_dl_quick_mouse.png);
+	float: left;
+	margin-left:20px;
+}
+#download-button-doc a:link {
+	background-image: url(/sites/default/files/software_dl_doc.png);
+	float: left;
+	margin-left:20px;
+}
+#download-button-doc a:hover {
+	background-image: url(/sites/default/files/software_dl_doc_mouse.png);
+	float: left;
+	margin-left:20px;
+}
+#download-button-pdf a:link {
+	background-image: url(/sites/default/files/software_dl_pdf.png);
+	float: left;
+	margin-left:20px;
+}
+#download-button-pdf a:hover {
+	background-image: url(/sites/default/files/software_dl_pdf_mouse.png);
+	float: left;
+	margin-left:20px;
+}
+
+
 
 /* Fix for random p tag that editor throws in */
 .dl-button p {
