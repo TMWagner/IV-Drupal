@@ -93,7 +93,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
                     <a href="/publications/date/2015">2015</a>
                   </li>
                   <li id="2016">
-                    <a href="/publications/date/2015">2016</a>
+                    <a href="/publications/date/2016">2016</a>
                   </li> 
                 </ul>',
 
