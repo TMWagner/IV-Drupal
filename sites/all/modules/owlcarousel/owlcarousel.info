@@ -7,9 +7,9 @@ dependencies[] = libraries
 dependencies[] = jquery_update
 
 
-; Information added by Drupal.org packaging script on 2016-01-25
+; Information added by Drupal.org packaging script on 2016-02-02
 version = "7.x-2.x-dev"
 core = "7.x"
 project = "owlcarousel"
-datestamp = "1453704547"
+datestamp = "1454385840"
 
