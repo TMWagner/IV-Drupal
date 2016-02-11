@@ -1,0 +1,55 @@
+// @file
+// Custom sass 
+//
+// Define the custom mixins for your project here.
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+// General CSS
+  .wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	padding-left: 10px;
+	padding-right:10px;
+  }
+
+// Front page stuff
+
+  .fp-hero {
+	  background-repeat: no-repeat;
+	  background-repeat:no-repeat;
+	  background-size:contain;
+	  background-position:center;
+	  width: 100%;
+	  height:480px;
+	  overflow: hidden;
+    position: relative;
+  }
+  
+  .fp-hero .fp-hero-content {
+    color: white;
+    font-size: 50px; /* this needs a media query */
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+	text-align: center;
+    top: 45%;
+    width: 500px;
+  }
+  
+  
+// Publications
+
+
+  .ds-2col > .group-left {
+    float: left;
+    width: 25%;
+	
+	}
+	.ds-2col > .group-right {
+		float: left;
+		width: 75%;
+	}

@@ -30,12 +30,15 @@ $zen-auto-include-item-base: false;
  *
  * For screen sizes larger than 1200px, prevent excessively long lines of text
  * by setting a max-width.
+ * 2016-02-06:
+ * Set page to 100%. Content still centered. We will create a container that
+ * constrains content to 960px. 
  */
 #page,
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -208,4 +211,9 @@ $zen-auto-include-item-base: false;
       @include zen-grid-item(1, 5);
     }
   }
+}
+
+#content {
+  padding-left: 0px;
+  padding-right: 0px;
 }
