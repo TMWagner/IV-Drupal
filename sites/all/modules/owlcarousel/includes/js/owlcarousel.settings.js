@@ -7,29 +7,51 @@
 
   Drupal.behaviors.owlcarousel = {
     attach: function(context, settings) {
-
       for (var carousel in settings.owlcarousel) {
-        // Carousel instance.
-        var owl = $('#' + carousel);
+        settings.owlcarousel.instance = carousel;
+        this.attachInit(carousel, settings.owlcarousel);
+      }
+    },
 
-        // lazyLoad support.
-        if (settings.owlcarousel[carousel].settings.lazyLoad) {
-          var images = owl.find('img');
+    /**
+     * Find and select carousel element.
+     *
+     * @param carousel htmlSelector
+     * @param settings object
+     */
+    attachInit(carousel, settings) {
+      var element = $('#' + carousel);
+      this.attachOwlCarousel(element, settings[settings.instance].settings);
+    },
 
-          $.each(images, function(i, image) {
-            $(image).attr('data-src', $(image).attr('src'));
-          });
+    /**
+     * Attaches each individual carousel instance
+     * to the provided HTML selector.
+     *
+     * @param element htmlElement
+     * @param settings object
+     */
+    attachOwlCarousel: function(element, settings) {
+      // Provide settings alter before init.
+      $(document).trigger('owlcarousel.alterSettings', settings);
 
-          images.addClass('owl-lazy');
-        }
+      // lazyLoad support.
+      if (settings.lazyLoad) {
+        var images = element.find('img');
 
-        if (owl.hasClass('disabled')) {
-          owl.show();
-        }
-        else {
-          // Attach instance settings.
-          owl.owlCarousel(settings.owlcarousel[carousel].settings);
-        }
+        $.each(images, function(i, image) {
+          $(image).attr('data-src', $(image).attr('src'));
+        });
+
+        images.addClass('owl-lazy');
+      }
+
+      if (element.hasClass('disabled') || settings.forceDisplay) {
+        element.show();
+      }
+      else {
+        // Attach instance settings & provide alter.
+        $(document).trigger('owlcarousel.alterInstance', [element.owlCarousel(settings)]);
       }
     }
   };
