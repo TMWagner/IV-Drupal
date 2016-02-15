@@ -203,7 +203,6 @@ function idmod_url_outbound_alter(&$path, &$options, $original_path) {
  */
 function idmod_entity_view($entity, $type, $view_mode, $langcode) {
   // CHeck "foreign author" field. If checked... don't display any author
-  $debug = 1;
   
   if (isset( $entity->field_publication_foreign_author['und'][0]['value'])) {
     if ($entity->field_publication_foreign_author['und'][0]['value']) {
@@ -220,10 +219,23 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
  * 
  */
 function idmod_init() {
+  $path = current_path();
+  
+  
   if (drupal_is_front_page()) {
     drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
     drupal_add_css(drupal_get_path('module', 'idmod') . '/css/fp.css');
   }
+  
+  // Check to see if we should load Owl JS to currant page.
+  //$path = currant_path();
+  
+  if ($path == 'node/174') {
+    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js');
+  }
+  
+
+ 
 
 }
 
