@@ -214,9 +214,9 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
 
 /**
  * Perform setup task for non-cached pages
- * Temp doc: https://api.drupal.org/api/drupal/includes%21common.inc/function/drupal_add_js/7
- * Purpose: To seperate special use CSS and JS into unique files.
- * 
+ * Purpose: To separate special use CSS and JS into unique files.
+ * Reference: https://api.drupal.org/api/drupal/includes%21common.inc/function/drupal_add_js/7
+ * Reference: Owl Carousel: http://smashingboxes.github.io/OwlCarousel2/index.html
  */
 function idmod_init() {
   $path = current_path();
@@ -225,14 +225,38 @@ function idmod_init() {
   if (drupal_is_front_page()) {
     drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
     drupal_add_css(drupal_get_path('module', 'idmod') . '/css/fp.css');
+    
+    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.carousel.min.css');
+    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.theme.default.css');
+  
+    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js', array(
+    'scope' => 'footer',
+    ));
+    drupal_add_js(libraries_get_path('owlcarousel')  . '/owl.carousel.min.js', array(
+    'scope' => 'footer',
+    ));     
+    
+    
   }
   
   // Check to see if we should load Owl JS to currant page.
+  // 2/14/2016: depends on owl carousel model for adding script tag to bottom of pages.
   //$path = currant_path();
   
-  if ($path == 'node/174') {
-    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js');
+  if ($path == 'node/172') {
+ 
+    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.carousel.min.css');
+    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.theme.default.css');
+  
+    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js', array(
+    'scope' => 'footer',
+    ));
+    drupal_add_js(libraries_get_path('owlcarousel')  . '/owl.carousel.min.js', array(
+    'scope' => 'footer',
+    ));    
   }
+  
+  
   
 
  

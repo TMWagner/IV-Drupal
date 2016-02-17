@@ -14,7 +14,7 @@ Drupal.behaviors.fp = {
         autoplay: false,
         rewind: false,
         items: 1,
-        nav: true,
+        nav: false,
         loop: true,
         animateOut: "fadeOut",
         responsiveRefreshRate: 1
