@@ -41,6 +41,14 @@ $zen-auto-include-item-base: false;
   max-width: 100%;
 }
 
+#navigation {
+  text-align: center; /*Allows content of contents to be centered*/
+}
+
+//.region.region-navigation { /* Center this div within Navigation */
+//    display: inline-block;
+//}
+
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
 #header,
 //#content,
@@ -67,7 +75,7 @@ $zen-auto-include-item-base: false;
     position: relative;
   }
   #navigation {
-    /* Move the navbar up inside #main's padding. */
+    /* Move the nav bar up inside #main's padding. */
     position: absolute;
     top: 0;
     height: $nav-height;
@@ -81,6 +89,28 @@ $zen-auto-include-item-base: false;
  * Use 3 grid columns for smaller screens.
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
+  
+  /**
+   *Custom mods
+   */
+  #block-superfish-1 {
+    display: none;
+  }
+  
+  .wrapper {
+    max-width: 724px;
+  }
+  .header__secondary-menu {
+    display: inline-block;
+  }
+  .slicknav_menu {
+    padding: 0 0 0 20px;
+  }
+  
+  
+  /**
+   * Zen config
+   */
 
   $zen-column-count: 3;
 
@@ -153,12 +183,19 @@ $zen-auto-include-item-base: false;
       }
     }
   }
-}
+   
+}  /*End of 959*/
 
 /**
  * Use 5 grid columns for larger screens.
  */
 @media all and (min-width: 960px) {
+ .slicknav_menu {
+    display: none;
+  }
+  .wrapper {
+    max-width: 960px;
+  }
 
   $zen-column-count: 5;
 

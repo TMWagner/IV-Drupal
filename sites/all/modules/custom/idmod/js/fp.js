@@ -9,6 +9,8 @@ Drupal.behaviors.fp = {
      *  jQuery('div#fp-nav-research').css("background-color", "yellow");
      *
      */
+    
+    
     $('div#fp-nav-research').hover(function(){
       $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
       $(this).find("a").css("color", "black");

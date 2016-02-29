@@ -39,8 +39,6 @@ function idmod_publications_page() {
 }
 
 
-
-
 /**
  * Implementation of hook_field_display_alter
  * Convert the reference to profile entity "Main profile" to actual name. 
@@ -92,9 +90,6 @@ function idmod_context_load_alter(&$context) {
     $context->reactions['block']['blocks']['block-5']['weight'] = -10;
   }
 }
-
-
-
 
 
 
@@ -212,6 +207,7 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
   } 
 }
 
+
 /**
  * Perform setup task for non-cached pages
  * Purpose: To separate special use CSS and JS into unique files.
@@ -234,9 +230,16 @@ function idmod_init() {
     ));
     drupal_add_js(libraries_get_path('owlcarousel')  . '/owl.carousel.min.js', array(
     'scope' => 'footer',
-    ));     
+    ));
     
-    
+    //Code for front page FlexNav responsive nav
+
+    //<link href="css/flexnav.css" rel="stylesheet" type="text/css" />
+    drupal_add_css(drupal_get_path('module', 'idmod') . '/slicknav/slicknav.css');
+    drupal_add_js(drupal_get_path('module', 'idmod') . '/slicknav/jquery.slicknav.min.js', array(
+    'scope' => 'footer',
+    ));
+   
   }
   
   // Check to see if we should load Owl JS to currant page.

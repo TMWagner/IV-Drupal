@@ -10,6 +10,16 @@
 @import "init";
 
 
+//How to do a mixin
+@import "compass/css3/border-radius";
+ 
+ .border-radius {
+    @include border-radius(25px);
+ }
+
+//Compass/Sprite tutorial https://www.youtube.com/watch?v=Tl6bceyTjFw
+@import "nav2/*.png";
+@include all-nav2-sprites;
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
