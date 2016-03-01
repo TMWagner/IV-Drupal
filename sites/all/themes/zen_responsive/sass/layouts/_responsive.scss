@@ -93,10 +93,16 @@ $zen-auto-include-item-base: false;
   /**
    *Custom mods
    */
+  // Get rid of padding reserved for desktop nav.
+  #main {
+    padding-top: 0px;
+  }
+  
   #block-superfish-1 {
     display: none;
   }
   
+  // Force flow of nav blocks on FP. (without this, we could get a 4+1 ugly thing happening.)
   .wrapper {
     max-width: 724px;
   }

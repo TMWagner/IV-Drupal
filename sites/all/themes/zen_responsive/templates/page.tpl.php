@@ -10,7 +10,7 @@
 
 <div id="page">
   <div class="center_content">
-  <div class="wrapper">  <!--Allow us to restrict and center content with page-->
+  <div class="wrapper1">  <!--Allow us to restrict and center content with page-->
   
   <header class="header" id="header" role="banner">
 

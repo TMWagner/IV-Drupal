@@ -56,6 +56,12 @@
 	  color: grey;
   }
   
+  #secondary-menu {
+	  bottom: 10px;
+	  height: 40px;
+	  //background-color: rgba(230, 34, 90, 0.44);
+  }
+    
 
  .slicknav_btn {
     background-color: transparent;
@@ -63,24 +69,26 @@
   
   .slicknav_menu {
     background: transparent;
-	position: absolute;
+	position: relative;
     z-index: 2;
   }
   
   .slicknav_nav {
-	background-color: #0073A3;
+	background-color: #d7d7d7;
   }
   
-
+  .slicknav_nav a {
+	color: black;
+	&:hover {
+	  color: green;
+	}
+  }
+  
   
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
 	margin-bottom: 8px;
 	width: 30px;
-  }
-  #secondary-menu {
-	position: relative;
-    bottom: 10px;
   }
   
   
