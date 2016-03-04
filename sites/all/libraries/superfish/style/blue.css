@@ -11,10 +11,18 @@
 }
 .sf-menu.sf-style-blue a,
 .sf-menu.sf-style-blue span.nolink {
-  border: 1px outset #003973;
-  color: #ffffff;
-  padding: 0.75em 1em;
+  border: none;
+  color: #858c8c;
+  padding: 1.2em 1em;
 }
+
+
+/*Temporary fix for 2nd level spacing*/
+#menu-1406-1 {
+	margin-top: .9em;
+}
+
+
 .sf-menu.sf-style-blue a.sf-with-ul,
 .sf-menu.sf-style-blue span.nolink.sf-with-ul {
   padding-right: 2.25em;
@@ -39,16 +47,19 @@
 .sf-menu.sf-style-blue.rtl span.sf-description {
   margin: 5px 5px 0 0;
 }
+/*Color main menu 1st level box*/
 .sf-menu.sf-style-blue li,
 .sf-menu.sf-style-blue.sf-navbar {
-  background: #095cb1;
+  background: none;
 }
+/*Drop down item color*/
 .sf-menu.sf-style-blue li li {
-  background: #0151a4;
+  background: #ececec;
 }
 .sf-menu.sf-style-blue li li li {
   background: #00478f;
 }
+/*Color main menu hover*/
 .sf-menu.sf-style-blue li:hover,
 .sf-menu.sf-style-blue li.sfHover,
 .sf-menu.sf-style-blue a:focus,
@@ -56,9 +67,11 @@
 .sf-menu.sf-style-blue a:active,
 .sf-menu.sf-style-blue span.nolink:hover,
 .sf-menu.sf-style-blue.sf-navbar li li {
-  background: #3270c5;
-  color: #ffea00;
+  background: #d7d7d7;
+  color: black;
 }
+
+
 .sf-menu.sf-style-blue.sf-navbar li ul {
   background-color: #3270c5;
 }

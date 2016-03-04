@@ -6,7 +6,10 @@
 
 // Makes an element visually hidden, but accessible.
 // @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+  //test CSS
   
+
 
   h3 {
 	margin-top: 0px;
@@ -35,23 +38,29 @@
   padding-top:10px;
   width: 100%;
   }
+  #logo {
+	padding-left: 10px;
+  }
   
   //Main Nav
   #main-nav-mobile {
 	  display: none;
   }
+
   
   #block-superfish-1 {
-	margin-top: 10px;
+	margin-top: 15px;
   }
   
   #superfish-1 > li {
 	background-color: none;
-	margin: 5px;
+	margin: 2px;
 	text-align: center;
-	width: 120px;  /*NOTE: this controls the overall width of the div as well*/
-	
+	width: 142px;  /*NOTE: this controls the overall width of the div as well*/
   }
+  
+
+  
   .menu a {
 	  color: grey;
   }
@@ -65,6 +74,7 @@
 
  .slicknav_btn {
     background-color: transparent;
+	margin: 5px 20px 6px;
   }
   
   .slicknav_menu {
@@ -84,12 +94,12 @@
 	}
   }
   
-  
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
 	margin-bottom: 8px;
 	width: 30px;
   }
+
   
   
   
@@ -120,10 +130,10 @@
     height: 300px;
     float: none;
     margin: 0 auto;
-	padding: 0 5px 0 5px;
+		padding: 0 5px 0 5px;
     overflow: hidden;
     display: inline-block;
-	text-align: center;
+		text-align: center;
   }
   
   .nav2-icon {
@@ -143,9 +153,37 @@
   }
 
   .feature.span {
-	width: 200px;
+	width:100%;
   }
-  // End test code
+  
+//***End Test Code ***
+
+
+
+//Panel / Feature Style
+
+  .banner-text h1 {
+	line-height: 1em;
+	padding-top: 0px;
+  }  
+  .banner-text h2 {
+	line-height: 0em;
+	padding-top: 0px;
+  }
+  
+  .inner.banner-text {
+    padding-top: 23%;
+  }
+
+  .feature a {
+	  color: white;
+  }
+  
+  .feature a:hover {
+	  color:orchid;
+  }
+
+//End Panel / Feature Code
   
 
   
