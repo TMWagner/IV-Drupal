@@ -69,6 +69,18 @@ $zen-auto-include-item-base: false;
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
+  
+  /* Select the proper "blue stripe" */
+  #stripe-full {
+    display: none; 
+  }
+  #stripe-tablet {
+    display: block; 
+  }
+  #stripe-mobile {
+    display: none; 
+  }
+
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: $nav-height;
@@ -86,14 +98,39 @@ $zen-auto-include-item-base: false;
 } // End of @if $zen-reverse-all-floats == false
 
 /**
+ * Screen below 480px)
+ * (2016-03-05) Custom Section: Not sure why this wasn't included in the "stock Zen config"
+ */
+@media all and (max-width: 480px) {
+  
+  #stripe-full {
+    display: none; 
+  }
+  #stripe-tablet {
+    display: none; 
+  }
+  #stripe-mobile {
+    display: block; 
+  }
+}
+
+/**
  * Use 3 grid columns for smaller screens.
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
-  
   /**
    *Custom mods
    */
-  // Get rid of padding reserved for desktop nav.
+
+  #stripe-full {
+    display: none; 
+  }
+  #stripe-tablet {
+    display: block; 
+  }
+  #stripe-mobile {
+    display: none; 
+  }
   #main {
     padding-top: 0px;
   }
@@ -198,6 +235,15 @@ $zen-auto-include-item-base: false;
 @media all and (min-width: 960px) {
  .slicknav_menu {
     display: none;
+  }
+  #stripe-mobile {
+    display: none;
+  }
+  #stripe-tablet {
+    display: none;
+  }
+  #stripe-full {
+    display: block; 
   }
   .wrapper {
     max-width: 960px;
