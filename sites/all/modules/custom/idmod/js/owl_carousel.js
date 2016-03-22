@@ -19,8 +19,18 @@ Drupal.behaviors.fp = {
     
     $('.slicknav').slicknav({
       label: '',
-      prependTo: "#secondary-menu"
+      prependTo: "#secondary-menu",
+      allowParentLinks: true
     });
+    
+    
+    // Test code for footer: based on WOCO
+    $(".accordion").accordion({
+      firstChildExpand: false
+    });
+    
+    
+    
     
     //$( ".slicknav_collapsed" ).parent().css( "background-color", "blue" );
 

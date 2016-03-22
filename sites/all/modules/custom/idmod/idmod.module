@@ -215,36 +215,51 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
  * Reference: Owl Carousel: http://smashingboxes.github.io/OwlCarousel2/index.html
  */
 function idmod_init() {
-  $path = current_path();
   
+  drupal_add_css(drupal_get_path('module', 'idmod') . '/slicknav/slicknav.css');
+  drupal_add_js(drupal_get_path('module', 'idmod') . '/slicknav/jquery.slicknav.min.js', array(
+  'scope' => 'footer',
+  ));
   
-  if (drupal_is_front_page()) {
-    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
-    drupal_add_css(drupal_get_path('module', 'idmod') . '/css/fp.css');
-    
-    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.carousel.min.css');
-    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.theme.default.css');
+  //Setup for WOCO (used in footer)
+  drupal_add_css(drupal_get_path('module', 'idmod') . '/woco/woco-accordion.css');
+  drupal_add_js(drupal_get_path('module', 'idmod') . '/woco/woco.accordion.js');
   
+  //Taking this out of the conditional for now because we need the trigger for slicknav
     drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js', array(
     'scope' => 'footer',
     ));
+  
+  
+  //Load conditional CSS and JS
+  $path = current_path();
+  if (drupal_is_front_page()) {
+    
+    //drupal_add_css(drupal_get_path('module', 'idmod') . '/css/fp.css');
+    
+    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.carousel.min.css');
+    drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.theme.default.css');
+    
+    // Our FP and the owl_carousel don't get along. One or the other, but not both. AND
+    // owl_carousel always take precedence... 
+    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js', array(
+    'scope' => 'header',
+    ));
+  
+    //drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js', array(
+    //'scope' => 'footer',
+    //));
     drupal_add_js(libraries_get_path('owlcarousel')  . '/owl.carousel.min.js', array(
     'scope' => 'footer',
     ));
     
-    //Code for front page FlexNav responsive nav
-
-    //<link href="css/flexnav.css" rel="stylesheet" type="text/css" />
-    drupal_add_css(drupal_get_path('module', 'idmod') . '/slicknav/slicknav.css');
-    drupal_add_js(drupal_get_path('module', 'idmod') . '/slicknav/jquery.slicknav.min.js', array(
-    'scope' => 'footer',
-    ));
    
   }
   
   // Check to see if we should load Owl JS to currant page.
   // 2/14/2016: depends on owl carousel model for adding script tag to bottom of pages.
   //$path = currant_path();
+  //NOTE: Remove for production. We won't be calling node/172 directly. 
   
   if ($path == 'node/172') {
  
@@ -258,6 +273,11 @@ function idmod_init() {
     'scope' => 'footer',
     ));    
   }
+  
+  
+  if ($path == 'node/10') {
+    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
+  }  
   
   
   

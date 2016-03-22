@@ -6,42 +6,36 @@ Drupal.behaviors.fp = {
 
     /*  Make the panel 2 icons hover active
      *  DEBUG: jQuery('div#fp-nav-research');
-     *  jQuery('div#fp-nav-research').css("background-color", "yellow");
+     *  jQuery('div#nav2-research').css("background-color", "yellow");
      *
      */
     
-    
-    $('div#fp-nav-research').hover(function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_research_hover.png");
-      $(this).find("a").css("color", "black");
-        }, function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_research.png");
-      $(this).find("a").css("color", "#0073A3");
+		
+		
+//	New JS
+    $(alert("fp jquery loaded."));
+
+    $('div#nav2-research').hover(function () {
+        $(this).find(".nav2-icon").toggleClass("research-hover");
     });
     
-    $('div#fp-nav-publications').hover(function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications_hover.png");
-      $(this).find("a").css("color", "black");
-        }, function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_publications.png");
-      $(this).find("a").css("color", "#0073A3");
+    $('div#nav2-publications').hover(function () {
+        $(this).find(".nav2-icon").toggleClass("publications-hover");
     });
     
-    $('div#fp-nav-software').hover(function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_software_hover.png");
-      $(this).find("a").css("color", "black");
-        }, function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_software.png");
-      $(this).find("a").css("color", "#0073A3");
+    $('div#nav2-software').hover(function () {
+        $(this).find(".nav2-icon").toggleClass("software-hover");
     });
     
-    $('div#fp-nav-team').hover(function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_team_hover.png");
-      $(this).find("a").css("color", "black");
-        }, function(){
-      $(this).find("img").attr("src", "/sites/default/files/fp_nav_team.png");
-     $(this).find("a").css("color", "#0073A3");
+    $('div#nav2-learn').hover(function () {
+        $(this).find(".nav2-icon").toggleClass("learn-hover");
     });
+    
+    $('div#nav2-team').hover(function () {
+        $(this).find(".nav2-icon").toggleClass("team-hover");
+    });
+    
+    
     
     
     /*  Make the rotators clickable
