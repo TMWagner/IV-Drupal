@@ -12,7 +12,21 @@
 
 //How to do a mixin
 @import "compass/css3/border-radius";
- 
+
+
+//I want this in Custom
+@import "compass/typography/lists/horizontal-list";
+.horizontal-list {
+	@include horizontal-list;
+
+}
+
+@import "compass/typography/lists/inline-list";
+li.footer-link-heading {
+
+}
+
+
  .border-radius {
     @include border-radius(25px);
  }
@@ -29,6 +43,8 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+
+
 // Optionally, add your own components here.
 @import "print";
 

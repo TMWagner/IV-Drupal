@@ -10,8 +10,9 @@
 
 // We are going to create a fluid grid with 1, 3, or 5 columns and 20px gutters
 // between columns (applied as 10px of left/right padding on each column).
-$zen-column-count:  1;
+$zen-column-count:  4;
 $zen-gutter-width:  20px;
+
 
 // If you need IE6/7 support for box-sizing: border-box (default), see _init.scss
 //$zen-box-sizing: content-box;
@@ -32,7 +33,7 @@ $zen-auto-include-item-base: false;
  * by setting a max-width.
  * 2016-02-06:
  * Set page to 100%. Content still centered. We will create a container that
- * constrains content to 960px. 
+ * constrains content to 960px. (should use zen to do this.)
  */
 #page,
 .region-bottom {
@@ -45,26 +46,33 @@ $zen-auto-include-item-base: false;
   text-align: center; /*Allows content of contents to be centered*/
 }
 
-//.region.region-navigation { /* Center this div within Navigation */
-//    display: inline-block;
-//}
+
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
 //#header,
 //#content,
+#banner,
 #navigation,
 .region-sidebar-first,
-.region-sidebar-second,
-#footer {
+.region-sidebar-second
+/*#footer*/ {
   // See the note about $zen-auto-include-item-base above.
   @include zen-grid-item-base();
 }
 
+
 /* Containers for grid items and flow items. */
 #header,
+#banner,
 #main,
 #footer {
   @include zen-grid-container();
+}
+
+
+#footer-full,
+#footer-tablet {
+  display: none;
 }
 
 /* Navigation bar */
@@ -83,7 +91,8 @@ $zen-auto-include-item-base: false;
 
   #main {
     /* Move all the children of #main down to make room. */
-    padding-top: $nav-height;
+    //padding-top: $nav-height;  Where the hell does $nav-height come from?
+    padding-top: 130px;
     position: relative;
   }
   #navigation {
@@ -93,6 +102,14 @@ $zen-auto-include-item-base: false;
     height: $nav-height;
     width: $zen-grid-width;
   }
+  #banner {
+    /* 2016-03-10(tmw): position new banner element */
+    position: absolute;
+    top: $nav-height;
+    padding: 0px;
+    width: 100%;
+    
+  }
 }
 
 } // End of @if $zen-reverse-all-floats == false
@@ -100,6 +117,7 @@ $zen-auto-include-item-base: false;
 /**
  * Screen below 480px)
  * (2016-03-05) Custom Section: Not sure why this wasn't included in the "stock Zen config"
+ * Custom mod
  */
 @media all and (max-width: 480px) {
   
@@ -113,11 +131,59 @@ $zen-auto-include-item-base: false;
     display: block; 
   }
 }
+//End custom < 480 mod
+
+
+
+
+
+
 
 /**
  * Use 3 grid columns for smaller screens.
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
+  
+  $zen-column-count: 4;
+  
+  /**
+   * Dev code
+   * TODO: Remove before production
+   */
+  
+  .col1 {
+    @include zen-grid-item(1, 1); //span1 / Position 1
+    background-color: lightblue;
+  }
+ 
+  .col2 {
+   @include zen-grid-item(1, 2); //span 1 position 2
+   background-color: lightgreen;
+  }
+
+ .col3 {
+  @include zen-grid-item(1, 3); // Span 1 / Position 3
+  background-color: red;
+ }
+ 
+  .col4 {
+    @include zen-grid-item(1, 4); // Span 1 / Position 3
+    background-color: blue;
+  }
+  .col-mid {
+    @include zen-grid-item(2, 2); // Span 1 / Position 3
+    background-color: green;
+    position: absolute;
+    top: 60%;
+  }
+  .full-span {
+    @include zen-grid-item(4, 1);
+    background-color: blue;
+    padding-top: 37%;
+  
+  }
+
+
   /**
    *Custom mods
    */
@@ -131,9 +197,10 @@ $zen-auto-include-item-base: false;
   #stripe-mobile {
     display: none; 
   }
-  #main {
-    padding-top: 0px;
-  }
+  //#main {
+  //  padding-top: 0px;
+  //}
+  
   
   #block-superfish-1 {
     display: none;
@@ -143,32 +210,42 @@ $zen-auto-include-item-base: false;
   .wrapper {
     max-width: 724px;
   }
-  .header__secondary-menu {
+  .header_secondary-menu {
     display: inline-block;
   }
   .slicknav_menu {
     padding: 0 0 0 20px;
   }
   
+  // Footer
+  #footer-tablet {
+    display: block;
+  }
+  
+  //End Custom mods
   
   /**
    * Zen config
    */
 
-  $zen-column-count: 3;
+
 
   /**
    * The layout when there is only one sidebar, the left one.
    */
   .sidebar-first {
+    background-color: lightblue;
     /* Span 2 columns, starting in 2nd column from left. */
     #content {
       @include zen-grid-item(2, 2);
+      background-color: orange;
     }
 
     /* Span 1 column, starting in 1st column from left. */
     .region-sidebar-first {
       @include zen-grid-item(1, 1);
+      background-color: green;
+      
     }
   }
 
@@ -248,6 +325,10 @@ $zen-auto-include-item-base: false;
   .wrapper {
     max-width: 960px;
   }
+  
+  #footer-full {
+    display: block;
+  }
 
   $zen-column-count: 5;
 
@@ -302,7 +383,11 @@ $zen-auto-include-item-base: false;
   }
 }
 
-#content {
-  padding-left: 0px;
-  padding-right: 0px;
-}
+/**
+ * Local mod
+ * This should not be needed...
+ */
+//#content {
+//  padding-left: 0px;
+//  padding-right: 0px;
+//}

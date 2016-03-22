@@ -8,16 +8,26 @@
 // @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 
   //test CSS
-  
+	
+	$default-text-color: black;
+	$link-color: #0073A3;
+	$iv-blue: #0073a3;
+	$iv-grey: #858c8c;
+	
+
 
 
   h3 {
 	margin-top: 0px;
   }
   a {
-	text-decoration: none;
-	text-transform: uppercase;
+		text-decoration: none;
+		color: $link-color;
+		text-transform: uppercase;
   }
+	a:hover {
+		color: black;
+	}
 
 // General CSS
   .wrapper, .region-navigation {
@@ -27,7 +37,7 @@
   
   // Parent to wrapper
   // The text-align property only works on inline elements. Wrapper contains inline-block property
-  .center_content {
+  .center-content {
 	text-align:center;
   }
   
@@ -68,7 +78,6 @@
   #secondary-menu {
 	  bottom: 10px;
 	  height: 40px;
-	  //background-color: rgba(230, 34, 90, 0.44);
   }
     
 
@@ -79,30 +88,41 @@
   
   .slicknav_menu {
     background: transparent;
-	position: relative;
+		position: relative;
     z-index: 2;
   }
   
   .slicknav_nav {
-	background-color: #d7d7d7;
+		background-color: #d7d7d7;
+		margin-top: 116px;
   }
+	
   
   .slicknav_nav a {
-	color: black;
-	&:hover {
-	  color: green;
+		color: black;
+		&:hover {
+			color: green;
+		}
 	}
-  }
   
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
-	margin-bottom: 8px;
-	width: 30px;
-  }
+		margin-bottom: 8px;
+		width: 30px;
+	}
 
-  
-  
-  
+//Banner (all pages)
+
+	.banner-stripe {
+		background-color: $iv-blue;
+		width: 100%;
+		height: 60px
+	}
+	div#block-block-38 {
+		margin-bottom: 0px;
+	}
+
+
   
 //FP 1  (Carousel)
   .container { 
@@ -141,23 +161,16 @@
 	height: 72px;
 	width: 72px;
   }
+	
+	#nav2-research a:hover {
+			color: black;
+	}
+	
+	.plain-para {
+		text-transform: none;
+		color: $default-text-color;
+	}
   
-  // Test Code
-  // Displaying the links as block elements makes the whole link area clickable
-  // (not just the text), and it allows us to specify padding
-
-  .horizontal-buttons {
-  float: left;
-  display: block;
-  padding: 5px;
-  }
-
-  .feature.span {
-	width:100%;
-  }
-  
-//***End Test Code ***
-
 
 
 //Panel / Feature Style
@@ -166,13 +179,24 @@
 	line-height: 1em;
 	padding-top: 0px;
   }  
-  .banner-text h2 {
-	line-height: 0em;
-	padding-top: 0px;
-  }
+
   
   .inner.banner-text {
-    padding-top: 23%;
+    padding-top: 25%;
+  }
+  
+  .feature h1 {
+		line-height: 1em;
+		margin: 0px;
+		padding: 0px 0px 0px 0px;
+	
+  }
+  
+  //This may need to move to responsive....
+  .feature h2 {
+		font-family: 'proxima-nova'; font-weight: 700;
+		font-size:14px;
+		margin: 0px;
   }
 
   .feature a {
@@ -197,3 +221,43 @@
 		float: left;
 		width: 75%;
 	}
+	
+	
+// Footer
+	.footer-wrapper {
+		background-color: $iv-blue;
+		//width: 100%;
+	}
+	.footer-wrapper a {
+		color: white;
+	}
+	
+	.footer-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+	}
+	
+
+	.footer-block>ul {
+		float: left;
+		list-style: none;
+		padding: 0px 0px 0px 45px;
+
+	}
+	
+	#copyright {
+    clear: left;
+    color: white;
+    font-size: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}	
+
+	.accordion-content ul {
+			list-style: none;
+	}
+
+	
+// End Footer
