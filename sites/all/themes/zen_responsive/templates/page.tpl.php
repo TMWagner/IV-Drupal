@@ -105,6 +105,11 @@
       <?php print render($page['navigation']); ?>
 
     </div>
+    
+    <div id="banner">
+      <?php print render($page['banner']); ?>
+    </div>
+    
 
     <?php
       // Render the sidebars to see if there's anything in them.
