@@ -75,6 +75,76 @@ $zen-auto-include-item-base: false;
   display: none;
 }
 
+.mobile-display {
+  display: none;
+}
+
+#banner {
+  /* 2016-03-10(tmw): position new banner element */
+  position: absolute;
+  top: $nav-height;
+  padding: 0px;
+  width: 100%;
+}
+
+.container .outer {
+  width: 100%;
+  padding-top: 37%; /* defines aspect ratio */
+  position: relative;
+}
+
+// Carousel formatting
+.owl-carousel {
+  position: relative;
+}
+
+
+	// Feature/banner Text formatting
+  
+.inner.banner-text {
+  padding-top: 25%;
+}
+.banner-text h1 {
+  line-height: 1em;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.banner-text h2 {
+  font-family: 'proxima-nova'; font-weight: 700;
+  font-size:14px;
+  margin: 0px;
+}
+.banner-text a {
+  color: white;
+}
+.banner-text a:hover {
+  color:orchid;
+}
+
+
+	
+	// End feature text CSS
+
+
+.slicknav_menu {
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.inner.banner-text {
+  color: white;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 0px;
+}
+
+#content {
+  padding-top: 40%;
+}
+
+
 /* Navigation bar */
 @media all and (min-width: 480px) {
   
@@ -88,6 +158,7 @@ $zen-auto-include-item-base: false;
   #stripe-mobile {
     display: none; 
   }
+  
 
   #main {
     /* Move all the children of #main down to make room. */
@@ -102,14 +173,11 @@ $zen-auto-include-item-base: false;
     height: $nav-height;
     width: $zen-grid-width;
   }
-  #banner {
-    /* 2016-03-10(tmw): position new banner element */
-    position: absolute;
-    top: $nav-height;
-    padding: 0px;
-    width: 100%;
-    
-  }
+  
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}  
+
 }
 
 } // End of @if $zen-reverse-all-floats == false
@@ -121,6 +189,73 @@ $zen-auto-include-item-base: false;
  */
 @media all and (max-width: 480px) {
   
+  //Logo adjustment
+  //.header__logo-image {
+  //  width: 330px;
+  
+ .container .outer {
+    padding-top: 50%; /* defines aspect ratio */
+  }
+  
+  #content {
+    padding-top: 100%;
+  }
+  
+  .inner.banner-text {
+    padding-top: 30%;
+  }
+  
+  #block-superfish-1 {
+    display: none;
+  }
+  
+  .mobile-display {
+    display: block;
+  }
+  .not-mobile-display {
+    display: none;
+  }
+  
+  // Feature/banner Text formatting
+  .banner-text h1 {
+    line-height: 1em;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .banner-text h2 {
+    font-family: 'proxima-nova'; font-weight: 500;
+    font-size:14px;
+    margin: 0px;
+  }
+  .banner-text a {
+    color: white;
+  }
+  .banner-text a:hover {
+    color:orchid;
+  }  
+  
+  .owl-dots {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
+  
+  .banner-text h1 {
+    font-size: 1.5em;
+  }
+  .banner-text h2 {
+    font-size: .9em;
+    line-height: 1.5em;
+  }
+  .banner-text.mobile-display {
+    height: 100px;
+    margin-top: 15px;
+  }
+  
+}
+  
+  
+  
   #stripe-full {
     display: none; 
   }
@@ -130,7 +265,46 @@ $zen-auto-include-item-base: false;
   #stripe-mobile {
     display: block; 
   }
-}
+  
+  #main {
+    margin-top: 0px;
+  }
+  
+  // SlickNav menu exception for Mobile
+  .slicknav_menu {
+    background: transparent none repeat scroll 0% 0%;
+    position: relative;
+    z-index: 2;
+    height: 61px;
+  }
+  
+  // The rest of this is in Custom: Maybe should move it all here....
+  .slicknav_nav {
+    background-color: #d7d7d7; 
+		margin-top: 55px;
+    // More code to fill entire page...
+  }
+  
+  div.slicknav_menu {
+    width: 50px;
+  }
+  ul.slicknav_nav {
+    width: 200px;
+    position: relative;
+    right: 200px;
+  }
+  
+    // Footer
+  #footer-tablet {
+    display: block;
+  }
+  
+    // Footer
+  #footer-full {
+    display: none;
+  }
+  
+
 //End custom < 480 mod
 
 
@@ -139,7 +313,8 @@ $zen-auto-include-item-base: false;
 
 
 
-/**
+/***** Tablet Layout **********************
+ * 
  * Use 3 grid columns for smaller screens.
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
@@ -150,6 +325,25 @@ $zen-auto-include-item-base: false;
    * Dev code
    * TODO: Remove before production
    */
+  
+  .container .outer {
+    padding-top: 45%; /* defines aspect ratio  of banner image*/
+  }
+  
+  #content {
+    padding-top: 50%;
+  } 
+  
+  .inner.banner-text {
+    padding-top: 32%;
+  }
+  
+  .not-mobile-display > h1 {
+    font-size: 1.5em;
+  }
+  .not-mobile-display > h2 {
+    font-size: 0.75em;
+  }
   
   .col1 {
     @include zen-grid-item(1, 1); //span1 / Position 1
@@ -182,6 +376,7 @@ $zen-auto-include-item-base: false;
     padding-top: 37%;
   
   }
+  
 
 
   /**
@@ -197,9 +392,17 @@ $zen-auto-include-item-base: false;
   #stripe-mobile {
     display: none; 
   }
-  //#main {
-  //  padding-top: 0px;
+  
+  ////Logo adjustment
+  //.header__logo-image {
+  //    width: 425px;
   //}
+  
+  .slicknav_nav {
+		background-color: #d7d7d7; 
+		margin-top: 115px;
+    // More code to fill entire page...
+  }
   
   
   #block-superfish-1 {
@@ -324,6 +527,10 @@ $zen-auto-include-item-base: false;
   }
   .wrapper {
     max-width: 960px;
+  }
+  
+  #stripe-full p {
+    margin-top: 1.5em;
   }
   
   #footer-full {
