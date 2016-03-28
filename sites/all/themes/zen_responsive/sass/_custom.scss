@@ -28,6 +28,10 @@
 	a:hover {
 		color: black;
 	}
+	
+	p {
+		margin: 0px;
+	}
 
 // General CSS
   .wrapper, .region-navigation {
@@ -48,9 +52,12 @@
   padding-top:10px;
   width: 100%;
   }
+	
   #logo {
-	padding-left: 10px;
+		padding-left: 10px;
+		width: 75%;
   }
+	
   
   //Main Nav
   #main-nav-mobile {
@@ -59,18 +66,18 @@
 
   
   #block-superfish-1 {
-	margin-top: 15px;
+		margin-top: 15px;
   }
   
   #superfish-1 > li {
-	background-color: none;
-	margin: 2px;
-	text-align: center;
-	width: 142px;  /*NOTE: this controls the overall width of the div as well*/
+		background-color: none;
+		margin: 2px;
+		text-align: center;
+		width: 142px;  /*NOTE: this controls the overall width of the div as well*/
   }
-  
+	
+	
 
-  
   .menu a {
 	  color: grey;
   }
@@ -80,22 +87,12 @@
 	  height: 40px;
   }
     
-
+	// position the 'hamburger'
  .slicknav_btn {
     background-color: transparent;
-	margin: 5px 20px 6px;
+		margin: 0px 20px 0px 0px;
   }
   
-  .slicknav_menu {
-    background: transparent;
-		position: relative;
-    z-index: 2;
-  }
-  
-  .slicknav_nav {
-		background-color: #d7d7d7;
-		margin-top: 116px;
-  }
 	
   
   .slicknav_nav a {
@@ -105,11 +102,6 @@
 		}
 	}
   
-  .slicknav_menu .slicknav_icon-bar {
-    background-color: #565656;
-		margin-bottom: 8px;
-		width: 30px;
-	}
 
 //Banner (all pages)
 
@@ -128,11 +120,13 @@
   .container { 
 	  width: 100%; /* Can be any desired width */
   }
-  .container .outer {
-	  width: 100%;
-	  padding-top: 37%; /* defines aspect ratio */
-	  position: relative;
-  }
+	
+	// Moved to _responsive
+//  .container .outer {
+//	  width: 100%;
+//	  padding-top: 37%; /* defines aspect ratio */
+//	  position: relative;
+//  }
   .container .outer .inner {
 	  position: absolute;
 	  top: 0;
@@ -141,7 +135,7 @@
 	  bottom: 0;
   }
   .inner {
-	background-size: cover; /* make sure the background image always fits and isn't clipped */
+		background-size: cover; /* make sure the background image always fits and isn't clipped */
   }
 	
 // FP 2 Nav icons
@@ -154,12 +148,13 @@
     overflow: hidden;
     display: inline-block;
 		text-align: center;
+		vertical-align: top;
   }
-  
+	
   .nav2-icon {
-	margin: 0 auto;
-	height: 72px;
-	width: 72px;
+		margin: 0 auto;
+		height: 72px;
+		width: 72px;
   }
 	
 	#nav2-research a:hover {
@@ -181,31 +176,7 @@
   }  
 
   
-  .inner.banner-text {
-    padding-top: 25%;
-  }
-  
-  .feature h1 {
-		line-height: 1em;
-		margin: 0px;
-		padding: 0px 0px 0px 0px;
-	
-  }
-  
-  //This may need to move to responsive....
-  .feature h2 {
-		font-family: 'proxima-nova'; font-weight: 700;
-		font-size:14px;
-		margin: 0px;
-  }
 
-  .feature a {
-	  color: white;
-  }
-  
-  .feature a:hover {
-	  color:orchid;
-  }
 
 //End Panel / Feature Code
   
