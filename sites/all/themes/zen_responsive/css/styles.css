@@ -2495,11 +2495,10 @@ div#block-block-38 {
 .fp-nav-row {
   width: 170px;
   height: 300px;
-  float: none;
+  float: left;
   margin: 0 auto;
   padding: 0 5px 0 5px;
   overflow: hidden;
-  display: inline-block;
   text-align: center;
 }
 
