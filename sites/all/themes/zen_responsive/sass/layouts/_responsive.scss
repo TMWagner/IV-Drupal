@@ -10,7 +10,7 @@
 
 // We are going to create a fluid grid with 1, 3, or 5 columns and 20px gutters
 // between columns (applied as 10px of left/right padding on each column).
-$zen-column-count:  4;
+$zen-column-count:  12;
 $zen-gutter-width:  20px;
 
 
@@ -42,9 +42,29 @@ $zen-auto-include-item-base: false;
   max-width: 100%;
 }
 
-#navigation {
-  text-align: center; /*Allows content of contents to be centered*/
-}
+
+	#page-title,
+	.page-content {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.page-content {
+		margin-bottom: 20px;
+	}
+  
+	.two-column-1 {	
+		float:left;
+		width:200px;
+		background-color:#ff0000;
+	}
+	.two-column-2 {
+		width: 100%;
+		background-color:#00FF00;
+	}
+
+	#navigation {
+		text-align: center; /*Allows content of contents to be centered*/
+	}
 
 
 
@@ -93,14 +113,19 @@ $zen-auto-include-item-base: false;
   position: relative;
 }
 
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #565656;
+  margin-bottom: 8px;
+  width: 30px;
+}
+
 // Carousel formatting
 .owl-carousel {
   position: relative;
 }
 
 
-	// Feature/banner Text formatting
-  
+// Feature/banner Text formatting 
 .inner.banner-text {
   padding-top: 25%;
 }
@@ -120,10 +145,7 @@ $zen-auto-include-item-base: false;
 .banner-text a:hover {
   color:orchid;
 }
-
-
-	
-	// End feature text CSS
+// End feature text CSS
 
 
 .slicknav_menu {
@@ -174,13 +196,15 @@ $zen-auto-include-item-base: false;
     width: $zen-grid-width;
   }
   
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px;
-}  
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+  }  
 
 }
 
 } // End of @if $zen-reverse-all-floats == false
+
+
 
 
 /**
@@ -200,10 +224,13 @@ $zen-auto-include-item-base: false;
 }
 
 @media all and (min-width: 450px) {
-  #home-p3 {
-    margin-top: 10%
-  }
+  //#home-p3 {
+  //  margin-top: 10%
+  //}
 }
+
+// End FP Mobile p3 hack
+
 
 
 
@@ -213,15 +240,10 @@ $zen-auto-include-item-base: false;
  * Custom mod
  */
 @media all and (max-width: 480px) {
-  
-  //Logo adjustment
-  //.header__logo-image {
-  //  width: 330px;
-  
+    
  .container .outer {
     padding-top: 50%; /* defines aspect ratio */
   }
-  
   
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
@@ -281,12 +303,12 @@ $zen-auto-include-item-base: false;
     font-size: .9em;
     line-height: 1.5em;
   }
-.banner-text.mobile-display {
+  .banner-text.mobile-display {
     height: 100px;
     margin-top: 15px;
+  }
 }
-  
-}
+// End 480 Max media Query
   
   
   
@@ -315,7 +337,7 @@ $zen-auto-include-item-base: false;
   // The rest of this is in Custom: Maybe should move it all here....
   .slicknav_nav {
     background-color: #d7d7d7; 
-		margin-top: 55px;
+		margin-top: 2.3em;
     // More code to fill entire page...
   }
   
@@ -337,12 +359,7 @@ $zen-auto-include-item-base: false;
   #footer-full {
     display: none;
   }
-  
-
-//End custom < 480 mod
-
-
-
+//End custom < 480 mod  (upps  no maybe it was pinched off above)
 
 
 
@@ -353,19 +370,23 @@ $zen-auto-include-item-base: false;
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
   
-  $zen-column-count: 4;
+  $zen-column-count: 12;
   
   /**
    * Dev code
-   * TODO: Remove before production
+   * TODO: Remove before production ? why? 
    */
+  
+  #banner {
+    top: 1em;
+  }
   
   .container .outer {
     padding-top: 45%; /* defines aspect ratio  of banner image*/
   }
   
   #content {
-    padding-top: 50%;
+    padding-top: 45%;
   } 
   
   .inner.banner-text {
@@ -378,38 +399,12 @@ $zen-auto-include-item-base: false;
   .not-mobile-display > h2 {
     font-size: 0.75em;
   }
-  
-  .col1 {
-    @include zen-grid-item(1, 1); //span1 / Position 1
-    background-color: lightblue;
-  }
- 
-  .col2 {
-   @include zen-grid-item(1, 2); //span 1 position 2
-   background-color: lightgreen;
-  }
+	
+	#page-title,
+	.page-content {
+  	max-width: 80%;
+	}
 
- .col3 {
-  @include zen-grid-item(1, 3); // Span 1 / Position 3
-  background-color: red;
- }
- 
-  .col4 {
-    @include zen-grid-item(1, 4); // Span 1 / Position 3
-    background-color: blue;
-  }
-  .col-mid {
-    @include zen-grid-item(2, 2); // Span 1 / Position 3
-    background-color: green;
-    position: absolute;
-    top: 60%;
-  }
-  .full-span {
-    @include zen-grid-item(4, 1);
-    background-color: blue;
-    padding-top: 37%;
-  
-  }
   
 
 
@@ -427,10 +422,6 @@ $zen-auto-include-item-base: false;
     display: none; 
   }
   
-  ////Logo adjustment
-  //.header__logo-image {
-  //    width: 425px;
-  //}
   
   .slicknav_nav {
 		background-color: #d7d7d7; 
@@ -466,7 +457,6 @@ $zen-auto-include-item-base: false;
    */
 
 
-
   /**
    * The layout when there is only one sidebar, the left one.
    */
@@ -476,6 +466,7 @@ $zen-auto-include-item-base: false;
     #content {
       @include zen-grid-item(2, 2);
       background-color: orange;
+			//@include zen-grid-item-base();
     }
 
     /* Span 1 column, starting in 1st column from left. */
@@ -543,6 +534,13 @@ $zen-auto-include-item-base: false;
    
 }  /*End of 959*/
 
+
+
+
+
+
+
+
 /**
  * Use 5 grid columns for larger screens.
  */
@@ -567,15 +565,79 @@ $zen-auto-include-item-base: false;
     margin-top: 1.5em;
   }
   
+  #home-p3 {
+    margin-top: 2em;
+  }
+  
   #footer-full {
     display: block;
   }
   #footer-tablet {
     display: none;
   }
-
-  $zen-column-count: 5;
-
+	
+	#page-title,
+	.page-content {
+  	max-width: 80%;
+	}
+ 
+  
+  /**
+   * Layout for Single Column Centered
+   */
+  .full-span {
+    @include zen-grid-item (10, 2);
+    background-color: lightgreen;  //testing
+    clear: left;
+  }
+  .test-col1 {
+    @include zen-grid-item(1, 1);
+    background-color: lightblue;
+    clear: left;
+  }
+  
+  .test-col2 {
+    @include zen-grid-item(1, 2); // Length, start position
+    background-color: beige;
+    clear: left;
+  }
+  
+  .test-col3 {
+    @include zen-grid-item(1, 3); // Length, start position
+    background-color: purple;
+    clear: left;
+  }
+  
+  .test-col4 {
+    @include zen-grid-item(1, 4); // Length, start position
+    background-color: yellow;
+    clear: left;
+  }
+  .test-col5 {
+    @include zen-grid-item(1, 5); // Length, start position
+    background-color: orange;
+    clear: left;
+  }
+ 
+  .test-col6 {
+    @include zen-grid-item(4, 2); // Length, start position
+    background-color: deeppink;
+    clear: left;
+  }
+	
+  .right-main {
+    @include zen-grid-item(6, 6); // Length, start position
+    background-color: floralwhite;
+		@include zen-grid-item-base();
+//    clear: left;
+  }	
+	 .left-sidebar {
+    @include zen-grid-item(4, 2); // Length, start position
+    background-color: deeppink;
+//    clear: left;
+  }
+  
+  
   /**
    * The layout when there is only one sidebar, the left one.
    */
@@ -583,6 +645,7 @@ $zen-auto-include-item-base: false;
     /* Span 4 columns, starting in 2nd column from left. */
     #content {
       @include zen-grid-item(4, 2);
+			background-color: chartreuse;
     }
 
     /* Span 1 column, starting in 1st column from left. */
@@ -598,11 +661,13 @@ $zen-auto-include-item-base: false;
     /* Span 4 columns, starting in 1st column from left. */
     #content {
       @include zen-grid-item(4, 1);
+      background-color: blue;
     }
 
     /* Span 1 column, starting in 5th column from left. */
     .region-sidebar-second {
       @include zen-grid-item(1, 5);
+      background-color: orange;
     }
   }
 
@@ -626,12 +691,5 @@ $zen-auto-include-item-base: false;
     }
   }
 }
+//End full size layout
 
-/**
- * Local mod
- * This should not be needed...
- */
-//#content {
-//  padding-left: 0px;
-//  padding-right: 0px;
-//}
