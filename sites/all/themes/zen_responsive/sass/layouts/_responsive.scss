@@ -51,16 +51,33 @@ $zen-auto-include-item-base: false;
 	.page-content {
 		margin-bottom: 20px;
 	}
+	
+	h1.page-title {
+		color: #0073a3;
+    margin-top: 0px;
+		font-family: 'proxima-nova',Arial;
+    font-style: normal;
+    font-weight: 300;
+	}
   
-	.two-column-1 {	
-		float:left;
-		width:200px;
-		background-color:#ff0000;
-	}
-	.two-column-2 {
-		width: 100%;
-		background-color:#00FF00;
-	}
+	//Two column layout
+	
+		.two-column-flex {
+			display: flex;
+			flex-direction: row;
+		}
+		.two-column-1 {
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 250px;
+		}
+		.two-column-2 {
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-basis: 0%;
+		}
+	
+	//End flex two column layout
 
 	#navigation {
 		text-align: center; /*Allows content of contents to be centered*/
@@ -585,57 +602,9 @@ $zen-auto-include-item-base: false;
   /**
    * Layout for Single Column Centered
    */
-  .full-span {
-    @include zen-grid-item (10, 2);
-    background-color: lightgreen;  //testing
-    clear: left;
-  }
-  .test-col1 {
-    @include zen-grid-item(1, 1);
-    background-color: lightblue;
-    clear: left;
-  }
-  
-  .test-col2 {
-    @include zen-grid-item(1, 2); // Length, start position
-    background-color: beige;
-    clear: left;
-  }
-  
-  .test-col3 {
-    @include zen-grid-item(1, 3); // Length, start position
-    background-color: purple;
-    clear: left;
-  }
-  
-  .test-col4 {
-    @include zen-grid-item(1, 4); // Length, start position
-    background-color: yellow;
-    clear: left;
-  }
-  .test-col5 {
-    @include zen-grid-item(1, 5); // Length, start position
-    background-color: orange;
-    clear: left;
-  }
- 
-  .test-col6 {
-    @include zen-grid-item(4, 2); // Length, start position
-    background-color: deeppink;
-    clear: left;
-  }
+
 	
-  .right-main {
-    @include zen-grid-item(6, 6); // Length, start position
-    background-color: floralwhite;
-		@include zen-grid-item-base();
-//    clear: left;
-  }	
-	 .left-sidebar {
-    @include zen-grid-item(4, 2); // Length, start position
-    background-color: deeppink;
-//    clear: left;
-  }
+
   
   
   /**
