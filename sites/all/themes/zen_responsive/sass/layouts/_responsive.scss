@@ -324,6 +324,12 @@ $zen-auto-include-item-base: false;
     height: 100px;
     margin-top: 15px;
   }
+	
+	//Hide sidebar on 2 column layout
+	.two-column-1 {
+    flex: 0 0 250px;
+    display: none;
+	}
 }
 // End 480 Max media Query
   
@@ -359,12 +365,12 @@ $zen-auto-include-item-base: false;
   }
   
   div.slicknav_menu {
-    width: 50px;
+    width: 100%;
   }
   ul.slicknav_nav {
     width: 200px;
     position: relative;
-    right: 200px;
+    //right: 200px;
   }
   
     // Footer

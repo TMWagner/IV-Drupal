@@ -1050,14 +1050,13 @@ h1.page-title {
 
 /* line 367, ../sass/layouts/_responsive.scss */
 div.slicknav_menu {
-  width: 50px;
+  width: 100%;
 }
 
 /* line 370, ../sass/layouts/_responsive.scss */
 ul.slicknav_nav {
   width: 200px;
   position: relative;
-  right: 200px;
 }
 
 /* line 377, ../sass/layouts/_responsive.scss */
@@ -2410,20 +2409,20 @@ header {
 /* line 59, ../sass/_custom.scss */
 #logo {
   padding-left: 10px;
-  width: 75%;
+  width: 50%;
 }
 
-/* line 66, ../sass/_custom.scss */
+/* line 65, ../sass/_custom.scss */
 #main-nav-mobile {
   display: none;
 }
 
-/* line 71, ../sass/_custom.scss */
+/* line 70, ../sass/_custom.scss */
 #block-superfish-1 {
   margin-top: 15px;
 }
 
-/* line 75, ../sass/_custom.scss */
+/* line 74, ../sass/_custom.scss */
 #superfish-1 > li {
   background-color: none;
   margin: 2px;
@@ -2432,51 +2431,51 @@ header {
   /*NOTE: this controls the overall width of the div as well*/
 }
 
-/* line 82, ../sass/_custom.scss */
+/* line 81, ../sass/_custom.scss */
 .menu a {
   color: grey;
 }
 
-/* line 86, ../sass/_custom.scss */
+/* line 85, ../sass/_custom.scss */
 #secondary-menu {
   bottom: 10px;
   height: 40px;
 }
 
-/* line 92, ../sass/_custom.scss */
+/* line 91, ../sass/_custom.scss */
 .slicknav_btn {
   background-color: transparent;
   margin: 0px 20px 0px 0px;
 }
 
-/* line 98, ../sass/_custom.scss */
+/* line 97, ../sass/_custom.scss */
 .slicknav_nav a {
   color: black;
 }
-/* line 100, ../sass/_custom.scss */
+/* line 99, ../sass/_custom.scss */
 .slicknav_nav a:hover {
   color: green;
 }
 
-/* line 108, ../sass/_custom.scss */
+/* line 107, ../sass/_custom.scss */
 .banner-stripe {
   background-color: #0073a3;
   width: 100%;
   height: 60px;
 }
 
-/* line 113, ../sass/_custom.scss */
+/* line 112, ../sass/_custom.scss */
 div#block-block-38 {
   margin-bottom: 0px;
 }
 
-/* line 120, ../sass/_custom.scss */
+/* line 119, ../sass/_custom.scss */
 .container {
   width: 100%;
   /* Can be any desired width */
 }
 
-/* line 124, ../sass/_custom.scss */
+/* line 123, ../sass/_custom.scss */
 .container .outer .inner {
   position: absolute;
   top: 0;
@@ -2485,13 +2484,13 @@ div#block-block-38 {
   bottom: 0;
 }
 
-/* line 131, ../sass/_custom.scss */
+/* line 130, ../sass/_custom.scss */
 .inner {
   background-size: cover;
   /* make sure the background image always fits and isn't clipped */
 }
 
-/* line 136, ../sass/_custom.scss */
+/* line 135, ../sass/_custom.scss */
 .fp-nav-row {
   width: 170px;
   height: 300px;
@@ -2504,37 +2503,37 @@ div#block-block-38 {
   vertical-align: top;
 }
 
-/* line 148, ../sass/_custom.scss */
+/* line 147, ../sass/_custom.scss */
 .nav2-icon {
   margin: 0 auto;
   height: 72px;
   width: 72px;
 }
 
-/* line 154, ../sass/_custom.scss */
+/* line 153, ../sass/_custom.scss */
 #nav2-research a:hover {
   color: black;
 }
 
-/* line 158, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 167, ../sass/_custom.scss */
+/* line 166, ../sass/_custom.scss */
 .banner-text h1 {
   line-height: 1em;
   padding-top: 0px;
 }
 
-/* line 178, ../sass/_custom.scss */
+/* line 177, ../sass/_custom.scss */
 .ds-2col > .group-left {
   float: left;
   width: 25%;
 }
 
-/* line 182, ../sass/_custom.scss */
+/* line 181, ../sass/_custom.scss */
 .ds-2col > .group-right {
   float: left;
   width: 75%;
@@ -2543,13 +2542,13 @@ div#block-block-38 {
 /**
  * Code for RLP
  */
-/* line 192, ../sass/_custom.scss */
+/* line 191, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 197, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 .fivebox_wrapper {
   margin-top: 10px;
   width: 300px;
@@ -2563,7 +2562,7 @@ div#block-block-38 {
   vertical-align: top;
 }
 
-/* line 210, ../sass/_custom.scss */
+/* line 209, ../sass/_custom.scss */
 .five_box_960row_block {
   -webkit-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.37);
   -moz-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.37);
@@ -2575,7 +2574,7 @@ div#block-block-38 {
   width: 300px;
 }
 
-/* line 222, ../sass/_custom.scss */
+/* line 221, ../sass/_custom.scss */
 .block_content {
   position: absolute;
   left: 80px;
@@ -2585,7 +2584,7 @@ div#block-block-38 {
   display: table;
 }
 
-/* line 231, ../sass/_custom.scss */
+/* line 230, ../sass/_custom.scss */
 .rollup {
   position: absolute;
   width: 300px;
@@ -2597,12 +2596,12 @@ div#block-block-38 {
   overflow: hidden;
 }
 
-/* line 242, ../sass/_custom.scss */
+/* line 241, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 248, ../sass/_custom.scss */
+/* line 247, ../sass/_custom.scss */
 .fp-nav-row-xxx {
   width: 170px;
   height: 300px;
@@ -2615,42 +2614,42 @@ div#block-block-38 {
   vertical-align: top;
 }
 
-/* line 260, ../sass/_custom.scss */
+/* line 259, ../sass/_custom.scss */
 .fivebox_wrapper h3 {
   margin-top: 25px;
   color: white;
 }
 
-/* line 269, ../sass/_custom.scss */
+/* line 268, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 273, ../sass/_custom.scss */
+/* line 272, ../sass/_custom.scss */
 .footer-wrapper a {
   color: white;
 }
 
-/* line 277, ../sass/_custom.scss */
+/* line 276, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 283, ../sass/_custom.scss */
+/* line 282, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 288, ../sass/_custom.scss */
+/* line 287, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 292, ../sass/_custom.scss */
+/* line 291, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -2660,7 +2659,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 301, ../sass/_custom.scss */
+/* line 300, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
