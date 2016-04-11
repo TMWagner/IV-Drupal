@@ -59,6 +59,13 @@ $zen-auto-include-item-base: false;
     font-style: normal;
     font-weight: 400;
 	}
+	
+	//Panel / Feature Style
+
+  .banner-text h1 {
+		line-height: 1em;
+		padding-top: 0px;
+  }  
   
 	//Two column layout
 	
@@ -257,10 +264,11 @@ $zen-auto-include-item-base: false;
  * Custom mod
  */
 @media all and (max-width: 480px) {
+	
     
- .container .outer {
-    padding-top: 50%; /* defines aspect ratio */
-  }
+	.container .outer {
+		 padding-top: 50%; /* defines aspect ratio */
+	 }
   
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
@@ -271,16 +279,11 @@ $zen-auto-include-item-base: false;
   // position content below banner
   #content {
     padding-top: 80%;
-}
-  
-  .inner.banner-text {
-    padding-top: 30%;
-  }
+	}
   
   #block-superfish-1 {
     display: none;
   }
-  
   
   .mobile-display {
     display: block;
@@ -290,6 +293,9 @@ $zen-auto-include-item-base: false;
   }
   
   // Feature/banner Text formatting
+	.inner.banner-text {
+    padding-top: 35%;
+  }
   .banner-text h1 {
     line-height: 1em;
     margin: 0px;
@@ -314,7 +320,7 @@ $zen-auto-include-item-base: false;
   }
   
   .banner-text h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .banner-text h2 {
     font-size: .9em;
@@ -336,7 +342,7 @@ $zen-auto-include-item-base: false;
   
   
   #stripe-full {
-    display: none; 
+    display: none;
   }
   #stripe-tablet {
     display: none; 
@@ -360,18 +366,49 @@ $zen-auto-include-item-base: false;
   // The rest of this is in Custom: Maybe should move it all here....
   .slicknav_nav {
     background-color: #d7d7d7; 
-		margin-top: 2.3em;
+		margin-top: 2.7em;
+		padding: 0px;
     // More code to fill entire page...
   }
+	
   
+	// position and style the 'hamburger'
+ .slicknav_btn {
+    background-color: transparent;
+		margin: 0px 20px 0px 0px;
+  }
+	
+  .slicknav_nav a {
+		color: #6C6666;
+		padding: 15px 10px;
+		&:hover {
+			color: black;
+		}
+	}	
+	
+	
   div.slicknav_menu {
     width: 100%;
+		padding: 0;
   }
+	
+
+	
   ul.slicknav_nav {
-    width: 200px;
+    width: 100%;
     position: relative;
-    //right: 200px;
   }
+	
+	.slicknav_nav .slicknav_row {
+		padding: 15px 10px;
+	}	
+		
+	//.slicknav_nav a {
+	//	padding: 15px 10px;
+	//}
+	//
+	
+	
   
     // Footer
   #footer-tablet {
@@ -415,6 +452,10 @@ $zen-auto-include-item-base: false;
   .inner.banner-text {
     padding-top: 32%;
   }
+	
+	.banner-text h1 {
+		font-size: 1.2em;
+  }  
   
   .not-mobile-display > h1 {
     font-size: 1.5em;
