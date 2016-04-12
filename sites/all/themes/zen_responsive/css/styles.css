@@ -44,46 +44,55 @@
   border-radius: 25px;
 }
 
-/* line 104, nav2/*.png */
-.nav2-sprite, .nav2-publications, .nav2-research, .nav2-software, .nav2-team {
-  background-image: url('../images/nav2-s4e50ed6fd1.png');
+/* line 120, nav2/*.png */
+.nav2-sprite, .nav2-learn, .nav2-publications, .nav2-research, .nav2-software, .nav2-team {
+  background-image: url('../images/nav2-s178de46154.png');
   background-repeat: no-repeat;
 }
 
 /* line 84, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-publications {
+.nav2-learn {
   background-position: 0 0;
 }
 /* line 59, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-publications:hover, .nav2-publications.publications-hover {
+.nav2-learn:hover, .nav2-learn.learn-hover {
   background-position: 0 -72px;
 }
 
 /* line 84, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-research {
+.nav2-publications {
   background-position: 0 -144px;
 }
 /* line 59, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-research:hover, .nav2-research.research-hover {
+.nav2-publications:hover, .nav2-publications.publications-hover {
   background-position: 0 -216px;
 }
 
 /* line 84, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-software {
+.nav2-research {
   background-position: 0 -288px;
 }
 /* line 59, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-software:hover, .nav2-software.software-hover {
+.nav2-research:hover, .nav2-research.research-hover {
   background-position: 0 -360px;
 }
 
 /* line 84, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-team {
+.nav2-software {
   background-position: 0 -432px;
 }
 /* line 59, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.nav2-team:hover, .nav2-team.team-hover {
+.nav2-software:hover, .nav2-software.software-hover {
   background-position: 0 -504px;
+}
+
+/* line 84, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.nav2-team {
+  background-position: 0 -576px;
+}
+/* line 59, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.nav2-team:hover, .nav2-team.team-hover {
+  background-position: 0 -648px;
 }
 
 /* HTML element (SMACSS base) rules */
@@ -2306,7 +2315,7 @@ tr.selected td {
 /* line 804, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1455752693');
+  background-image: url('../images/progress.gif?1460423281');
 }
 
 /**
@@ -2484,7 +2493,7 @@ header {
 }
 
 /* line 100, ../sass/_custom.scss */
-div#block-block-38 {
+.blue_banner_stripe {
   margin-bottom: 0px;
 }
 
