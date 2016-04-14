@@ -97,7 +97,7 @@
 
 /* line 136, rlp/*.png */
 .rlp-sprite, .rlp-appmath, .rlp-epi, .rlp-hiv, .rlp-malaria, .rlp-polio, .rlp-tb {
-  background-image: url('../images/rlp-sb031f8d198.png');
+  background-image: url('../images/rlp-sf277fb61a9.png');
   background-repeat: no-repeat;
 }
 
@@ -2641,35 +2641,45 @@ div#footer-full {
 }
 
 /* line 280, ../sass/_custom.scss */
+div#footer-tablet {
+  margin-top: 20px;
+}
+
+/* line 283, ../sass/_custom.scss */
+#footer-header img {
+  margin-top: 20px;
+}
+
+/* line 286, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 284, ../sass/_custom.scss */
+/* line 290, ../sass/_custom.scss */
 .footer-wrapper a {
   color: white;
 }
 
-/* line 288, ../sass/_custom.scss */
+/* line 294, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 294, ../sass/_custom.scss */
+/* line 300, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 299, ../sass/_custom.scss */
+/* line 306, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 303, ../sass/_custom.scss */
+/* line 310, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -2679,7 +2689,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 312, ../sass/_custom.scss */
+/* line 319, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }

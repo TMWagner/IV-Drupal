@@ -277,6 +277,12 @@
 	div#footer-full {
 		margin-top: 20px;
 	}
+	div#footer-tablet {
+    margin-top: 20px;
+	}
+	#footer-header img {
+    margin-top: 20px;
+	}
 	.footer-wrapper {
 		background-color: $iv-blue;
 		//width: 100%;
@@ -296,6 +302,7 @@
 		list-style: none;
 		padding: 0px 0px 0px 45px;
 	}
+	
 	div#footer-header>p {
     padding-top: 10px;
 	}
