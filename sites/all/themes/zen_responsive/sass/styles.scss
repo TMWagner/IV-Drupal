@@ -35,6 +35,9 @@ li.footer-link-heading {
 @import "nav2/*.png";
 @include all-nav2-sprites;
 
+@import "rlp/*.png";
+@include all-rlp-sprites;
+
 /* HTML element (SMACSS base) rules */
 @import "normalize";
 
