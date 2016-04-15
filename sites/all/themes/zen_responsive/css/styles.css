@@ -886,7 +886,7 @@ h1.page-title {
 
 /* line 153, ../sass/layouts/_responsive.scss */
 .inner.banner-text {
-  padding-top: 25%;
+  padding-top: 28%;
 }
 
 /* line 156, ../sass/layouts/_responsive.scss */
@@ -2411,6 +2411,12 @@ header {
   text-align: center;
   width: 142px;
   /*NOTE: this controls the overall width of the div as well*/
+}
+
+/* line 81, ../sass/_custom.scss */
+.sf-menu.sf-style-blue ul {
+  padding-left: 0px;
+  padding-top: 12px;
 }
 
 /* line 86, ../sass/_custom.scss */
