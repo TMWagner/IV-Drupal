@@ -329,9 +329,10 @@ $zen-auto-include-item-base: false;
     left: 45%;
   }
   
-  .banner-text h1 {
-    font-size: 1.2em;
-  }
+	.banner-text h1 {
+		font-size: .9em;
+		font-weight: bold;
+	}
   .banner-text h2 {
     font-size: .9em;
     line-height: 1.5em;
@@ -346,6 +347,11 @@ $zen-auto-include-item-base: false;
     flex: 0 0 250px;
     display: none;
 	}
+	
+	.two-column-2 {
+		margin: 0px 10px;
+	}	
+	
 }
 // End 480 Max media Query
   
@@ -464,6 +470,7 @@ $zen-auto-include-item-base: false;
 	
 	.banner-text h1 {
 		font-size: 1.2em;
+		font-weight: 500;
   }  
   
   .not-mobile-display > h1 {
