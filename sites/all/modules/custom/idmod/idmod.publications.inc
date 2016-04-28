@@ -6,7 +6,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   
   $form['publications'] = array(
     '#type' => 'fieldset',
-    '#prefix' => '<div class="team-menu-wrap">',
+    '#prefix' => '<div class="team-menu-wrap page-content">',
     '#suffix' => '</div>',
   );
   
