@@ -350,6 +350,13 @@ $zen-auto-include-item-base: false;
  */
 @media all and (max-width: 480px) {
 	
+	h1#page-title {
+    display: none;
+	}
+	.team-menu-wrap.page-content {
+    display: none;
+	}
+	
 	//Publications Mobile
 	
 	div#publications-mobile-left {
@@ -387,8 +394,13 @@ $zen-auto-include-item-base: false;
   }
   
   // position content below banner
+	
+	.front  #content {
+		padding-top: 80%;
+	}
+	
   #content {
-    padding-top: 80%;
+    padding-top: 70%;
 	}
   
   #block-superfish-1 {
