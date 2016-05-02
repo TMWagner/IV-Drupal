@@ -247,8 +247,11 @@ $zen-auto-include-item-base: false;
 	//Publications LIST view
 	
 	.field.field-name-field-publications-image-teaser.field-type-image.field-label-hidden {
-		padding-top: 30px;
-	}	
+		padding-top: 30px;	
+	}
+	.team-menu > .form-item {
+    margin: 0px;
+	}
 	.view-mode-views_display .field-items {
 			clear: left;
 			float: left;
@@ -625,8 +628,8 @@ $zen-auto-include-item-base: false;
   }
   
   // Force flow of nav blocks on FP. (without this, we could get a 4+1 ugly thing happening.)
-  .wrapper {
-    max-width: 724px;
+  .front .wrapper {
+    max-width: 525px;
   }
   .header_secondary-menu {
     display: inline-block;
