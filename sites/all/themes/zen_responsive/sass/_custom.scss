@@ -16,7 +16,7 @@
 	
 
   h3 {
-	margin-top: 0px;
+		margin-top: 0px;
   }
   a {
 		text-decoration: none;
@@ -38,22 +38,22 @@
 
 // General CSS
   .wrapper, .region-navigation {
-	display: inline-block;
-	text-align: center;
+		display: inline-block;
+		text-align: center;
   }
   
   // Parent to wrapper
   // The text-align property only works on inline elements. Wrapper contains inline-block property
   .center-content {
-	text-align:center;
+		text-align:center;
   }
   
   
 
 // Header
   header {
-  padding-top:10px;
-  width: 100%;
+		padding-top:10px;
+		width: 100%;
   }
 	
   #logo {
@@ -180,10 +180,6 @@
 		text-transform: none;
 		color: $default-text-color;
 	}
-  
-
-
-
 
 //End Panel / Feature Code
   
@@ -191,15 +187,7 @@
   
   
 // Publications
-  .ds-2col > .group-left {
-    float: left;
-    width: 25%;
-	}
-	.ds-2col > .group-right {
-		float: left;
-		width: 75%;
-	}
-	
+
 	
 /**
  * Code for RLP
@@ -209,75 +197,13 @@
 	width: 960px;
 	height: 100px;
 }
-
-	.fivebox_wrapper {
-		margin-top: 10px;
-		width: 300px;
-		height: 130px;
-		float: none;
-		margin: 0px auto;
-		padding: 0px 5px;
-		overflow: hidden;
-		display: inline-block;
-		text-align: center;
-		vertical-align: top;
-	}
-	
-	.five_box_960row_block {
-		-webkit-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.37);
-		-moz-box-shadow:    2px 1px 3px 0px rgba(50, 50, 50, 0.37);
-		box-shadow:         2px 1px 3px 0px rgba(50, 50, 50, 0.37);
-		//float: left;
-		height: 130px;
-		margin-right: 20px;
-		margin-top: 10px;
-		position: relative;
-		width: 300px;
-	}
-	
-	.block_content {
-    position: absolute;
-    left: 80px;
-    top: 20px;
-    width: 135px;
-    height: 84px;
-    display: table;
-	}
-
-	.rollup {
-		position: absolute;
-		width: 300px;
-		height: 0px;
-		display: block;
-		top: 180px;
-		z-index: 4;
-		background-color: #808080;
-		overflow: hidden;
-	}
 	
 	#hidden {
 		display: none;
 	}
 	
 	
-	//Box Centering Code from FP
-	.fp-nav-row-xxx {
-    width: 170px;
-    height: 300px;
-    float: none;
-    margin: 0px auto;
-    padding: 0px 5px;
-    overflow: hidden;
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-	}
-	
-	.fivebox_wrapper h3 {
-		margin-top: 25px;
-		color: white;
-	}	
-//
+
 // END RLP Code
 
 

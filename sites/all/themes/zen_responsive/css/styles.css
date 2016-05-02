@@ -2668,144 +2668,65 @@ header {
   color: black;
 }
 
-/* line 194, ../sass/_custom.scss */
-.ds-2col > .group-left {
-  float: left;
-  width: 25%;
-}
-
-/* line 198, ../sass/_custom.scss */
-.ds-2col > .group-right {
-  float: left;
-  width: 75%;
-}
-
 /**
  * Code for RLP
  */
-/* line 208, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 213, ../sass/_custom.scss */
-.fivebox_wrapper {
-  margin-top: 10px;
-  width: 300px;
-  height: 130px;
-  float: none;
-  margin: 0px auto;
-  padding: 0px 5px;
-  overflow: hidden;
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-}
-
-/* line 226, ../sass/_custom.scss */
-.five_box_960row_block {
-  -webkit-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.37);
-  -moz-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.37);
-  box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.37);
-  height: 130px;
-  margin-right: 20px;
-  margin-top: 10px;
-  position: relative;
-  width: 300px;
-}
-
-/* line 238, ../sass/_custom.scss */
-.block_content {
-  position: absolute;
-  left: 80px;
-  top: 20px;
-  width: 135px;
-  height: 84px;
-  display: table;
-}
-
-/* line 247, ../sass/_custom.scss */
-.rollup {
-  position: absolute;
-  width: 300px;
-  height: 0px;
-  display: block;
-  top: 180px;
-  z-index: 4;
-  background-color: #808080;
-  overflow: hidden;
-}
-
-/* line 258, ../sass/_custom.scss */
+/* line 201, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 264, ../sass/_custom.scss */
-.fp-nav-row-xxx {
-  width: 170px;
-  height: 300px;
-  float: none;
-  margin: 0px auto;
-  padding: 0px 5px;
-  overflow: hidden;
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-}
-
-/* line 276, ../sass/_custom.scss */
-.fivebox_wrapper h3 {
-  margin-top: 25px;
-  color: white;
-}
-
-/* line 286, ../sass/_custom.scss */
+/* line 212, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 289, ../sass/_custom.scss */
+/* line 215, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 292, ../sass/_custom.scss */
+/* line 218, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 295, ../sass/_custom.scss */
+/* line 221, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 299, ../sass/_custom.scss */
+/* line 225, ../sass/_custom.scss */
 .footer-wrapper a {
   color: white;
 }
 
-/* line 303, ../sass/_custom.scss */
+/* line 229, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 309, ../sass/_custom.scss */
+/* line 235, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 315, ../sass/_custom.scss */
+/* line 241, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 319, ../sass/_custom.scss */
+/* line 245, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -2815,7 +2736,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 328, ../sass/_custom.scss */
+/* line 254, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
