@@ -13,7 +13,8 @@ Drupal.behaviors.fp = {
 		
 		
 //	New JS
-    $(alert("fp jquery loaded."));
+    //$(alert("fp jquery loaded."));
+    // TODO: 20160501 Get rid of all of the following nav2 stuff
 
     $('div#nav2-research').hover(function () {
         $(this).find(".nav2-icon").toggleClass("research-hover");
