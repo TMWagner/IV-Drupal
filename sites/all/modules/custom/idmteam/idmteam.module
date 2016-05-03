@@ -276,44 +276,46 @@ function idmteam_contents($which_block) {
         $title = $profile->field_profile_title['und'][0]['value'];        
       }
       
-      if (isset($node->field_publications_link['und'][0]['title'])) {
-        $form['publication_name'] = array(
-          '#type' => 'item',
-          '#title' => 'Published in ',
-          '#markup' => '<h4>' . $node->field_publications_link['und'][0]['title'] . '</h4>',
-          '#prefix' => '<div class="publish_info">',
-        );
-        
-        if (isset($node->field_publications_link['und'][0]['url'])) {
-          $form['publication_link'] = array(
-            '#type' => 'link',
-            '#title' => t('Read online'),
-            '#href' => $node->field_publications_link['und'][0]['url'],
-            '#attributes' => array(
-              'target' => array('_blank')
-            ),
-            '#suffix' => '<i class="fa fa-external-link"></i></div>',
-          );
-        }
-      }
+      //if (isset($node->field_publications_link['und'][0]['title'])) {
+      //  $form['publication_name'] = array(
+      //    '#type' => 'item',
+      //    '#title' => 'Published in ',
+      //    '#markup' => '<h4>' . $node->field_publications_link['und'][0]['title'] . '</h4>',
+      //    '#prefix' => '<div class="publish_info">',
+      //  );
+      //  
+      //  if (isset($node->field_publications_link['und'][0]['url'])) {
+      //    $form['publication_link'] = array(
+      //      '#type' => 'link',
+      //      '#title' => t('Read online'),
+      //      '#href' => $node->field_publications_link['und'][0]['url'],
+      //      '#attributes' => array(
+      //        'target' => array('_blank')
+      //      ),
+      //      '#suffix' => '<i class="fa fa-external-link"></i></div>',
+      //    );
+      //  }
+      //}
        
       $form['photos'] = array(
         '#type' => 'item',
         '#markup' => $views_embed,
-      );
-      // This is the first form element. It's a textfield with a label, "Name"
-      $form['name'] = array(
-        '#type' => 'item',
-        '#markup' => $full_name,
-        '#prefix' => '<div class="default-author-data" style="clear: left">',
-      );
-      
-      $form['title'] = array(
-        '#type' => 'item',
-        '#markup' => $title,
-        '#prefix' => '<div>',
+        '#prefix' => '<div class="page-content">',
         '#suffix' => '</div>',
-      );      
+      );
+      // This is the first form element. It's a text field with a label, "Name"
+      //$form['name'] = array(
+      //  '#type' => 'item',
+      //  '#markup' => $full_name,
+      //  '#prefix' => '<div class="default-author-data" style="clear: left">',
+      //);
+      //
+      //$form['title'] = array(
+      //  '#type' => 'item',
+      //  '#markup' => $title,
+      //  '#prefix' => '<div>',
+      //  '#suffix' => '</div>',
+      //);      
       
 
       $result = $form; 

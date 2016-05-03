@@ -183,12 +183,21 @@
 
 //End Panel / Feature Code
   
-
-  
   
 // Publications
 
-	
+	.block-idmteam > .page-content {
+		border-top: thin solid;
+	}
+	.author-list ul {
+		display: inline;
+		list-style-type: none;
+		padding: 0px;
+	}
+	.author-list li {
+    float: left;
+    padding: 0px 10px 0px 0px;
+	}
 /**
  * Code for RLP
  */
