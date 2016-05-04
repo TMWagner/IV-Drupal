@@ -1,7 +1,7 @@
 (function ($) {
 
 //https://www.lullabot.com/articles/understanding-javascript-behaviors-in-drupal
-Drupal.behaviors.fp = {
+Drupal.behaviors.owl_carousel = {
   attach: function (context, settings) {
 
     /*  Configure and call Owl Carousel 
@@ -17,18 +17,18 @@ Drupal.behaviors.fp = {
     // Note: (2016-2-28) Instead of fixed menu, can we clone the real menu?
     // (we are selecting .slicknav; which is hard coded in a block)
     
-    $('.slicknav').slicknav({
-      label: '',
-      prependTo: "#secondary-menu",
-      allowParentLinks: true
-    });
-    
-    
-    // Test code for footer: based on WOCO
-    $(".accordion").accordion({
-      firstChildExpand: false
-    });
-    
+    //$('.slicknav').slicknav({
+    //  label: '',
+    //  prependTo: "#secondary-menu",
+    //  allowParentLinks: true
+    //});
+    //
+    //
+    //// Test code for footer: based on WOCO
+    //$(".accordion").accordion({
+    //  firstChildExpand: false
+    //});
+    //
     
     
     

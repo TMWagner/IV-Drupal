@@ -10,68 +10,60 @@ Drupal.behaviors.fp = {
      *
      */
     
+  //$(alert("fp jquery loaded."));
 		
-		
-//	New JS
-    //$(alert("fp jquery loaded."));
-    // TODO: 20160501 Get rid of all of the following nav2 stuff
-
-    $('div#nav2-research').hover(function () {
-        $(this).find(".nav2-icon").toggleClass("research-hover");
+    // Init SlickNav
+    // Documentation: http://slicknav.com/
+    // Note: (2016-2-28) Instead of fixed menu, can we clone the real menu?
+    // (we are selecting .slicknav; which is hard coded in a block)
+    
+    $('.slicknav').slicknav({
+      label: '',
+      prependTo: "#secondary-menu",
+      allowParentLinks: true
     });
     
-    $('div#nav2-publications').hover(function () {
-        $(this).find(".nav2-icon").toggleClass("publications-hover");
-    });
     
-    $('div#nav2-software').hover(function () {
-        $(this).find(".nav2-icon").toggleClass("software-hover");
-    });
-    
-    $('div#nav2-learn').hover(function () {
-        $(this).find(".nav2-icon").toggleClass("learn-hover");
-    });
-    
-    $('div#nav2-team').hover(function () {
-        $(this).find(".nav2-icon").toggleClass("team-hover");
+    // Test code for footer: based on WOCO
+    $(".accordion").accordion({
+      firstChildExpand: false
     });
     
     
     
-    
-    /*  Make the rotators clickable
-     */
-    $('div#fp-p1-video').click(function(){
-      window.location = '/news/node/132';
-    });
-    $('div#fp-p1-releases').click(function(){
-      window.location = '/software';
-    });     
-    $('div#fp-p1-shapes').click(function(){
-      window.location = '/about';
-    });  
-    $('div#fp-p1-challenges').click(function(){
-      window.location = '/news/node/142';
-    });
-    $('div#fp-p1-guinea').click(function(){
-      window.location = '/news/node/154';
-    });
-    
-    /*  Make the panel 2 nav  clickable
-     *
-     */
-    $('div#fp-nav-research').click(function(){
-      window.location = '/research';
-    });
-    $('div#fp-nav-publications').click(function(){
-      window.location = '/publications';
-    });
-    $('div#fp-nav-software').click(function(){
-      window.location = '/software';
-    });
-    $('div#fp-nav-team').click(function(){
-      window.location = '/team';
-    });    
+    ///*  Make the rotators clickable
+    // */
+    //$('div#fp-p1-video').click(function(){
+    //  window.location = '/news/node/132';
+    //});
+    //$('div#fp-p1-releases').click(function(){
+    //  window.location = '/software';
+    //});     
+    //$('div#fp-p1-shapes').click(function(){
+    //  window.location = '/about';
+    //});  
+    //$('div#fp-p1-challenges').click(function(){
+    //  window.location = '/news/node/142';
+    //});
+    //$('div#fp-p1-guinea').click(function(){
+    //  window.location = '/news/node/154';
+    //});
+    //
+    ///*  Make the panel 2 nav  clickable
+    // *
+    // */
+    //$('div#fp-nav-research').click(function(){
+    //  window.location = '/research';
+    //});
+    //$('div#fp-nav-publications').click(function(){
+    //  window.location = '/publications';
+    //});
+    //$('div#fp-nav-software').click(function(){
+    //  window.location = '/software';
+    //});
+    //$('div#fp-nav-team').click(function(){
+    //  window.location = '/team';
+    //});    
 
   }
 };
