@@ -225,11 +225,6 @@ function idmod_init() {
   drupal_add_css(drupal_get_path('module', 'idmod') . '/woco/woco-accordion.css');
   drupal_add_js(drupal_get_path('module', 'idmod') . '/woco/woco.accordion.js');
   
-  ////Taking this out of the conditional for now because we need the trigger for slicknav
-  //  drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js', array(
-  //  'scope' => 'footer',
-  //  ));
-  
   drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js', array(
   'scope' => 'footer',
   )); 
@@ -245,11 +240,11 @@ function idmod_init() {
     drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.theme.default.css');
     
     drupal_add_js(drupal_get_path('module', 'idmod') . '/js/owl_carousel.js', array(
-    'scope' => 'footer',
+      'scope' => 'footer',
     ));
     
     drupal_add_js(libraries_get_path('owlcarousel')  . '/owl.carousel.min.js', array(
-    'scope' => 'footer',
+      'scope' => 'footer',
     ));
     
    
@@ -274,12 +269,12 @@ function idmod_init() {
   }
   
   
-  if ($path == 'node/10') {
-    drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
-  }  
-  
-  
-  
+  //if ($path == 'node/10') {
+  //  drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js');
+  //}  
+  //
+  //
+  //
 
  
 
