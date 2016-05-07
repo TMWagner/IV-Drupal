@@ -372,7 +372,9 @@ $zen-auto-include-item-base: false;
 	
 	div#publications-mobile-left {
     display: block;
-		max-width: 100px;
+		float: left;
+		margin-right: 1em;
+		max-width: 30%;
 	}
 	
 	div#publications-mobile-right {
@@ -388,10 +390,7 @@ $zen-auto-include-item-base: false;
 		display: none;
 	}
 	
-	#publications-mobile-left {
-    float: left;
-    margin-right: 1em;
-	}
+	
 	//End Publications CSS
 	
     
