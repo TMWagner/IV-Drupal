@@ -2670,6 +2670,33 @@ header {
 }
 
 /* line 156, ../sass/_custom.scss */
+a.read-more:after {
+  font-family: FontAwesome;
+  content: "\f08e";
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+/* line 164, ../sass/_custom.scss */
+a.views-more-link:after {
+  font-family: FontAwesome;
+  content: "\f08e";
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+/* line 173, ../sass/_custom.scss */
+a.home-link:after {
+  font-family: FontAwesome;
+  content: "\f015";
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+/* line 183, ../sass/_custom.scss */
 .rlp-nav-row {
   width: 300px;
   height: 150px;
@@ -2682,12 +2709,12 @@ header {
   vertical-align: top;
 }
 
-/* line 168, ../sass/_custom.scss */
+/* line 195, ../sass/_custom.scss */
 .rlp-nav-row {
   margin-top: 20px;
 }
 
-/* line 172, ../sass/_custom.scss */
+/* line 199, ../sass/_custom.scss */
 .rlp_button_content {
   color: white;
   font-size: 24px;
@@ -2695,25 +2722,25 @@ header {
   text-transform: none;
 }
 
-/* line 179, ../sass/_custom.scss */
+/* line 206, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 189, ../sass/_custom.scss */
+/* line 216, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 192, ../sass/_custom.scss */
+/* line 219, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 197, ../sass/_custom.scss */
+/* line 224, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -2722,62 +2749,62 @@ header {
 /**
  * Code for RLP
  */
-/* line 205, ../sass/_custom.scss */
+/* line 232, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 210, ../sass/_custom.scss */
+/* line 237, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 221, ../sass/_custom.scss */
+/* line 248, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 224, ../sass/_custom.scss */
+/* line 251, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 227, ../sass/_custom.scss */
+/* line 254, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 230, ../sass/_custom.scss */
+/* line 257, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 234, ../sass/_custom.scss */
+/* line 261, ../sass/_custom.scss */
 .footer-wrapper a {
   color: white;
 }
 
-/* line 238, ../sass/_custom.scss */
+/* line 265, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 244, ../sass/_custom.scss */
+/* line 271, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 250, ../sass/_custom.scss */
+/* line 277, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 254, ../sass/_custom.scss */
+/* line 281, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -2787,7 +2814,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 263, ../sass/_custom.scss */
+/* line 290, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }

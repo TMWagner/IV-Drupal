@@ -151,6 +151,33 @@
 		color: black;
 	}
 	
+	// FontAwesome CS
+	
+	a.read-more:after {
+		font-family: FontAwesome;
+		content: "\f08e";
+		display: inline-block;
+		padding-left: 5px;
+		vertical-align: middle;
+	}
+
+	a.views-more-link:after {
+		font-family: FontAwesome;
+		content: "\f08e";
+		display: inline-block;
+		padding-left: 5px;
+		vertical-align: middle;
+	}
+
+
+	a.home-link:after {
+		font-family: FontAwesome;
+		content: "\f015";
+		display: inline-block;
+		padding-left: 5px;
+		vertical-align: middle;
+	}
+	
 	// Research Front page (RLP)
 		
 	.rlp-nav-row {
