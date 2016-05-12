@@ -126,6 +126,13 @@
     <?php endif; ?>
 
   </div>
+  
+  <div id="content-second">
+    
+      <?php print render($page['content_second']); ?>
+    
+  </div>
+
 
   <?php print render($page['footer']); ?>
 
