@@ -44,6 +44,7 @@ $zen-auto-include-item-base: false;
 
 
 	#page-title,
+	#content-second,
 	.page-content {
 		margin-left: auto;
 		margin-right: auto;
@@ -73,16 +74,22 @@ $zen-auto-include-item-base: false;
   
 	//Two column layout
 	
-		.two-column-flex, .ds-2col {
+		.two-column-flex,
+		.region-content-second,
+		.ds-2col {
 			display: flex;
 			flex-direction: row;
 		}
-		.two-column-1, .group-left {
+		.two-column-1,
+		#block-idmteam-team-contact,
+		.group-left {
 			flex-grow: 0;
 			flex-shrink: 0;
 			flex-basis: 250px;
 		}
-		.two-column-2, .group-right {
+		.two-column-2,
+		#block-idmteam-related-subteam,
+		.group-right {
 			flex-grow: 1;
 			flex-shrink: 1;
 			flex-basis: 0%;
@@ -760,6 +767,7 @@ $zen-auto-include-item-base: false;
   }
 	
 	#page-title,
+	#content-second,
 	.page-content {
   	max-width: 80%;
 	}

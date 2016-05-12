@@ -14,6 +14,25 @@
 	$iv-blue: #0073a3;
 	$iv-grey: #858c8c;
 	
+	//Temporary code
+	
+	#block-idmteam-team-contact {
+    background-color: rgb(91, 185, 185);
+	}
+	
+	#block-idmteam-related-subteam {
+			background-color: bisque;
+	}
+	
+	// This needs to go to responsive
+	.team-member-profile-list {
+		float: left;
+		margin-left: 10px;
+	}
+		
+	
+	// End Temporary code
+	
 
   h3 {
 		margin-top: 0px;
@@ -244,6 +263,9 @@
 
 
 // Footer
+	#footer {
+		clear: both;
+	}
 
 	div#footer-full {
 		margin-top: 20px;
