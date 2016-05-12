@@ -128,9 +128,7 @@
   </div>
   
   <div id="content-second">
-    
-      <?php print render($page['content_second']); ?>
-    
+    <?php print render($page['content_second']); ?> 
   </div>
 
 
