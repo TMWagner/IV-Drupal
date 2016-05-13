@@ -429,8 +429,20 @@ $zen-auto-include-item-base: false;
 		margin: 10px;
 	}
 	
+	.region-content-second .view-header {
+		margin-left: 10px;
+	
+	}
+	
 	.views-field.views-field-nothing-1.publication-list-col1 {
 		display: none;
+	}
+	
+	.view-display-team-lead .views-row {
+    border-bottom: none;
+	}
+	.team-member-profile .views-row {
+		border-bottom: none;
 	}
 	
 	//End Publications CSS
@@ -786,7 +798,7 @@ $zen-auto-include-item-base: false;
 	#page-title,
 	#content-second,
 	.page-content {
-  	max-width: 80%;
+  	max-width: 960px;
 	}
  
   
