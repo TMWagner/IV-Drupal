@@ -57,6 +57,9 @@
   .center-content {
 		text-align:center;
   }
+	.form-item {
+		margin: 0px;
+	}
   
   
 
@@ -238,8 +241,9 @@
  * Code for RLP
  */
 	.team-member-profile-list {
-		float: left;
-		margin-left: 10px;
+    float: left;
+    margin-left: 10px;
+    background-color: aliceblue;
 	}
 
 	.box-section_wrapper {

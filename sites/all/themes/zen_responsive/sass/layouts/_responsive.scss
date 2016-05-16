@@ -222,6 +222,10 @@ $zen-auto-include-item-base: false;
 	.view-related-team-profile2 {
 		float:left;
 	}
+	
+	#block-idmteam-related-subteam .team-member-profile {
+		max-width: 100%;
+	}
 
 //	//Debug code
 //	#block-idmteam-related-subteam {
@@ -449,8 +453,8 @@ $zen-auto-include-item-base: false;
     min-height: 200px;
 	}
 	.views-row {
-		clear: left;
-		border-bottom: thin solid black;
+		//clear: left; >>>> removing this puts group below Team Contact
+		//border-bottom: thin solid black;
 		margin: 10px;
 	}
 	
@@ -473,6 +477,10 @@ $zen-auto-include-item-base: false;
 	
 	.two-column-flex, .region-content-second, .ds-2col {
     display: block;
+	}
+	
+	#content-second img {
+		width: 125px;
 	}
 	
 	//End Publications CSS
