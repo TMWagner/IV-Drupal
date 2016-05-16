@@ -94,6 +94,10 @@ $zen-auto-include-item-base: false;
 			flex-shrink: 1;
 			flex-basis: 0%;
 		}
+		
+		.two-column-flex {
+			margin-bottom: 2em;
+		}
 	
 	//End flex two column layout
 
@@ -130,7 +134,8 @@ $zen-auto-include-item-base: false;
   display: none;
 }
 
-.mobile-display {
+.mobile-display,
+.mobile-left {
   display: none;
 }
 
@@ -201,7 +206,7 @@ $zen-auto-include-item-base: false;
   padding-top: 40%;
 }
 
-//Publications
+//Publications  (standard 2 column with float and embedded)
 .views-field.views-field-nothing-1.publication-list-col1 {
 	float: left;
 	width: 200px;
@@ -360,7 +365,15 @@ $zen-auto-include-item-base: false;
 	
 //End News & Events
 
+//Research pages
 
+	// Hide the mobile version of the teaser
+	div#mobile-left {
+    display: none;
+	}
+
+
+//End Research pages
 
 
 
@@ -405,11 +418,23 @@ $zen-auto-include-item-base: false;
  */
 @media all and (max-width: 480px) {
 	
+	// Turn on mobile left column
+	.mobile-left {
+		display: block;
+		float: left;
+		margin-right: 1em;
+		max-width: 30%;
+	}
+	
 	h1#page-title {
     display: none;
 	}
 	.team-menu-wrap.page-content {
     display: none;
+	}
+	
+	.mobile-hide {
+		display:none;
 	}
 	
 //Publications Mobile	
@@ -434,7 +459,8 @@ $zen-auto-include-item-base: false;
 	
 	}
 	
-	.views-field.views-field-nothing-1.publication-list-col1 {
+	.views-field.views-field-nothing-1.publication-list-col1,
+	.two-column-float-1 {
 		display: none;
 	}
 	
@@ -443,6 +469,10 @@ $zen-auto-include-item-base: false;
 	}
 	.team-member-profile .views-row {
 		border-bottom: none;
+	}
+	
+	.two-column-flex, .region-content-second, .ds-2col {
+    display: block;
 	}
 	
 	//End Publications CSS
