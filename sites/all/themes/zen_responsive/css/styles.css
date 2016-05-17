@@ -2588,83 +2588,83 @@ tr.selected td {
   }
 }
 /* IDM Custom */
-/* line 18, ../sass/_custom.scss */
+/* line 19, ../sass/_custom.scss */
 h3 {
   margin-top: 0px;
 }
 
-/* line 21, ../sass/_custom.scss */
+/* line 22, ../sass/_custom.scss */
 a {
   text-decoration: none;
   color: #0073A3;
   text-transform: uppercase;
 }
 
-/* line 26, ../sass/_custom.scss */
+/* line 27, ../sass/_custom.scss */
 a:hover {
   color: black;
 }
 
-/* line 30, ../sass/_custom.scss */
+/* line 31, ../sass/_custom.scss */
 p {
   margin: 0px;
 }
 
-/* line 34, ../sass/_custom.scss */
+/* line 35, ../sass/_custom.scss */
 .hidden {
   display: none;
 }
 
-/* line 38, ../sass/_custom.scss */
+/* line 39, ../sass/_custom.scss */
 .field-name-field-publications-image-teaser .field-item img {
   box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
 }
 
-/* line 43, ../sass/_custom.scss */
+/* line 44, ../sass/_custom.scss */
 .field-content img,
 .field-items img {
   box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
 }
 
-/* line 50, ../sass/_custom.scss */
+/* line 51, ../sass/_custom.scss */
 .wrapper, .region-navigation {
   display: inline-block;
   text-align: center;
 }
 
-/* line 57, ../sass/_custom.scss */
+/* line 58, ../sass/_custom.scss */
 .center-content {
   text-align: center;
 }
 
-/* line 60, ../sass/_custom.scss */
+/* line 61, ../sass/_custom.scss */
 .form-item {
   margin: 0px;
 }
 
-/* line 67, ../sass/_custom.scss */
+/* line 68, ../sass/_custom.scss */
 header {
   padding-top: 10px;
   width: 100%;
 }
 
-/* line 72, ../sass/_custom.scss */
+/* line 73, ../sass/_custom.scss */
 #logo {
   padding-left: 10px;
   width: 50%;
 }
 
-/* line 78, ../sass/_custom.scss */
+/* line 79, ../sass/_custom.scss */
 #main-nav-mobile {
   display: none;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 84, ../sass/_custom.scss */
 #block-superfish-1 {
   margin-top: 15px;
 }
 
-/* line 87, ../sass/_custom.scss */
+/* line 88, ../sass/_custom.scss */
 #superfish-1 > li {
   background-color: none;
   margin: 2px;
@@ -2673,47 +2673,47 @@ header {
   /*NOTE: this controls the overall width of the div as well*/
 }
 
-/* line 94, ../sass/_custom.scss */
+/* line 95, ../sass/_custom.scss */
 .sf-menu.sf-style-blue ul {
   padding-left: 0px;
   padding-top: 12px;
 }
 
-/* line 99, ../sass/_custom.scss */
+/* line 100, ../sass/_custom.scss */
 .menu a {
   color: grey;
 }
 
-/* line 103, ../sass/_custom.scss */
+/* line 104, ../sass/_custom.scss */
 #secondary-menu {
   bottom: 10px;
   height: 40px;
 }
 
-/* line 109, ../sass/_custom.scss */
+/* line 110, ../sass/_custom.scss */
 .sf-menu.sf-style-blue li li li {
   background: #2F3032;
 }
 
-/* line 117, ../sass/_custom.scss */
+/* line 118, ../sass/_custom.scss */
 .banner-stripe {
   background-color: #0073a3;
   width: 100%;
   height: 60px;
 }
 
-/* line 122, ../sass/_custom.scss */
+/* line 123, ../sass/_custom.scss */
 .blue_banner_stripe {
   margin-bottom: 0px;
 }
 
-/* line 129, ../sass/_custom.scss */
+/* line 130, ../sass/_custom.scss */
 .container {
   width: 100%;
   /* Can be any desired width */
 }
 
-/* line 133, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 .container .outer .inner {
   position: absolute;
   top: 0;
@@ -2722,13 +2722,13 @@ header {
   bottom: 0;
 }
 
-/* line 140, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 .inner {
   background-size: cover;
   /* make sure the background image always fits and isn't clipped */
 }
 
-/* line 145, ../sass/_custom.scss */
+/* line 146, ../sass/_custom.scss */
 .fp-nav-row {
   width: 170px;
   height: 300px;
@@ -2741,19 +2741,19 @@ header {
   vertical-align: top;
 }
 
-/* line 157, ../sass/_custom.scss */
+/* line 158, ../sass/_custom.scss */
 .nav2-icon {
   margin: 0 auto;
   height: 72px;
   width: 72px;
 }
 
-/* line 163, ../sass/_custom.scss */
+/* line 164, ../sass/_custom.scss */
 #nav2-research a:hover {
   color: black;
 }
 
-/* line 169, ../sass/_custom.scss */
+/* line 170, ../sass/_custom.scss */
 a.read-more:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -2762,7 +2762,7 @@ a.read-more:after {
   vertical-align: middle;
 }
 
-/* line 177, ../sass/_custom.scss */
+/* line 178, ../sass/_custom.scss */
 a.views-more-link:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -2771,7 +2771,7 @@ a.views-more-link:after {
   vertical-align: middle;
 }
 
-/* line 186, ../sass/_custom.scss */
+/* line 187, ../sass/_custom.scss */
 a.home-link:after {
   font-family: FontAwesome;
   content: "\f015";
@@ -2780,7 +2780,17 @@ a.home-link:after {
   vertical-align: middle;
 }
 
-/* line 196, ../sass/_custom.scss */
+/* line 195, ../sass/_custom.scss */
+a.git-link:after {
+  font-family: FontAwesome;
+  content: "\f09b";
+  display: inline-block;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+/* line 206, ../sass/_custom.scss */
 .rlp-nav-row {
   width: 300px;
   height: 150px;
@@ -2793,12 +2803,12 @@ a.home-link:after {
   vertical-align: top;
 }
 
-/* line 208, ../sass/_custom.scss */
+/* line 218, ../sass/_custom.scss */
 .rlp-nav-row {
   margin-top: 20px;
 }
 
-/* line 212, ../sass/_custom.scss */
+/* line 222, ../sass/_custom.scss */
 .rlp_button_content {
   color: white;
   font-size: 24px;
@@ -2806,25 +2816,25 @@ a.home-link:after {
   text-transform: none;
 }
 
-/* line 219, ../sass/_custom.scss */
+/* line 229, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 228, ../sass/_custom.scss */
+/* line 238, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 231, ../sass/_custom.scss */
+/* line 241, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 236, ../sass/_custom.scss */
+/* line 246, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -2833,84 +2843,89 @@ a.home-link:after {
 /**
  * Code for RLP
  */
-/* line 243, ../sass/_custom.scss */
+/* line 253, ../sass/_custom.scss */
 .team-member-profile-list {
   float: left;
   margin-left: 10px;
   background-color: aliceblue;
 }
 
-/* line 249, ../sass/_custom.scss */
+/* line 259, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 254, ../sass/_custom.scss */
+/* line 264, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 258, ../sass/_custom.scss */
+/* line 268, ../sass/_custom.scss */
 .research-math-item-title {
   margin-bottom: 1em;
 }
 
-/* line 261, ../sass/_custom.scss */
+/* line 271, ../sass/_custom.scss */
 .research-math img {
   margin-top: 5px;
 }
 
-/* line 271, ../sass/_custom.scss */
+/* line 279, ../sass/_custom.scss */
+.two-column-2-item-title {
+  margin-bottom: 0px;
+}
+
+/* line 287, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 275, ../sass/_custom.scss */
+/* line 291, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 278, ../sass/_custom.scss */
+/* line 294, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 281, ../sass/_custom.scss */
+/* line 297, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 284, ../sass/_custom.scss */
+/* line 300, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 288, ../sass/_custom.scss */
+/* line 304, ../sass/_custom.scss */
 .footer-wrapper a {
   color: white;
 }
 
-/* line 292, ../sass/_custom.scss */
+/* line 308, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 298, ../sass/_custom.scss */
+/* line 314, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 304, ../sass/_custom.scss */
+/* line 320, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 308, ../sass/_custom.scss */
+/* line 324, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -2920,7 +2935,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 317, ../sass/_custom.scss */
+/* line 333, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }

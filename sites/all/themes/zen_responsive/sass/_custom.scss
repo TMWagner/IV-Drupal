@@ -13,6 +13,7 @@
 	$link-color: #0073A3;
 	$iv-blue: #0073a3;
 	$iv-grey: #858c8c;
+	$shadow-grey: rgba(119,119, 119, 0.75);
 	
 
   h3 {
@@ -36,7 +37,7 @@
 	}
 	
 	.field-name-field-publications-image-teaser .field-item img {
-    box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
+    box-shadow: 3px 2px 10px 0px $shadow-grey;
 	}
 	// Shadow images
 	// 5/15/2016: Too General... scope the targets!
@@ -191,6 +192,15 @@
 		vertical-align: middle;
 	}
 	
+	a.git-link:after {
+		font-family: FontAwesome;
+		content: "\f09b";
+		display: inline-block;
+		padding-bottom: 3px;
+		padding-left: 5px;
+		vertical-align: middle;
+	}
+	
 	// Research Front page (RLP)
 		
 	.rlp-nav-row {
@@ -262,9 +272,15 @@
 		margin-top: 5px;
 	}
 	
-	
-
 // END RLP Code
+
+// Software page
+
+	.two-column-2-item-title {
+		margin-bottom: 0px;
+	}
+
+// End Software page
 
 
 // Footer
