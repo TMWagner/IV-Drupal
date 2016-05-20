@@ -33,6 +33,11 @@
     background: linear-gradient(to bottom, #004462, #0072a3);
 }
 
+#symposium-download-table table, th, td {
+    border: solid thin grey;
+    border-collapse: collapse;
+}
+
 
 .fp-hero {
 	background-repeat: no-repeat;
