@@ -222,8 +222,9 @@ function idmod_init() {
   ));
   
   drupal_add_js('http://amp.azure.net/libs/amp/latest/azuremediaplayer.min.js', 'external');
-  drupal_add_css('http:amp.azure.net/libs/amp/latest/skins/amp-default/azuremediaplayer.min.css', 'external');
+  drupal_add_css('http://amp.azure.net/libs/amp/latest/skins/amp-default/azuremediaplayer.min.css', 'external');
   
+
   
   //Setup for WOCO (used in footer)
   drupal_add_css(drupal_get_path('module', 'idmod') . '/woco/woco-accordion.css');
