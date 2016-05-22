@@ -221,8 +221,8 @@ function idmod_init() {
   'scope' => 'footer',
   ));
   
-  drupal_add_js('http://amp.azure.net/libs/amp/latest/azuremediaplayer.min.js', 'external');
-  drupal_add_css('http://amp.azure.net/libs/amp/latest/skins/amp-default/azuremediaplayer.min.css', 'external');
+  drupal_add_js('http://amp.azure.net/libs/amp/1.7.1/azuremediaplayer.min.js', 'external');
+  drupal_add_css('http://amp.azure.net/libs/amp/1.7.1/skins/amp-default/azuremediaplayer.min.css', 'external');
   
 
   
