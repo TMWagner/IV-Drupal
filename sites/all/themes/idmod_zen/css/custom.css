@@ -38,6 +38,10 @@
     border-collapse: collapse;
 }
 
+.icon {
+	padding-right: 5px;
+}
+
 
 .fp-hero {
 	background-repeat: no-repeat;
