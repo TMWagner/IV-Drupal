@@ -239,9 +239,6 @@ function idmod_init() {
   $path = current_path();
   if (drupal_is_front_page()) {
     
-    //drupal_add_css(drupal_get_path('module', 'idmod') . '/css/fp.css');
-    //drupal_add_js('http://amp.azure.net/libs/amp/latest/azuremediaplayer.min.js', 'external');
-    //drupal_add_css('http:amp.azure.net/libs/amp/latest/skins/amp-default/azuremediaplayer.min.css', 'external');
     
     drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.carousel.min.css');
     drupal_add_css(libraries_get_path('owlcarousel')  . '/assets/owl.theme.default.css');
