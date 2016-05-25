@@ -412,6 +412,7 @@ $zen-auto-include-item-base: false;
 	#footer-header-mobile  img {
 		width:60%;
 	}
+  
 }
 
 
@@ -443,6 +444,11 @@ $zen-auto-include-item-base: false;
 	.mobile-hide {
 		display:none;
 	}
+  
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    margin-top: -150px;
+  }
 	
 //Publications Mobile	
 	div#publications-mobile-left {
@@ -545,12 +551,7 @@ $zen-auto-include-item-base: false;
   .banner-text a:hover {
     color:orchid;
   }  
-  
-  .owl-dots {
-    position: absolute;
-    top: 50%;
-    left: 45%;
-  }
+
   
 	.banner-text h1 {
 		font-size: .9em;
