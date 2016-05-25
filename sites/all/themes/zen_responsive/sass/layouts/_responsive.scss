@@ -138,6 +138,9 @@ $zen-auto-include-item-base: false;
 .mobile-left {
   display: none;
 }
+.tablet-display {
+  display: none;
+}
 
 #banner {
   /* 2016-03-10(tmw): position new banner element */
@@ -517,6 +520,11 @@ $zen-auto-include-item-base: false;
     display: none;
   }
   
+  .desktop-display {
+    display: none;
+  }
+
+  
   // Feature/banner Text formatting
 	.inner.banner-text {
     padding-top: 35%;
@@ -701,6 +709,12 @@ $zen-auto-include-item-base: false;
     font-size: 0.75em;
   }
 	
+  .desktop-display {
+    display: none;
+  }
+  .tablet-display {
+    display: block;
+  }
 	#page-title,
 	#content-second,
 	.page-content {
