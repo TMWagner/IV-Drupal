@@ -230,14 +230,25 @@ $zen-auto-include-item-base: false;
 		max-width: 100%;
 	}
 
-//	//Debug code
-//	#block-idmteam-related-subteam {
-//    background-color: rgba(15, 203, 243, 0.13);
-//	}
-
-	
 	
 //End Research
+
+//Team page general settings
+  .team-name-info {
+    height: 95px;
+  }
+     
+  ul.team-member-item li {
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0;
+    width: 150px;
+    
+  }
+  .team-name-info {
+    max-width: 150px;
+  }
+//End Team page
 
 
 //Footer
