@@ -33,8 +33,9 @@
     background: linear-gradient(to bottom, #004462, #0072a3);
 }
 
-#symposium-download-table table, th, td {
-    border: solid thin grey;
+
+#symposium-download-table td {
+    border: solid thin rgba(128, 128, 128, 0.38);
     border-collapse: collapse;
 }
 
