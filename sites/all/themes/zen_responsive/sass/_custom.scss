@@ -27,8 +27,15 @@
 	
 
   h3 {
-		margin-top: 0px;
+	margin-top: 0px;
   }
+  h5 {
+    font-size: 18px;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    }
   a {
 		text-decoration: none;
 		color: $link-color;
@@ -76,6 +83,12 @@
     background-color: #DEDCDC;
     padding: 5px;
 	}
+    
+    .no-bullet {
+        list-style-type: none;
+        margin: 0px;
+        padding-left: 5px;
+    }
   
   
 
@@ -284,9 +297,7 @@
 	.research-math-item-title {
 		margin-bottom: 1em;
 	}
-	.research-math img {
-		margin-top: 5px;
-	}
+
 	
 // END RLP Code
 
@@ -297,6 +308,12 @@
 	}
 
 // End Software page
+
+// 2nd level pages misc
+	.sidebar-item img {
+		margin-top: 5px;
+	}
+
 
 
 // Footer
