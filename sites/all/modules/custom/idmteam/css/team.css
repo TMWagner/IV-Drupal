@@ -24,10 +24,72 @@ ul#team-research {
 .team-name-info a {
 	color: white;
 }
+.team-name-info a:hover {
+	color: white;
+}
 
 /*TEST CODE*/
 #navigation .sf-menu ul {
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 	min-width: 185px;
 }
+
+/*
+
+.outer {
+  display: table;
+}
+
+.inner {
+  height: 200px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+ Just for styling 
+.inner {
+  background: #eee;
+  padding: 0 20px;
+}
+*/
+
+
+.views-field.views-field-field-profile-picture {
+    display: table;
+}
+
+.team-name-info {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.team-name-info {
+    background-image: url(/sites/default/files/team_pic_gradient.png);
+    position: relative;
+    width: 150px;
+    height: 150px;
+    bottom: 155px;
+}
+
+ul.team-member-item li {
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0;
+    width: 150px;
+    height: 160px;
+}
+
+
+/*
+.team-member-info-gradient {
+	background-image: url(/sites/default/files/team_pic_gradient.png);
+	bottom: 130px;
+	height: 150px;
+  max-width: 150px;
+  position: relative;
+
+}
+*/
+	
+
 /*>> END Test Code <<< */
