@@ -1,15 +1,36 @@
 /**
+ *
  * @file
  * Javascript functionality for Display Suite's administration UI.
  *
  * TODO: We need to grab just one... The last term in the URL.
  *  Strip backward to the last '/'
+ *
+ * 
+ *  DEBUG: jQuery('div#fp-nav-research');
+ *  jQuery('div#fp-nav-research').css("background-color", "yellow");
+ *  $( ".field-content)").css( "border", "thin solid red");
+ *
  */
 
 //Wrap the whole mess in the following function to make it work in Drupal
 (function($) {
 
   $(document).ready(function () {
+    
+    //$(alert("team js loaded."));
+    
+    
+    
+    $('div.team-name-info').hoverIntent(
+      function() {
+      //$(this).parent().css( "background-color", "red" );
+      $(this).parent().find("img").css( "filter", "grayscale(100%) brightness(150%)");
+      },
+      function(){
+      //$(this).parent().css( "background-color", "white" );
+      $(this).parent().find("img").css( "filter", "grayscale(100%)");
+    });
     
     
     function stripTrailingSlash(str) {
@@ -88,7 +109,8 @@
     }
     
     //Test Code
-    $( "li.item-ii" ).find( "li" ).css( "background-color", "red" );
+    //$( "li.item-ii" ).find( "li" ).css( "background-color", "red" );
+    //$( ".field-content").css( "border", "thin solid red");
     
   });
 
