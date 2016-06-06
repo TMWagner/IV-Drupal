@@ -54,14 +54,14 @@ ul#team-research {
 */
 
 
-.views-field.views-field-field-profile-picture {
+/*.views-field.views-field-field-profile-picture {
     display: table;
 }
 
 .team-name-info {
   display: table-cell;
   vertical-align: bottom;
-}
+}*/
 
 .team-name-info {
     background-image: url(/sites/default/files/team_pic_gradient.png);
@@ -77,6 +77,16 @@ ul.team-member-item li {
     margin: 0 10px 0;
     width: 150px;
     height: 160px;
+}
+
+div.team-info-wrapper {
+  height: 150px;
+  display: table;
+}
+div.team-info {
+  display: table-cell;
+  padding: 0 5px 5px 5px;
+  vertical-align: bottom;
 }
 
 
