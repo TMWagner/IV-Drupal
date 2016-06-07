@@ -54,14 +54,6 @@ ul#team-research {
 */
 
 
-/*.views-field.views-field-field-profile-picture {
-    display: table;
-}
-
-.team-name-info {
-  display: table-cell;
-  vertical-align: bottom;
-}*/
 
 .team-name-info {
     background-image: url(/sites/default/files/team_pic_gradient.png);

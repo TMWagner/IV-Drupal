@@ -26,8 +26,8 @@
     $('div.team-name-info').hoverIntent(
       function() {
       //$(this).parent().css( "background-color", "red" );
-      $(this).parent().find("img").css( "filter", "grayscale(100%) brightness(150%)");
-      $(this).parent().find("img").css( "webkitFilter", "grayscale(100%) brightness(150%)");
+      $(this).parent().find("img").css( "filter", "none");
+      $(this).parent().find("img").css( "webkitFilter", "none");
       },
       function(){
       //$(this).parent().css( "background-color", "white" );
