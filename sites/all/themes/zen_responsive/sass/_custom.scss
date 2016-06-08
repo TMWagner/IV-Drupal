@@ -33,43 +33,54 @@
 //    display:inline-block;
 //}
 	
-	$default-text-color: black;
-	$link-color: #0073A3;
-	$iv-blue: #0073a3;
-	$iv-grey: #858c8c;
-	$shadow-grey: rgba(119,119, 119, 0.75);
+$default-text-color: black;
+$link-color: #0073A3;
+$iv-blue: #0073a3;
+$iv-grey: #858c8c;
+$shadow-grey: rgba(119,119, 119, 0.75);
 	
-    .amp-logo {
-        display: none;
-    }
-	.azuremediaplayer {
-    background-color: white;
-	}
-	.vjs-control-bar {
-    display: none;
-	}
-    
+.amp-logo {
+	display: none;
+}
 
-    
-    .views-field.views-field-field-profile-picture img {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-    .views-field.views-field-field-profile-picture img:hover {
-        -webkit-filter: none;
-        filter: none;
-    }
+.azuremediaplayer {
+  background-color: white;
+}
+.vjs-control-bar {
+	display: none;
+}
+        
+.views-field.views-field-field-profile-picture img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.views-field.views-field-field-profile-picture img:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+
+h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+}
    
-    h3 {
-        margin-top: 0px;
-    }
-  h5 {
-    font-size: 18px;
-    line-height: 1em;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    }
+h3 {
+	margin-top: 0px;
+	font-size: 18px;
+	font-style: italic;
+}
+
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 18px;
+	line-height: 1em;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
   a {
 		text-decoration: none;
 		color: $link-color;
