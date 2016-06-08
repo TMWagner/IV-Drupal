@@ -2664,23 +2664,27 @@ h2 {
 }
 
 /* line 71, ../sass/_custom.scss */
-#nav2-research h3 {
+.nav2-icon h3 {
   font-style: normal;
 }
 
 /* line 74, ../sass/_custom.scss */
-h3 {
-  margin-top: 0px;
-  font-size: 18px;
-  font-style: italic;
+.nav-item h2 {
+  margin: 0px;
 }
 
-/* line 80, ../sass/_custom.scss */
+/* line 77, ../sass/_custom.scss */
+h2 h3 {
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+/* line 82, ../sass/_custom.scss */
 h4 {
   font-size: 16px;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 85, ../sass/_custom.scss */
 h5 {
   font-size: 18px;
   line-height: 1em;
@@ -2689,91 +2693,91 @@ h5 {
   text-transform: uppercase;
 }
 
-/* line 93, ../sass/_custom.scss */
+/* line 95, ../sass/_custom.scss */
 a {
   text-decoration: none;
   color: #0073A3;
   text-transform: uppercase;
 }
 
-/* line 98, ../sass/_custom.scss */
+/* line 100, ../sass/_custom.scss */
 a:hover {
   color: black;
 }
 
-/* line 102, ../sass/_custom.scss */
+/* line 104, ../sass/_custom.scss */
 p {
   margin: 0px;
 }
 
-/* line 106, ../sass/_custom.scss */
+/* line 108, ../sass/_custom.scss */
 .hidden {
   display: none;
 }
 
-/* line 110, ../sass/_custom.scss */
+/* line 112, ../sass/_custom.scss */
 .field-name-field-publications-image-teaser .field-item img {
   box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
 }
 
-/* line 115, ../sass/_custom.scss */
+/* line 117, ../sass/_custom.scss */
 .field-content img,
 .field-items img {
   box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
 }
 
-/* line 122, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 .wrapper, .region-navigation {
   display: inline-block;
   text-align: center;
 }
 
-/* line 129, ../sass/_custom.scss */
+/* line 131, ../sass/_custom.scss */
 .center-content {
   text-align: center;
 }
 
-/* line 132, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 .form-item {
   margin: 0px;
 }
 
-/* line 136, ../sass/_custom.scss */
+/* line 138, ../sass/_custom.scss */
 .figure-block {
   background-color: #DEDCDC;
   padding: 5px;
 }
 
-/* line 141, ../sass/_custom.scss */
+/* line 143, ../sass/_custom.scss */
 .no-bullet {
   list-style-type: none;
   margin: 0px;
   padding-left: 5px;
 }
 
-/* line 150, ../sass/_custom.scss */
+/* line 152, ../sass/_custom.scss */
 header {
   padding-top: 10px;
   width: 100%;
 }
 
-/* line 155, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 #logo {
   padding-left: 10px;
   width: 50%;
 }
 
-/* line 161, ../sass/_custom.scss */
+/* line 163, ../sass/_custom.scss */
 #main-nav-mobile {
   display: none;
 }
 
-/* line 166, ../sass/_custom.scss */
+/* line 168, ../sass/_custom.scss */
 #block-superfish-1 {
   margin-top: 15px;
 }
 
-/* line 170, ../sass/_custom.scss */
+/* line 172, ../sass/_custom.scss */
 #superfish-1 > li {
   background-color: none;
   margin: 2px;
@@ -2782,47 +2786,47 @@ header {
   /*NOTE: this controls the overall width of the div as well*/
 }
 
-/* line 177, ../sass/_custom.scss */
+/* line 179, ../sass/_custom.scss */
 .sf-menu.sf-style-blue ul {
   padding-left: 0px;
   padding-top: 12px;
 }
 
-/* line 182, ../sass/_custom.scss */
+/* line 184, ../sass/_custom.scss */
 .menu a {
   color: grey;
 }
 
-/* line 186, ../sass/_custom.scss */
+/* line 188, ../sass/_custom.scss */
 #secondary-menu {
   bottom: 10px;
   height: 40px;
 }
 
-/* line 192, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 .sf-menu.sf-style-blue li li li {
   background: #2F3032;
 }
 
-/* line 200, ../sass/_custom.scss */
+/* line 202, ../sass/_custom.scss */
 .banner-stripe {
   background-color: #0073a3;
   width: 100%;
   height: 60px;
 }
 
-/* line 205, ../sass/_custom.scss */
+/* line 207, ../sass/_custom.scss */
 .blue_banner_stripe {
   margin-bottom: 0px;
 }
 
-/* line 212, ../sass/_custom.scss */
+/* line 214, ../sass/_custom.scss */
 .container {
   width: 100%;
   /* Can be any desired width */
 }
 
-/* line 216, ../sass/_custom.scss */
+/* line 218, ../sass/_custom.scss */
 .container .outer .inner {
   position: absolute;
   top: 0;
@@ -2831,13 +2835,13 @@ header {
   bottom: 0;
 }
 
-/* line 223, ../sass/_custom.scss */
+/* line 225, ../sass/_custom.scss */
 .inner {
   background-size: cover;
   /* make sure the background image always fits and isn't clipped */
 }
 
-/* line 228, ../sass/_custom.scss */
+/* line 230, ../sass/_custom.scss */
 .fp-nav-row {
   width: 170px;
   height: 300px;
@@ -2850,19 +2854,19 @@ header {
   vertical-align: top;
 }
 
-/* line 240, ../sass/_custom.scss */
+/* line 242, ../sass/_custom.scss */
 .nav2-icon {
   margin: 0 auto;
   height: 72px;
   width: 72px;
 }
 
-/* line 246, ../sass/_custom.scss */
+/* line 248, ../sass/_custom.scss */
 #nav2-research a:hover {
   color: black;
 }
 
-/* line 252, ../sass/_custom.scss */
+/* line 254, ../sass/_custom.scss */
 a.read-more:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -2871,7 +2875,7 @@ a.read-more:after {
   vertical-align: middle;
 }
 
-/* line 260, ../sass/_custom.scss */
+/* line 262, ../sass/_custom.scss */
 a.views-more-link:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -2880,7 +2884,7 @@ a.views-more-link:after {
   vertical-align: middle;
 }
 
-/* line 269, ../sass/_custom.scss */
+/* line 271, ../sass/_custom.scss */
 a.home-link:after {
   font-family: FontAwesome;
   content: "\f015";
@@ -2889,7 +2893,7 @@ a.home-link:after {
   vertical-align: middle;
 }
 
-/* line 277, ../sass/_custom.scss */
+/* line 279, ../sass/_custom.scss */
 a.git-link:after {
   font-family: FontAwesome;
   content: "\f09b";
@@ -2899,7 +2903,7 @@ a.git-link:after {
   vertical-align: middle;
 }
 
-/* line 288, ../sass/_custom.scss */
+/* line 290, ../sass/_custom.scss */
 .rlp-nav-row {
   width: 300px;
   height: 150px;
@@ -2912,12 +2916,12 @@ a.git-link:after {
   vertical-align: top;
 }
 
-/* line 300, ../sass/_custom.scss */
+/* line 302, ../sass/_custom.scss */
 .rlp-nav-row {
   margin-top: 20px;
 }
 
-/* line 304, ../sass/_custom.scss */
+/* line 306, ../sass/_custom.scss */
 .rlp_button_content {
   color: white;
   font-size: 24px;
@@ -2925,25 +2929,25 @@ a.git-link:after {
   text-transform: none;
 }
 
-/* line 311, ../sass/_custom.scss */
+/* line 313, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 320, ../sass/_custom.scss */
+/* line 322, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 323, ../sass/_custom.scss */
+/* line 325, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 328, ../sass/_custom.scss */
+/* line 330, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -2952,82 +2956,82 @@ a.git-link:after {
 /**
  * Code for RLP
  */
-/* line 342, ../sass/_custom.scss */
+/* line 344, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 347, ../sass/_custom.scss */
+/* line 349, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 351, ../sass/_custom.scss */
+/* line 353, ../sass/_custom.scss */
 .research-math-item-title {
   margin-bottom: 1em;
 }
 
-/* line 360, ../sass/_custom.scss */
+/* line 362, ../sass/_custom.scss */
 .two-column-2-item-title {
   margin-bottom: 0px;
 }
 
-/* line 367, ../sass/_custom.scss */
+/* line 369, ../sass/_custom.scss */
 .sidebar-item img {
   margin-top: 5px;
 }
 
-/* line 374, ../sass/_custom.scss */
+/* line 376, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 378, ../sass/_custom.scss */
+/* line 380, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 381, ../sass/_custom.scss */
+/* line 383, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 384, ../sass/_custom.scss */
+/* line 386, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 387, ../sass/_custom.scss */
+/* line 389, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 391, ../sass/_custom.scss */
+/* line 393, ../sass/_custom.scss */
 .footer-wrapper a {
   color: white;
 }
 
-/* line 395, ../sass/_custom.scss */
+/* line 397, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 401, ../sass/_custom.scss */
+/* line 403, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 407, ../sass/_custom.scss */
+/* line 409, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 411, ../sass/_custom.scss */
+/* line 413, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3037,7 +3041,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 420, ../sass/_custom.scss */
+/* line 422, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }

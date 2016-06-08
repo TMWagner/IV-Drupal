@@ -68,13 +68,15 @@ h2 {
 .banner-text h2 {
 	text-transform: none;
 }
-#nav2-research h3 {
+.nav2-icon h3 {
 	font-style: normal;
 }
-h3 {
+.nav-item h2 {
+	margin: 0px;
+}
+h2 h3 {
 	margin-top: 0px;
 	font-size: 18px;
-	font-style: italic;
 }
 
 h4 {
