@@ -60,6 +60,7 @@ $shadow-grey: rgba(119,119, 119, 0.75);
 	filter: none;
 }
 
+//h tag specifics and overrides
 h2 {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -67,7 +68,9 @@ h2 {
 .banner-text h2 {
 	text-transform: none;
 }
-   
+#nav2-research h3 {
+	font-style: normal;
+}
 h3 {
 	margin-top: 0px;
 	font-size: 18px;
@@ -84,6 +87,9 @@ h5 {
 	margin-bottom: 0px;
 	text-transform: uppercase;
 }
+
+
+
 a {
 	text-decoration: none;
 	color: $link-color;
