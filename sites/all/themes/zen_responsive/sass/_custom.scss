@@ -64,6 +64,9 @@ h2 {
 	font-size: 18px;
 	text-transform: uppercase;
 }
+.banner-text h2 {
+	text-transform: none;
+}
    
 h3 {
 	margin-top: 0px;
@@ -81,11 +84,11 @@ h5 {
 	margin-bottom: 0px;
 	text-transform: uppercase;
 }
-  a {
-		text-decoration: none;
-		color: $link-color;
-		text-transform: uppercase;
-  }
+a {
+	text-decoration: none;
+	color: $link-color;
+	text-transform: uppercase;
+}
 	a:hover {
 		color: black;
 	}
