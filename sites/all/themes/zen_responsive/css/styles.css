@@ -1491,31 +1491,25 @@ ul.slicknav_nav {
 
   /* line 723, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 35px;
   }
 
   /* line 728, ../sass/layouts/_responsive.scss */
-  .not-mobile-display > h1 {
-    font-size: 1.5em;
+  .banner-text > h2 {
+    font-size: 18px;
   }
 
-  /* line 731, ../sass/layouts/_responsive.scss */
-  .not-mobile-display > h2 {
-    font-size: 0.75em;
-  }
-
-  /* line 735, ../sass/layouts/_responsive.scss */
+  /* line 732, ../sass/layouts/_responsive.scss */
   .desktop-display {
     display: none;
   }
 
-  /* line 738, ../sass/layouts/_responsive.scss */
+  /* line 735, ../sass/layouts/_responsive.scss */
   .tablet-display {
     display: block;
   }
 
-  /* line 741, ../sass/layouts/_responsive.scss */
+  /* line 738, ../sass/layouts/_responsive.scss */
   #page-title,
   #content-second,
   .page-content {
@@ -1525,48 +1519,48 @@ ul.slicknav_nav {
   /**
    *Custom mods
    */
-  /* line 752, ../sass/layouts/_responsive.scss */
+  /* line 749, ../sass/layouts/_responsive.scss */
   #stripe-full {
     display: none;
   }
 
-  /* line 755, ../sass/layouts/_responsive.scss */
+  /* line 752, ../sass/layouts/_responsive.scss */
   #stripe-tablet {
     display: block;
   }
 
-  /* line 758, ../sass/layouts/_responsive.scss */
+  /* line 755, ../sass/layouts/_responsive.scss */
   #stripe-mobile {
     display: none;
   }
 
-  /* line 763, ../sass/layouts/_responsive.scss */
+  /* line 760, ../sass/layouts/_responsive.scss */
   .slicknav_nav {
     background-color: #d7d7d7;
     margin-top: 115px;
   }
 
-  /* line 770, ../sass/layouts/_responsive.scss */
+  /* line 767, ../sass/layouts/_responsive.scss */
   #block-superfish-1 {
     display: none;
   }
 
-  /* line 775, ../sass/layouts/_responsive.scss */
+  /* line 772, ../sass/layouts/_responsive.scss */
   .front .wrapper {
     max-width: 525px;
   }
 
-  /* line 778, ../sass/layouts/_responsive.scss */
+  /* line 775, ../sass/layouts/_responsive.scss */
   .header_secondary-menu {
     display: inline-block;
   }
 
-  /* line 781, ../sass/layouts/_responsive.scss */
+  /* line 778, ../sass/layouts/_responsive.scss */
   .slicknav_menu {
     padding: 0 0 0 20px;
   }
 
-  /* line 787, ../sass/layouts/_responsive.scss */
+  /* line 784, ../sass/layouts/_responsive.scss */
   #footer-tablet {
     display: block;
   }
@@ -1574,13 +1568,13 @@ ul.slicknav_nav {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 797, ../sass/layouts/_responsive.scss */
+  /* line 794, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     background-color: lightblue;
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 800, ../sass/layouts/_responsive.scss */
+  /* line 797, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 16.66667%;
@@ -1588,7 +1582,7 @@ ul.slicknav_nav {
     margin-right: -25%;
     background-color: orange;
   }
-  /* line 807, ../sass/layouts/_responsive.scss */
+  /* line 804, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 8.33333%;
@@ -1600,19 +1594,19 @@ ul.slicknav_nav {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 817, ../sass/layouts/_responsive.scss */
+  /* line 814, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 819, ../sass/layouts/_responsive.scss */
+  /* line 816, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 16.66667%;
     margin-left: 0%;
     margin-right: -16.66667%;
   }
-  /* line 824, ../sass/layouts/_responsive.scss */
+  /* line 821, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 8.33333%;
@@ -1625,52 +1619,52 @@ ul.slicknav_nav {
  * Use 5 grid columns for larger screens.
  */
 @media all and (min-width: 960px) {
-  /* line 842, ../sass/layouts/_responsive.scss */
+  /* line 839, ../sass/layouts/_responsive.scss */
   .slicknav_menu {
     display: none;
   }
 
-  /* line 845, ../sass/layouts/_responsive.scss */
+  /* line 842, ../sass/layouts/_responsive.scss */
   #stripe-mobile {
     display: none;
   }
 
-  /* line 848, ../sass/layouts/_responsive.scss */
+  /* line 845, ../sass/layouts/_responsive.scss */
   #stripe-tablet {
     display: none;
   }
 
-  /* line 851, ../sass/layouts/_responsive.scss */
+  /* line 848, ../sass/layouts/_responsive.scss */
   #stripe-full {
     display: block;
   }
 
-  /* line 854, ../sass/layouts/_responsive.scss */
+  /* line 851, ../sass/layouts/_responsive.scss */
   .wrapper {
     max-width: 960px;
   }
 
-  /* line 858, ../sass/layouts/_responsive.scss */
+  /* line 855, ../sass/layouts/_responsive.scss */
   #stripe-full p {
     margin-top: 1.5em;
   }
 
-  /* line 862, ../sass/layouts/_responsive.scss */
+  /* line 859, ../sass/layouts/_responsive.scss */
   #home-p3 {
     margin-top: 2em;
   }
 
-  /* line 866, ../sass/layouts/_responsive.scss */
+  /* line 863, ../sass/layouts/_responsive.scss */
   #footer-full {
     display: block;
   }
 
-  /* line 869, ../sass/layouts/_responsive.scss */
+  /* line 866, ../sass/layouts/_responsive.scss */
   #footer-tablet {
     display: none;
   }
 
-  /* line 873, ../sass/layouts/_responsive.scss */
+  /* line 870, ../sass/layouts/_responsive.scss */
   #page-title,
   #content-second,
   .page-content {
