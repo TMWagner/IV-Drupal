@@ -114,6 +114,7 @@ a {
 	}
 	// Shadow images
 	// 5/15/2016: Too General... scope the targets!
+	.malaria-publication-thumbnail > img,
 	.field-content img,
 	.field-items img {
 		box-shadow: 3px 2px 10px 0px rgba(119, 119, 119, 0.75);
