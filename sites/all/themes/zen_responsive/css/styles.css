@@ -3045,29 +3045,34 @@ div#footer-tablet {
 
 /* line 394, ../sass/_custom.scss */
 .footer-wrapper a {
-  color: white;
+  color: #CDCECF;
 }
 
 /* line 398, ../sass/_custom.scss */
+.footer-wrapper a:hover {
+  color: white;
+}
+
+/* line 402, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 404, ../sass/_custom.scss */
+/* line 408, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 410, ../sass/_custom.scss */
+/* line 414, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 414, ../sass/_custom.scss */
+/* line 418, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3077,7 +3082,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 423, ../sass/_custom.scss */
+/* line 427, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
