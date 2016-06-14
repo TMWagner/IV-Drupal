@@ -215,7 +215,7 @@ function idmod_entity_view($entity, $type, $view_mode, $langcode) {
  * Reference: Owl Carousel: http://smashingboxes.github.io/OwlCarousel2/index.html
  */
 function idmod_init() {
-  
+  drupal_add_css(drupal_get_path('module', 'idmod') . '/css/hover.css');
   drupal_add_css(drupal_get_path('module', 'idmod') . '/slicknav/slicknav.css');
   drupal_add_js(drupal_get_path('module', 'idmod') . '/slicknav/jquery.slicknav.min.js', array(
   'scope' => 'footer',
