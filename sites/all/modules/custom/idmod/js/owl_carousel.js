@@ -14,7 +14,7 @@ Drupal.behaviors.owl_carousel = {
 
     $(document).ready(function(){
       $(".owl-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
         rewind: false,
         items: 1,
         nav: false,
