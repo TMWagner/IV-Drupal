@@ -2695,7 +2695,7 @@ h2 {
 
 /* line 68, ../sass/_custom.scss */
 .banner-text h2 {
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 /* line 71, ../sass/_custom.scss */
