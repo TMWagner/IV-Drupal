@@ -422,7 +422,30 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 		width: 80%;
-	}	
+	}
+	#copyright-mobile {
+		background-color: #0073a3;
+		clear: left;
+		color: white;
+		font-size: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	#copyright-mobile-content {
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	
+	#copyright-mobile-content ul {
+		text-align: center;
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
 
 	.accordion-content ul {
 			list-style: none;
