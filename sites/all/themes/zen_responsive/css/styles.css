@@ -2917,7 +2917,36 @@ header {
   color: black;
 }
 
-/* line 255, ../sass/_custom.scss */
+/* line 256, ../sass/_custom.scss */
+ul#copyright-list {
+  text-align: center;
+}
+
+/* line 260, ../sass/_custom.scss */
+ul#copyright-list li {
+  display: inline-block;
+  float: none;
+}
+
+/* line 265, ../sass/_custom.scss */
+ul.copyright-list {
+  text-align: center;
+  margin: 0px;
+  line-height: 15px;
+}
+
+/* line 271, ../sass/_custom.scss */
+ul.copyright-list li {
+  display: inline-block;
+  float: none;
+}
+
+/* line 275, ../sass/_custom.scss */
+.copyright {
+  margin-bottom: 10px;
+}
+
+/* line 280, ../sass/_custom.scss */
 a.read-more:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -2926,7 +2955,7 @@ a.read-more:after {
   vertical-align: middle;
 }
 
-/* line 263, ../sass/_custom.scss */
+/* line 288, ../sass/_custom.scss */
 a.views-more-link:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -2935,7 +2964,7 @@ a.views-more-link:after {
   vertical-align: middle;
 }
 
-/* line 272, ../sass/_custom.scss */
+/* line 297, ../sass/_custom.scss */
 a.home-link:after {
   font-family: FontAwesome;
   content: "\f015";
@@ -2944,7 +2973,7 @@ a.home-link:after {
   vertical-align: middle;
 }
 
-/* line 280, ../sass/_custom.scss */
+/* line 305, ../sass/_custom.scss */
 a.git-link:after {
   font-family: FontAwesome;
   content: "\f09b";
@@ -2954,7 +2983,7 @@ a.git-link:after {
   vertical-align: middle;
 }
 
-/* line 291, ../sass/_custom.scss */
+/* line 316, ../sass/_custom.scss */
 .rlp-nav-row {
   width: 300px;
   height: 150px;
@@ -2967,12 +2996,12 @@ a.git-link:after {
   vertical-align: top;
 }
 
-/* line 303, ../sass/_custom.scss */
+/* line 328, ../sass/_custom.scss */
 .rlp-nav-row {
   margin-top: 20px;
 }
 
-/* line 307, ../sass/_custom.scss */
+/* line 332, ../sass/_custom.scss */
 .rlp_button_content {
   color: white;
   font-size: 24px;
@@ -2980,25 +3009,25 @@ a.git-link:after {
   text-transform: none;
 }
 
-/* line 314, ../sass/_custom.scss */
+/* line 339, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 323, ../sass/_custom.scss */
+/* line 348, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 326, ../sass/_custom.scss */
+/* line 351, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 331, ../sass/_custom.scss */
+/* line 356, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -3007,87 +3036,87 @@ a.git-link:after {
 /**
  * Code for RLP
  */
-/* line 345, ../sass/_custom.scss */
+/* line 370, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 350, ../sass/_custom.scss */
+/* line 375, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 354, ../sass/_custom.scss */
+/* line 379, ../sass/_custom.scss */
 .research-math-item-title {
   margin-bottom: 1em;
 }
 
-/* line 363, ../sass/_custom.scss */
+/* line 388, ../sass/_custom.scss */
 .two-column-2-item-title {
   margin-bottom: 0px;
 }
 
-/* line 370, ../sass/_custom.scss */
+/* line 395, ../sass/_custom.scss */
 .sidebar-item img {
   margin-top: 5px;
 }
 
-/* line 377, ../sass/_custom.scss */
+/* line 402, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 381, ../sass/_custom.scss */
+/* line 406, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 384, ../sass/_custom.scss */
+/* line 409, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 387, ../sass/_custom.scss */
+/* line 412, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 390, ../sass/_custom.scss */
+/* line 415, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 394, ../sass/_custom.scss */
+/* line 419, ../sass/_custom.scss */
 .footer-wrapper a {
   color: #CDCECF;
 }
 
-/* line 398, ../sass/_custom.scss */
+/* line 423, ../sass/_custom.scss */
 .footer-wrapper a:hover {
   color: white;
 }
 
-/* line 402, ../sass/_custom.scss */
+/* line 427, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 408, ../sass/_custom.scss */
+/* line 433, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 414, ../sass/_custom.scss */
+/* line 439, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 418, ../sass/_custom.scss */
+/* line 443, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3097,7 +3126,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 426, ../sass/_custom.scss */
+/* line 451, ../sass/_custom.scss */
 #copyright-mobile {
   background-color: #0073a3;
   clear: left;
@@ -3108,7 +3137,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 435, ../sass/_custom.scss */
+/* line 460, ../sass/_custom.scss */
 #copyright-mobile-content {
   text-align: center;
   display: block;
@@ -3117,7 +3146,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 443, ../sass/_custom.scss */
+/* line 468, ../sass/_custom.scss */
 #copyright-mobile-content ul {
   text-align: center;
   display: block;
@@ -3125,7 +3154,7 @@ div#footer-header > p {
   width: 50%;
 }
 
-/* line 450, ../sass/_custom.scss */
+/* line 475, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }

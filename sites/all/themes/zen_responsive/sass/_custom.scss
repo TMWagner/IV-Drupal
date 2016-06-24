@@ -250,6 +250,31 @@ a {
 		color: black;
 	}
 	
+	
+	// Footer
+	
+	ul#copyright-list {
+		text-align: center;
+	}
+	
+	ul#copyright-list li {
+		display:inline-block;
+		float: none;
+	}	
+	
+	ul.copyright-list {
+		text-align: center;
+		margin: 0px;
+		line-height: 15px;
+	}
+	
+	ul.copyright-list li {
+		display:inline-block;
+		float: none;
+	}
+	.copyright {
+    margin-bottom: 10px;
+	}
 	// FontAwesome CSS...
 	
 	a.read-more:after {
