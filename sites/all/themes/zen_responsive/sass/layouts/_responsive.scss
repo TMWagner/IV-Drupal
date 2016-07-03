@@ -42,7 +42,10 @@ $zen-auto-include-item-base: false;
   max-width: 100%;
 }
 
-
+  header {
+    display: none;
+  }
+f
 	#page-title,
 	#content-second,
 	.page-content {
@@ -195,6 +198,7 @@ $zen-auto-include-item-base: false;
 .slicknav_menu {
   background: transparent;
   position: relative;
+  //top: -15px;
   z-index: 2;
 }
 
@@ -453,6 +457,12 @@ $zen-auto-include-item-base: false;
 	}
 
 }
+	
+	
+	
+	
+	
+	
 
 } // End of @if $zen-reverse-all-floats == false
 
@@ -463,13 +473,16 @@ $zen-auto-include-item-base: false;
  * hacks to fix FP mobile
  */
 
-@media all and (max-width: 375px) {
-  #home-p3 {
-    margin-top: 20%;
-  }
-}
+//@media all and (max-width: 320px) {
+//  #home-p3 {
+//    margin-top: 20%;
+//  }
+//}
 
-@media all and (min-width: 376px) and (max-width: 425px) {
+
+
+//Was 376 / 425
+@media all and (min-width: 300px) and (max-width: 768px) {
   #home-p3 {
     margin-top: 10%
   }
@@ -477,7 +490,13 @@ $zen-auto-include-item-base: false;
 		width:60%;
 	}
   
+  header {
+    display: initial;
+  }
+  
 }
+
+
 
 
 // End FP Mobile p3 hack
@@ -704,6 +723,7 @@ $zen-auto-include-item-base: false;
   div.slicknav_menu {
     width: 100%;
 		padding: 0;
+    height: auto;
   }
 	
 
@@ -748,6 +768,10 @@ $zen-auto-include-item-base: false;
   
   #banner {
     top: 1em;
+  }
+  
+  header {
+    display: initial;
   }
   
   .container .outer {
