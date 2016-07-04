@@ -34,7 +34,7 @@
         <?php endif; ?>
         
      
-        <nav class="header__secondary-menu" id="secondary-menu" role="navigation"></nav>
+        
     
         <?php if ($secondary_menu): ?>
           <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
@@ -51,8 +51,10 @@
             )); ?>
           </nav>
         <?php endif; ?>
+				
+				<?php print render($page['header']); ?>
+				<nav class="header__secondary-menu" id="secondary-menu" role="navigation"></nav>
         
-        <?php print render($page['header']); ?>
     
       </header>
  

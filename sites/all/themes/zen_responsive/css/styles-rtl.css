@@ -41,21 +41,20 @@ ul {
 /**
  * hacks to fix FP mobile
  */
-@media all and (max-width: 375px) {
-  /* line 467, ../sass/layouts/_responsive.scss */
-  #home-p3 {
-    margin-top: 20%;
-  }
-}
-@media all and (min-width: 376px) and (max-width: 425px) {
-  /* line 473, ../sass/layouts/_responsive.scss */
+@media all and (min-width: 300px) and (max-width: 768px) {
+  /* line 486, ../sass/layouts/_responsive.scss */
   #home-p3 {
     margin-top: 10%;
   }
 
-  /* line 476, ../sass/layouts/_responsive.scss */
+  /* line 489, ../sass/layouts/_responsive.scss */
   #footer-header-mobile img {
     width: 60%;
+  }
+
+  /* line 493, ../sass/layouts/_responsive.scss */
+  header {
+    display: initial;
   }
 }
 /***** Mobile Layout **********************************************************************
@@ -64,7 +63,27 @@ ul {
  * Custom mod
  */
 @media all and (max-width: 480px) {
-  /* line 494, ../sass/layouts/_responsive.scss */
+  /* line 514, ../sass/layouts/_responsive.scss */
+  .slicknav_menu {
+    background: transparent none repeat scroll 0% 0%;
+    position: relative;
+    z-index: 2;
+    height: 61px;
+    top: -10px;
+  }
+
+  /* line 522, ../sass/layouts/_responsive.scss */
+  #idm-logo-mobile {
+    position: relative;
+    bottom: 25px;
+  }
+
+  /* line 527, ../sass/layouts/_responsive.scss */
+  #idm-logo-mobile > h2 {
+    font-size: 30px;
+  }
+
+  /* line 532, ../sass/layouts/_responsive.scss */
   .mobile-left {
     display: block;
     float: left;
@@ -72,28 +91,28 @@ ul {
     max-width: 30%;
   }
 
-  /* line 501, ../sass/layouts/_responsive.scss */
+  /* line 539, ../sass/layouts/_responsive.scss */
   h1#page-title {
     display: none;
   }
 
-  /* line 504, ../sass/layouts/_responsive.scss */
+  /* line 542, ../sass/layouts/_responsive.scss */
   .team-menu-wrap.page-content {
     display: none;
   }
 
-  /* line 508, ../sass/layouts/_responsive.scss */
+  /* line 546, ../sass/layouts/_responsive.scss */
   .mobile-hide {
     display: none;
   }
 
-  /* line 512, ../sass/layouts/_responsive.scss */
+  /* line 550, ../sass/layouts/_responsive.scss */
   .owl-theme .owl-nav.disabled + .owl-dots {
     position: relative;
     margin-top: -150px;
   }
 
-  /* line 518, ../sass/layouts/_responsive.scss */
+  /* line 556, ../sass/layouts/_responsive.scss */
   div#publications-mobile-left {
     display: block;
     float: left;
@@ -101,103 +120,103 @@ ul {
     max-width: 30%;
   }
 
-  /* line 525, ../sass/layouts/_responsive.scss */
+  /* line 563, ../sass/layouts/_responsive.scss */
   div#publications-mobile-right {
     min-height: 200px;
   }
 
-  /* line 528, ../sass/layouts/_responsive.scss */
+  /* line 566, ../sass/layouts/_responsive.scss */
   .views-row {
     margin: 10px;
   }
 
-  /* line 534, ../sass/layouts/_responsive.scss */
+  /* line 572, ../sass/layouts/_responsive.scss */
   .region-content-second .view-header {
     margin-left: 10px;
   }
 
-  /* line 539, ../sass/layouts/_responsive.scss */
+  /* line 577, ../sass/layouts/_responsive.scss */
   .views-field.views-field-nothing-1.publication-list-col1,
   .two-column-float-1 {
     display: none;
   }
 
-  /* line 544, ../sass/layouts/_responsive.scss */
+  /* line 582, ../sass/layouts/_responsive.scss */
   .view-display-team-lead .views-row {
     border-bottom: none;
   }
 
-  /* line 547, ../sass/layouts/_responsive.scss */
+  /* line 585, ../sass/layouts/_responsive.scss */
   .team-member-profile .views-row {
     border-bottom: none;
   }
 
-  /* line 551, ../sass/layouts/_responsive.scss */
+  /* line 589, ../sass/layouts/_responsive.scss */
   .two-column-flex, .region-content-second, .ds-2col {
     display: block;
   }
 
-  /* line 555, ../sass/layouts/_responsive.scss */
+  /* line 593, ../sass/layouts/_responsive.scss */
   #content-second img {
     width: 125px;
   }
 
-  /* line 562, ../sass/layouts/_responsive.scss */
+  /* line 600, ../sass/layouts/_responsive.scss */
   .container .outer {
     padding-top: 50%;
     /* defines aspect ratio */
   }
 
-  /* line 566, ../sass/layouts/_responsive.scss */
+  /* line 604, ../sass/layouts/_responsive.scss */
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
     margin-bottom: 5px;
     width: 25px;
   }
 
-  /* line 574, ../sass/layouts/_responsive.scss */
+  /* line 612, ../sass/layouts/_responsive.scss */
   .front #content {
     padding-top: 80%;
   }
 
-  /* line 578, ../sass/layouts/_responsive.scss */
+  /* line 616, ../sass/layouts/_responsive.scss */
   #content {
     padding-top: 70%;
   }
 
-  /* line 582, ../sass/layouts/_responsive.scss */
+  /* line 620, ../sass/layouts/_responsive.scss */
   #block-superfish-1 {
     display: none;
   }
 
-  /* line 586, ../sass/layouts/_responsive.scss */
+  /* line 624, ../sass/layouts/_responsive.scss */
   .mobile-display {
     display: block;
   }
 
-  /* line 589, ../sass/layouts/_responsive.scss */
+  /* line 627, ../sass/layouts/_responsive.scss */
   .not-mobile-display {
     display: none;
   }
 
-  /* line 593, ../sass/layouts/_responsive.scss */
+  /* line 631, ../sass/layouts/_responsive.scss */
   .desktop-display {
     display: none;
   }
 
-  /* line 599, ../sass/layouts/_responsive.scss */
+  /* line 637, ../sass/layouts/_responsive.scss */
   .inner.banner-text {
     padding-top: 35%;
   }
 
-  /* line 602, ../sass/layouts/_responsive.scss */
+  /* line 640, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     line-height: 1em;
     margin: 0px;
     padding: 0px 0px 0px 0px;
   }
 
-  /* line 607, ../sass/layouts/_responsive.scss */
+  /* line 645, ../sass/layouts/_responsive.scss */
   .banner-text h2 {
     font-family: 'proxima-nova';
     font-weight: 500;
@@ -205,76 +224,76 @@ ul {
     margin: 0px;
   }
 
-  /* line 612, ../sass/layouts/_responsive.scss */
+  /* line 650, ../sass/layouts/_responsive.scss */
   .banner-text a {
     color: white;
   }
 
-  /* line 615, ../sass/layouts/_responsive.scss */
+  /* line 653, ../sass/layouts/_responsive.scss */
   .banner-text a:hover {
     color: orchid;
   }
 
-  /* line 620, ../sass/layouts/_responsive.scss */
+  /* line 658, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     font-size: .9em;
     font-weight: bold;
   }
 
-  /* line 624, ../sass/layouts/_responsive.scss */
+  /* line 662, ../sass/layouts/_responsive.scss */
   .banner-text h2 {
     font-size: .9em;
     line-height: 1.5em;
   }
 
-  /* line 628, ../sass/layouts/_responsive.scss */
+  /* line 666, ../sass/layouts/_responsive.scss */
   .banner-text.mobile-display {
     height: 100px;
     margin-top: 15px;
   }
 
-  /* line 634, ../sass/layouts/_responsive.scss */
+  /* line 672, ../sass/layouts/_responsive.scss */
   .two-column-1 {
     flex: 0 0 250px;
     display: none;
   }
 
-  /* line 639, ../sass/layouts/_responsive.scss */
+  /* line 677, ../sass/layouts/_responsive.scss */
   .two-column-2 {
     margin: 0px 10px;
   }
 
-  /* line 642, ../sass/layouts/_responsive.scss */
+  /* line 680, ../sass/layouts/_responsive.scss */
   #page-title, .page-content {
     max-width: 90%;
   }
 
-  /* line 647, ../sass/layouts/_responsive.scss */
+  /* line 685, ../sass/layouts/_responsive.scss */
   .field.field-name-news-and-events-heading.field-type-ds.field-label-hidden {
     display: none;
   }
 }
-/* line 658, ../sass/layouts/_responsive.scss */
+/* line 696, ../sass/layouts/_responsive.scss */
 #stripe-full {
   display: none;
 }
 
-/* line 661, ../sass/layouts/_responsive.scss */
+/* line 699, ../sass/layouts/_responsive.scss */
 #stripe-tablet {
   display: none;
 }
 
-/* line 664, ../sass/layouts/_responsive.scss */
+/* line 702, ../sass/layouts/_responsive.scss */
 #stripe-mobile {
   display: block;
 }
 
-/* line 668, ../sass/layouts/_responsive.scss */
+/* line 706, ../sass/layouts/_responsive.scss */
 #main {
   margin-top: 0px;
 }
 
-/* line 673, ../sass/layouts/_responsive.scss */
+/* line 711, ../sass/layouts/_responsive.scss */
 .slicknav_menu {
   background: transparent none repeat scroll 0% 0%;
   position: relative;
@@ -282,52 +301,53 @@ ul {
   height: 61px;
 }
 
-/* line 681, ../sass/layouts/_responsive.scss */
+/* line 719, ../sass/layouts/_responsive.scss */
 .slicknav_nav {
   background-color: #d7d7d7;
   margin-top: 2.7em;
   padding: 0px;
 }
 
-/* line 690, ../sass/layouts/_responsive.scss */
+/* line 728, ../sass/layouts/_responsive.scss */
 .slicknav_btn {
   background-color: transparent;
   margin: 0px 20px 0px 0px;
 }
 
-/* line 695, ../sass/layouts/_responsive.scss */
+/* line 733, ../sass/layouts/_responsive.scss */
 .slicknav_nav a {
   color: #6C6666;
   padding: 15px 10px;
 }
-/* line 698, ../sass/layouts/_responsive.scss */
+/* line 736, ../sass/layouts/_responsive.scss */
 .slicknav_nav a:hover {
   color: black;
 }
 
-/* line 704, ../sass/layouts/_responsive.scss */
+/* line 742, ../sass/layouts/_responsive.scss */
 div.slicknav_menu {
   width: 100%;
   padding: 0;
+  height: auto;
 }
 
-/* line 711, ../sass/layouts/_responsive.scss */
+/* line 750, ../sass/layouts/_responsive.scss */
 ul.slicknav_nav {
   width: 100%;
   position: relative;
 }
 
-/* line 716, ../sass/layouts/_responsive.scss */
+/* line 755, ../sass/layouts/_responsive.scss */
 .slicknav_nav .slicknav_row {
   padding: 15px 10px;
 }
 
-/* line 724, ../sass/layouts/_responsive.scss */
+/* line 763, ../sass/layouts/_responsive.scss */
 #footer-tablet {
   display: block;
 }
 
-/* line 728, ../sass/layouts/_responsive.scss */
+/* line 767, ../sass/layouts/_responsive.scss */
 #footer-full {
   display: none;
 }
@@ -341,48 +361,59 @@ ul.slicknav_nav {
    * Dev code
    * TODO: Remove before production ? why? 
    */
-  /* line 749, ../sass/layouts/_responsive.scss */
+  /* line 788, ../sass/layouts/_responsive.scss */
   #banner {
     top: 1em;
   }
 
-  /* line 753, ../sass/layouts/_responsive.scss */
+  /* line 792, ../sass/layouts/_responsive.scss */
+  #idm-logo-mobile > h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  /* line 797, ../sass/layouts/_responsive.scss */
+  header {
+    display: initial;
+  }
+
+  /* line 801, ../sass/layouts/_responsive.scss */
   .container .outer {
     padding-top: 45%;
     /* defines aspect ratio  of banner image*/
   }
 
-  /* line 757, ../sass/layouts/_responsive.scss */
+  /* line 805, ../sass/layouts/_responsive.scss */
   #content {
     padding-top: 45%;
   }
 
-  /* line 761, ../sass/layouts/_responsive.scss */
+  /* line 809, ../sass/layouts/_responsive.scss */
   .inner.banner-text {
     padding-top: 30%;
   }
 
-  /* line 765, ../sass/layouts/_responsive.scss */
+  /* line 813, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     font-size: 25px;
   }
 
-  /* line 770, ../sass/layouts/_responsive.scss */
+  /* line 818, ../sass/layouts/_responsive.scss */
   .banner-text > h2 {
     font-size: 18px;
   }
 
-  /* line 774, ../sass/layouts/_responsive.scss */
+  /* line 822, ../sass/layouts/_responsive.scss */
   .desktop-display {
     display: none;
   }
 
-  /* line 777, ../sass/layouts/_responsive.scss */
+  /* line 825, ../sass/layouts/_responsive.scss */
   .tablet-display {
     display: block;
   }
 
-  /* line 780, ../sass/layouts/_responsive.scss */
+  /* line 828, ../sass/layouts/_responsive.scss */
   #page-title,
   #content-second,
   .page-content {
@@ -392,48 +423,48 @@ ul.slicknav_nav {
   /**
    *Custom mods
    */
-  /* line 791, ../sass/layouts/_responsive.scss */
+  /* line 839, ../sass/layouts/_responsive.scss */
   #stripe-full {
     display: none;
   }
 
-  /* line 794, ../sass/layouts/_responsive.scss */
+  /* line 842, ../sass/layouts/_responsive.scss */
   #stripe-tablet {
     display: block;
   }
 
-  /* line 797, ../sass/layouts/_responsive.scss */
+  /* line 845, ../sass/layouts/_responsive.scss */
   #stripe-mobile {
     display: none;
   }
 
-  /* line 802, ../sass/layouts/_responsive.scss */
+  /* line 850, ../sass/layouts/_responsive.scss */
   .slicknav_nav {
     background-color: #d7d7d7;
     margin-top: 115px;
   }
 
-  /* line 809, ../sass/layouts/_responsive.scss */
+  /* line 857, ../sass/layouts/_responsive.scss */
   #block-superfish-1 {
     display: none;
   }
 
-  /* line 814, ../sass/layouts/_responsive.scss */
+  /* line 862, ../sass/layouts/_responsive.scss */
   .front .wrapper {
     max-width: 525px;
   }
 
-  /* line 817, ../sass/layouts/_responsive.scss */
+  /* line 865, ../sass/layouts/_responsive.scss */
   .header_secondary-menu {
     display: inline-block;
   }
 
-  /* line 820, ../sass/layouts/_responsive.scss */
+  /* line 868, ../sass/layouts/_responsive.scss */
   .slicknav_menu {
     padding: 0 0 0 20px;
   }
 
-  /* line 826, ../sass/layouts/_responsive.scss */
+  /* line 874, ../sass/layouts/_responsive.scss */
   #footer-tablet {
     display: block;
   }
@@ -441,13 +472,13 @@ ul.slicknav_nav {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 836, ../sass/layouts/_responsive.scss */
+  /* line 884, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     background-color: lightblue;
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 839, ../sass/layouts/_responsive.scss */
+  /* line 887, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: right;
     width: 16.66667%;
@@ -455,7 +486,7 @@ ul.slicknav_nav {
     margin-left: -25%;
     background-color: orange;
   }
-  /* line 846, ../sass/layouts/_responsive.scss */
+  /* line 894, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
     width: 8.33333%;
@@ -467,19 +498,19 @@ ul.slicknav_nav {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 856, ../sass/layouts/_responsive.scss */
+  /* line 904, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 858, ../sass/layouts/_responsive.scss */
+  /* line 906, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: right;
     width: 16.66667%;
     margin-right: 0%;
     margin-left: -16.66667%;
   }
-  /* line 863, ../sass/layouts/_responsive.scss */
+  /* line 911, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: right;
     width: 8.33333%;
@@ -492,52 +523,52 @@ ul.slicknav_nav {
  * Use 5 grid columns for larger screens.
  */
 @media all and (min-width: 960px) {
-  /* line 875, ../sass/layouts/_responsive.scss */
+  /* line 923, ../sass/layouts/_responsive.scss */
   .slicknav_menu {
     display: none;
   }
 
-  /* line 878, ../sass/layouts/_responsive.scss */
+  /* line 926, ../sass/layouts/_responsive.scss */
   #stripe-mobile {
     display: none;
   }
 
-  /* line 881, ../sass/layouts/_responsive.scss */
+  /* line 929, ../sass/layouts/_responsive.scss */
   #stripe-tablet {
     display: none;
   }
 
-  /* line 884, ../sass/layouts/_responsive.scss */
+  /* line 932, ../sass/layouts/_responsive.scss */
   #stripe-full {
     display: block;
   }
 
-  /* line 887, ../sass/layouts/_responsive.scss */
+  /* line 935, ../sass/layouts/_responsive.scss */
   .wrapper {
     max-width: 960px;
   }
 
-  /* line 891, ../sass/layouts/_responsive.scss */
+  /* line 939, ../sass/layouts/_responsive.scss */
   #stripe-full p {
     margin-top: 1.5em;
   }
 
-  /* line 895, ../sass/layouts/_responsive.scss */
+  /* line 943, ../sass/layouts/_responsive.scss */
   #home-p3 {
     margin-top: 2em;
   }
 
-  /* line 899, ../sass/layouts/_responsive.scss */
+  /* line 947, ../sass/layouts/_responsive.scss */
   #footer-full {
     display: block;
   }
 
-  /* line 902, ../sass/layouts/_responsive.scss */
+  /* line 950, ../sass/layouts/_responsive.scss */
   #footer-tablet {
     display: none;
   }
 
-  /* line 906, ../sass/layouts/_responsive.scss */
+  /* line 954, ../sass/layouts/_responsive.scss */
   #page-title,
   #content-second,
   .page-content {

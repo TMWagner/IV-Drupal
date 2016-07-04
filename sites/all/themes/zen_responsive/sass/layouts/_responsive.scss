@@ -508,6 +508,25 @@ f
  * Custom mod
  */
 @media all and (max-width: 480px) {
+  
+  // Top menu bar
+  
+  .slicknav_menu {
+    background: transparent none repeat scroll 0% 0%;
+    position: relative;
+    z-index: 2;
+    height: 61px;
+    top: -10px;
+  }
+  
+  #idm-logo-mobile {
+    position: relative;
+    bottom: 25px;
+  }
+  
+  #idm-logo-mobile > h2 {
+    font-size: 30px;
+  }
 	
 	// Turn on mobile left column
 	.mobile-left {
@@ -769,6 +788,11 @@ f
   #banner {
     top: 1em;
   }
+  
+  #idm-logo-mobile > h2 {
+		font-size: 40px;
+		line-height: 30px;
+	}
   
   header {
     display: initial;

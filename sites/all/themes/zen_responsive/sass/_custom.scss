@@ -155,20 +155,31 @@ a {
 		width: 100%;
   }
 	
+	
   #logo {
 		padding-left: 10px;
 		width: 50%;
   }
 	
   //Main Nav
+	#block-block-57 {
+    float: left;
+	}
+	#block-superfish-1 {
+		float: left;
+		margin-top: 15px;
+  }
+	
+	#idm-logo > h2 {
+    font-size: 40px;
+    color: $iv-blue;
+    margin-top: 0px;
+	}
   #main-nav-mobile {
 	  display: none;
   }
 
-  
-  #block-superfish-1 {
-		margin-top: 15px;
-  }
+
   
   #superfish-1 > li {
 		background-color: none;
@@ -186,10 +197,22 @@ a {
 	  color: grey;
   }
   
-  #secondary-menu {
+  #secondary-menu,
+	#mobile-nav-menu {
 	  bottom: 10px;
 	  height: 40px;
+		float: right;
   }
+	#idm-logo-mobile {
+    float: left;
+		margin-left:30px;
+	}
+  #idm-logo-mobile > h2 {
+		margin: 0px;
+		color: $iv-blue;
+	}
+	
+	
 	
 	//Third level menu
 	.sf-menu.sf-style-blue li li li {
