@@ -1267,7 +1267,7 @@ h1.page-title {
   }
 
   /* line 527, ../sass/layouts/_responsive.scss */
-  #idm-logo-mobile > h2 {
+  #idm-logo-mobile h2 {
     font-size: 30px;
   }
 
@@ -1560,7 +1560,7 @@ ul.slicknav_nav {
   }
 
   /* line 795, ../sass/layouts/_responsive.scss */
-  #idm-logo-mobile > h2 {
+  #idm-logo-mobile h2 {
     font-size: 40px;
     line-height: 30px;
   }
@@ -2866,7 +2866,7 @@ header {
 }
 
 /* line 173, ../sass/_custom.scss */
-#idm-logo > h2 {
+#idm-logo h2 {
   font-size: 40px;
   color: #0073a3;
   margin-top: 0px;
@@ -2912,7 +2912,7 @@ header {
 }
 
 /* line 210, ../sass/_custom.scss */
-#idm-logo-mobile > h2 {
+#idm-logo-mobile h2 {
   margin: 0px;
   color: #0073a3;
 }
