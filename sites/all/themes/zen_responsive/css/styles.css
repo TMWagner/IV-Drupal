@@ -2857,37 +2857,38 @@ header {
 /* line 165, ../sass/_custom.scss */
 #block-block-57 {
   float: left;
+  padding-right: 20px;
 }
 
-/* line 168, ../sass/_custom.scss */
+/* line 169, ../sass/_custom.scss */
 #block-superfish-1 {
   float: left;
   margin-top: 15px;
 }
 
-/* line 173, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 #idm-logo h2 {
   font-size: 40px;
   color: #0073a3;
   margin-top: 0px;
 }
 
-/* line 179, ../sass/_custom.scss */
+/* line 180, ../sass/_custom.scss */
 #idm-logo h2:hover {
   color: black;
 }
 
-/* line 183, ../sass/_custom.scss */
+/* line 184, ../sass/_custom.scss */
 #idm-logo-mobile h2:hover {
   color: black;
 }
 
-/* line 187, ../sass/_custom.scss */
+/* line 188, ../sass/_custom.scss */
 #main-nav-mobile {
   display: none;
 }
 
-/* line 193, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 #superfish-1 > li {
   background-color: none;
   margin: 2px;
@@ -2896,18 +2897,18 @@ header {
   /*NOTE: this controls the overall width of the div as well*/
 }
 
-/* line 200, ../sass/_custom.scss */
+/* line 201, ../sass/_custom.scss */
 .sf-menu.sf-style-blue ul {
   padding-left: 0px;
   padding-top: 12px;
 }
 
-/* line 205, ../sass/_custom.scss */
+/* line 206, ../sass/_custom.scss */
 .menu a {
   color: grey;
 }
 
-/* line 209, ../sass/_custom.scss */
+/* line 210, ../sass/_custom.scss */
 #secondary-menu,
 #mobile-nav-menu {
   bottom: 10px;
@@ -2915,42 +2916,42 @@ header {
   float: right;
 }
 
-/* line 215, ../sass/_custom.scss */
+/* line 216, ../sass/_custom.scss */
 #idm-logo-mobile {
   float: left;
   margin-left: 30px;
 }
 
-/* line 219, ../sass/_custom.scss */
+/* line 220, ../sass/_custom.scss */
 #idm-logo-mobile h2 {
   margin: 0px;
   color: #0073a3;
 }
 
-/* line 227, ../sass/_custom.scss */
+/* line 228, ../sass/_custom.scss */
 .sf-menu.sf-style-blue li li li {
   background: #2F3032;
 }
 
-/* line 235, ../sass/_custom.scss */
+/* line 236, ../sass/_custom.scss */
 .banner-stripe {
   background-color: #0073a3;
   width: 100%;
   height: 60px;
 }
 
-/* line 240, ../sass/_custom.scss */
+/* line 241, ../sass/_custom.scss */
 .blue_banner_stripe {
   margin-bottom: 0px;
 }
 
-/* line 247, ../sass/_custom.scss */
+/* line 248, ../sass/_custom.scss */
 .container {
   width: 100%;
   /* Can be any desired width */
 }
 
-/* line 251, ../sass/_custom.scss */
+/* line 252, ../sass/_custom.scss */
 .container .outer .inner {
   position: absolute;
   top: 0;
@@ -2959,13 +2960,13 @@ header {
   bottom: 0;
 }
 
-/* line 258, ../sass/_custom.scss */
+/* line 259, ../sass/_custom.scss */
 .inner {
   background-size: cover;
   /* make sure the background image always fits and isn't clipped */
 }
 
-/* line 263, ../sass/_custom.scss */
+/* line 264, ../sass/_custom.scss */
 .fp-nav-row {
   width: 170px;
   height: 300px;
@@ -2978,48 +2979,48 @@ header {
   vertical-align: top;
 }
 
-/* line 275, ../sass/_custom.scss */
+/* line 276, ../sass/_custom.scss */
 .nav2-icon {
   margin: 0 auto;
   height: 72px;
   width: 72px;
 }
 
-/* line 281, ../sass/_custom.scss */
+/* line 282, ../sass/_custom.scss */
 #nav2-research a:hover {
   color: black;
 }
 
-/* line 288, ../sass/_custom.scss */
+/* line 289, ../sass/_custom.scss */
 ul#copyright-list {
   text-align: center;
 }
 
-/* line 292, ../sass/_custom.scss */
+/* line 293, ../sass/_custom.scss */
 ul#copyright-list li {
   display: inline-block;
   float: none;
 }
 
-/* line 297, ../sass/_custom.scss */
+/* line 298, ../sass/_custom.scss */
 ul.copyright-list {
   text-align: center;
   margin: 0px;
   line-height: 15px;
 }
 
-/* line 303, ../sass/_custom.scss */
+/* line 304, ../sass/_custom.scss */
 ul.copyright-list li {
   display: inline-block;
   float: none;
 }
 
-/* line 307, ../sass/_custom.scss */
+/* line 308, ../sass/_custom.scss */
 .copyright {
   margin-bottom: 10px;
 }
 
-/* line 312, ../sass/_custom.scss */
+/* line 313, ../sass/_custom.scss */
 a.read-more:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -3028,7 +3029,7 @@ a.read-more:after {
   vertical-align: middle;
 }
 
-/* line 320, ../sass/_custom.scss */
+/* line 321, ../sass/_custom.scss */
 a.views-more-link:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -3037,7 +3038,7 @@ a.views-more-link:after {
   vertical-align: middle;
 }
 
-/* line 329, ../sass/_custom.scss */
+/* line 330, ../sass/_custom.scss */
 a.home-link:after {
   font-family: FontAwesome;
   content: "\f015";
@@ -3046,7 +3047,7 @@ a.home-link:after {
   vertical-align: middle;
 }
 
-/* line 337, ../sass/_custom.scss */
+/* line 338, ../sass/_custom.scss */
 a.git-link:after {
   font-family: FontAwesome;
   content: "\f09b";
@@ -3056,7 +3057,7 @@ a.git-link:after {
   vertical-align: middle;
 }
 
-/* line 348, ../sass/_custom.scss */
+/* line 349, ../sass/_custom.scss */
 .rlp-nav-row {
   width: 300px;
   height: 150px;
@@ -3069,12 +3070,12 @@ a.git-link:after {
   vertical-align: top;
 }
 
-/* line 360, ../sass/_custom.scss */
+/* line 361, ../sass/_custom.scss */
 .rlp-nav-row {
   margin-top: 20px;
 }
 
-/* line 364, ../sass/_custom.scss */
+/* line 365, ../sass/_custom.scss */
 .rlp_button_content {
   color: white;
   font-size: 24px;
@@ -3082,25 +3083,25 @@ a.git-link:after {
   text-transform: none;
 }
 
-/* line 371, ../sass/_custom.scss */
+/* line 372, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 380, ../sass/_custom.scss */
+/* line 381, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 383, ../sass/_custom.scss */
+/* line 384, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 388, ../sass/_custom.scss */
+/* line 389, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -3109,87 +3110,87 @@ a.git-link:after {
 /**
  * Code for RLP
  */
-/* line 402, ../sass/_custom.scss */
+/* line 403, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 407, ../sass/_custom.scss */
+/* line 408, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 411, ../sass/_custom.scss */
+/* line 412, ../sass/_custom.scss */
 .research-math-item-title {
   margin-bottom: 1em;
 }
 
-/* line 420, ../sass/_custom.scss */
+/* line 421, ../sass/_custom.scss */
 .two-column-2-item-title {
   margin-bottom: 0px;
 }
 
-/* line 427, ../sass/_custom.scss */
+/* line 428, ../sass/_custom.scss */
 .sidebar-item img {
   margin-top: 5px;
 }
 
-/* line 434, ../sass/_custom.scss */
+/* line 435, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 438, ../sass/_custom.scss */
+/* line 439, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 441, ../sass/_custom.scss */
+/* line 442, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 444, ../sass/_custom.scss */
+/* line 445, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 447, ../sass/_custom.scss */
+/* line 448, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 451, ../sass/_custom.scss */
+/* line 452, ../sass/_custom.scss */
 .footer-wrapper a {
   color: #CDCECF;
 }
 
-/* line 455, ../sass/_custom.scss */
+/* line 456, ../sass/_custom.scss */
 .footer-wrapper a:hover {
   color: white;
 }
 
-/* line 459, ../sass/_custom.scss */
+/* line 460, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 465, ../sass/_custom.scss */
+/* line 466, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 471, ../sass/_custom.scss */
+/* line 472, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 475, ../sass/_custom.scss */
+/* line 476, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3199,7 +3200,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 483, ../sass/_custom.scss */
+/* line 484, ../sass/_custom.scss */
 #copyright-mobile {
   background-color: #0073a3;
   clear: left;
@@ -3210,7 +3211,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 492, ../sass/_custom.scss */
+/* line 493, ../sass/_custom.scss */
 #copyright-mobile-content {
   text-align: center;
   display: block;
@@ -3219,7 +3220,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 500, ../sass/_custom.scss */
+/* line 501, ../sass/_custom.scss */
 #copyright-mobile-content ul {
   text-align: center;
   display: block;
@@ -3227,7 +3228,7 @@ div#footer-header > p {
   width: 50%;
 }
 
-/* line 507, ../sass/_custom.scss */
+/* line 508, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
