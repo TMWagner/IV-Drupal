@@ -171,10 +171,18 @@ a {
 		margin-top: 15px;
   }
 	
-	#idm-logo  h2 {
-    font-size: 40px;
-    color: $iv-blue;
-    margin-top: 0px;
+	#idm-logo h2 {
+			font-size: 35px;
+			color: #0073a3;
+			margin-top: 4px;
+			font-weight: 400;
+	}
+	
+	
+	#idm-logo-mobile  h2 {
+		margin: 0px;
+		color: $iv-blue;
+		font-weight: 400;
 	}
 	
 	#idm-logo h2:hover {
@@ -217,10 +225,7 @@ a {
     float: left;
 		margin-left:30px;
 	}
-  #idm-logo-mobile  h2 {
-		margin: 0px;
-		color: $iv-blue;
-	}
+
 	
 	
 	
