@@ -638,12 +638,12 @@ f
   
   // Feature/banner Text formatting
 	.inner.banner-text {
-    padding-top: 35%;
+    padding-top: 30%;
   }
   .banner-text h1 {
     line-height: 1em;
     margin: 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 5px 0px;
   }
   .banner-text h2 {
     font-family: 'proxima-nova'; font-weight: 500;
@@ -664,7 +664,7 @@ f
 	}
   .banner-text h2 {
     font-size: .9em;
-    line-height: 1.5em;
+    line-height: 1.3em;
   }
   .banner-text.mobile-display {
     height: 100px;
@@ -820,6 +820,8 @@ f
   
   .banner-text > h2 {
     font-size: 18px;
+    line-height: 1.2em;
+    padding-top: .3em;
   }
 	
   .desktop-display {
