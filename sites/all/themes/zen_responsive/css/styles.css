@@ -2993,12 +2993,17 @@ header {
 }
 
 /* line 295, ../sass/_custom.scss */
+#page-title {
+  margin-bottom: 5px;
+}
+
+/* line 298, ../sass/_custom.scss */
 .field-name-field-publications-topic {
   float: left;
   padding-right: .5em;
 }
 
-/* line 299, ../sass/_custom.scss */
+/* line 302, ../sass/_custom.scss */
 .field.field-name-publication-name {
   border-left: thin solid #808080;
   border-right: thin solid #808080;
@@ -3007,62 +3012,111 @@ header {
   padding-right: .5em;
 }
 
-/* line 306, ../sass/_custom.scss */
+/* line 309, ../sass/_custom.scss */
 .field-name-field-publications-date {
   float: left;
   padding-left: .5em;
 }
 
-/* line 311, ../sass/_custom.scss */
+/* line 314, ../sass/_custom.scss */
 .pub-title {
   clear: left;
 }
 
-/* line 314, ../sass/_custom.scss */
+/* line 317, ../sass/_custom.scss */
 .pub-title h3 {
   margin-bottom: 10px;
 }
 
-/* line 317, ../sass/_custom.scss */
+/* line 320, ../sass/_custom.scss */
 #publication-authors {
   font-size: 14px;
 }
 
-/* line 321, ../sass/_custom.scss */
+/* line 324, ../sass/_custom.scss */
 .label-inline.pub-abstract {
   margin: 0px 0px 0px 0px;
 }
 
-/* line 326, ../sass/_custom.scss */
+/* line 330, ../sass/_custom.scss */
+.field-name-field-news-type {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 334, ../sass/_custom.scss */
+.field-name-field-news-date {
+  border-left: thin solid #808080;
+  float: left;
+  padding-left: 10px;
+}
+
+/* line 339, ../sass/_custom.scss */
+.news-item-title {
+  clear: left;
+}
+
+/* line 343, ../sass/_custom.scss */
+.view-news-and-events .views-row {
+  border-bottom: thin solid #808080;
+  margin: 10px 0px 25px;
+}
+
+/* line 347, ../sass/_custom.scss */
+.views-row.views-row-1.views-row-odd.views-row-first.views-row-last {
+  border-bottom: none;
+}
+
+/* line 351, ../sass/_custom.scss */
+.views-field.views-field-field-news-type {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 355, ../sass/_custom.scss */
+.views-field.views-field-field-news-date {
+  border-left: thin solid #808080;
+  float: left;
+  font-style: italic;
+  margin: 0px 10px 0px 0px;
+  padding-left: 10px;
+}
+
+/* line 362, ../sass/_custom.scss */
+.views-field.views-field-title-field {
+  clear: left;
+}
+
+/* line 370, ../sass/_custom.scss */
 ul#copyright-list {
   text-align: center;
 }
 
-/* line 330, ../sass/_custom.scss */
+/* line 374, ../sass/_custom.scss */
 ul#copyright-list li {
   display: inline-block;
   float: none;
 }
 
-/* line 335, ../sass/_custom.scss */
+/* line 379, ../sass/_custom.scss */
 ul.copyright-list {
   text-align: center;
   margin: 0px;
   line-height: 15px;
 }
 
-/* line 341, ../sass/_custom.scss */
+/* line 385, ../sass/_custom.scss */
 ul.copyright-list li {
   display: inline-block;
   float: none;
 }
 
-/* line 345, ../sass/_custom.scss */
+/* line 389, ../sass/_custom.scss */
 .copyright {
   margin-bottom: 10px;
 }
 
-/* line 350, ../sass/_custom.scss */
+/* line 394, ../sass/_custom.scss */
 a.read-more:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -3071,7 +3125,7 @@ a.read-more:after {
   vertical-align: middle;
 }
 
-/* line 358, ../sass/_custom.scss */
+/* line 402, ../sass/_custom.scss */
 a.views-more-link:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -3080,7 +3134,7 @@ a.views-more-link:after {
   vertical-align: middle;
 }
 
-/* line 367, ../sass/_custom.scss */
+/* line 411, ../sass/_custom.scss */
 a.home-link:after {
   font-family: FontAwesome;
   content: "\f015";
@@ -3089,7 +3143,7 @@ a.home-link:after {
   vertical-align: middle;
 }
 
-/* line 375, ../sass/_custom.scss */
+/* line 419, ../sass/_custom.scss */
 a.git-link:after {
   font-family: FontAwesome;
   content: "\f09b";
@@ -3099,7 +3153,7 @@ a.git-link:after {
   vertical-align: middle;
 }
 
-/* line 386, ../sass/_custom.scss */
+/* line 430, ../sass/_custom.scss */
 .rlp-nav-row {
   width: 300px;
   height: 150px;
@@ -3112,12 +3166,12 @@ a.git-link:after {
   vertical-align: top;
 }
 
-/* line 398, ../sass/_custom.scss */
+/* line 442, ../sass/_custom.scss */
 .rlp-nav-row {
   margin-top: 20px;
 }
 
-/* line 402, ../sass/_custom.scss */
+/* line 446, ../sass/_custom.scss */
 .rlp_button_content {
   color: white;
   font-size: 24px;
@@ -3125,25 +3179,25 @@ a.git-link:after {
   text-transform: none;
 }
 
-/* line 409, ../sass/_custom.scss */
+/* line 453, ../sass/_custom.scss */
 .plain-para {
   text-transform: none;
   color: black;
 }
 
-/* line 418, ../sass/_custom.scss */
+/* line 462, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 421, ../sass/_custom.scss */
+/* line 465, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 426, ../sass/_custom.scss */
+/* line 470, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -3152,87 +3206,87 @@ a.git-link:after {
 /**
  * Code for RLP
  */
-/* line 440, ../sass/_custom.scss */
+/* line 484, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 445, ../sass/_custom.scss */
+/* line 489, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 449, ../sass/_custom.scss */
+/* line 493, ../sass/_custom.scss */
 .research-math-item-title {
   margin-bottom: 1em;
 }
 
-/* line 458, ../sass/_custom.scss */
+/* line 502, ../sass/_custom.scss */
 .two-column-2-item-title {
   margin-bottom: 0px;
 }
 
-/* line 465, ../sass/_custom.scss */
+/* line 509, ../sass/_custom.scss */
 .sidebar-item img {
   margin-top: 5px;
 }
 
-/* line 472, ../sass/_custom.scss */
+/* line 516, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 476, ../sass/_custom.scss */
+/* line 520, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 479, ../sass/_custom.scss */
+/* line 523, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 482, ../sass/_custom.scss */
+/* line 526, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 485, ../sass/_custom.scss */
+/* line 529, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 489, ../sass/_custom.scss */
+/* line 533, ../sass/_custom.scss */
 .footer-wrapper a {
   color: #CDCECF;
 }
 
-/* line 493, ../sass/_custom.scss */
+/* line 537, ../sass/_custom.scss */
 .footer-wrapper a:hover {
   color: white;
 }
 
-/* line 497, ../sass/_custom.scss */
+/* line 541, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 503, ../sass/_custom.scss */
+/* line 547, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 509, ../sass/_custom.scss */
+/* line 553, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 513, ../sass/_custom.scss */
+/* line 557, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3242,7 +3296,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 521, ../sass/_custom.scss */
+/* line 565, ../sass/_custom.scss */
 #copyright-mobile {
   background-color: #0073a3;
   clear: left;
@@ -3253,7 +3307,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 530, ../sass/_custom.scss */
+/* line 574, ../sass/_custom.scss */
 #copyright-mobile-content {
   text-align: center;
   display: block;
@@ -3262,7 +3316,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 538, ../sass/_custom.scss */
+/* line 582, ../sass/_custom.scss */
 #copyright-mobile-content ul {
   text-align: center;
   display: block;
@@ -3270,7 +3324,7 @@ div#footer-header > p {
   width: 50%;
 }
 
-/* line 545, ../sass/_custom.scss */
+/* line 589, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
