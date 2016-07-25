@@ -310,6 +310,20 @@ a {
 		padding-left: .5em;
 		padding-right: .5em;
 	}
+	
+	.field-name-publications-external-link {
+		border-left: thin solid #808080;
+		border-right: thin solid #808080;
+    float: left;
+		padding-left: .5em;
+		padding-right: .5em;
+		a {
+			text-transform: none;
+		}
+	}
+//	.field-name-publications-external-link a {
+//    text-transform: none;
+//	}
 	.field-name-field-publications-date {
     float: left;
 		padding-left: .5em;
