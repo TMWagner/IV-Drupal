@@ -413,32 +413,7 @@ f
     display: none;
 	}
 	
-//News & Events
 
-	.view-news-and-events .views-row {
-			border-bottom: thin solid #808080;
-			margin: 10px 0px 25px;
-	}
-	.views-row.views-row-1.views-row-odd.views-row-first.views-row-last {
-    border-bottom: none;
-	}
-
-	.views-field.views-field-field-news-type {
-		float: left;
-		margin-right: 20px;
-	}
-	.views-field.views-field-field-news-date {
-		border-left: thin solid #808080;
-    float: left;
-    font-style: italic;
-    margin: 0px 10px 0px 0px;
-    padding-left: 10px;
-	}
-	.views-field.views-field-title-field {
-    clear: left;
-	}
-	
-//End News & Events
 
 //Research pages
 
@@ -562,6 +537,10 @@ f
 		margin-right: 1em;
 		max-width: 30%;
 	}
+  
+  .image-responsive-30 {
+    max-width: 30%;
+  }
 	
 	div#publications-mobile-right {
     min-height: 200px;
