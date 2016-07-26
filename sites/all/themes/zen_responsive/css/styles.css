@@ -2980,12 +2980,12 @@ header {
 /* line 303, ../sass/_custom.scss */
 #publications-title h2 {
   line-height: 1.2em;
+  margin: .5em 0em 0em 0em;
 }
 
-/* line 306, ../sass/_custom.scss */
+/* line 307, ../sass/_custom.scss */
 .pub-title h2 {
   line-height: 1.5em;
-  margin: .5em 0em 0em 0em;
 }
 
 /* line 310, ../sass/_custom.scss */
