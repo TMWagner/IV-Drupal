@@ -13,7 +13,7 @@
 function idmod_menu() {
   $items = array();
   $items['publications'] = array(
-    'title' => 'Publications',
+    'title' => '', /* Remove title from page output */
     'page callback' => 'drupal_get_form',
     'page arguments' => array('idmod_publications_author', 2),
     'access arguments' => array('access content'),
@@ -22,7 +22,7 @@ function idmod_menu() {
   );
   
   $items['publications/%'] = array(
-    'title' => 'Publications',
+    'title' => '', /*remove title*/
     'page callback' => 'drupal_get_form',
     'page arguments' => array('idmod_publications_author', 2),
     'access arguments' => array('access content'),
