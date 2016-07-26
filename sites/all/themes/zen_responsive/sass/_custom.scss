@@ -507,9 +507,14 @@ a {
 		display: none;
 	}
 	
-	.research-math-item-title {
-		margin: 1em 0 1em 0;
+	.research-level2-item-title {
+		margin: 1em 0em 0em 0em;
+		clear: left;
 	}
+	.research-level2-item-content {
+		min-height: 200px;
+	}
+
 
 	
 // END RLP Code

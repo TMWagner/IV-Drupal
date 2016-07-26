@@ -3213,75 +3213,81 @@ a.git-link:after {
 }
 
 /* line 510, ../sass/_custom.scss */
-.research-math-item-title {
-  margin: 1em 0 1em 0;
+.research-level2-item-title {
+  margin: 1em 0em 0em 0em;
+  clear: left;
 }
 
-/* line 519, ../sass/_custom.scss */
+/* line 514, ../sass/_custom.scss */
+.research-level2-item-content {
+  min-height: 200px;
+}
+
+/* line 524, ../sass/_custom.scss */
 .two-column-2-item-title {
   margin-bottom: 0px;
 }
 
-/* line 526, ../sass/_custom.scss */
+/* line 531, ../sass/_custom.scss */
 .sidebar-item img {
   margin-top: 5px;
 }
 
-/* line 533, ../sass/_custom.scss */
+/* line 538, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 537, ../sass/_custom.scss */
+/* line 542, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 540, ../sass/_custom.scss */
+/* line 545, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 543, ../sass/_custom.scss */
+/* line 548, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 546, ../sass/_custom.scss */
+/* line 551, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 550, ../sass/_custom.scss */
+/* line 555, ../sass/_custom.scss */
 .footer-wrapper a {
   color: #CDCECF;
 }
 
-/* line 554, ../sass/_custom.scss */
+/* line 559, ../sass/_custom.scss */
 .footer-wrapper a:hover {
   color: white;
 }
 
-/* line 558, ../sass/_custom.scss */
+/* line 563, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 564, ../sass/_custom.scss */
+/* line 569, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 570, ../sass/_custom.scss */
+/* line 575, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 574, ../sass/_custom.scss */
+/* line 579, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3291,7 +3297,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 582, ../sass/_custom.scss */
+/* line 587, ../sass/_custom.scss */
 #copyright-mobile {
   background-color: #0073a3;
   clear: left;
@@ -3302,7 +3308,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 591, ../sass/_custom.scss */
+/* line 596, ../sass/_custom.scss */
 #copyright-mobile-content {
   text-align: center;
   display: block;
@@ -3311,7 +3317,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 599, ../sass/_custom.scss */
+/* line 604, ../sass/_custom.scss */
 #copyright-mobile-content ul {
   text-align: center;
   display: block;
@@ -3319,7 +3325,7 @@ div#footer-header > p {
   width: 50%;
 }
 
-/* line 606, ../sass/_custom.scss */
+/* line 611, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
