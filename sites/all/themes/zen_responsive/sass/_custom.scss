@@ -296,18 +296,18 @@ a {
 	}
 	
 	//Publications
+	
 	#page-title {
 		margin-bottom: 5px;
 	}
+	#publications-title h2 {
+    line-height: 1.2em;
+	}
+	.pub-title h2 {
+		line-height: 1.5em;
+	}
 	.field-name-field-publications-topic {
 		float: left;
-		padding-right: .5em;
-	}
-	.field.field-name-publication-name {
-		border-left: thin solid #808080;
-		border-right: thin solid #808080;
-    float: left;
-		padding-left: .5em;
 		padding-right: .5em;
 	}
 	
@@ -321,9 +321,7 @@ a {
 			text-transform: none;
 		}
 	}
-//	.field-name-publications-external-link a {
-//    text-transform: none;
-//	}
+
 	.field-name-field-publications-date {
     float: left;
 		padding-left: .5em;
