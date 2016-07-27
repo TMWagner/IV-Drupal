@@ -379,6 +379,9 @@ a {
 	.views-field.views-field-title-field {
     clear: left;
 	}
+	.views-field.views-field-title-field > h2 {
+    margin-bottom: 0px;
+	}	
 	
 //End News & Events	
 	
