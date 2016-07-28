@@ -617,3 +617,38 @@ a {
 
 	
 // End Footer
+
+// General buttons, etc
+
+.general-button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 0px solid #a12727;
+    border-radius: 4px;
+    background: #0072a3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0072a3), to(#0072a3));
+    background: -moz-linear-gradient(top, #0072a3, #0072a3);
+    background: linear-gradient(to bottom, #0072a3, #0072a3);
+    font: normal normal bold 15px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.general-button:hover,
+.general-button:focus {
+    background: #0089c4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0089c4), to(#0089c4));
+    background: -moz-linear-gradient(top, #0089c4, #0089c4);
+    background: linear-gradient(to bottom, #0089c4, #0089c4);
+    color: #ffffff;
+    text-decoration: none;
+}
+.general-button:active {
+    background: #004462;
+    background: -webkit-gradient(linear, left top, left bottom, from(#004462), to(#0072a3));
+    background: -moz-linear-gradient(top, #004462, #0072a3);
+    background: linear-gradient(to bottom, #004462, #0072a3);
+}
+
+// End general buttons etc
