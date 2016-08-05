@@ -267,6 +267,7 @@ a {
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
+		margin: 0px 8px 0px 8px;
   }
   .inner {
 		background-size: cover; /* make sure the background image always fits and isn't clipped */
@@ -511,9 +512,13 @@ a {
 	}
 	
 	.research-level2-item-title {
-		margin: 1em 0em 0em 0em;
+		margin: 1em 0em .5em 0em;
 		clear: left;
+		h3 {
+			margin:0px;
+		}
 	}
+	
 	.research-level2-item-content {
 		min-height: 200px;
 	}
