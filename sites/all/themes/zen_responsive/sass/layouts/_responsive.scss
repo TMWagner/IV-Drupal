@@ -896,7 +896,7 @@ f
 
 //  Tablet media query for lower end of display
 //  This is position after the main media query and processed subsquently... Don't really like this
-@media all and (min-width: 479px) and (max-width: 600px) {
+@media all and (min-width: 480px) and (max-width: 600px) {
   .banner-text h1 {
 		font-size: 150%
   }

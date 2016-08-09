@@ -528,7 +528,7 @@ ul.slicknav_nav {
   }
 }
 /*End of 959*/
-@media all and (min-width: 479px) and (max-width: 600px) {
+@media all and (min-width: 480px) and (max-width: 600px) {
   /* line 900, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     font-size: 150%;
