@@ -318,6 +318,9 @@ f
 }
 
 
+
+
+
 /* Navigation bar */
 @media all and (min-width: 480px) {
   
@@ -444,17 +447,6 @@ f
 
 
 
-/**
- * hacks to fix FP mobile
- */
-
-//@media all and (max-width: 320px) {
-//  #home-p3 {
-//    margin-top: 20%;
-//  }
-//}
-
-
 
 //Was 376 / 425
 @media all and (min-width: 300px) and (max-width: 768px) {
@@ -470,6 +462,7 @@ f
   }
   
 }
+
 
 
 
@@ -760,6 +753,8 @@ f
  */
 @media all and (min-width: 480px) and (max-width: 959px) {
   
+  
+  
   $zen-column-count: 12;
   
   /**
@@ -793,7 +788,7 @@ f
   }
 	
 	.banner-text h1 {
-		font-size: 25px;
+		font-size: 200%
   }
   
   
@@ -898,6 +893,17 @@ f
   }
 
 }  /*End of 959*/
+
+//  Tablet media query for lower end of display
+//  This is position after the main media query and processed subsquently... Don't really like this
+@media all and (min-width: 479px) and (max-width: 600px) {
+  .banner-text h1 {
+		font-size: 150%
+  }
+  .banner-text > h2 {
+    font-size: 95%;
+  }
+}
 
 
 /**
