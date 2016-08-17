@@ -463,10 +463,6 @@ f
   
 }
 
-
-
-
-
 // End FP Mobile p3 hack
 
 
@@ -663,6 +659,21 @@ f
 	
 }
 // End 480 Max media Query
+
+
+// Media query for small mobile (e.g., smaller the iPhone6s)
+@media all and (max-width: 375px) {
+  .banner-text h2 {
+    font-size: .7em;
+    line-height: 1.1em;
+  }
+  
+  
+}
+// End small  media query
+
+
+
   
   
 	
@@ -948,69 +959,9 @@ f
 	}
  
   
-  /**
-   * Layout for Single Column Centered
-   */
-
-	
-
-  
-   
-  /**
-   * The layout when there is only one sidebar, the left one.
-   */
-//  .sidebar-first {
-//    /* Span 4 columns, starting in 2nd column from left. */
-//    #content {
-//      @include zen-grid-item(4, 2);
-//			background-color: chartreuse;
-//    }
-//
-//    /* Span 1 column, starting in 1st column from left. */
-//    .region-sidebar-first {
-//      @include zen-grid-item(1, 1);
-//    }
-//  }
-
-  /**
-   * The layout when there is only one sidebar, the right one.
-   */
-  //.sidebar-second {
-  //  /* Span 4 columns, starting in 1st column from left. */
-  //  #content {
-  //    @include zen-grid-item(4, 1);
-  //    background-color: blue;
-  //  }
-  //
-  //  /* Span 1 column, starting in 5th column from left. */
-  //  .region-sidebar-second {
-  //    @include zen-grid-item(1, 5);
-  //    background-color: orange;
-  //  }
-  //}
-
-  /**
-   * The layout when there are two sidebars.
-   */
-  //.two-sidebars {
-  //  /* Span 3 columns, starting in 2nd column from left. */
-  //  #content {
-  //    @include zen-grid-item(3, 2);
-  //  }
-  //
-  //  /* Span 1 column, starting in 1st column from left. */
-  //  .region-sidebar-first {
-  //    @include zen-grid-item(1, 1);
-  //  }
-  //
-  //  /* Span 1 column, starting in 5th column from left. */
-  //  .region-sidebar-second {
-  //    @include zen-grid-item(1, 5);
-  //  }
-  //}
-	
-	
 	
 }
 //End full size layout
+
+
 
