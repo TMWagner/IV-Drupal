@@ -3400,6 +3400,12 @@ div#footer-header > p {
   background: linear-gradient(to bottom, #004462, #0072a3);
 }
 
+/* line 680, ../sass/_custom.scss */
+#symposium-download-table td {
+  border: solid thin grey;
+  border-collapse: collapse;
+}
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
