@@ -221,14 +221,14 @@ function idmod_init() {
   'scope' => 'footer',
   ));
   
-  //drupal_add_js('http://amp.azure.net/libs/amp/1.7.1/azuremediaplayer.min.js', 'external');
-  //drupal_add_css('http://amp.azure.net/libs/amp/1.7.1/skins/amp-default/azuremediaplayer.min.css', 'external');
-  //
+
 
   
   //Setup for WOCO (used in footer)
   drupal_add_css(drupal_get_path('module', 'idmod') . '/woco/woco-accordion.css');
   drupal_add_js(drupal_get_path('module', 'idmod') . '/woco/woco.accordion.js');
+  drupal_add_js(drupal_get_path('module', 'idmod') . '/js/idmdefault.js', array(
+  'scope' => 'footer'));
   
   drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js', array(
   'scope' => 'footer',
