@@ -501,6 +501,9 @@ a {
   
   
 // Publications
+	.page-publications #page-title {
+    display: none;
+	}
 	.block-idmteam > .page-content {
 		border-top: thin solid;
 	}

@@ -3216,18 +3216,23 @@ a.git-link:after {
 }
 
 /* line 504, ../sass/_custom.scss */
+.page-publications #page-title {
+  display: none;
+}
+
+/* line 507, ../sass/_custom.scss */
 .block-idmteam > .page-content {
   border-top: thin solid;
 }
 
-/* line 507, ../sass/_custom.scss */
+/* line 510, ../sass/_custom.scss */
 .author-list ul {
   display: inline;
   list-style-type: none;
   padding: 0px;
 }
 
-/* line 512, ../sass/_custom.scss */
+/* line 515, ../sass/_custom.scss */
 .author-list li {
   float: left;
   padding: 0px 10px 0px 0px;
@@ -3236,97 +3241,97 @@ a.git-link:after {
 /**
  * Code for RLP
  */
-/* line 526, ../sass/_custom.scss */
+/* line 529, ../sass/_custom.scss */
 .box-section_wrapper {
   width: 960px;
   height: 100px;
 }
 
-/* line 531, ../sass/_custom.scss */
+/* line 534, ../sass/_custom.scss */
 #hidden {
   display: none;
 }
 
-/* line 535, ../sass/_custom.scss */
+/* line 538, ../sass/_custom.scss */
 .research-level2-item-title {
   margin: 1em 0em .5em 0em;
   clear: left;
 }
-/* line 538, ../sass/_custom.scss */
+/* line 541, ../sass/_custom.scss */
 .research-level2-item-title h3 {
   margin: 0px;
 }
 
-/* line 543, ../sass/_custom.scss */
+/* line 546, ../sass/_custom.scss */
 .research-level2-item-content {
   min-height: 200px;
 }
 
-/* line 553, ../sass/_custom.scss */
+/* line 556, ../sass/_custom.scss */
 .two-column-2-item-title {
   margin-bottom: 0px;
 }
 
-/* line 560, ../sass/_custom.scss */
+/* line 563, ../sass/_custom.scss */
 .sidebar-item img {
   margin-top: 5px;
 }
 
-/* line 567, ../sass/_custom.scss */
+/* line 570, ../sass/_custom.scss */
 #footer {
   clear: both;
 }
 
-/* line 571, ../sass/_custom.scss */
+/* line 574, ../sass/_custom.scss */
 div#footer-full {
   margin-top: 20px;
 }
 
-/* line 574, ../sass/_custom.scss */
+/* line 577, ../sass/_custom.scss */
 div#footer-tablet {
   margin-top: 20px;
 }
 
-/* line 577, ../sass/_custom.scss */
+/* line 580, ../sass/_custom.scss */
 #footer-header img {
   margin-top: 20px;
 }
 
-/* line 580, ../sass/_custom.scss */
+/* line 583, ../sass/_custom.scss */
 .footer-wrapper {
   background-color: #0073a3;
 }
 
-/* line 584, ../sass/_custom.scss */
+/* line 587, ../sass/_custom.scss */
 .footer-wrapper a {
   color: #CDCECF;
 }
 
-/* line 588, ../sass/_custom.scss */
+/* line 591, ../sass/_custom.scss */
 .footer-wrapper a:hover {
   color: white;
 }
 
-/* line 592, ../sass/_custom.scss */
+/* line 595, ../sass/_custom.scss */
 .footer-block {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 598, ../sass/_custom.scss */
+/* line 601, ../sass/_custom.scss */
 .footer-block > ul {
   float: left;
   list-style: none;
   padding: 0px 0px 0px 45px;
 }
 
-/* line 604, ../sass/_custom.scss */
+/* line 607, ../sass/_custom.scss */
 div#footer-header > p {
   padding-top: 10px;
 }
 
-/* line 608, ../sass/_custom.scss */
+/* line 611, ../sass/_custom.scss */
 #copyright {
   clear: left;
   color: white;
@@ -3336,7 +3341,7 @@ div#footer-header > p {
   width: 80%;
 }
 
-/* line 616, ../sass/_custom.scss */
+/* line 619, ../sass/_custom.scss */
 #copyright-mobile {
   background-color: #0073a3;
   clear: left;
@@ -3347,7 +3352,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 625, ../sass/_custom.scss */
+/* line 628, ../sass/_custom.scss */
 #copyright-mobile-content {
   text-align: center;
   display: block;
@@ -3356,7 +3361,7 @@ div#footer-header > p {
   width: 100%;
 }
 
-/* line 633, ../sass/_custom.scss */
+/* line 636, ../sass/_custom.scss */
 #copyright-mobile-content ul {
   text-align: center;
   display: block;
@@ -3364,12 +3369,12 @@ div#footer-header > p {
   width: 50%;
 }
 
-/* line 640, ../sass/_custom.scss */
+/* line 643, ../sass/_custom.scss */
 .accordion-content ul {
   list-style: none;
 }
 
-/* line 649, ../sass/_custom.scss */
+/* line 652, ../sass/_custom.scss */
 .general-button {
   display: inline-block;
   text-align: center;
@@ -3386,7 +3391,7 @@ div#footer-header > p {
   text-decoration: none;
 }
 
-/* line 664, ../sass/_custom.scss */
+/* line 667, ../sass/_custom.scss */
 .general-button:hover,
 .general-button:focus {
   background: #0089c4;
@@ -3397,7 +3402,7 @@ div#footer-header > p {
   text-decoration: none;
 }
 
-/* line 673, ../sass/_custom.scss */
+/* line 676, ../sass/_custom.scss */
 .general-button:active {
   background: #004462;
   background: -webkit-gradient(linear, left top, left bottom, from(#004462), to(#0072a3));
@@ -3405,7 +3410,7 @@ div#footer-header > p {
   background: linear-gradient(to bottom, #004462, #0072a3);
 }
 
-/* line 683, ../sass/_custom.scss */
+/* line 686, ../sass/_custom.scss */
 #symposium-download-table td {
   border: solid thin grey;
   border-collapse: collapse;
