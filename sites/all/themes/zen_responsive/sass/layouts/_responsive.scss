@@ -648,7 +648,7 @@ f
 	.two-column-2 {
 		margin: 0px 10px;
 	}
-	#page-title, .page-content {
+	#page-title, .page-content {  //mobile
 		max-width: 90%;
 	}
 	
@@ -810,7 +810,7 @@ f
   .tablet-display {
     display: block;
   }
-	#page-title,
+	#page-title, //tablet
 	#content-second,
 	.page-content {
   	max-width: 90%;
@@ -950,7 +950,7 @@ f
 	#page-title,
 	#content-second,
 	.page-content {
-  	max-width: 960px;
+  	max-width: 960px;  // Not sure why we did this... shouldn't it just be 90%?
 	}
  
   
