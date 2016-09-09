@@ -54,6 +54,7 @@ f
 	}
 	.page-content {
 		margin-bottom: 20px;
+    max-width: 90%;
 	}
 	
 	h1.page-title {
@@ -648,7 +649,7 @@ f
 	.two-column-2 {
 		margin: 0px 10px;
 	}
-	#page-title, .page-content {  //mobile
+	#page-title  {  //mobile
 		max-width: 90%;
 	}
 	
@@ -811,8 +812,7 @@ f
     display: block;
   }
 	#page-title, //tablet
-	#content-second,
-	.page-content {
+	#content-second {
   	max-width: 90%;
 	}
 
@@ -948,9 +948,8 @@ f
   }
 	
 	#page-title,
-	#content-second,
-	.page-content {
-  	max-width: 960px;  // Not sure why we did this... shouldn't it just be 90%?
+	#content-second {
+  	max-width: 90%;  // Not sure why we did this... shouldn't it just be 90%?
 	}
  
   

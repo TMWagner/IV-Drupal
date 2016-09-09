@@ -39,17 +39,17 @@ ul {
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
 @media all and (min-width: 300px) and (max-width: 768px) {
-  /* line 453, ../sass/layouts/_responsive.scss */
+  /* line 454, ../sass/layouts/_responsive.scss */
   #home-p3 {
     margin-top: 10%;
   }
 
-  /* line 456, ../sass/layouts/_responsive.scss */
+  /* line 457, ../sass/layouts/_responsive.scss */
   #footer-header-mobile img {
     width: 60%;
   }
 
-  /* line 460, ../sass/layouts/_responsive.scss */
+  /* line 461, ../sass/layouts/_responsive.scss */
   header {
     display: initial;
   }
@@ -60,7 +60,7 @@ ul {
  * Custom mod
  */
 @media all and (max-width: 480px) {
-  /* line 478, ../sass/layouts/_responsive.scss */
+  /* line 479, ../sass/layouts/_responsive.scss */
   .slicknav_menu {
     background: transparent none repeat scroll 0% 0%;
     position: relative;
@@ -69,23 +69,23 @@ ul {
     top: -10px;
   }
 
-  /* line 486, ../sass/layouts/_responsive.scss */
+  /* line 487, ../sass/layouts/_responsive.scss */
   #idm-logo-mobile {
     position: relative;
     bottom: 25px;
   }
 
-  /* line 491, ../sass/layouts/_responsive.scss */
+  /* line 492, ../sass/layouts/_responsive.scss */
   #idm-logo-mobile h2 {
     font-size: 30px;
   }
 
-  /* line 494, ../sass/layouts/_responsive.scss */
+  /* line 495, ../sass/layouts/_responsive.scss */
   #idm-logo {
     display: none;
   }
 
-  /* line 499, ../sass/layouts/_responsive.scss */
+  /* line 500, ../sass/layouts/_responsive.scss */
   .mobile-left {
     display: block;
     float: left;
@@ -93,28 +93,28 @@ ul {
     max-width: 30%;
   }
 
-  /* line 506, ../sass/layouts/_responsive.scss */
+  /* line 507, ../sass/layouts/_responsive.scss */
   h1#page-title {
     display: none;
   }
 
-  /* line 509, ../sass/layouts/_responsive.scss */
+  /* line 510, ../sass/layouts/_responsive.scss */
   .team-menu-wrap.page-content {
     display: none;
   }
 
-  /* line 513, ../sass/layouts/_responsive.scss */
+  /* line 514, ../sass/layouts/_responsive.scss */
   .mobile-hide {
     display: none;
   }
 
-  /* line 517, ../sass/layouts/_responsive.scss */
+  /* line 518, ../sass/layouts/_responsive.scss */
   .owl-theme .owl-nav.disabled + .owl-dots {
     position: relative;
     margin-top: -150px;
   }
 
-  /* line 523, ../sass/layouts/_responsive.scss */
+  /* line 524, ../sass/layouts/_responsive.scss */
   div#publications-mobile-left {
     display: block;
     float: left;
@@ -122,108 +122,108 @@ ul {
     max-width: 30%;
   }
 
-  /* line 530, ../sass/layouts/_responsive.scss */
+  /* line 531, ../sass/layouts/_responsive.scss */
   .image-responsive-30 {
     max-width: 30%;
   }
 
-  /* line 534, ../sass/layouts/_responsive.scss */
+  /* line 535, ../sass/layouts/_responsive.scss */
   div#publications-mobile-right {
     min-height: 200px;
   }
 
-  /* line 537, ../sass/layouts/_responsive.scss */
+  /* line 538, ../sass/layouts/_responsive.scss */
   .views-row {
     margin: 10px;
   }
 
-  /* line 543, ../sass/layouts/_responsive.scss */
+  /* line 544, ../sass/layouts/_responsive.scss */
   .region-content-second .view-header {
     margin-left: 10px;
   }
 
-  /* line 548, ../sass/layouts/_responsive.scss */
+  /* line 549, ../sass/layouts/_responsive.scss */
   .views-field.views-field-nothing-1.publication-list-col1,
   .two-column-float-1 {
     display: none;
   }
 
-  /* line 553, ../sass/layouts/_responsive.scss */
+  /* line 554, ../sass/layouts/_responsive.scss */
   .view-display-team-lead .views-row {
     border-bottom: none;
   }
 
-  /* line 556, ../sass/layouts/_responsive.scss */
+  /* line 557, ../sass/layouts/_responsive.scss */
   .team-member-profile .views-row {
     border-bottom: none;
   }
 
-  /* line 560, ../sass/layouts/_responsive.scss */
+  /* line 561, ../sass/layouts/_responsive.scss */
   .two-column-flex, .region-content-second, .ds-2col {
     display: block;
   }
 
-  /* line 564, ../sass/layouts/_responsive.scss */
+  /* line 565, ../sass/layouts/_responsive.scss */
   #content-second img {
     width: 125px;
   }
 
-  /* line 571, ../sass/layouts/_responsive.scss */
+  /* line 572, ../sass/layouts/_responsive.scss */
   .container .outer {
     padding-top: 50%;
     /* defines aspect ratio */
   }
 
-  /* line 575, ../sass/layouts/_responsive.scss */
+  /* line 576, ../sass/layouts/_responsive.scss */
   .slicknav_menu .slicknav_icon-bar {
     background-color: #565656;
     margin-bottom: 5px;
     width: 25px;
   }
 
-  /* line 583, ../sass/layouts/_responsive.scss */
+  /* line 584, ../sass/layouts/_responsive.scss */
   .front #content {
     padding-top: 80%;
   }
 
-  /* line 587, ../sass/layouts/_responsive.scss */
+  /* line 588, ../sass/layouts/_responsive.scss */
   #content {
     padding-top: 70%;
   }
 
-  /* line 591, ../sass/layouts/_responsive.scss */
+  /* line 592, ../sass/layouts/_responsive.scss */
   #block-superfish-1 {
     display: none;
   }
 
-  /* line 595, ../sass/layouts/_responsive.scss */
+  /* line 596, ../sass/layouts/_responsive.scss */
   .mobile-display {
     display: block;
   }
 
-  /* line 598, ../sass/layouts/_responsive.scss */
+  /* line 599, ../sass/layouts/_responsive.scss */
   .not-mobile-display {
     display: none;
   }
 
-  /* line 602, ../sass/layouts/_responsive.scss */
+  /* line 603, ../sass/layouts/_responsive.scss */
   .desktop-display {
     display: none;
   }
 
-  /* line 608, ../sass/layouts/_responsive.scss */
+  /* line 609, ../sass/layouts/_responsive.scss */
   .inner.banner-text {
     padding-top: 33%;
   }
 
-  /* line 611, ../sass/layouts/_responsive.scss */
+  /* line 612, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     line-height: 1em;
     margin: 0px;
     padding: 0px 0px 5px 0px;
   }
 
-  /* line 616, ../sass/layouts/_responsive.scss */
+  /* line 617, ../sass/layouts/_responsive.scss */
   .banner-text h2 {
     font-family: 'proxima-nova';
     font-weight: 500;
@@ -231,83 +231,83 @@ ul {
     margin: 0px;
   }
 
-  /* line 621, ../sass/layouts/_responsive.scss */
+  /* line 622, ../sass/layouts/_responsive.scss */
   .banner-text a {
     color: white;
   }
 
-  /* line 624, ../sass/layouts/_responsive.scss */
+  /* line 625, ../sass/layouts/_responsive.scss */
   .banner-text a:hover {
     color: orchid;
   }
 
-  /* line 629, ../sass/layouts/_responsive.scss */
+  /* line 630, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     font-size: 1em;
     font-weight: bold;
   }
 
-  /* line 633, ../sass/layouts/_responsive.scss */
+  /* line 634, ../sass/layouts/_responsive.scss */
   .banner-text h2 {
     font-size: .9em;
     line-height: 1.3em;
   }
 
-  /* line 637, ../sass/layouts/_responsive.scss */
+  /* line 638, ../sass/layouts/_responsive.scss */
   .banner-text.mobile-display {
     height: 100px;
     margin-top: 15px;
   }
 
-  /* line 643, ../sass/layouts/_responsive.scss */
+  /* line 644, ../sass/layouts/_responsive.scss */
   .two-column-1 {
     flex: 0 0 250px;
     display: none;
   }
 
-  /* line 648, ../sass/layouts/_responsive.scss */
+  /* line 649, ../sass/layouts/_responsive.scss */
   .two-column-2 {
     margin: 0px 10px;
   }
 
-  /* line 651, ../sass/layouts/_responsive.scss */
-  #page-title, .page-content {
+  /* line 652, ../sass/layouts/_responsive.scss */
+  #page-title {
     max-width: 90%;
   }
 
-  /* line 656, ../sass/layouts/_responsive.scss */
+  /* line 657, ../sass/layouts/_responsive.scss */
   .field.field-name-news-and-events-heading.field-type-ds.field-label-hidden {
     display: none;
   }
 }
 @media all and (max-width: 375px) {
-  /* line 666, ../sass/layouts/_responsive.scss */
+  /* line 667, ../sass/layouts/_responsive.scss */
   .banner-text h2 {
     font-size: .7em;
     line-height: 1.1em;
   }
 }
-/* line 677, ../sass/layouts/_responsive.scss */
+/* line 678, ../sass/layouts/_responsive.scss */
 #stripe-full {
   display: none;
 }
 
-/* line 680, ../sass/layouts/_responsive.scss */
+/* line 681, ../sass/layouts/_responsive.scss */
 #stripe-tablet {
   display: none;
 }
 
-/* line 683, ../sass/layouts/_responsive.scss */
+/* line 684, ../sass/layouts/_responsive.scss */
 #stripe-mobile {
   display: block;
 }
 
-/* line 687, ../sass/layouts/_responsive.scss */
+/* line 688, ../sass/layouts/_responsive.scss */
 #main {
   margin-top: 0px;
 }
 
-/* line 692, ../sass/layouts/_responsive.scss */
+/* line 693, ../sass/layouts/_responsive.scss */
 .slicknav_menu {
   background: transparent none repeat scroll 0% 0%;
   position: relative;
@@ -315,53 +315,53 @@ ul {
   height: 61px;
 }
 
-/* line 700, ../sass/layouts/_responsive.scss */
+/* line 701, ../sass/layouts/_responsive.scss */
 .slicknav_nav {
   background-color: #d7d7d7;
   margin-top: 2.7em;
   padding: 0px;
 }
 
-/* line 709, ../sass/layouts/_responsive.scss */
+/* line 710, ../sass/layouts/_responsive.scss */
 .slicknav_btn {
   background-color: transparent;
   margin: 0px 20px 0px 0px;
 }
 
-/* line 714, ../sass/layouts/_responsive.scss */
+/* line 715, ../sass/layouts/_responsive.scss */
 .slicknav_nav a {
   color: #6C6666;
   padding: 15px 10px;
 }
-/* line 717, ../sass/layouts/_responsive.scss */
+/* line 718, ../sass/layouts/_responsive.scss */
 .slicknav_nav a:hover {
   color: black;
 }
 
-/* line 723, ../sass/layouts/_responsive.scss */
+/* line 724, ../sass/layouts/_responsive.scss */
 div.slicknav_menu {
   width: 100%;
   padding: 0;
   height: auto;
 }
 
-/* line 731, ../sass/layouts/_responsive.scss */
+/* line 732, ../sass/layouts/_responsive.scss */
 ul.slicknav_nav {
   width: 100%;
   position: relative;
 }
 
-/* line 736, ../sass/layouts/_responsive.scss */
+/* line 737, ../sass/layouts/_responsive.scss */
 .slicknav_nav .slicknav_row {
   padding: 15px 10px;
 }
 
-/* line 744, ../sass/layouts/_responsive.scss */
+/* line 745, ../sass/layouts/_responsive.scss */
 #footer-tablet {
   display: block;
 }
 
-/* line 748, ../sass/layouts/_responsive.scss */
+/* line 749, ../sass/layouts/_responsive.scss */
 #footer-full {
   display: none;
 }
@@ -375,64 +375,63 @@ ul.slicknav_nav {
    * Dev code
    * TODO: Remove before production ? why? 
    */
-  /* line 771, ../sass/layouts/_responsive.scss */
+  /* line 772, ../sass/layouts/_responsive.scss */
   #banner {
     top: 1em;
   }
 
-  /* line 775, ../sass/layouts/_responsive.scss */
+  /* line 776, ../sass/layouts/_responsive.scss */
   #idm-logo-mobile h2 {
     font-size: 40px;
     line-height: 30px;
   }
 
-  /* line 780, ../sass/layouts/_responsive.scss */
+  /* line 781, ../sass/layouts/_responsive.scss */
   header {
     display: initial;
   }
 
-  /* line 784, ../sass/layouts/_responsive.scss */
+  /* line 785, ../sass/layouts/_responsive.scss */
   .container .outer {
     padding-top: 45%;
     /* defines aspect ratio  of banner image*/
   }
 
-  /* line 788, ../sass/layouts/_responsive.scss */
+  /* line 789, ../sass/layouts/_responsive.scss */
   #content {
     padding-top: 45%;
   }
 
-  /* line 792, ../sass/layouts/_responsive.scss */
+  /* line 793, ../sass/layouts/_responsive.scss */
   .inner.banner-text {
     padding-top: 30%;
   }
 
-  /* line 796, ../sass/layouts/_responsive.scss */
+  /* line 797, ../sass/layouts/_responsive.scss */
   .banner-text h1 {
     font-size: 200%;
   }
 
-  /* line 801, ../sass/layouts/_responsive.scss */
+  /* line 802, ../sass/layouts/_responsive.scss */
   .banner-text > h2 {
     font-size: 18px;
     line-height: 1.2em;
     padding-top: .3em;
   }
 
-  /* line 807, ../sass/layouts/_responsive.scss */
+  /* line 808, ../sass/layouts/_responsive.scss */
   .desktop-display {
     display: none;
   }
 
-  /* line 810, ../sass/layouts/_responsive.scss */
+  /* line 811, ../sass/layouts/_responsive.scss */
   .tablet-display {
     display: block;
   }
 
-  /* line 813, ../sass/layouts/_responsive.scss */
+  /* line 814, ../sass/layouts/_responsive.scss */
   #page-title,
-  #content-second,
-  .page-content {
+  #content-second {
     max-width: 90%;
   }
 
@@ -597,9 +596,8 @@ ul.slicknav_nav {
 
   /* line 950, ../sass/layouts/_responsive.scss */
   #page-title,
-  #content-second,
-  .page-content {
-    max-width: 960px;
+  #content-second {
+    max-width: 90%;
   }
 }
 /* Component (SMACSS module) rules */
