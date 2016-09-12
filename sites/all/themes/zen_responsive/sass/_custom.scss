@@ -63,11 +63,12 @@ section {
 	margin-bottom: 20px;
 }
 
-//#content {
-//	max-width: 90%;
-//	margin-left: auto;
-//	margin-right: auto;
-//}
+.page-user #content,
+.page-groups #content {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 //h tag specifics and overrides
 h2 {
