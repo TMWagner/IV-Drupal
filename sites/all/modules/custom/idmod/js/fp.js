@@ -20,9 +20,9 @@ Drupal.behaviors.fp = {
     $('.slicknav').slicknav({
       label: '',
       prependTo: "#secondary-menu",
+//			prependTo: "#mobile-nav-menu",
       allowParentLinks: true
     });
-    
     
     // Test code for footer: based on WOCO
     $(".accordion").accordion({
@@ -30,41 +30,6 @@ Drupal.behaviors.fp = {
     });
     
     
-    
-    ///*  Make the rotators clickable
-    // */
-    //$('div#fp-p1-video').click(function(){
-    //  window.location = '/news/node/132';
-    //});
-    //$('div#fp-p1-releases').click(function(){
-    //  window.location = '/software';
-    //});     
-    //$('div#fp-p1-shapes').click(function(){
-    //  window.location = '/about';
-    //});  
-    //$('div#fp-p1-challenges').click(function(){
-    //  window.location = '/news/node/142';
-    //});
-    //$('div#fp-p1-guinea').click(function(){
-    //  window.location = '/news/node/154';
-    //});
-    //
-    ///*  Make the panel 2 nav  clickable
-    // *
-    // */
-    //$('div#fp-nav-research').click(function(){
-    //  window.location = '/research';
-    //});
-    //$('div#fp-nav-publications').click(function(){
-    //  window.location = '/publications';
-    //});
-    //$('div#fp-nav-software').click(function(){
-    //  window.location = '/software';
-    //});
-    //$('div#fp-nav-team').click(function(){
-    //  window.location = '/team';
-    //});    
-
   }
 };
 
