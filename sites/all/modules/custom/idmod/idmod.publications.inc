@@ -91,7 +91,10 @@ function idmod_publications_author($form, &$form_state, $arg1) {
                   </li>
                   <li id="2015">
                     <a href="/publications/date/2015">2015</a>
-                  </li>  
+                  </li>
+                  <li id="2016">
+                    <a href="/publications/date/2016">2016</a>
+                  </li> 
                 </ul>',
 
     '#prefix' => '<div class="team-menu" style="clear: left">',
@@ -186,8 +189,11 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   if ($arg1 == '2015') {
     $display_id = '2015';
     $arg = NULL;
+  }
+  if ($arg1 == '2016') {
+    $display_id = '2016';
+    $arg = NULL;
   } 
-  
   
   
   $view_name = 'publications';
