@@ -37,7 +37,6 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       'all' => t('All'),
       '68' => t('Ben Althouse'),
       '9' => t('Basil Bayati'),
-      '64' =>t('David Bernotas'),
       '46' => t('Matthew Behrend'),
       '13' => t('Anna Bershteyn'),
       '16' => t('Caitlin Bever'),
@@ -91,7 +90,10 @@ function idmod_publications_author($form, &$form_state, $arg1) {
                   </li>
                   <li id="2015">
                     <a href="/publications/date/2015">2015</a>
-                  </li>  
+                  </li>
+                  <li id="2016">
+                    <a href="/publications/date/2016">2016</a>
+                  </li>
                 </ul>',
 
     '#prefix' => '<div class="team-menu" style="clear: left">',
@@ -185,6 +187,10 @@ function idmod_publications_author($form, &$form_state, $arg1) {
   }
   if ($arg1 == '2015') {
     $display_id = '2015';
+    $arg = NULL;
+  }
+  if ($arg1 == '2016') {
+    $display_id = '2016';
     $arg = NULL;
   } 
   
