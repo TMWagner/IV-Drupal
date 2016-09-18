@@ -31,13 +31,14 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     '#suffix' => '</div>',
   );  
   
+  //Array index is based in "PID", not "UID"
   $form['publications']['author'] = array(
     '#type' => 'select',
     '#options' => array(
       'all' => t('All'),
       '68' => t('Ben Althouse'),
+      '84' => t('Atiye Alaeddini'),
       '9' => t('Basil Bayati'),
-      '64' =>t('David Bernotas'),
       '46' => t('Matthew Behrend'),
       '13' => t('Anna Bershteyn'),
       '16' => t('Caitlin Bever'),
@@ -52,6 +53,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       '7' => t('Dan Klein'),
       '23' => t('Hil Lyons'),
       '26' => t('Kevin McCarthy'),
+      '81' => t('Joel Miller'),
       '70' => t('Milen Nikolov'),
       '45' => t('Karima Nigmatulina'),
       '42' => t('Kevin Oishi'),
@@ -94,7 +96,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
                   </li>
                   <li id="2016">
                     <a href="/publications/date/2016">2016</a>
-                  </li> 
+                  </li>
                 </ul>',
 
     '#prefix' => '<div class="team-menu" style="clear: left">',
@@ -194,6 +196,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     $display_id = '2016';
     $arg = NULL;
   } 
+  
   
   
   $view_name = 'publications';
