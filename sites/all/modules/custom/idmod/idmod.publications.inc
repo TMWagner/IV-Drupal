@@ -31,11 +31,13 @@ function idmod_publications_author($form, &$form_state, $arg1) {
     '#suffix' => '</div>',
   );  
   
+  //Array index is based in "PID", not "UID"
   $form['publications']['author'] = array(
     '#type' => 'select',
     '#options' => array(
       'all' => t('All'),
       '68' => t('Ben Althouse'),
+      '84' => t('Atiye Alaeddini'),
       '9' => t('Basil Bayati'),
       '46' => t('Matthew Behrend'),
       '13' => t('Anna Bershteyn'),
@@ -51,6 +53,7 @@ function idmod_publications_author($form, &$form_state, $arg1) {
       '7' => t('Dan Klein'),
       '23' => t('Hil Lyons'),
       '26' => t('Kevin McCarthy'),
+      '81' => t('Joel Miller'),
       '70' => t('Milen Nikolov'),
       '45' => t('Karima Nigmatulina'),
       '42' => t('Kevin Oishi'),
