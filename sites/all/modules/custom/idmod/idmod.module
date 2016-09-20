@@ -232,7 +232,10 @@ function idmod_init() {
   
   drupal_add_js(drupal_get_path('module', 'idmod') . '/js/fp.js', array(
   'scope' => 'footer',
-  )); 
+  ));
+  
+  drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
+  drupal_add_js(drupal_get_path('module', 'idmteam') . '/js/team.js');
   
   
   //Load conditional CSS and JS

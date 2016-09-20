@@ -634,8 +634,8 @@ function idmteam_views_pre_view(&$view, &$display_id, &$args){
  
   if ($team_page) {
     //Add CSS specific to this page
-    drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
-    drupal_add_js(drupal_get_path('module', 'idmteam') . '/js/team.js');
+    //drupal_add_css(drupal_get_path('module', 'idmteam') . '/css/team.css');
+    //drupal_add_js(drupal_get_path('module', 'idmteam') . '/js/team.js');
     
     // Wrap the "team" items so we can handle appropriately with jQuery later. 
     $build['team'] = array(
