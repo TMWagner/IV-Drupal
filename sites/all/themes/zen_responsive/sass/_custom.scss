@@ -139,6 +139,16 @@ a {
     display: inline-block;
 		text-align: center;
   }
+	
+// Format team member profile blocks (used in research and publications)
+	.team-name-info-175 .team-info {
+    display: table-cell;
+    padding: 0 5px 5px 5px;
+    vertical-align: bottom;
+		width: 175px;
+		height: 175px;
+	}
+
   
   // Parent to wrapper
   // The text-align property only works on inline elements. Wrapper contains inline-block property

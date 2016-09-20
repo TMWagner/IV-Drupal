@@ -34,24 +34,7 @@ ul#team-research {
 	min-width: 185px;
 }
 
-/*
 
-.outer {
-  display: table;
-}
-
-.inner {
-  height: 200px;
-  display: table-cell;
-  vertical-align: bottom;
-}
-
- Just for styling 
-.inner {
-  background: #eee;
-  padding: 0 20px;
-}
-*/
 
 
 
@@ -62,13 +45,35 @@ ul#team-research {
     height: 150px;
     bottom: 155px;
 }
+.team-name-info-175 {
+  
+  /*background-image: url(/sites/default/files/team_pic_gradient.png);*/
+  /* Took off BA image because it defined as 150 for team page and
+   * I didn't want to rebuilt it
+   */
+  background-image: none;   
+  position: relative;
+  width: 175px;
+  height: 175px;
+  bottom: 175px;
+}
+
+.team-name-info-175 .team-info p {
+  margin-bottom: 10px;
+}
+
+.team-member-profile-list {
+    float: left;
+    margin-right: 10px;
+    height: 180px;
+}
 
 ul.team-member-item li {
-    float: left;
-    list-style-type: none;
-    margin: 0 10px 0;
-    width: 150px;
-    height: 160px;
+  float: left;
+  list-style-type: none;
+  margin: 0 10px 0;
+  width: 150px;
+  height: 160px;
 }
 
 div.team-info-wrapper {
@@ -82,16 +87,5 @@ div.team-info {
 }
 
 
-/*
-.team-member-info-gradient {
-	background-image: url(/sites/default/files/team_pic_gradient.png);
-	bottom: 130px;
-	height: 150px;
-  max-width: 150px;
-  position: relative;
 
-}
-*/
 	
-
-/*>> END Test Code <<< */
