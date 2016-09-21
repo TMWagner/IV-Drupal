@@ -1313,11 +1313,6 @@ h1.page-title {
     display: block;
   }
 
-  /* line 565, ../sass/layouts/_responsive.scss */
-  #content-second img {
-    width: 125px;
-  }
-
   /* line 572, ../sass/layouts/_responsive.scss */
   .container .outer {
     padding-top: 50%;

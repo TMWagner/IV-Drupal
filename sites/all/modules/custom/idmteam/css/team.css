@@ -34,9 +34,14 @@ ul#team-research {
 	min-width: 185px;
 }
 
-
-
-
+/*restrict height of team lead profile pic*/
+.view-display-team-lead .view-content {
+  height: 170px;
+}
+/*Restrict height of IDM Author list (in publications)*/
+.author-list .views-row {
+  height:200px;
+}
 
 .team-name-info {
     background-image: url(/sites/default/files/team_pic_gradient.png);
