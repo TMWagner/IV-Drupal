@@ -281,14 +281,10 @@ f
 //Team page general settings
 
      
-  //ul.team-member-item li {
-  //  float: left;
-  //  list-style-type: none;
-  //  margin: 0 10px 0;
-  //  width: 150px;
-  //}
- 
-  //next  this?
+ .talking-head {
+  display: inline-block;
+ }
+
   .team-name-info h3 {
     margin-bottom: 0px;
     font-size: 15px;
@@ -562,9 +558,6 @@ f
     display: block;
 	}
 	
-	//#content-second img {
-	//	width: 125px;
-	//}
 	
 	//End Publications CSS
 	
